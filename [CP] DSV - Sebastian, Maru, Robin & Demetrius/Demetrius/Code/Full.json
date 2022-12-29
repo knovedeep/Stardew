@@ -1,0 +1,101 @@
+{
+// DEMETRIUS DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Demetrius Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Demetrius, Characters/Demetrius",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{DemetriusVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomDemetrius}}_{{DemetriusWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Demetrius Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Demetrius, Characters/Demetrius",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{DemetriusVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestDemetrius}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},		
+		{
+			"LogName": "Demetrius Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Beach",
+			"FromFile": "Demetrius/{{TargetPathOnly}}/{{DemetriusVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Demetrius Resort Portrait Fix",
+			"Action": "EditImage",
+			"Target": "Portraits/Demetrius", 
+			"FromFile": "Demetrius/Portraits/{{DemetriusVariant}}/Demetrius_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "IslandSouth, IslandNorth, IslandSouthEast, IslandWest, IslandEast",
+				"Time": "{{Range: 1200, 1800}}"
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Demetrius Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{DemetriusVariant}}/Demetrius_SleepSprite.png",
+			"ToArea": { "X": 16, "Y": 160, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "ScienceHouse",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Demetrius Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Demetrius/Misc/Demetrius_Emoji_{{DemetriusVariant}}.png",
+			"ToArea": {"X": 45, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"DemetriusVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Demetrius Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "Demetrius/Misc/Junimo_Demetrius_{{DemetriusVariant}}.png",
+			"ToArea": { "X": 384, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"DemetriusVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// ICE FESTIVAL DIALOGUE FIX
+		{
+            "LogName": "Demetrius Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries":
+            {
+                "Demetrius": "{{i18n:dialogue.Demetrius.IceFest}}",
+            },
+        },
+	]
+}

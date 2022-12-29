@@ -1,0 +1,529 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// KROBUS WEATHER
+		{
+			"Name": "KrobusWeatherVariant",
+			"Value": "",
+		},
+		{
+			"Name": "KrobusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "wind",
+			},
+		},
+		{
+			"Name": "KrobusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"KrobusLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "KrobusWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+			},
+		},
+		{
+			"Name": "KrobusWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+			},
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomKrobus",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomKrobus",
+			"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7|key= KrobusMain}}",
+			"When":
+			{
+				"KrobusLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomKrobusTrenchcoat",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomKrobusTrenchcoat",
+			"Value": "{{Random: 1, 2, 3|key= KrobusMain}}",
+			"When":
+			{
+				"KrobusLightweightConfig |contains= full": true,
+			},
+		},
+		
+// MERMAID RANDOM
+		{
+			"Name": "RandomMermaidATop",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidATop",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= randomlower": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidATop",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomupper, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidATop",
+			"Value": "2",
+			"When":
+			{
+				"Mermaids |contains= Light": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidATail",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidATail",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= randomupper": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidATail",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomlower, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidATail",
+			"Value": "4",
+			"When":
+			{
+				"Mermaids |contains= Light": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidBTop",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidBTop",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomupper, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidBTop",
+			"Value": "3",
+			"When":
+			{
+				"Mermaids |contains= Light": true,
+			},
+		},{
+			"Name": "RandomMermaidCTop",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidCTop",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= randomlower": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidCTop",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomupper, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidCTop",
+			"Value": "4",
+			"When":
+			{
+				"Mermaids |contains= Light": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidCTail",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidCTail",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= RandomUpper, Light": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidCTail",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomlower, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidDTop",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidDTop",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= randomlower": true,
+				"HasMod |contains=PaperNautilus.IslaMermaid": false,
+			},
+		},
+		{
+			"Name": "RandomMermaidDTop",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomupper, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidDTop",
+			"Value": "3",
+			"When":
+			{
+				"Mermaids |contains= Light": true,
+				"HasMod |contains=PaperNautilus.IslaMermaid": false,
+			},
+		},
+		{
+			"Name": "RandomMermaidDTail",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidDTail",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= randomupper": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidDTail",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomlower, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidDTail",
+			"Value": "2",
+			"When":
+			{
+				"Mermaids |contains= Light": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidETop",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidETop",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= randomlower": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidETop",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomupper, randomboth": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidETop",
+			"Value": "4",
+			"When":
+			{
+				"Mermaids |contains= Light": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidETail",
+			"Value": "",
+		},
+		{
+			"Name": "RandomMermaidETail",
+			"Value": "1",
+			"When":
+			{
+				"Mermaids |contains= randomupper, Light": true,
+			},
+		},
+		{
+			"Name": "RandomMermaidETail",
+			"Value": "{{Random: 1, 2, 3, 4}}",
+			"When":
+			{
+				"Mermaids |contains= randomlower, randomboth": true,
+			},
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// WIZARD MARRIAGE MOD COMPATIBILITY
+		{
+			"Name": "MarriageableWizard",
+			"Value": "Default",
+		},
+		{
+			"Name": "MarriageableWizard",
+			"Value": "RomRas",
+			"When":
+			{
+				"HasMod |contains= Wolf.RomRas": true,
+				"WizardMarriageMod": "RomanceableRasmodius",
+			}
+		},
+		{
+			"Name": "MarriageableWizard",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"HasMod |contains= foggy.LfL": true,
+				"WizardMarriageMod": "LookingForLove",
+			}
+		},
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"KrobusVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "Modded",
+		},
+		"KrobusLightweightConfig":
+		{
+			"AllowValues": "Full, Light",
+			"Default": "Full",
+			"Description": "Toggles whether Krobus will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+		},
+		"Mermaids":
+		{
+			"AllowValues": "RandomBoth, RandomUpper, RandomLower, Light, off",
+			"Default": "RandomBoth",
+			"Description": "Randomizes the appearance of the mermaids who appear in the game. The 'Light' option will change the mermaids to a pre-selected mix.",
+		},
+		"WitchVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off",
+		},
+		"WizardVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"WizardLightweightConfig":
+		{
+			"AllowValues": "Full, Light",
+			"Default": "Full",
+			"Description": "Toggles whether the Wizard will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+		},
+		"WizardFamiliars":
+		{
+			"AllowValues": "HatJunimos, ShoulderJunimos, SpiritCreatures",
+			"AllowBlank": true,
+			"AllowMultiple": true,
+			"Description": "Gives the Wizard some spirit familiars who hang around him. Can't be used if WizardLightweightConfig option is set to 'light'.",
+		},
+		"WizardMarriageMod":
+		{
+			"AllowValues": "LookingForLove, RomanceableRasmodius, None",
+			"Default": "None",
+			"Description": "If you are using a mod to romance the Wizard, select which one you are using here. Note: DSV does not support SVE's Wizard romance option.",
+		},	
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'light'.",
+		},
+	},
+	"Changes":[
+		{
+			"LogName": "Krobus Main",
+			"Action": "Include",
+			"FromFile": "Krobus/Code/Krobus.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"KrobusVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "Mermaids Main",
+			"Action": "Include",
+			"FromFile": "Mermaids/Code/Mermaids.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Mermaids |contains= off": false,
+				"HasMod |contains= gwenynnefydd.diversemermaidshow": false,
+				"HasMod |contains= Naya.Colling.MermaidShow": false,				
+			},
+		},
+		{
+			"LogName": "Wizard Main",
+			"Action": "Include",
+			"FromFile": "Wizard/Code/{{WizardLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"WizardVariant |contains= off": false,
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP, DSVTeam.AddOnPack.AirynWizard": false,
+			},
+		},
+		{
+			"LogName": "Witch Main",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Witch/CursorsWitch.png",
+			"ToArea": { "X": 276, "Y": 1885, "Width": 40, "Height": 59 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"WitchVariant": "modded",
+				"HasMod |contains= ZoeDoll.NPCAlecto": false,
+			},
+		},
+	]
+}

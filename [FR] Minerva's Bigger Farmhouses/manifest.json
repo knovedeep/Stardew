@@ -1,0 +1,17 @@
+{
+   "Name": "Minerva's Bigger Farmhouses",
+   "Author": "minervamaga",
+   "Version": "1.2.3",
+   "Description": "Some new bigger farmhouse maps for your enjoyment",
+   "UniqueID": "minervamaga.FR.BiggerFarmhouses",
+   "UpdateKeys": ["ModDrop:580731", "Nexus:3704"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+   },
+   "Dependencies": [
+	   {
+	      "UniqueID": "mabelsyrup.farmhouse",
+	      "IsRequired": false
+	   },
+	]
+}

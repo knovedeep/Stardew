@@ -1,0 +1,29 @@
+{
+// DSV TRINNIE
+
+	"Changes": [
+		{
+			"LogName": "DSV Trinnie",
+			"Action": "EditImage",
+			"Target": "Portraits/Trinnie, Portraits/Trinnie_Beach, Characters/Trinnie, Characters/Trinnie_Beach",
+			"FromFile": "RSVCompat/{{Target}}_{{RidgesideVillageTrinnie}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "DSV Trinnie Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVemojis",
+			"FromFile": "RSVCompat/Misc/Trinnie_Emoji_{{RidgesideVillageTrinnie}}.png",
+			"ToArea": {"X": 45, "Y": 27, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

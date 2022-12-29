@@ -1,0 +1,139 @@
+{
+	"Name": "Diverse SDV - Sam, Vincent, Jodi & Kent",
+	"Author": "DSV Team",
+	"Version": "3.2.2",
+	"Description": "Adds ethnic, cultural, gender identity, and disability diversity to Sam, Vincent, Jodi & Kent, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.SamVincentJodiKent",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1073355", "GitHub:AirynS/DSV-Sam-Vincent-Jodi-Kent" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PPAFSMAPI",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "PurrplingCat.CustomGiftDialogue",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "brin.SSRivalHeartEvents",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.SamNorwegianWeddingSuit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Sqbr.KentDoesTheDishes",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ZoeDoll.RSVSeasonalAlissa",
+			"IsRequired": false,
+		},
+		
+// DIALOGUE COMPATIBILITY
+
+		{
+			"UniqueID": "crunchkitty.sambastian",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ShotFromGuns.NoMoreWarKentJournalist",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "CopperSun.SamVincentShopCP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Lemurkat.UniqueGiftReactions",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "nraittanna.RememberMyBirthday",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Fellowclown.Lyell",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "FuzzyMittens.Toshinori",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Lizi.KentMail",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Rafseazz.RSVCP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Seismothesaurus.JodiKent",
+			"IsRequired": false,
+		},
+		
+// GIFT TASTE COMPATIBILITY
+		
+		
+		{
+			"UniqueID": "mothbeanie.GiftsRedone",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Swift.EveryoneLikesFruit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Lemurkat.UniqueGiftReactions",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "paradigmnomad.freshmeat",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ppja.artisanvalleymachinegoods",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ppja.starbrewvalley",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "PPJA.cannabiskit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "SSaturn.OrientalKitchen.withFreshMeat",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "fwippy.champagnewishes",
+			"IsRequired": false,
+		},
+		
+	]
+}

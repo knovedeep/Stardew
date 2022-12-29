@@ -1,0 +1,1163 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// SEBASTIAN WEATHER
+		{
+			"Name": "SebastianWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "SebastianWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"SebastianLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "SebastianWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"SebastianLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "SebastianWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"SebastianLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "SebastianWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"SebastianLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// MARU WEATHER
+		{
+			"Name": "MaruWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "MaruWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"MaruLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "MaruWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"MaruLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "MaruWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"MaruLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "MaruWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"MaruLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// ROBIN WEATHER
+		{
+			"Name": "RobinWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "RobinWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"RobinLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "RobinWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"RobinLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "RobinWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"RobinLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "RobinWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"RobinLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// DEMETRIUS WEATHER
+		{
+			"Name": "DemetriusWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "DemetriusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"DemetriusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "DemetriusWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"DemetriusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "MaruWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"DemetriusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "DemetriusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"DemetriusLightweightConfig |contains= full": true,
+			}
+		},
+		{
+			"Name": "DemetriusWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"DemetriusLightweightConfig |contains= full": false,
+			}
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomSebastian",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomSebastian",
+			"Value": "{{Random: 1, 2, 3|key= SebastianMain}}",
+			"When":
+			{
+				"SebastianLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomFestivalSebastian",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalSebastian",
+			"Value": "{{Random: 1, 2, 3 |key= SebastianFestival}}",
+			"When":
+			{
+				"SebastianLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true,
+			},
+		},
+		{
+			"Name": "RandomMaru",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomMaru",
+			"Value": "{{Random: 1, 2, 3|key= MaruMain}}",
+			"When":
+			{
+				"MaruLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomFestivalMaru",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalMaru",
+			"Value": "{{Random: 1, 2 |key= MaruFestival}}",
+			"When":
+			{
+				"MaruLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve, feast of the winter star": true,
+			},
+		},
+		{
+			"Name": "RandomRobin",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomRobin",
+			"Value": "{{Random: 1, 2 |key= RobinMain}}",
+			"When":
+			{
+				"RobinLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomDemetrius",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomDemetrius",
+			"Value": "{{Random: 1, 2 |key= RobinMain}}",
+			"When":
+			{
+				"DemetriusLightweightConfig |contains= full": true,
+			},
+		},
+		
+		
+// SPECIAL - AEROBICS
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"Time": "{{Range: 0900, 1600}}",
+				"LocationName": "SeedShop",
+				"Weather |contains= Rain, Storm": false,
+				"RobinLightweightConfig |contains= full": true,
+				"RobinVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"LocationName": "SeedShop",
+				"Weather |contains= Rain, Storm": false,
+				"RobinLightweightConfig |contains= light": true,
+				"RobinVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"LocationName": "SeedShop",
+				"Hearts:Harvey": "{{Range: 6, 14}}",
+				"Time": "{{Range: 1100, 1500}}",
+				"HasSeenEvent |contains= 58": false,
+				"RobinLightweightConfig |contains= full": true,
+				"RobinVariant |contains= off": false,	
+			},
+		},
+		
+// SPECIAL - MOTORBIKE
+		{
+			"Name": "Special+Festival",
+			"Value": "Motorbike_Helmet",
+			"When":
+			{
+				"HasSeenEvent|contains= 384882": false,
+				"Time": "{{Range: 2000, 2300}}",
+				"LocationName": "Mountain",
+				"Hearts:Sebastian": "10, 11, 12",
+				"SebSafety": "helmet",
+				"SebastianLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Motorbike_NoHelmet",
+			"When":
+			{
+				"HasSeenEvent|contains= 384882": false,
+				"Time": "{{Range: 2000, 2300}}",
+				"LocationName": "Mountain",
+				"Hearts:Sebastian": "10, 11, 12",
+				"SebSafety": "nohelmet",
+				"SebastianLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Motorbike_NoHelmet",
+			"When":
+			{
+				"HasSeenEvent|contains= 384882": false,
+				"Time": "{{Range: 2000, 2400}}",
+				"LocationName": "SebastianMountain, Temp",
+				"Hearts:Sebastian": "10, 11, 12",
+				"SebastianLightweightConfig |contains= full": true,
+			},
+		},
+		
+// SPECIAL - SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true,
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker",
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"Season": "summer",
+				"LocationName": "Beach",
+				"Weather": "sun, wind",
+				"DayEvent |contains= dance of the moonlight jellies, luau, Moonshine Barbecue, Pelican Town Potluck": false,
+			}
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// 14 HEART PYJAMA EXCEPTIONS
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "false",
+		},
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "true",
+			"When":
+			{
+				"Relationship:Sebastian": "Married",
+				"Hearts:Sebastian": "14",
+				"LocationName |contains= Farmhouse": true,
+				"Time": "{{Range: 0620, 1900}}",
+				"HasSeenEvent |contains = 9333220": false,
+				"SebastianLightweightConfig |contains= full": true,
+			},
+		},
+		
+// PYJAMAS
+		{
+			"Name": "PyjamasSebastianToken",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasSebastianToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, SebastianRoom": true,
+				"Query: {{Time}} < 0830 OR {{Time}} >= 2200": true,
+				"14HeartPyjamaException": false,
+				"SebastianLightweightConfig |contains= full": true,
+				"SebastianVariant |contains= off": false,	
+				"PyjamasSebastian |contains= true": true,
+			}
+		},
+		{
+			"Name": "PyjamasSebastianToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} < 0830 OR {{Time}} >= 2200": true,
+				"14HeartPyjamaException": false,
+				"Relationship:Sebastian": "Married",
+				"SebastianLightweightConfig |contains= full": true,
+				"SebastianVariant |contains= off": false,	
+				"PyjamasSebastian |contains= marriage": true,
+			}
+		},
+		{
+			"Name": "PyjamasMaruToken",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasMaruToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, ScienceHouse": true,
+				"Query: {{Time}} < 0730 OR {{Time}} >= 2200": true,
+				"MaruLightweightConfig |contains= full": true,
+				"MaruVariant |contains= off": false,	
+				"PyjamasMaru |contains= true": true,
+			}
+		},
+		{
+			"Name": "PyjamasMaruToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} < 0730 OR {{Time}} >= 2200": true,
+				"Relationship:Maru": "Married",
+				"MaruLightweightConfig |contains= full": true,
+				"MaruVariant |contains= off": false,	
+				"PyjamasMaru |contains= marriage": true,
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+
+		{
+			"Name": "WeddingGuestSebastian",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestSebastian",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"SebastianLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestSebastian",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"SebastianLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestSebastian",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"SebastianLightweightConfig |contains= ultralight": false,
+			}
+		},		
+		{
+			"Name": "WeddingGuestMaru",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestMaru",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"MaruLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestMaru",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"MaruLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestMaru",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"MaruLightweightConfig |contains= ultralight": false,
+			}
+		},
+		{
+			"Name": "WeddingGuestRobin",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestRobin",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"RobinLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestRobin",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"RobinLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestRobin",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"RobinLightweightConfig |contains= ultralight": false,
+			}
+		},		
+		{
+			"Name": "WeddingGuestDemetrius",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestDemetrius",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"DemetriusLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestDemetrius",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"DemetriusLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestDemetrius",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"DemetriusLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// MARU DUTCH-XHOSA WEDDING DRESS COMPAT
+
+		{
+			"Name": "WeddingOutfitMaruToken",
+			"Value": "{{WeddingOutfitMaru}}",
+		},
+		{
+			"Name": "WeddingOutfitMaruToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.MaruDutchXhosaWeddingDress": false,
+				"WeddingOutfitMaru": "6",
+			},
+		},
+		{
+			"Name": "WeddingOutfitMaruToken",
+			"Value": "6_{{Season}}_Vanilla",
+			"When": 
+			{
+				"HasMod |contains= Elaho.MaruDutchXhosaWeddingDress": true,
+				"WeddingOutfitMaru": "6",
+				"RobinVariant |contains= off": true,
+			},
+		},
+		{
+			"Name": "WeddingOutfitMaruToken",
+			"Value": "6_{{Season}}_{{RobinVariant}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.MaruDutchXhosaWeddingDress": true,
+				"WeddingOutfitMaru": "6",
+				"RobinVariant |contains= off": false,
+			},
+		},
+		
+// SEBASTIAN DUTCH-VIETNAMESE OR DUTCH-ROMANIAN WEDDING OUTFIT COMPAT
+
+		{
+			"Name": "WeddingOutfitSebastianToken",
+			"Value": "{{WeddingOutfitSebastian}}",
+		},
+		{
+			"Name": "WeddingOutfitSebastianToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.SebastianDutchRomanianOrDutchVietnameseWeddingOutfits": false,
+				"WeddingOutfitSebastian": "5, 6",
+			},
+		},
+		{
+			"Name": "WeddingOutfitSebastianToken",
+			"Value": "5_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.SebastianDutchRomanianOrDutchVietnameseWeddingOutfits": true,
+				"WeddingOutfitSebastian": "5",
+			},
+		},
+		{
+			"Name": "WeddingOutfitSebastianToken",
+			"Value": "6_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.SebastianDutchRomanianOrDutchVietnameseWeddingOutfits": true,
+				"WeddingOutfitSebastian": "6",
+			},
+		},
+		
+// SEBASTIAN SUNGLASSES
+
+		{
+			"Name": "SebastianSunglassesRandom",
+			"Value": "blank",
+		},
+		{			
+			"Name": "SebastianSunglassesRandom",
+			"Value": "{{Random: SunglassesOverlay, x, x, x, x |key= SebastianSunglasses}}",
+			"When":
+			{				
+				"IsOutdoors": true,
+				"Season": "spring, fall",
+				"Weather": "sun, wind",
+				"Special+Festival| contains= Motorbike_Helmet, Motorbike_NoHelmet, EggFestival, FlowerDance, IceFestival, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"SebastianLightweightConfig |contains= full": true,
+			},
+		},		
+		{			
+			"Name": "SebastianSunglassesRandom",
+			"Value": "{{Random: SunglassesOverlay, x |key= SebastianSunglasses}}",
+			"When":
+			{				
+				"IsOutdoors": true,
+				"Query: ('{{LocationName}}' IN ('IslandSouth', 'IslandNorth', 'IslandWest', 'IslandSouthEast', 'IslandEast')) OR ('{{Season}}' = 'summer')": true,
+				"Weather": "sun, wind",
+				"Special+Festival| contains= Motorbike_Helmet, Motorbike_NoHelmet, EggFestival, FlowerDance, IceFestival, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"SebastianLightweightConfig |contains= full": true,
+			},
+		},
+		
+// SEBASTIAN GLASSES
+// Sprites
+		{
+			"Name": "SebGlassesSprites",
+			"Value": "",
+		},
+		{
+			"Name": "SebGlassesSprites",
+			"Value": "Glasses",
+			"When": 
+			{
+				"SebGlasses |contains= glasses": true,
+				"Query: ('{{Season}}' = 'fall' AND '{{SebastianWeatherVariant}}' = 'Rain' AND '{{RandomSebastian}}' = '3') OR ('{{RandomFestivalSebastian}}' = '1' AND '{{Special+Festival}}' = 'SpiritsEve') OR ('{{SebastianVariant}}' = 'vanilla' AND '{{Season}}' = 'summer')": false,
+			},
+		},
+		{
+			"Name": "SebGlassesSprites",
+			"Value": "Glasses_Fall3",
+			"When": 
+			{
+				"SebGlasses |contains= glasses": true,
+				"Query: '{{Season}}' = 'fall' AND '{{SebastianWeatherVariant}}' = 'Rain' AND '{{RandomSebastian}}' = '3'": true,
+			},
+		},
+		{
+			"Name": "SebGlassesSprites",
+			"Value": "Glasses_Summer",
+			"When": 
+			{
+				"SebGlasses |contains= glasses": true,
+				"SebastianVariant |contains= vanilla": true,
+				"Season": "summer",
+			},
+		},
+		{
+			"Name": "SebGlassesSprites",
+			"Value": "Glasses",
+			"When": 
+			{
+				"SebGlasses |contains= dynamic": true,
+				"LocationName": "Farmhouse, SebastianRoom, SamHouse",
+				"Query: '{{SebastianVariant}}' = 'vanilla' AND '{{Season}}' = 'summer'": false,			
+			},
+		},
+		{
+			"Name": "SebGlassesSprites",
+			"Value": "Glasses_Summer",
+			"When": 
+			{
+				"SebGlasses |contains= dynamic": true,
+				"LocationName": "Farmhouse, SebastianRoom, SamHouse",
+				"SebastianVariant |contains= vanilla": true,
+				"Season": "summer",								
+			},
+		},
+// Portraits
+		{
+			"Name": "SebGlassesPortraits",
+			"Value": "",
+		},			
+		{
+			"Name": "SebGlassesPortraits",
+			"Value": "Glasses",
+			"When": 
+			{
+				"SebGlasses |contains= glasses": true,
+				"Query: ('{{RandomFestivalSebastian}}' = '1' AND '{{Special+Festival}}' = 'SpiritsEve') OR ('{{Special+Festival}}' = 'Motorbike_Helmet')": false,
+			},
+		},			
+		{
+			"Name": "SebGlassesPortraits",
+			"Value": "Glasses_Helmet",
+			"When": 
+			{
+				"SebGlasses |contains= glasses": true,
+				"Special+Festival |contains= Motorbike_Helmet": true,
+			},
+		},
+		
+// MATERNITY
+		{
+			"Name": "MaternityMaru",
+			"Value": "",
+		},
+		{
+			"Name": "MaternityMaru",
+			"Value": "Maternity",
+			"When":
+			{
+				"Pregnant |contains= Maru": true,
+				"MaternitySprites": true,
+				"MaruLightweightConfig |contains= ultralight": false,
+				"MaruVariant |contains= off": false,		
+			}
+		},
+		
+// MARU HOSPITAL WEAR
+		{
+			"Name": "MaruHospitalWear",
+			"Value": "NoScrubs",
+			"When":
+			{
+				"MaruHospitalVariant": "noscrubs",
+				"MaternityMaru |contains= maternity": false,
+			},
+		},
+		{
+			"Name": "MaruHospitalWear",
+			"Value": "Scrubs1",
+			"When":
+			{
+				"MaruHospitalVariant": "scrubs",
+				"MaruLightweightConfig |contains= full": false,
+				"MaternityMaru |contains= maternity": false,				
+			},
+		},
+		{
+			"Name": "MaruHospitalWear",
+			"Value": "{{Random: Scrubs1, Scrubs2, Scrubs3 |key= MaruScrubs}}",
+			"When":
+			{
+				"MaruHospitalVariant": "scrubs",
+				"MaruLightweightConfig |contains= full": true,
+				"MaternityMaru |contains= maternity": false,
+			},
+		},
+		{
+			"Name": "MaruHospitalWear",
+			"Value": "Maternity",
+			"When":
+			{
+				"MaternityMaru |contains= maternity": true,
+			},
+		},
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"SebastianVariant":
+		{
+			"AllowValues": "Vanilla, ModdedBlack, ModdedPurple, off",
+			"Default": "Vanilla",
+		},
+		"SebastianLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Sebastian will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"MaruVariant":
+		{
+			"AllowValues": "Vanilla, ModdedNotsnufffie, ModdedLavender, off",
+			"Default": "Vanilla",
+		},
+		"MaruLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Maru will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"RobinVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"RobinLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Robin will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"DemetriusVariant":
+		{
+			"AllowValues": "Vanilla, ModdedDarkSkin, ModdedAlbino, off",
+			"Default": "Vanilla",
+		},
+		"DemetriusLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Demetrius will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},		
+		//
+		//Additional options
+		"MaternitySprites":
+		{
+			"AllowValues": "false, true",
+			"Default": "false",
+			"Description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change.",
+		},
+		"PlatonicNPCs":
+		{
+			"AllowValues": "Sebastian, Maru",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+            "Default": "Sebastian, Maru",
+			"Description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+		},
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"PyjamasSebastian":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not Sebastian will wear pyjamas in the morning and evening. If 'Marriage' is selected, he will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"PyjamasMaru":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not Maru will wear pyjamas in the morning and evening. If 'Marriage' is selected, she will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"WeddingOutfitSebastian":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Sebastian will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+		"WeddingOutfitMaru":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Maru will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+// INDIVIDUAL OPTIONS
+		// Maru
+		"MaruHospitalVariant":
+		{
+			"AllowValues": "Scrubs, NoScrubs",
+			"Default": "scrubs",
+			"Description": "Gives Maru scrubs when she's working at the clinic or keeps her vanilla nurse's dress.",
+		},
+		"MaruCharacterGlasses":
+		{
+			"AllowValues": "Glasses, NoGlasses",
+			"Default": "NoGlasses",
+			"Description": "Gives Maru's character/overworld sprite glasses to match her portraits. Only affects the Vanilla and ModdedNotsnufffie variants.",
+		},
+		//Sebastian
+		"SebSafety":
+		{
+			"AllowValues": "Helmet, NoHelmet",
+			"Default": "Helmet",
+			"Description": "Gives Sebastian a helmet when he rides his motorcycle. Can only be used if SebastianLightweightConfig is set to 'full'.",
+		},
+		"SebGlasses":
+		{
+			"AllowValues": "Dynamic, Glasses, NoGlasses",
+			"Default": "NoGlasses",
+			"Description": "Gives Sebastian glasses. When 'Dynamic' is selected, he only wears them in private. Can't be used if SebastianLightweightConfig is set to 'ultralight'.",
+		},
+		"SebPiercings":
+		{
+			"AllowValues": "Piercings, NoPiercings",
+			"Default": "NoPiercings",
+			"Description": "Gives Sebastian lip and ear piercings. Can't be used if SebastianLightweightConfig is set to 'ultralight'.",
+		},
+	},
+	"Changes":[
+		{
+			"LogName": "Sebastian Main",
+			"Action": "Include",
+			"FromFile": "Sebastian/Code/{{SebastianLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SebastianVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "Maru Main",
+			"Action": "Include",
+			"FromFile": "Maru/Code/{{MaruLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaruVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.AcerbiconMaru": false,
+				"HasMod |contains= DSVTeam.AddOnPack.LavenderMaru": false,
+				"HasMod |contains= DSVTeam.AddOnPack.RubyquesterMaru": false,
+			},
+		},
+		{
+			"LogName": "Robin Main",
+			"Action": "Include",
+			"FromFile": "Robin/Code/{{RobinLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"RobinVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "Demetrius Main",
+			"Action": "Include",
+			"FromFile": "Demetrius/Code/{{DemetriusLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"DemetriusVariant |contains= off": false,
+			},
+		},
+
+	]
+}

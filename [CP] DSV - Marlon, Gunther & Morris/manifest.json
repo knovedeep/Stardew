@@ -1,0 +1,67 @@
+{
+	"Name": "Diverse SDV - Marlon, Gunther & Morris",
+	"Author": "DSV Team",
+	"Version": "3.2.1",
+	"Description": "Adds ethnic and cultural diversity to Marlon and Gunther, with complete seasonal outfits for Marlon, Gunther & Morris",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.MarlonGuntherMorris",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1073313", "GitHub:AirynS/DSV-Marlon-Gunther-Morris" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "lemurkat.MarnieRanchPack",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Wolf.Marlon",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "andril11.charlie",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Wolf.Gun",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Yoshimax.BefriendMarlon",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DestyNova.Mateo.CP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "balverines.Denver",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "supert.adventureguildexpanded",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "lillifer.SeasonalOutfitsAGE",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+	]
+}

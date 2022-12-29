@@ -1,0 +1,105 @@
+{
+// MARU DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Maru Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Maru, Characters/Maru",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MaruVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomMaru}}_{{MaruWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Maru Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Maru, Characters/Maru",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MaruVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestMaru}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityMaru |contains= maternity": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Maru Hospital Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Maru_Hospital, Characters/Maru_Hospital",
+			"FromFile": "Maru/{{TargetPathOnly}}/{{MaruVariant}}/{{TargetWithoutPath}}_{{MaruHospitalWear}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Maru Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Maru_Beach, Characters/Maru_Beach",
+			"FromFile": "Maru/{{TargetPathOnly}}/{{MaruVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Maru Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Maru",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MaruVariant}}/{{TargetWithoutPath}}_Wedding_1.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Maru Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Maru/Misc/Maru_Emoji_{{MaruVariant}}.png",
+			"ToArea": {"X": 18, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"MaruVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+//MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "Maru Character Glasses Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Maru, Characters/Maru_Hospital, Characters/Maru_Beach",
+			"FromFile": "Maru/Characters/{{TargetWithoutPath}}_GlassesOverlay_{{MaruVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaruCharacterGlasses|contains= glasses": true,
+				"MaruVariant|contains= vanilla, moddednotsnufffie": true,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Maru Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Maru",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Maru_{{MaruVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Maru",
+			},
+		},
+	]
+}

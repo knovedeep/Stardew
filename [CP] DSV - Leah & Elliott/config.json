@@ -1,0 +1,13 @@
+{
+  "ElliottVariant": "Vanilla",
+  "ElliottLightweightConfig": "Full",
+  "LeahVariant": "Vanilla",
+  "LeahLightweightConfig": "Full",
+  "MaternitySprites": "false",
+  "PlatonicNPCs": "Elliott, Leah",
+  "MermaidPendants": "true",
+  "PyjamasElliott": "true",
+  "PyjamasLeah": "true",
+  "WeddingOutfitElliott": "1",
+  "WeddingOutfitLeah": "1"
+}

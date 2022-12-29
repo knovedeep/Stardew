@@ -1,0 +1,172 @@
+{
+	"Changes": [
+		{
+			"LogName": "Marigold Sprites",
+			"Action": "Load",
+			"Target": "Portraits/Marigold, Characters/Marigold",
+			"FromFile": "{{Target}}/{{TargetWithoutPath}}.png",
+		},
+		{
+			"LogName": "Marigold Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Marigold",
+			"FromFile": "Code/OtherJsons/Marigold/MarigoldSchedule.json",
+		},
+		{
+			"LogName": "Marigold Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Marigold",
+			"FromFile": "Code/OtherJsons/Marigold/MarigoldDialogue.json",
+		},
+		{
+			"LogName": "Marigold Dialogue Rainy",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/rainy",
+			"Entries": {
+				"Marigold": "$c 0.5#Marigold shakes water out of her coat.#Marigold looks around happily.#$e#Marigold is working now. Better not distract her.",
+			},
+		},
+		{
+			"LogName": "Marigold Disposition",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Marigold": "adult/neutral/shy/positive/female/not-datable/null/Town/summer 3//Tent 3 4/Marigold",
+			},
+		},
+		{
+			"LogName": "Marigold Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"Marigold": "%Marigold gently bites down on your gift and wags her tail./579 580 581 582 583 584 585/%Marigold is a professional, so she ignores your gift. It falls to the ground./-5 -6 -79 -81/%Marigold is a professional, so she ignores your gift. It falls to the ground./-2 330/%Marigold is a professional, so she ignores your gift. It falls to the ground./2/%Marigold is a professional, so she ignores your gift. It falls to the ground./-4/ ",
+			},
+		},
+		{
+			"LogName": "Marigold Custom NPC Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Marigold": "All",
+			},
+			"When": {
+				"HasMod |contains= Esca.CustomNPCExclusions": true,
+			},
+		},
+	// EVENTS
+		{
+			"LogName": "Marigold Events",
+			"Action": "Include",
+			"FromFile": "Code/OtherJsons/Marigold/MarigoldEvents.json",
+			"When": {
+				"LinusEventChanges": true,
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP, FlashShifter.StardewValleyExpandedALL, DaisyNiko.StardewValleyReimagined": false,
+			},
+		},
+	// FESTIVALS
+		{
+			"LogName": "Marigold Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 28 55 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Marigold Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 25 27 left",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Marigold Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 51 20 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Marigold Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 55 7 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Marigold SV Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 69 71 left",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Marigold Spirits Eve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 28 1 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Marigold Ice Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 12 44 left",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Marigold Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Marigold 44 57 down",
+					"Delimiter": "/"
+				}
+			]
+		},
+	]
+}

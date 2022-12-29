@@ -1,0 +1,91 @@
+{
+	"Changes": [
+
+// MODDED ZINNIA
+		{
+			"LogName": "Zinnia Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Zinnia, Characters/Zinnia, Portraits/Zinnia_Beach, Characters/Zinnia_Beach",
+			"FromFile": "AGECompat/{{Target}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= AllModded, ModdedZinniaOnly": true
+			}
+		},
+		{
+			"LogName": "Zinnia Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Zinnia, Characters/Zinnia",
+			"FromFile": "AGECompat/{{TargetPathOnly}}/SeasonalZinnia/{{TargetWithoutPath}}_{{season}}{{AGEWinterIndoorOutdoor}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= AllModded, ModdedZinniaOnly": true,
+				"HasMod |contains= lillifer.SeasonalOutfitsAGE": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Zinnia Maps",
+			"Action": "EditImage",
+			"Target": "Maps/z_zinniaPicture",
+			"FromFile": "AGECompat/{{Target}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= AllModded, ModdedZinniaOnly": true
+			}
+		},
+		
+// MODDED ZINNIA
+		{
+			"LogName": "Gabriel Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Gabriel, Characters/Gabriel, Portraits/Gabriel_Beach, Characters/Gabriel_Beach",
+			"FromFile": "AGECompat/{{Target}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= AllModded, ModdedGabrielOnly": true
+			}
+		},
+		{
+			"LogName": "Gabriel Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Gabriel, Characters/Gabriel",
+			"FromFile": "AGECompat/{{TargetPathOnly}}/SeasonalGabriel/{{TargetWithoutPath}}_{{season}}{{AGEWinterIndoorOutdoor}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= AllModded, ModdedGabrielOnly": true,
+				"HasMod |contains= lillifer.SeasonalOutfitsAGE": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Gabriel Props",
+			"Action": "EditImage",
+			"Target": "Characters/YoungGabrielGE",
+			"FromFile": "AGECompat/Props/YoungGabrielGE.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= AllModded, ModdedGabrielOnly": true
+			}
+		},
+		
+// MODDED DAISY
+		{
+			"LogName": "Daisy Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Daisy, Characters/Daisy",
+			"FromFile": "AGECompat/{{Target}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= AllModded": true
+			}
+		}
+	]
+}

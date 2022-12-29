@@ -1,0 +1,51 @@
+{
+// GEORGE DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "George Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/George, Characters/George",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{GeorgeVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomGeorge}}_{{GeorgeWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "George Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/George, Characters/George",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{GeorgeVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "George Beach",
+			"Action": "Load",
+			"Target": "Portraits/George_Beach, Characters/George_Beach",
+			"FromFile": "George/{{TargetPathOnly}}/{{GeorgeVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "George Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "George/Misc/George_Emoji_{{GeorgeVariant}}.png",
+			"ToArea": {"X": 36, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"GeorgeVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

@@ -1,0 +1,127 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.SebastianVariant.name": "SebastianVariant",
+	"config.SebastianVariant.values.Vanilla": "Vanilla",
+	"config.SebastianVariant.values.ModdedBlack": "ModdedBlack",
+	"config.SebastianVariant.values.ModdedPurple": "ModdedPurple",
+	"config.SebastianVariant.values.Off": "Off",
+	
+	"config.SebastianLightweightConfig.name": "SebastianLightweightConfig",
+	"config.SebastianLightweightConfig.description": "Toggles whether Sebastian will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.SebastianLightweightConfig.values.Full": "Full",
+	"config.SebastianLightweightConfig.values.Light": "Light",
+	"config.SebastianLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.MaruVariant.name": "MaruVariant",
+	"config.MaruVariant.values.Vanilla": "Vanilla",
+	"config.MaruVariant.values.ModdedNotsnufffie": "ModdedNotsnufffie",
+	"config.MaruVariant.values.ModdedLavender": "ModdedLavender",
+	"config.MaruVariant.values.Off": "Off",
+	
+	"config.MaruLightweightConfig.name": "MaruLightweightConfig",
+	"config.MaruLightweightConfig.description": "Toggles whether Maru will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.MaruLightweightConfig.values.Full": "Full",
+	"config.MaruLightweightConfig.values.Light": "Light",
+	"config.MaruLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.RobinVariant.name": "RobinVariant",
+	"config.RobinVariant.values.Vanilla": "Vanilla",
+	"config.RobinVariant.values.Modded": "Modded",
+	"config.RobinVariant.values.Off": "Off",
+	
+	"config.RobinLightweightConfig.name": "RobinLightweightConfig",
+	"config.RobinLightweightConfig.description": "Toggles whether Robin will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.RobinLightweightConfig.values.Full": "Full",
+	"config.RobinLightweightConfig.values.Light": "Light",
+	"config.RobinLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.DemetriusVariant.name": "DemetriusVariant",
+	"config.DemetriusVariant.values.Vanilla": "Vanilla",
+	"config.DemetriusVariant.values.ModdedDarkSkin": "ModdedDarkSkin",
+	"config.DemetriusVariant.values.ModdedAlbino": "ModdedAlbino",
+	"config.DemetriusVariant.values.Off": "Off",
+	
+	"config.DemetriusLightweightConfig.name": "DemetriusLightweightConfig",
+	"config.DemetriusLightweightConfig.description": "Toggles whether Demetrius will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.DemetriusLightweightConfig.values.Full": "Full",
+	"config.DemetriusLightweightConfig.values.Light": "Light",
+	"config.DemetriusLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.MaternitySprites.name": "MaternitySprites",
+	"config.MaternitySprites.description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MaternitySprites.values.True": "True",	
+	"config.MaternitySprites.values.False": "False",
+	
+	"config.PlatonicNPCs.name": "PlatonicNPCs",
+	"config.PlatonicNPCs.description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.PyjamasSebastian.name": "PyjamasSebastian",
+	"config.PyjamasSebastian.description": "Toggles whether or not Sebastian will wear pyjamas in the morning and evening. If 'Marriage' is selected, he will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.PyjamasSebastian.values.True": "True",	
+	"config.PyjamasSebastian.values.False": "False",
+	"config.PyjamasSebastian.values.Marriage": "Marriage",
+	
+	"config.PyjamasMaru.name": "PyjamasMaru",
+	"config.PyjamasMaru.description": "Toggles whether or not Maru will wear pyjamas in the morning and evening. If 'Marriage' is selected, she will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.PyjamasMaru.values.True": "True",	
+	"config.PyjamasMaru.values.False": "False",
+	"config.PyjamasMaru.values.Marriage": "Marriage",
+	
+	"config.WeddingOutfitSebastian.name": "WeddingOutfitSebastian",
+	"config.WeddingOutfitSebastian.description": "Selects which wedding outfit Sebastian will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitSebastian.values.1": "1",
+	"config.WeddingOutfitSebastian.values.2": "2",
+	"config.WeddingOutfitSebastian.values.3": "3",
+	"config.WeddingOutfitSebastian.values.4": "4",
+	"config.WeddingOutfitSebastian.values.5": "5",
+	"config.WeddingOutfitSebastian.values.6": "6",
+	
+	"config.WeddingOutfitMaru.name": "WeddingOutfitMaru",
+	"config.WeddingOutfitMaru.description": "Selects which wedding outfit Maru will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitMaru.values.1": "1",
+	"config.WeddingOutfitMaru.values.2": "2",
+	"config.WeddingOutfitMaru.values.3": "3",
+	"config.WeddingOutfitMaru.values.4": "4",
+	"config.WeddingOutfitMaru.values.5": "5",
+	"config.WeddingOutfitMaru.values.6": "6",
+	
+	"config.MaruHospitalVariant.name": "MaruHospitalVariant",
+	"config.MaruHospitalVariant.description": "Gives Maru scrubs when she's working at the clinic or keeps her vanilla nurse's dress.",
+	"config.MaruHospitalVariant.values.Scrubs": "Scrubs",
+	"config.MaruHospitalVariant.values.NoScrubs": "NoScrubs",
+	
+	"config.MaruCharacterGlasses.name": "MaruCharacterGlasses",
+	"config.MaruCharacterGlasses.description": "Gives Maru's character/overworld sprite glasses to match her portraits. Only affects the Vanilla and ModdedNotsnufffie variants.",
+	"config.MaruCharacterGlasses.values.Glasses": "Glasses",
+	"config.MaruCharacterGlasses.values.NoGlasses": "NoGlasses",
+	
+	"config.SebSafety.name": "SebSafety",
+	"config.SebSafety.description": "Gives Sebastian a helmet when he rides his motorcycle. Can only be used if SebastianLightweightConfig is set to 'full'.",
+	"config.SebSafety.values.Helmet": "Helmet",
+	"config.SebSafety.values.NoHelmet": "NoHelmet",
+	
+	"config.SebGlasses.name": "SebGlasses",
+	"config.SebGlasses.description": "Gives Sebastian glasses. When 'Dynamic' is selected, he only wears them in private. Can't be used if SebastianLightweightConfig is set to 'ultralight'.",
+	"config.SebGlasses.values.Dynamic": "Dynamic",
+	"config.SebGlasses.values.Glasses": "Glasses",
+	"config.SebGlasses.values.NoGlasses": "NoGlasses",
+	
+	"config.SebPiercings.name": "SebPiercings",
+	"config.SebPiercings.description": "Gives Sebastian lip and ear piercings. Can't be used if SebastianLightweightConfig is set to 'ultralight'.",
+	"config.SebPiercings.values.Piercings": "Piercings",
+	"config.SebPiercings.values.NoPiercings": "NoPiercings",
+	
+// DEMETRIUS ICE FESTIVAL DIALOGUE FIX
+
+	"dialogue.Demetrius.IceFest": "Even with a jacket on, it's still cold out here. I admire Robin's ability to stand so close to the ice!"
+	
+}
+	
+	
+	

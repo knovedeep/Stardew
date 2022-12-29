@@ -1,0 +1,64 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.PennyVariant.name": "PennyÇeşidi",
+	"config.PennyVariant.values.Vanilla": "Vanilla",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieLarge": "ModluAirynNotsnufffieBüyük",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieSmall": "ModluAirynNotsnufffieKüçük",
+	"config.PennyVariant.values.Mixed": "Karışık",
+	"config.PennyVariant.values.Off": "Kapalı",
+	
+	"config.PennyLightweightConfig.name": "PennyHafiflikYapılandırma",
+	"config.PennyLightweightConfig.description": "Penny'nin Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.PennyLightweightConfig.values.Full": "Tam",
+	"config.PennyLightweightConfig.values.Light": "Hafif",
+	"config.PennyLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.PamVariant.name": "PamÇeşidi",
+	"config.PamVariant.values.Vanilla": "Vanilla",
+	"config.PamVariant.values.Modded": "Modlu",
+	"config.PamVariant.values.Off": "Kapalı",
+	
+	"config.PamLightweightConfig.name": "PamHafiflikYapılandırma",
+	"config.PamLightweightConfig.description": "Pam'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.PamLightweightConfig.values.Full": "Tam",
+	"config.PamLightweightConfig.values.Light": "Hafif",
+	"config.PamLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description": "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun wikisine bakın.",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "foggywizard'ın Looking For Love moduyla uyumluluk ekler ki LfL'nin evlenilebilir Pam'i DSV'nin Pam çeşidiyle eşleşsin ve mevsimsel kıyafetleri olsun. Bu seçeneği yalnızca eğer Pam LfL'nin yapılandırma seçeneklerinde evlenilebilir olarak ayarlandıysa kullanın.",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.Pyjamas.name": "Pijama",
+	"config.Pyjamas.description": "Evlilik adaylarının sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.Pyjamas.values.True": "Açık",	
+	"config.Pyjamas.values.False": "Kapalı",
+	"config.Pyjamas.values.Marriage": "Evlilik",
+	
+	"config.WeddingOutfitPenny.name": "DüğünElbisesiPenny",
+	"config.WeddingOutfitPenny.description": "Penny'nin evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitPenny.values.1": "1",
+	"config.WeddingOutfitPenny.values.2": "2",
+	"config.WeddingOutfitPenny.values.3": "3",
+	"config.WeddingOutfitPenny.values.4": "4",
+	"config.WeddingOutfitPenny.values.5": "5",
+	"config.WeddingOutfitPenny.values.6": "6",
+	
+// PENNY SPOUSE PREGNANCY DIALOGUE REPLACEMENT
+
+	"Penny.HaveBabyQuestion": "Sence evlat edinmeli miyiz, {0}?",
+	"Penny.BirthMessage_SpouseMother": "Geceleyin evlatlık kurumu yeni bebeğinizi ({0}) bıraktı.",
+	"Penny.Strings.4443": "Bugün enerjik değilim, o kadar... Kahvaltını kendin hazırlayamaz mısın?$s",
+	"Penny.Strings.4445": "{0}, evlat edinme belgelerini doldurdum. Geriye bir tek dua edip beklemek kaldı.$l",
+	
+}
+	
+	
+	

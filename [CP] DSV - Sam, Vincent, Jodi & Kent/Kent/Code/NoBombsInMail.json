@@ -1,0 +1,14 @@
+{
+	"Changes": [
+	
+        {
+			"LogName": "NMW Dialogue - No Bombs in Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": 
+            {
+                "Kent": "{{i18n:DSV.NMW.VanillaMail.Kent.Body}}%item object 709 5 495 5 496 5 497 5 498 5 691 1 695 1 686 1 787 2 %%[#]{{i18n:DSV.NMW.VanillaMail.Kent.Title}}",
+            },
+        },
+	],
+}

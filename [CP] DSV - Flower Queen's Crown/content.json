@@ -1,0 +1,696 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// RANDOM OUTFITS JAS & VINCENT
+		{
+			"Name": "RandomFestivalJasVincentFQ",
+			"Value": "{{Random: 1, 2 |key= VincentJasFlowerDance}}",
+			"When":
+			{
+				"DayEvent |contains= flower dance": true,
+			},
+		},
+		
+// DSV ADD-ON TOKENS
+// Abigail
+		{
+			"Name": "AbigailAddon",
+			"Value": "",
+		},
+		{
+			"Name": "AbigailAddon",
+			"Value": "_LavenderAbigail",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.LavenderAbigail": true,
+			},
+		},
+// Elliott
+		{
+			"Name": "ElliottAddon",
+			"Value": "",
+		},
+		{
+			"Name": "ElliottAddon",
+			"Value": "_SabreeneElliott",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.SabreeneElliott": true,
+			},
+		},
+		{
+			"Name": "ElliottAddon",
+			"Value": "_EemieElliott",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.EemieElliott": true,
+			},
+		},
+		{
+			"Name": "ElliottAddon",
+			"Value": "_LumenElliott",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.LumenElliott": true,
+			},
+		},
+// Harvey
+		{
+			"Name": "HarveyAddon",
+			"Value": "",
+		},
+		{
+			"Name": "HarveyAddon",
+			"Value": "_AcerbiconHarvey",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.AcerbiconHarvey": true,
+			},
+		},
+		{
+			"Name": "HarveyAddon",
+			"Value": "_MedinaquirinPinzolHarveyNoGlasses",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.MedinaquirinPinzolHarveyNoGlasses": true,
+			},
+		},
+		{
+			"Name": "HarveyAddon",
+			"Value": "_MedinaquirinPinzolHarveyGlasses",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.MedinaquirinPinzolHarveyGlasses": true,
+			},
+		},
+// Jas		
+		{
+			"Name": "JasAddon",
+			"Value": "",
+		},
+		{
+			"Name": "JasAddon",
+			"Value": "_SarahsynaJas",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.SarahsynaJas": true,
+			},
+		},
+// Leah		
+		{
+			"Name": "LeahAddon",
+			"Value": "",
+		},
+		{
+			"Name": "LeahAddon",
+			"Value": "_JoLeah",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.JoLeah": true,
+			},
+		},
+		{
+			"Name": "LeahAddon",
+			"Value": "_AshbrassLeah",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.AshbrassLeah": true,
+			},
+		},
+// Maru
+		{
+			"Name": "MaruAddon",
+			"Value": "",
+		},
+		{
+			"Name": "MaruAddon",
+			"Value": "_AcerbiconMaru",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.AcerbiconMaru": true,
+			},
+		},
+		{
+			"Name": "MaruAddon",
+			"Value": "_LavenderMaru",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.LavenderMaru": true,
+			},
+		},
+		{
+			"Name": "MaruAddon",
+			"Value": "_RubyquesterMaru",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.RubyquesterMaru": true,
+			},
+		},
+// Penny		
+		{
+			"Name": "PennyAddon",
+			"Value": "",
+		},
+		{
+			"Name": "PennyAddon",
+			"Value": "_BittybeePenny",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.BittybeePenny": true,
+			},
+		},
+// Sam
+		{
+			"Name": "SamAddon",
+			"Value": "",
+		},
+		{
+			"Name": "SamAddon",
+			"Value": "_OenimoSam",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.OenimoSam": true,
+			},
+		},
+		{
+			"Name": "SamAddon",
+			"Value": "_OenimoHopefulFoxSam",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.OenimoHopefulFoxSam": true,
+			},
+		},
+		{
+			"Name": "SamAddon",
+			"Value": "_AirynSam",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.AirynSam": true,
+			},
+		},
+		{
+			"Name": "SamAddon",
+			"Value": "_Cheshire348Sam",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.Cheshire348Sam": true,
+			},
+		},
+// Sebastian		
+		{
+			"Name": "SebastianAddon",
+			"Value": "",
+		},
+		{
+			"Name": "SebastianAddon",
+			"Value": "_SideShaveSebastian",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.SideShaveSebastian": true,
+			},
+		},
+// Shane		
+		{
+			"Name": "ShaneAddon",
+			"Value": "",
+		},
+		{
+			"Name": "ShaneAddon",
+			"Value": "_SarahsynaShane",
+			"When":
+			{
+				"HasMod |contains= DSVTeam.AddOnPack.SarahsynaShane": true,
+			},
+		},
+
+		
+// FLOWER QUEEN'S CROWN
+
+		{
+			"Name": "FlowerQueen",
+			"Value": "",
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "Haley",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"HaleyVariant |contains= off": false,
+			}
+		},	
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Abigail}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{AbigailVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.LavenderAbigail}} = 'true')": true,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Alex}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"AlexVariant |contains= off": false,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Elliott}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{ElliottVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.SabreeneElliott}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.EemieElliott}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.LumenElliott}} = 'true')": true,
+			}
+		},			
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Emily}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"EmilyVariant |contains= off": false,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Harvey}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{HarveyVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.AcerbiconHarvey}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.MedinaquirinPinzolHarveyNoGlasses}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.MedinaquirinPinzolHarveyGlasses}} = 'true')": true,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Leah}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{LeahVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.JoLeah}} = 'true')": true,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Maru}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{MaruVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.AcerbiconMaru}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.LavenderMaru}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.RubyquesterMaru}} = 'true')": true,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Penny}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{PennyVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.BittybeePenny}} = 'true')": true,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Sam}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{SamVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.OenimoSam}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.OenimoHopefulFoxSam}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.AirynSam}} = 'true') OR ({{HasMod |contains=DSVTeam.AddOnPack.Cheshire348Sam}} = 'true')": true,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Sebastian}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"SebastianVariant |contains= off": false,
+			}
+		},		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Shane}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"Query: ('{{ShaneVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.SarahsynaShane}} = 'true')": true,
+			}
+		},	
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Jas, Jas}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1, 2": false, 
+				"Query: ('{{JasVariant}}' <> 'off') OR ({{HasMod |contains=DSVTeam.AddOnPack.SarahsynaJas}} = 'true')": true,
+			}
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Vincent, Vincent}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1, 2": false, 
+				"VincentVariant |contains= off": false,
+			}
+		},
+		
+// FQC - Everyone
+		
+		{
+			"Name": "FlowerQueen",
+			"Value": "Abigail, Alex, Elliott, Emily, Haley, Harvey, Jas, Leah, Maru, Penny, Sam, Shane, Sebastian, Vincent",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Everyone": true,
+			}
+		},
+		
+// FLOWER QUEEN'S CROWN - CUSTOM NPCS
+// Always Raining in the Valley
+		
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Mia, Henry, Sterling}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"TownspeopleOnly": "false",
+			}
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{FlowerQueen}}, Mia, Henry, Sterling",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Everyone": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"TownspeopleOnly": "false",
+			}
+		},	
+		
+// Jade
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Jade}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"HasMod |contains= malic.cp.jadeNPC": true,
+				"TownspeopleOnly": "false",
+			}
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{FlowerQueen}}, Jade",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Everyone": true,
+				"HasMod |contains= malic.cp.jadeNPC": true,
+				"TownspeopleOnly": "false",
+			}
+		},
+		
+// Lavril
+		/*{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Lavril}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1, 2": false, 
+				"HasMod |contains= Arknir27.Lavril": true,
+				"TownspeopleOnly": "false",
+			}
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{FlowerQueen}}, Lavril",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Everyone": true,
+				"HasMod |contains= Arknir27.Lavril": true,
+				"TownspeopleOnly": "false",
+			}
+		},
+
+// Juna
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Juna}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"HasMod |contains= elhrvy.NPCJuna": true,
+			}
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{FlowerQueen}}, Juna",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Everyone": true,
+				"HasMod |contains= elhrvy.NPCJuna": true,
+			}
+		},
+		
+// Juliet
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Juliet}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1": false,
+				"HasMod |contains= LemurKat.JulietHouse.NPC": true,
+			}
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{FlowerQueen}}, Juliet}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Everyone": true,
+				"HasMod |contains= LemurKat.JulietHouse.NPC": true,
+			}
+		},
+		
+// Eloise
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{Random: {{FlowerQueen}}, Eloise}}",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Random": true,
+				"Year |contains= 1, 2": false,
+				"HasMod |contains= Lemurkat.JacobEloise.CP": true,
+			}
+		},
+		{
+			"Name": "FlowerQueen",
+			"Value": "{{FlowerQueen}}, Eloise",
+			"When":
+			{
+				"FlowerQueensCrown |contains= Everyone": true,
+				"HasMod |contains= Lemurkat.JacobEloise.CP": true,
+			}
+		},*/
+	],
+
+
+	"ConfigSchema":
+	{		
+		"FlowerQueensCrown":
+		{
+			"AllowValues": "Random, Everyone",
+			"Default": "Random",
+			"Description": "Gives other NPCs a chance to be Flower Queen during the Flower Dance. If 'random is selected, one person will be chosen each year, while if 'everyone' is selected, all eligible townspeople will wear Flower Queen crowns.",
+		},
+		"TownspeopleOnly":
+		{
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Allows custom NPCs to be Flower Queen candidates as well. Set to 'true' if you only want the Pelican Town marriage candidates and children to be eligible.",
+		},
+		
+// CHARACTER VARIANTS
+		
+		"AbigailVariant":
+		{
+			"AllowValues": "VanillaStraightSize, VanillaPlusSize, ModdedStraightSize, ModdedPlusSize, off",
+			"Default": "VanillaStraightSize",
+		},
+		"AlexVariant":
+		{
+			"AllowValues": "Vanilla, Mexican, Samoan, off",
+			"Default": "Vanilla",
+		},
+		"ElliottVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"EmilyVariant":
+		{
+			"AllowValues": "Vanilla, Black, Romani, off",
+			"Default": "Vanilla",
+		},
+		"HaleyVariant":
+		{
+			"AllowValues": "Vanilla, Black, Romani, off",
+			"Default": "Vanilla",
+		},
+		"HarveyVariant":
+		{
+			"AllowValues": "Vanilla, ModdedNonSikh, ModdedSikh, off",
+			"Default": "Vanilla",
+		},
+		"JasVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"LeahVariant":
+		{
+			"AllowValues": "Vanilla, Native, Butch, off",
+			"Default": "Vanilla",
+		},
+		"MaruVariant":
+		{
+			"AllowValues": "Vanilla, ModdedLavender, ModdedNotsnufffie, off",
+			"Default": "Vanilla",
+		},
+		"PennyVariant":
+		{
+			"AllowValues": "Vanilla, ModdedAirynNotsnufffieLarge, ModdedAirynNotsnufffieSmall, Mixed, off",
+			"Default": "Vanilla",
+		},
+		"SamVariant":
+		{
+			"AllowValues": "Vanilla, ModdedLighter, ModdedDarker, off",
+			"Default": "Vanilla",
+		},
+		"SebastianVariant":
+		{
+			"AllowValues": "Vanilla, ModdedBlack, ModdedPurple, off",
+			"Default": "Vanilla",
+		},
+		"ShaneVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"VincentVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		
+// INDIVIDUAL OPTIONS
+		"EmilyTattoos":
+		{
+			"AllowValues": "Tattoos, NoTattoos",
+			"Default": "Tattoos",
+			"Description": "Chooses whether or not Emily has colorful tattoos.",
+		},
+		"HaleyAccessories":
+		{
+			"AllowValues": "Piercings, Cuffs",
+			"AllowBlank": true,
+			"AllowMultiple": true,
+			"Description": "Gives Haley nose and eyebrow piercings, and/or gives her hair cuffs. Hair cuffs only apply to Haley's Black variant.",
+		},
+		"HarveyCharacterMustache":
+		{
+			"AllowValues": "Mustache, NoMustache",
+			"Default": "NoMustache",
+			"Description": "Gives Harvey's character/overworld sprite a mustache to match his portraits. Only affects the Vanilla variant.",
+		},
+		"MaruCharacterGlasses":
+		{
+			"AllowValues": "Glasses, NoGlasses",
+			"Default": "NoGlasses",
+			"Description": "Gives Maru's character/overworld sprite glasses to match her portraits. Only affects the Vanilla and ModdedNotsnufffie variants.",
+		},
+		"SamEyes":
+		{
+			"AllowValues": "Default, Alternate, Heterochromia",
+			"Default": "Default",
+			"Description": "Keeps Sam's default eye color, changes it to an alternate color, or gives him heterochromia (each eye is a different color).",
+		},
+		"SamExtras":
+		{
+			"AllowValues": "Stubble, Beard, Piercings",
+			"AllowBlank": true,
+			"AllowMultiple": true,
+			"Description": "Gives Sam stubble, a beard, and/or lip and eyebrow piercings.",
+		},
+		"SebGlasses":
+		{
+			"AllowValues": "Glasses, NoGlasses",
+			"Default": "NoGlasses",
+			"Description": "Gives Sebastian glasses. ('Dynamic' option is not available in FQC).",
+		},
+		"SebPiercings":
+		{
+			"AllowValues": "Piercings, NoPiercings",
+			"Default": "NoPiercings",
+			"Description": "Gives Sebastian lip and ear piercings.",
+		},
+	},
+	"Changes":[
+		{
+			"LogName": "Flower Queen's Crown Main",
+			"Action": "Include",
+			"FromFile": "Code/FlowerQueensCrownMain.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"DayEvent": "flower dance",
+				"LocationName": "forest, temp",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Flower Queen's Crown Extras",
+			"Action": "Include",
+			"FromFile": "Code/FlowerQueensCrownExtras.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"DayEvent": "flower dance",
+				"LocationName": "forest, temp",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Flower Queen's Crown Dialogue",
+			"Action": "Include",
+			"FromFile": "Code/FlowerQueensCrownDialogue.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

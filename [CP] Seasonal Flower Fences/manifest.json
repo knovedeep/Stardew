@@ -1,0 +1,13 @@
+{
+  "Name": "Seasonal Flower Fences",
+  "Author": "Mr. Ricatto (Original Artwork: MouseyPounds)",
+  "Version": "1.2.0",
+  "Description": "Adds seasonal flower fences to your game.",
+  "UniqueID": "AdaptationForAndroid.FloweryFence",
+  "UpdateKeys": [ "ModDrop:613243" ],
+  "MinimumApiVersion": "2.5",
+  "MinimumGameVersion": "1.3",
+  "ContentPackFor":{
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+}

@@ -1,0 +1,287 @@
+{
+// HALEY DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Haley Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomHaley}}_{{HaleyWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Haley Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{PyjamasHaleyToken}}{{WeddingGuestHaley}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityHaley |contains= maternity": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Haley Maternity Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}_Maternity_1.png",
+			"When":
+			{
+				"MaternityHaley |contains= maternity": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Haley Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley_Beach, Characters/Haley_Beach",
+			"FromFile": "Haley/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Haley Maternity Beach Character",
+			"Action": "EditImage",
+			"Target": "Characters/Haley_Beach",
+			"FromFile": "Haley/{{TargetPathOnly}}/{{HaleyVariant}}/Haley_Beach_Maternity.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityHaley |contains= maternity": true,
+			},
+		},
+		{
+			"LogName": "Haley Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitHaleyToken}}.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PlatonicNPCs |contains= Haley": false,
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Emoji Haley",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Haley/Misc/Haley_Emoji_{{HaleyVariant}}.png",
+			"ToArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= vanilla, off": false,
+			},
+		},
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Haley Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Portraits/Haley_Beach",
+			"FromFile": "Haley/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Haley": "Married, Engaged",
+				"Query: '{{HaleyWeatherVariant}}'= 'Base' OR ('{{Special+Festival}}' IN ('swim', 'EggFestival', 'FlowerDance', 'Luau', 'MoonlightJellies', 'SVFair', 'WinterStar'))": true,
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+				"MaternityHaley |contains= maternity": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Haley Maternity Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Portraits/Haley_Beach",
+			"FromFile": "Haley/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityHaley |contains= maternity": true,
+			},
+		},
+		
+//MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "Haley Camera Sprite Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/Haley_Overlay_Blackcam.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyAccessories|contains= Blackcam": true,
+			}
+		},
+		{
+			"LogName": "Haley Camera Bag Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Haley, Portraits/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/Overlays/{{TargetWithoutPath}}_{{season}}_{{RandomHaley}}_{{HaleyWeatherVariant}}_CameraBag.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"IsOutdoors": true,
+				"Season": "spring, fall",
+				"Weather": "sun, wind",
+				"DayOfWeek": "Monday",
+				"Special+Festival| contains= swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+			},
+			"Update": "OnLocationChange",	
+		},
+		{
+			"LogName": "Haley Piercings Overlay",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Portraits/Haley_Beach",
+			"FromFile": "Haley/{{TargetPathOnly}}/{{HaleyVariant}}/Overlays/{{TargetWithoutPath}}_PiercingsOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyAccessories|contains= piercings": true,
+			}
+		},
+		{
+			"LogName": "Haley Sunglasses Overlay",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley, Portraits/Haley_Beach, Characters/Haley_Beach",
+			"FromFile": "Haley/{{TargetPathOnly}}/{{HaleyVariant}}/Overlays/{{TargetWithoutPath}}_{{HaleySunglassesRandom}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// BLACK HALEY HAIR CUFFS
+		{
+			"LogName": "Haley Cuffs Overlay Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/CuffsOverlays/{{TargetWithoutPath}}_{{season}}_{{RandomHaley}}_{{HaleyWeatherVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= Black": true,
+				"HaleyAccessories|contains= cuffs": true,
+				"Special+Festival| contains= swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"PyjamasHaleyToken |contains= Pyjamas": false,
+				"MaternityHaley |contains= maternity": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Haley Cuffs Overlay Festival/Special",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/CuffsOverlays/{{TargetWithoutPath}}_{{Special+Festival}}{{PyjamasHaleyToken}}_1.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= Black": true,
+				"HaleyAccessories|contains= cuffs": true,
+				"MaternityHaley |contains= maternity": false,
+			},			
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Haley Cuffs Overlay Maternity",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/CuffsOverlays/{{TargetWithoutPath}}_Maternity_1.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= Black": true,
+				"HaleyAccessories|contains= cuffs": true,
+				"MaternityHaley |contains= maternity": true,
+			},
+		},
+		
+// COW PHOTOS	
+		{
+			"LogName": "Cow Photos Seasonal",
+			"Action": "EditImage",
+			"Target": "LooseSprites/cowPhotos, LooseSprites/cowPhotosWinter",
+			"FromFile": "Haley/Characters/CowPhotos/{{HaleyVariant}}/cowPhotos_{{season}}_{{RandomHaley}}_Sun.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Cow Photos Cuffs Overlay",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/cowPhotos, LooseSprites/cowPhotosWinter",
+			"FromFile": "Haley/Characters/CowPhotos/{{HaleyVariant}}/cowPhotos_{{season}}_{{RandomHaley}}_Sun_cuffs.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= Black": true,
+				"HaleyAccessories|contains= cuffs": true,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Haley Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Haley_{{HaleyVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Haley",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Haley No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Haley_{{HaleyVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Haley",
+			},
+		},
+		
+// NIGHT MARKET DIALOGUE FIX
+		{
+            "LogName": "Haley Night Market Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries":
+            {
+                "winter_16.001": "{{i18n:dialogue.Haley.NightMarket}}",
+            },
+        },
+	]
+}

@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+	
+	"config.ElliottVariant.name": "ElliottVariante",
+	"config.ElliottVariant.values.Modded": "Modded",
+	"config.ElliottVariant.values.Vanilla": "Vanilla",
+	"config.ElliottVariant.values.Off": "Disabilitato",
+	
+	"config.ElliottLightweightConfig.name": "ElliottConfigPesoleggero",
+	"config.ElliottLightweightConfig.description": "Decidi se Elliott avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.ElliottLightweightConfig.values.Full": "Intero",
+	"config.ElliottLightweightConfig.values.Light": "Leggero",
+	"config.ElliottLightweightConfig.values.Ultralight": "Ultraleggero",
+
+	"config.LeahVariant.name": "LeahVariante",
+	"config.LeahVariant.values.Vanilla": "Vanilla",
+	"config.LeahVariant.values.Native": "Nativa",
+	"config.LeahVariant.values.Butch": "Maschiaccio",
+	"config.LeahVariant.values.Off": "Disabilitato",
+	
+	"config.LeahLightweightConfig.name": "LeahConfigPesoleggero",
+	"config.LeahLightweightConfig.description": "Decidi se Leah avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.LeahLightweightConfig.values.Full": "Intero",
+	"config.LeahLightweightConfig.values.Light": "Leggero",
+	"config.LeahLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.MaternitySprites.name": "SpritesMaternità",
+	"config.MaternitySprites.description": "Abilita l'abbigliamento premaman per tua moglie mentre è incinta. Se impostato su 'vero', gli sprite cambieranno automaticamente. Non influisce sulla sua variante maschiaccio. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MaternitySprites.values.True": "Vero",	
+	"config.MaternitySprites.values.False": "Falso",
+	
+	"config.PlatonicNPCs.name": "NPCPlatonici",
+	"config.PlatonicNPCs.description": "Aggiunge la compatibilità con Platonic Partners and Friendships di Amaranthacyan. Metti il nome del candidato in questa lista per avere i loro ritratti e sprites romantici sostituiti con le alternative platonic. Controlla il sito per maggiori informazioni.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.PyjamasElliott.name": "PigiamaElliott",
+	"config.PyjamasElliott.description": "Alterna se i candidati al matrimonio indosseranno o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosseranno solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.PyjamasElliott.values.True": "Vero",	
+	"config.PyjamasElliott.values.False": "Falso",
+	"config.PyjamasElliott.values.Marriage": "Matrimonio",
+	
+	"config.PyjamasLeah.name": "PigiamaLeah",
+	"config.PyjamasLeah.description": "Alterna se i candidati al matrimonio indosseranno o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosseranno solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.PyjamasLeah.values.True": "Vero",	
+	"config.PyjamasLeah.values.False": "Falso",
+	"config.PyjamasLeah.values.Marriage": "Matrimonio",
+	
+	"config.WeddingOutfitElliott.name": "OutfitMatrimonioElliott",
+	"config.WeddingOutfitElliott.description": "Seleziona quale abito da sposo Elliott indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitElliott.values.1": "1",
+	"config.WeddingOutfitElliott.values.2": "2",
+	"config.WeddingOutfitElliott.values.3": "3",
+	"config.WeddingOutfitElliott.values.4": "4",
+	"config.WeddingOutfitElliott.values.5": "5",
+	"config.WeddingOutfitElliott.values.6": "6",
+	
+	"config.WeddingOutfitLeah.name": "OutfitMatrimonioLeah",
+	"config.WeddingOutfitLeah.description": "Seleziona quale abito da sposa Leah indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitLeah.values.1": "1",
+	"config.WeddingOutfitLeah.values.2": "2",
+	"config.WeddingOutfitLeah.values.3": "3",
+	"config.WeddingOutfitLeah.values.4": "4",
+	"config.WeddingOutfitLeah.values.5": "5",
+	"config.WeddingOutfitLeah.values.6": "6",
+	"config.WeddingOutfitLeah.values.7": "7",
+	
+// BUTCH LEAH SPOUSE PREGNANCY DIALOGUE REPLACEMENT
+
+	"Leah.HaveBabyQuestion": "Forse dovremmo adottare un bambino, {0}?",
+	"Leah.BirthMessage_SpouseMother": "Durante la notte, l'agenzia di adozioni vi ha portato {0} che aspettavate.",
+	"Leah.Strings.4443": "Oggi non ho proprio energie.... non puoi farti la colazione per conto tuo?$",
+	"Leah.Strings.4445": "{0}, ho spedito le carte per l'adozione. Ora possiamo solo attendere con le dita incrociate.$l",
+	
+}
+	
+	
+	

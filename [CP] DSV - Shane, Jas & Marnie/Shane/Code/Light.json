@@ -1,0 +1,230 @@
+{
+// SHANE DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Shane Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{ShaneVariant}}/{{ShaneDynamic}}/{{TargetWithoutPath}}_{{season}}_{{RandomShane}}_{{ShaneWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Shane Swim Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{ShaneVariant}}/{{ShaneDynamic}}/{{TargetWithoutPath}}_Swim_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Special+Festival |contains= Swim": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Shane Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{ShaneVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestShane}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Shane Work",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane_Jojamart",
+			"FromFile": "Shane/{{TargetPathOnly}}/{{ShaneVariant}}/Shane_JojaMart_{{ShaneJoja}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "JojaMart",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Shane Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane_Beach, Characters/Shane_Beach",
+			"FromFile": "Shane/{{TargetPathOnly}}/{{ShaneVariant}}/{{TargetWithoutPath}}{{BeachStyleShane}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Shane Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Shane",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{ShaneVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitShaneToken}}.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Shane Tunnelers Game (Shane)",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+			"FromFile": "{{Target}}/{{ShaneVariant}}/Neat/{{TargetWithoutPath}}_Spring_1_Sun.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasSeenEvent |contains= 9581348": false,
+				"LocationName |contains= BusStop, Temp": true,
+				"Query: ({{HasMod |contains=tenthousandcats.ImmersiveCShane}} = 'false' AND {{Hearts:Shane}} >= 10) OR ({{HasMod |contains=tenthousandcats.ImmersiveCShane}} = 'true' AND {{Hearts:Shane}} >= 8)": true
+			},
+			"Update": "OnLocationChange"
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Shane Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Shane/Misc/Shane_Emoji_{{ShaneVariant}}.png",
+			"ToArea": {"X": 63, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"ShaneVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Shane Clothes Therapy Characters",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Shane/Misc/ClothesTherapy_Shane_{{ShaneVariant}}.png",
+			"ToArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+			"When":
+			{
+				"ShaneVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Shane Drunk Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Shane/Misc/DrunkCursors/{{ShaneVariant}}/{{ShaneSelfCare}}/Shane_{{season}}_{{RandomShane}}_{{ShaneWeatherVariant}}.png",
+			"ToArea": { "X": 533, "Y": 1864, "Width": 20, "Height": 28 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+		  	},
+			"Update": "OnLocationChange",
+		},
+		
+//MERMAID PENDANTS
+		{
+			"LogName": "Shane Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Portraits/Shane_Beach",
+			"FromFile": "Shane/Misc/{{TargetWithoutPath}}_Pendant_{{ShaneVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Shane": "Married, Engaged",
+				"ShaneWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "Shane PPAF Compat Include",
+			"Action": "Include",
+			"FromFile": "Shane/Code/PPAFCompatibility.json",
+			"When": 
+			{
+				"HasMod |contains= Amaranthacyan.PPAFSMAPI": true
+			}
+		},
+		
+// Shane's New Job
+		{
+			"LogName": "Shane's New Job Compat",
+			"Action": "EditImage",
+			"Target": "Characters/Shane",
+			"FromFile": "Shane/Misc/ShanesNewJob/{{ShaneVariant}}/{{ShaneDynamic}}/Shane_{{season}}_{{RandomShane}}_Base.png",
+			"ToArea": { "X":0, "Y":288, "Width":64, "Height":64 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Ran.ShanesNewJob",
+			},
+		},
+		
+// Mr Ginger
+		{
+			"LogName": "Mr Ginger Compat",
+			"Action": "EditImage",
+			"Target": "Characters/Shane",
+			"FromFile": "Shane/Misc/ShaneBook/{{ShaneVariant}}/{{ShaneDynamic}}/Shane_{{season}}_{{RandomShane}}_Base.png",
+			"ToArea":   { "X": 0, "Y": 416, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "LemurKat.Mr.Ginger.NPC",
+			},
+		},
+		
+// Tristan
+		{
+			"LogName": "Shane Tristan Compat",
+			"Action": "EditImage",
+			"Target": "Characters/MarnShane",
+			"FromFile": "Shane/Misc/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"ShaneVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Lemurkat.Tristan.CP",
+			},
+		},
+		
+// Always Raining in the Valley
+		{
+			"LogName": "Shane ARV Compat",
+			"Action": "EditImage",
+			"Target": "Characters/Shane_HappyDrunk",
+			"FromFile": "Shane/Misc/ARVDrunk/{{ShaneVariant}}/{{ShaneDynamic}}/Shane_{{season}}_{{RandomShane}}_Base.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Himetarts.ARV.CP",
+				
+			},
+		},
+		
+//MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "Shane Alcohol Flush Overlays",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane",
+			"FromFile": "Shane/{{TargetPathOnly}}/Shane_DrinkFlushOverlay_{{ShaneVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasSeenEvent |contains= 2118991": false,
+				"LocationName": "Saloon",
+				"Query: '{{HasMod |contains=Ran.ShanesNewJob}}' = 'false' OR ('{{HasMod |contains=Ran.ShanesNewJob}}' = 'true' AND '{{IsCommunityCenterComplete}}' = 'false')" : true,
+			},
+			"Update": "OnLocationChange",
+		},
+	]
+}

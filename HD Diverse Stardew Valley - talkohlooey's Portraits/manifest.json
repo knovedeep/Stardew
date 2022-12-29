@@ -1,0 +1,73 @@
+{
+	"Name": "DSV Add-On Pack - talkohlooeys' Portraits",
+	"Author": "talkohlooey & Airyn",
+	"Version": "2.0.1",
+	"Description": "Adapts talkohlooey's high-res portraits to match DSV's character designs.",
+	"UniqueID": "DSVTeam.AddOnPack.DSVTalkohlooeysHiResPortraits",
+	"UpdateKeys": [ "ModDrop:1228300" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "tlitookilakin.HDPortraits",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "talkohlooeys.HiResPortraits",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.AbigailCarolinePierre",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.AlexEvelynGeorge",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.HarveyGusLewis",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.KrobusMermaidsWizardWitch",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.LeahElliott",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.MarlonMorrisGunther",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.PennyPam",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.SamVincentJodiKent",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.SebastianMaruRobinDemetrius",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.ShaneJasMarnie",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.WillyClintLinus",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.FlowerQueensCrown",
+			"IsRequired": false
+		}
+	],
+}

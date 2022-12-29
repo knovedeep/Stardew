@@ -1,0 +1,117 @@
+{
+// MARLON DSV
+
+	"Changes": [
+		{
+			"LogName": "Marlon Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Marlon, Characters/Marlon",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{CompatMarlon}}/{{MarlonVariant}}/{{TargetWithoutPath}}_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Marlon Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Marlon, Characters/Marlon",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{CompatMarlon}}/{{MarlonVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MAPS
+		{
+			"LogName": "Marlon Movie Theater Sprites",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "Marlon/Misc/TheaterSprites/{{MarlonVariant}}/Marlon_{{season}}_1_Base.png",
+			"ToArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Marlon Pendants",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Portraits/Marlon",
+			"FromFile": "Marlon/Misc/Marlon_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:{{TargetWithoutPath}}": "Married, Engaged",
+				"HasMod |contains= Wolf.Marlon": true,
+				"MermaidPendants": "true",
+			}
+		},
+		
+// EMOJIS
+		{
+			"LogName": "Emoji Marlon",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Marlon/Misc/Marlon_Emoji_{{MarlonVariant}}.png",
+			"ToArea": {"X": 72, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarlonVariant|contains= vanilla, off": false,
+			},
+		},
+		
+// COMPATIBILITY
+		{
+			"LogName": "Marlon Ranch Expansion Temp",
+			"Action": "EditImage",
+			"Target": "Portraits/Marlon_walking, Characters/Marlon_walking",
+			"FromFile": "Marlon/{{TargetPathOnly}}/RanchExpansion/{{MarlonVariant}}/Marlon_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= lemurkat.MarnieRanchPack": true
+			},
+		},
+		{
+			"LogName": "Marlon Ranch Expansion Main",
+			"Action": "EditImage",
+			"Target": "Portraits/Marlon",
+			"FromFile": "Marlon/{{TargetPathOnly}}/RanchExpansion/{{MarlonVariant}}/Marlon_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= lemurkat.MarnieRanchPack": true,
+				"HasMod |contains= Wolf.Marlon": false,
+				"CompatMarlon |contains= Default": true
+			},
+		},
+		{
+			"LogName": "Marlon Mateo",
+			"Action": "EditImage",
+			"Target": "Portraits/MateoMarlon, Characters/MateoMarlon",
+			"FromFile": "Marlon/{{TargetPathOnly}}/MakeMarlonReal/{{MarlonVariant}}/Marlon_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasMod |contains= DestyNova.Mateo.CP": true,
+			},
+		},
+		{
+			"LogName": "Marlon AGE",
+			"Action": "EditImage",
+			"Target": "Characters/YoungMarlonGE",
+			"FromFile": "AGECompat/Props/YoungMarlonGE.png",
+			"When":
+			{
+				"HasMod |contains= supert.adventureguildexpanded": true,
+			},
+		}
+	]
+}

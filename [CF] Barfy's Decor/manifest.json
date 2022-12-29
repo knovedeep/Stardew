@@ -1,0 +1,13 @@
+{
+  "Name": "Barfy's Home Decor",
+   "Author": "barfyscorpion and sylveonne",
+   "Version": "1.4",
+   "Description": "A CF pack containing barfy's furniture replacements. Converted from an XNB mod by sylveonne.",
+   "UniqueID": "sylveonne.CFBarfyHomeDecor",
+   "MinimumApiVersion": "2.5.2",
+   "UpdateKeys": ["Nexus:3129"],
+  "ContentPackFor": {
+    "UniqueID": "Platonymous.CustomFurniture",
+    "MinimumVersion": "0.8.6"
+  }
+}

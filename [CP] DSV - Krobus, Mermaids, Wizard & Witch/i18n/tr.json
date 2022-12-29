@@ -1,0 +1,55 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.KrobusVariant.name": "KrobusÇeşidi",
+	"config.KrobusVariant.values.Modded": "Modlu",
+	"config.KrobusVariant.values.Off": "Kapalı",
+	
+	"config.KrobusLightweightConfig.name": "KrobusHafiflikYapılandırma",
+	"config.KrobusLightweightConfig.description": "Krobus'un Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif bir seçime mi sahip olacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.KrobusLightweightConfig.values.Full": "Tam",
+	"config.KrobusLightweightConfig.values.Light": "Hafif",
+	
+	"config.Mermaids.name": "Denizkızları",
+	"config.Mermaids.description": "Oyunda görünen denizkızlarının görünümlerini rastgele şekilde ayarlar. 'Hafif' seçeneği önceden seçilmiş bir karışıma sahip olacak şekilde değiştirecek.",
+	"config.Mermaids.values.RandomBoth": "Rastgeleİkiside",
+	"config.Mermaids.values.RandomUpper": "RastgeleÜst",
+	"config.Mermaids.values.RandomLower": "RastgeleAlt",
+	"config.Mermaids.values.Light": "Hafif",
+	"config.Mermaids.values.Off": "Kapalı",
+	
+	"config.WitchVariant.name": "CadıÇeşidi",
+	"config.WitchVariant.values.Modded": "Modlu",
+	"config.WitchVariant.values.Off": "Kapalı",
+	
+	"config.WizardVariant.name": "BüyücüÇeşidi",
+	"config.WizardVariant.values.Vanilla": "Vanilla",
+	"config.WizardVariant.values.Modded": "Modlu",
+	"config.WizardVariant.values.Off": "Kapalı",
+	
+	"config.WizardLightweightConfig.name": "BüyücüHafiflikYapılandırma",
+	"config.WizardLightweightConfig.description": "Büyücü'nün Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.WizardLightweightConfig.values.Full": "Tam",
+	"config.WizardLightweightConfig.values.Light": "Hafif",
+	
+	"config.WizardFamiliars.name": "BüyücüDostları",
+	"config.WizardFamiliars.description": "Büyücüye etrafında dolanan ruhani dostlar verir. BüyücüHafiflikYapılandırma 'hafif'e ayarlıysa kullanılamaz.",
+	"config.WizardFamiliars.values.HatJunimos": "ŞapkaJunimoları",
+	"config.WizardFamiliars.values.ShoulderJunimos": "OmuzJunimoları",
+	"config.WizardFamiliars.values.SpiritCreatures": "RuhaniYaratıklar",
+	
+	"config.WizardMarriageMod.name": "BüyücüEvlilikModu",
+	"config.WizardMarriageMod.description": "Eğer büyücüyle evlenmek için bir mod kullanıyorsanız, buradan hangisini kullandığınızı seçin. Not: DSV SVE'nin Büyücüyle evlenme seçeneğini desteklemez.",
+	"config.WizardMarriageMod.values.LookingForLove": "LookingForLove",
+	"config.WizardMarriageMod.values.RomanceableRasmodius": "RomanceableRasmodius",
+	"config.WizardMarriageMod.values.None": "Hiçbiri",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+}
+	
+	
+	

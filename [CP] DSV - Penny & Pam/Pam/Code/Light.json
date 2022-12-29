@@ -1,0 +1,109 @@
+{
+// PAM DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Pam Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam, Characters/Pam",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLPam}}/{{PamVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomPam}}_{{PamWeatherVariant}}{{PamBus}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Pam Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam, Characters/Pam",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLPam}}/{{PamVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestPam}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Pam Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam_Beach, Characters/Pam_Beach",
+			"FromFile": "Pam/{{TargetPathOnly}}/{{LFLPam}}/{{PamVariant}}/Pam_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Pam Hug Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Penny",
+			"FromFile": "Pam/{{TargetPathOnly}}/HugOverlay/{{PamVariant}}/Pam_{{season}}_{{RandomPam}}_{{PamWeatherVariant}}_Overlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Pam Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Pam/Misc/Pam_Emoji_{{PamVariant}}.png",
+			"ToArea": {"X": 36, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PamVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Pam Bus Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Pam/Misc/BusDrive/{{PamVariant}}/Pam_{{season}}_{{RandomPam}}_{{PamWeatherVariant}}.png",
+			"ToArea": { "X": 384, "Y": 1311, "Width": 15, "Height": 19 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+	   },
+	   
+// MISCELLANEOUS OVERLAYS
+	
+		{
+			"LogName": "Pam Alcohol Flush Overlays",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLPam}}/{{TargetWithoutPath}}_{{PamDrinkOverlay}}_{{PamVariant}}.png",
+			"ToArea": {"X": 36, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+
+// MERMAID PENDANTS
+		{
+			"LogName": "Pam Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam",
+			"Target": "Portraits/Pam, Portraits/Pam_Beach",
+			"FromFile": "Pam/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LookingForLove |contains= Pam": true,
+				"Relationship:Pam": "Married, Engaged",
+				"PamWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+		},
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"Name": "Diverse SDV - Krobus, Mermaids, Wizard, & Witch",
+	"Author": "DSV Team",
+	"Version": "3.0.2",
+	"Description": "Adds ethnic and cultural diversity to the mermaids, Wizard and Witch, with complete seasonal outfits for Krobus and the Wizard.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.KrobusMermaidsWizardWitch",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1073290", "GitHub:AirynS/DSV-Krobus-Mermaids-Wizard-Witch" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "PaperNautilus.IslaMermaid",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "foggy.LfL",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Wolf.RomRas",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ZoeDoll.NPCAlecto",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+	]
+}

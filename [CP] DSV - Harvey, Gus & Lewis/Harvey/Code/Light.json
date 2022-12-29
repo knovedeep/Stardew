@@ -1,0 +1,202 @@
+{
+// HARVEY DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Harvey Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HarveyVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomHarvey}}_{{HarveyWeatherVariant}}{{HarveyClinic}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Harvey Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HarveyVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestHarvey}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Harvey Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey_Beach, Characters/Harvey_Beach",
+			"FromFile": "Harvey/{{TargetPathOnly}}/{{HarveyVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Harvey Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HarveyVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitHarveyToken}}.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PlatonicNPCs |contains= Harvey": false,
+			},
+		},
+		{
+			"LogName": "Harvey Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HarveyVariant}}/Harvey_SleepSprite.png",
+			"ToArea": { "X": 32, "Y": 416, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "HarveyRoom",
+			},
+			"Update": "OnLocationChange",
+		},
+		/*{
+			"LogName": "Harvey Balloon Date",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+			"FromFile": "{{Target}}/{{HarveyVariant}}/{{TargetWithoutPath}}_SVFair_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasSeenEvent |contains= 528052": false,
+				"LocationName |contains= Railroad, HarveyBalloon": true,
+				"Time": "{{Range: 0900, 1700}}",
+				"Hearts:Harvey": "10, 11, 12",
+			},
+			"Update": "OnLocationChange",
+		},*/
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Harvey Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Harvey/Misc/Harvey_Emoji_{{HarveyVariant}}.png",
+			"ToArea": {"X": 90, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HarveyVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+//MERMAID PENDANTS
+		{
+			"LogName": "Harvey Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Portraits/Harvey_Beach",
+			"FromFile": "Harvey/Misc/MermaidPendants/{{TargetWithoutPath}}_Pendant_{{HarveyVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Harvey": "Married, Engaged",
+				"HarveyWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+//MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "Harvey Character Mustache Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey, Characters/Harvey_Beach",
+			"FromFile": "Harvey/{{Target}}_MustacheOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HarveyVariant |contains= vanilla": true,
+				"HarveyCharacterMustache": "mustache",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Harvey Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Harvey_{{HarveyVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Harvey",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Harvey No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Harvey_{{HarveyVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Harvey",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+//SIKH HARVEY NO ALCOHOL GIFT CHANGES
+		{
+			"LogName": "Sikh Harvey No Alcohol",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+            "Fields": {
+				"Harvey":
+				{
+					1: "237 432 395 342",
+				},
+			},
+            "TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Harvey", "5"],
+					"Value": "alcohol_item 346 348 303 459 873",
+					"Delimiter": " ",
+				},
+			],
+			"When": 
+			{
+				"HarveyVariant |contains= moddedsikh": true,
+				"GiftTastesChange": true,
+			},
+		},
+		{
+			"LogName": "Sikh Harvey Custom Gift Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries": 
+			{				
+				"GiftReaction_Beer": "{{i18n:Harvey.CGD.alcohol}}$s",
+				"GiftReactionPreserved_Wine": "{{i18n:Harvey.CGD.alcohol}}$s",
+				"GiftReaction_Mead": "{{i18n:Harvey.CGD.alcohol}}$s",
+				"GiftReaction_Pale_Ale": "{{i18n:Harvey.CGD.alcohol}}$s",
+				"GiftReaction_Piña_Colada": "{{i18n:Harvey.CGD.alcohol}}$s",
+			},
+			"When": 
+			{
+				"HarveyVariant |contains= moddedsikh": true,
+				"GiftTastesChange": true,
+				"HasMod": "PurrplingCat.CustomGiftDialogue",
+			},
+		},
+	]
+}

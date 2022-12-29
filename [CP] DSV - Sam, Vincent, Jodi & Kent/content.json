@@ -1,0 +1,1167 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// SAM WEATHER
+		{
+			"Name": "SamWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"SamLightweightConfig |contains= ultralight": true
+			}
+		},
+		{
+			"Name": "SamWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"IsOutdoors": false,
+				"SamLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "SamWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"SamLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "SamWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"SamLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "SamWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"SamLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "SamWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"SamLightweightConfig |contains= ultralight": false
+			}
+		},
+		
+// VINCENT WEATHER
+		{
+			"Name": "VincentWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"VincentLightweightConfig |contains= ultralight": true
+			}
+		},
+		{
+			"Name": "VincentWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"IsOutdoors": false,
+				"VincentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "VincentWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"VincentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "VincentWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"VincentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "VincentWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"VincentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "VincentWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"VincentLightweightConfig |contains= ultralight": false
+			}
+		},
+
+// JODI WEATHER
+		{
+			"Name": "JodiWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"JodiLightweightConfig |contains= ultralight": true
+			}
+		},
+		{
+			"Name": "JodiWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"IsOutdoors": false,
+				"JodiLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "JodiWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"JodiLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "JodiWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"JodiLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "JodiWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"JodiLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "JodiWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"JodiLightweightConfig |contains= ultralight": false
+			}
+		},
+
+// KENT WEATHER
+		{
+			"Name": "KentWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"KentLightweightConfig |contains= ultralight": true
+			}
+		},
+		{
+			"Name": "KentWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+				"IsOutdoors": false,
+				"KentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "KentWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"KentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "KentWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"KentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "KentWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"KentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "KentWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"KentLightweightConfig |contains= ultralight": false
+			}
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomSam",
+			"Value": "1"
+		},
+		{
+			"Name": "RandomSam",
+			"Value": "{{Random: 1, 2 |key= SamMain}}",
+			"When":
+			{
+				"SamLightweightConfig |contains= full": true
+			}
+		},
+		{
+			"Name": "RandomFestivalSam",
+			"Value": "1"
+		},
+		{
+			"Name": "RandomFestivalSam",
+			"Value": "{{Random: 1, 2 |key= SamFestival}}",
+			"When":
+			{
+				"SamLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true
+			}
+		},
+		{
+			"Name": "RandomVincent",
+			"Value": "1"
+		},
+		{
+			"Name": "RandomVincent",
+			"Value": "{{Random: 1, 2 |key= VincentMain}}",
+			"When":
+			{
+				"VincentLightweightConfig |contains= full": true
+			}
+		},
+		{
+			"Name": "RandomFestivalVincent",
+			"Value": "1"
+		},
+		{
+			"Name": "RandomFestivalVincent",
+			"Value": "{{Random: 1, 2 |key= VincentJasFlowerDance}}",
+			"When":
+			{
+				"VincentLightweightConfig |contains= full": true,
+				"DayEvent |contains= flower dance": true
+			}
+		},
+		{
+			"Name": "RandomFestivalVincent",
+			"Value": "{{Random: 1, 2 |key= VincentFestival}}",
+			"When":
+			{
+				"VincentLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true
+			}
+		},
+		{
+			"Name": "RandomJodi",
+			"Value": "1"
+		},
+		{
+			"Name": "RandomJodi",
+			"Value": "{{Random: 1, 2 |key= JodiMain}}",
+			"When":
+			{
+				"JodiLightweightConfig |contains= full": true
+			}
+		},
+		{
+			"Name": "RandomKent",
+			"Value": "1"
+		},
+		{
+			"Name": "RandomFestivalKent",
+			"Value": "1"
+		},
+		{
+			"Name": "RandomFestivalKent",
+			"Value": "{{Random: 1, 2 |key= KentFestival}}",
+			"When":
+			{
+				"KentLightweightConfig |contains= full": true,
+				"DayEvent |contains= flower dance": true,
+				"Query: ((('{{JodiVariant}}' = 'modded') OR {{HasMod|contains=DSVTeam.AddOnPack.HopefulfoxJodi}}) AND '{{ModdedJodiKentDialogueEdits}}' = 'true') OR {{HasMod|contains=ShotFromGuns.NoMoreWarKentJournalist}} = 'true'": false
+			}
+		},
+		{
+			"Name": "RandomFestivalKent",
+			"Value": "2",
+			"When":
+			{
+				"KentLightweightConfig |contains= ultralight": false,
+				"DayEvent |contains= egg festival, Fairy Ring Feast, flower dance, stardew valley fair, spirit's eve, feast of the winter star, festival of ice, dance of the moonlight jellies, luau, Moonshine Barbecue, Pelican Town Potluck, Ember of Resolutions, Ridgeside Gathering": false,
+				"Year": "3"
+			}
+		},
+		{
+			"Name": "RandomFestivalKent",
+			"Value": "3",
+			"When":
+			{
+				"KentLightweightConfig |contains= ultralight": false,
+				"DayEvent |contains= egg festival, Fairy Ring Feast, flower dance, stardew valley fair, spirit's eve, feast of the winter star, festival of ice, dance of the moonlight jellies, luau, Moonshine Barbecue, Pelican Town Potluck, Ember of Resolutions, Ridgeside Gathering": false,
+				"Year |contains= 1, 2, 3": false
+			}
+		},
+
+// SPECIAL - AEROBICS
+
+		{
+			"Name": "Special+Festival",
+			"Value": ""
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"Time": "{{Range: 0900, 1600}}",
+				"LocationName": "SeedShop",
+				"JodiLightweightConfig |contains= full": true
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"LocationName": "SeedShop",
+				"JodiLightweightConfig |contains= light": true
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"LocationName": "SeedShop",
+				"Hearts:Harvey": "{{Range: 6, 14}}",
+				"Time": "{{Range: 1100, 1500}}",
+				"HasSeenEvent |contains= 58": false,
+				"JodiLightweightConfig |contains= full": true
+			}
+		},
+		
+// SPECIAL - SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"Season": "summer",
+				"LocationName": "Beach",
+				"Weather": "sun, wind",
+				"DayEvent |contains= dance of the moonlight jellies, luau, Moonshine Barbecue, Pelican Town Potluck": false
+			}
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn, Custom_ESClearingHouse"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"Season": "Fall",
+				"LocationName |contains= town, temp, Custom_TrickorTreatEvent_Map": true,
+				"Day |contains= 22, 23, 24, 25, 26, 28": true,
+				"HasSeenEvent |contains= 29102022": false,
+				"Time": "{{Range: 1850, 2150}}",
+				"HasMod |contains= LenneDalben.TrickorTreatEvent": true,
+			}
+		},
+		
+// SAM BINDER
+
+		{
+			"Name": "SamSwim",
+			"Value": ""
+		},
+		{
+			"Name": "SamSwim",
+			"Value": "_Binder",
+			"When":
+			{
+				"Special+Festival |contains= swim, Luau, MoonlightJellies": true,
+				"SamBinder": "binder"
+			}
+		},
+		{
+			"Name": "SamSwim",
+			"Value": "_NoBinder",
+			"When":
+			{
+				"Special+Festival |contains= swim, Luau, MoonlightJellies": true,
+				"SamBinder": "nobinder"
+			}
+		},
+		{
+			"Name": "SamSwimBeach",
+			"Value": "_Binder",
+			"When":
+			{
+				"SamBinder": "binder"
+			}
+		},
+		{
+			"Name": "SamSwimBeach",
+			"Value": "_NoBinder",
+			"When":
+			{
+				"SamBinder": "nobinder"
+			}
+		},
+		
+// 14 HEART PYJAMA EXCEPTIONS
+
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "false"
+		},
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "true",
+			"When":
+			{
+				"Relationship:Sam": "Married",
+				"Hearts:Sam": "14",
+				"LocationName |contains= Farmhouse": true,
+				"Time": "{{Range: 0610, 1700}}",
+				"FarmhouseUpgrade": "2, 3",				
+				"HasSeenEvent |contains = 3918600": true,
+				"HasSeenEvent |contains = 3918603": false,
+				"HasConversationTopic |contains= samJob1, samJob2, samJob3": false,
+				"SamLightweightConfig |contains= full": true
+			}
+		},
+		
+// PYJAMAS
+		{
+			"Name": "PyjamasSam",
+			"Value": ""
+		},
+		{
+			"Name": "PyjamasSam",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, SamHouse": true,
+				"Query: {{Time}} < 0800 OR {{Time}} >= 2100": true,
+				"14HeartPyjamaException": false,
+				"SamLightweightConfig |contains= full": true,
+				"SamVariant |contains= off": false,	
+				"Pyjamas |contains= true": true
+			}
+		},
+		{
+			"Name": "PyjamasSam",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} < 0800 OR {{Time}} >= 2100": true,
+				"14HeartPyjamaException": false,
+				"Relationship:Sam": "Married",
+				"SamLightweightConfig |contains= full": true,
+				"SamVariant |contains= off": false,	
+				"Pyjamas |contains= marriage": true
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+
+		{
+			"Name": "WeddingGuestSam",
+			"Value": ""
+		},
+		{
+			"Name": "WeddingGuestSam",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"SamLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}"
+			}
+		},
+		{
+			"Name": "WeddingGuestSam",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"SamLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "WeddingGuestSam",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.SamAndAlissaRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"SamLightweightConfig |contains= full": true			
+			}
+		},
+		{
+			"Name": "WeddingGuestSam",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.JericAlexRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= AlexJericWeddingLetter": true,
+				"HasSeenEvent |contains= 955807": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"SamLightweightConfig |contains= full": true
+			}
+		},
+		{
+			"Name": "WeddingGuestVincent",
+			"Value": ""
+		},
+		{
+			"Name": "WeddingGuestVincent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"VincentLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}"
+			}
+		},
+		{
+			"Name": "WeddingGuestVincent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"VincentLightweightConfig |contains= ultralight": false
+			}
+		},	
+		{
+			"Name": "WeddingGuestVincent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.SamAndAlissaRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"VincentLightweightConfig |contains= full": true			
+			}
+		},	
+		{
+			"Name": "WeddingGuestVincent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.JericAlexRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= AlexJericWeddingLetter": true,
+				"HasSeenEvent |contains= 955807": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"VincentLightweightConfig |contains= full": true
+			}
+		},
+		{
+			"Name": "WeddingGuestJodi",
+			"Value": ""
+		},
+		{
+			"Name": "WeddingGuestJodi",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"JodiLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}"
+			}
+		},
+		{
+			"Name": "WeddingGuestJodi",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"JodiLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "WeddingGuestJodi",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.SamAndAlissaRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"JodiLightweightConfig |contains= full": true			
+			}
+		},
+		{
+			"Name": "WeddingGuestJodi",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.JericAlexRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= AlexJericWeddingLetter": true,
+				"HasSeenEvent |contains= 955807": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"JodiLightweightConfig |contains= full": true	
+			}
+		},
+		{
+			"Name": "WeddingGuestKent",
+			"Value": ""
+		},
+		{
+			"Name": "WeddingGuestKent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"KentLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}"
+			}
+		},
+		{
+			"Name": "WeddingGuestKent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"KentLightweightConfig |contains= ultralight": false
+			}
+		},
+		{
+			"Name": "WeddingGuestKent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.SamAndAlissaRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"KentLightweightConfig |contains= full": true			
+			}
+		},
+		{
+			"Name": "WeddingGuestKent",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod |contains= ZoeDoll.JericAlexRivalHearts": true,
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= AlexJericWeddingLetter": true,
+				"HasSeenEvent |contains= 955807": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"KentLightweightConfig |contains= full": true
+			}
+		},
+		
+// SAM NORWEGIAN WEDDING SUIT COMPAT
+
+		{
+			"Name": "WeddingOutfitSamToken",
+			"Value": "{{WeddingOutfitSam}}"
+		},
+		{
+			"Name": "WeddingOutfitSamToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.SamNorwegianWeddingSuit": false,
+				"WeddingOutfitSam": "4"
+			}
+		},
+		{
+			"Name": "WeddingOutfitSamToken",
+			"Value": "4_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.SamNorwegianWeddingSuit": true,
+				"WeddingOutfitSam": "4"
+			}
+		},
+		
+// SAM SUNGLASSES
+
+		{
+			"Name": "SamSunglassesRandom",
+			"Value": "blank"
+		},
+		{			
+			"Name": "SamSunglassesRandom",
+			"Value": "{{Random: SunglassesOverlay, x, x, x, x |key= SamSunglasses}}",
+			"When":
+			{				
+				"IsOutdoors": true,
+				"Season": "spring, fall",
+				"Weather": "sun, wind",
+				"Time": "{{Range: 0800, 1800}}",
+				"Special+Festival| contains= EggFestival, FlowerDance, IceFestival, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"SamLightweightConfig |contains= full": true
+			}
+		},		
+		{			
+			"Name": "SamSunglassesRandom",
+			"Value": "{{Random: SunglassesOverlay, x |key= SamSunglasses}}",
+			"When":
+			{				
+				"IsOutdoors": true,
+				"Query: ('{{LocationName}}' IN ('IslandSouth', 'IslandNorth', 'IslandWest', 'IslandSouthEast', 'IslandEast')) OR ('{{Season}}' = 'summer')": true,
+				"Weather": "sun, wind",
+				"Time": "{{Range: 0800, 1800}}",
+				"Special+Festival| contains= EggFestival, FlowerDance, IceFestival, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"SamLightweightConfig |contains= full": true
+			}
+		},
+
+// VANILLA-STYLE BEACH OUTFITS
+
+		{
+			"Name": "BeachStyleSam",
+			"Value": ""
+		},
+		{
+			"Name": "BeachStyleSam",
+			"Value": "_VanillaStyle",
+			"When":
+			{
+				"VanillaBeachStyle |contains= Sam": true
+			}
+		},
+		{
+			"Name": "BeachStyleJodi",
+			"Value": ""
+		},
+		{
+			"Name": "BeachStyleJodi",
+			"Value": "_VanillaStyle",
+			"When":
+			{
+				"VanillaBeachStyle |contains= Jodi": true
+			}
+		}
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"SamVariant":
+		{
+			"AllowValues": "Vanilla, ModdedLighter, ModdedDarker, off",
+			"Default": "Vanilla"
+		},
+		"SamLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Sam will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info."
+		},
+		"VincentVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla"
+		},
+		"VincentLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Vincent will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info."
+		},
+		"JodiVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla"
+		},
+		"JodiLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Jodi will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info."
+		},
+		"KentVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla"
+		},
+		"KentLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Kent will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info."
+		},
+		
+		//Additional options
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'."
+		},
+		"Pyjamas":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'."
+		},
+		"VanillaBeachStyle":
+		{
+			"AllowValues": "Sam, Jodi",
+			"Default": "",
+			"AllowBlank": true,
+			"AllowMultiple": true,
+			"Description": "Selects whether characters will use their swimsuit design from the default game with sprite and portrait touchups or a new swimsuit designed by the DSV team. Only available for characters with a beach swimsuit in vanilla. Check the website for more info."
+		},
+		"WeddingOutfitSam":
+		{
+			"AllowValues": "1, 2, 3, 4",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Sam will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'."
+		},		
+		"GiftTastesChange":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Changes the family's gift tastes to dislike alcoholic drinks and mod-added pork or drug products if using Jodi's modded variant. If using Jodi's vanilla variant, this option does nothing. This option is on by default but can be disabled for compatibility with other mods."
+		},		
+		"ModdedJodiKentDialogueEdits":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Changes dialogue about Kent's profession and the war if using Jodi's modded variant. Doesn't affect her vanilla variant. Check the website for more info. This option is on by default but can be disabled for compatibility with other mods."
+		},	
+		"KentNoBombsInMail":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Changes Kent's letters so that he does not post bombs to the player and will instead send other, more appropriate items. Automatically disabled if Replace Bombs Kent Mail by LiziAnne is installed."
+		},
+// INDIVIDUAL OPTIONS
+		//Sam
+		"SamEyes":
+		{
+			"AllowValues": "Default, Alternate, Heterochromia",
+			"Default": "Default",
+			"Description": "Keeps Sam's default eye color, changes it to an alternate color, or gives him heterochromia (each eye is a different color). Can't be used if SamLightweightConfig is set to 'ultralight'."
+		},
+		"SamExtras":
+		{
+			"AllowValues": "Stubble, Beard, Piercings",
+			"AllowBlank": true,
+			"AllowMultiple": true,
+			"Description": "Gives Sam stubble, a beard, and/or lip and eyebrow piercings. Can't be used if SamLightweightConfig is set to 'ultralight'."
+		},
+		"SamBinder":
+		{
+			"AllowValues": "Binder, NoBinder",
+			"Default": "Binder",
+			"Description": "Gives Sam a tanktop-style binder which is visible when he goes swimming and during certain events."
+		}
+	},
+	"Changes":[
+		{
+			"LogName": "Sam Main",
+			"Action": "Include",
+			"FromFile": "Sam/Code/{{SamLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.OenimoSam": false,
+				"HasMod |contains= DSVTeam.AddOnPack.OenimoHopefulFoxSam": false,
+				"HasMod |contains= DSVTeam.AddOnPack.AirynSam": false,
+				"HasMod |contains= DSVTeam.AddOnPack.Cheshire348Sam": false
+			}
+		},
+		{
+			"LogName": "Vincent Main",
+			"Action": "Include",
+			"FromFile": "Vincent/Code/{{VincentLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"VincentVariant |contains= off": false
+			}
+		},
+		{
+			"LogName": "Jodi Main",
+			"Action": "Include",
+			"FromFile": "Jodi/Code/{{JodiLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"JodiVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.HopefulfoxJodi": false
+			}
+		},
+		{
+			"LogName": "Modded Jodi Religion Edits",
+			"Action": "Include",
+			"FromFile": "Jodi/Code/ModdedJodiReligionEdits.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"JodiVariant |contains= modded": true
+			}
+		},
+		{
+			"LogName": "Modded Jodi Gift Tastes Change",
+			"Action": "Include",
+			"FromFile": "Jodi/Code/ModdedJodiGiftTastesChange.json, Kent/Code/ModdedJodiGiftTastesChange.json, Vincent/Code/ModdedJodiGiftTastesChange.json, Sam/Code/ModdedJodiGiftTastesChange.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"JodiVariant |contains= modded": true,
+				"GiftTastesChange": true
+			}
+		},
+		{
+			"LogName": "Modded Jodi Dialogue Edits",
+			"Action": "Include",
+			"FromFile": "Jodi/Code/ModdedJodiDialogueEdits.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"JodiVariant |contains= modded": true,
+				"ModdedJodiKentDialogueEdits": true
+			}
+		},
+		{
+			"LogName": "Modded Jodi Dialogue Edits Toshinori",
+			"Action": "Include",
+			"FromFile": "Jodi/Code/ModdedJodiDialogueEditsToshi.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"JodiVariant |contains= modded": true,
+				"HasMod |contains=FuzzyMittens.Toshinori": true,
+				"ModdedJodiKentDialogueEdits": true
+			}
+		},
+		{
+			"LogName": "Kent Main",
+			"Action": "Include",
+			"FromFile": "Kent/Code/{{KentLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"KentVariant |contains= off": false
+			}
+		},
+		{
+			"LogName": "Kent No Bombs Code",
+			"Action": "Include",
+			"FromFile": "Kent/Code/NoBombsInMail.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"KentVariant |contains= off": false,
+				"HasMod |contains= Lizi.KentMail": false,
+				"KentNoBombsInMail": true
+			}
+		}
+	]
+}

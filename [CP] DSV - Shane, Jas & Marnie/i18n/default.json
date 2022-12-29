@@ -1,0 +1,79 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.ShaneVariant.name": "ShaneVariant",
+	"config.ShaneVariant.values.Vanilla": "Vanilla",
+	"config.ShaneVariant.values.Modded": "Modded",
+	"config.ShaneVariant.values.Off": "Off",
+	
+	"config.ShaneLightweightConfig.name": "ShaneLightweightConfig",
+	"config.ShaneLightweightConfig.description": "Toggles whether Shane will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.ShaneLightweightConfig.values.Full": "Full",
+	"config.ShaneLightweightConfig.values.Light": "Light",
+	"config.ShaneLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.JasVariant.name": "JasVariant",
+	"config.JasVariant.values.Vanilla": "Vanilla",
+	"config.JasVariant.values.Modded": "Modded",
+	"config.JasVariant.values.Off": "Off",
+	
+	"config.JasLightweightConfig.name": "JasLightweightConfig",
+	"config.JasLightweightConfig.description": "Toggles whether Jas will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.JasLightweightConfig.values.Full": "Full",
+	"config.JasLightweightConfig.values.Light": "Light",
+	"config.JasLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.MarnieVariant.name": "MarnieVariant",
+	"config.MarnieVariant.values.Vanilla": "Vanilla",
+	"config.MarnieVariant.values.Modded": "Modded",
+	"config.MarnieVariant.values.Off": "Off",
+	
+	"config.MarnieLightweightConfig.name": "MarnieLightweightConfig",
+	"config.MarnieLightweightConfig.description": "Toggles whether Marnie will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.MarnieLightweightConfig.values.Full": "Full",
+	"config.MarnieLightweightConfig.values.Light": "Light",
+	"config.MarnieLightweightConfig.values.Ultralight": "Ultralight",
+
+	"config.VanillaBeachStyle.name": "VanillaBeachStyle",
+	"config.VanillaBeachStyle.description": "Selects whether characters will use their swimsuit design from the default game with sprite and portrait touchups or a new swimsuit designed by the DSV team. Only available for characters with a beach swimsuit in vanilla. Check the website for more info.",
+	"config.VanillaBeachStyle.values.Shane": "Shane",
+	"config.VanillaBeachStyle.values.Marnie": "Marnie",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Marnie will match DSV's Marnie variant and have seasonal outfits. Only select this if you have Marnie set to dateable in LfL's configuration options.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.Pyjamas.name": "Pyjamas",
+	"config.Pyjamas.description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.Pyjamas.values.True": "True",	
+	"config.Pyjamas.values.False": "False",
+	"config.Pyjamas.values.Marriage": "Marriage",
+	
+	"config.WeddingOutfitShane.name": "WeddingOutfitShane",
+	"config.WeddingOutfitShane.description": "Selects which wedding outfit Shane will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitShane.values.1": "1",
+	"config.WeddingOutfitShane.values.2": "2",
+	"config.WeddingOutfitShane.values.3": "3",
+	"config.WeddingOutfitShane.values.4": "4",
+	"config.WeddingOutfitShane.values.5": "5",
+	"config.WeddingOutfitShane.values.6": "6",
+	
+	"config.MarnieCharacterSmile.name": "MarnieCharacterSmile",
+	"config.MarnieCharacterSmile.description": "Chooses whether the character/overworld sprites for Marnie's vanilla variant will have a visible smile visible like the default game or if her sprites will be blank-faced like the other character sprites. Does not affect Marnie's modded variant.",
+	"config.MarnieCharacterSmile.values.Smile": "Smile",
+	"config.MarnieCharacterSmile.values.NoSmile": "NoSmile",
+	
+	"config.ShaneSelfCare.name": "ShaneSelfCare",
+	"config.ShaneSelfCare.description": "Chooses whether Shane dresses neatly, messily, or if his appearance changes dynamically as his story progresses. The 'dynamic' option can't be used if ShaneLightweightConfig is set to 'ultralight'.",
+	"config.ShaneSelfCare.values.Neat": "Neat",
+	"config.ShaneSelfCare.values.Messy": "Messy",
+	"config.ShaneSelfCare.values.Dynamic": "Dynamic",
+	
+}
+	
+	
+	

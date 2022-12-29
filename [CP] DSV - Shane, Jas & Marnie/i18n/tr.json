@@ -1,0 +1,79 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.ShaneVariant.name": "ShaneÇeşidi",
+	"config.ShaneVariant.values.Vanilla": "Vanilla",
+	"config.ShaneVariant.values.Modded": "Modlu",
+	"config.ShaneVariant.values.Off": "Kapalı",
+	
+	"config.ShaneLightweightConfig.name": "ShaneHafiflikYapılandırma",
+	"config.ShaneLightweightConfig.description": "Shane'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.ShaneLightweightConfig.values.Full": "Tam",
+	"config.ShaneLightweightConfig.values.Light": "Hafif",
+	"config.ShaneLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.JasVariant.name": "JasÇeşidi",
+	"config.JasVariant.values.Vanilla": "Vanilla",
+	"config.JasVariant.values.Modded": "Modlu",
+	"config.JasVariant.values.Off": "Kapalı",
+	
+	"config.JasLightweightConfig.name": "JasHafiflikYapılandırma",
+	"config.JasLightweightConfig.description": "Jas'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.JasLightweightConfig.values.Full": "Tam",
+	"config.JasLightweightConfig.values.Light": "Hafif",
+	"config.JasLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.MarnieVariant.name": "MarnieÇeşidi",
+	"config.MarnieVariant.values.Vanilla": "Vanilla",
+	"config.MarnieVariant.values.Modded": "Modlu",
+	"config.MarnieVariant.values.Off": "Kapalı",
+	
+	"config.MarnieLightweightConfig.name": "MarnieHafiflikYapılandırma",
+	"config.MarnieLightweightConfig.description": "Marnie'nin Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.MarnieLightweightConfig.values.Full": "Tam",
+	"config.MarnieLightweightConfig.values.Light": "Hafif",
+	"config.MarnieLightweightConfig.values.Ultralight": "Ultra hafif",
+
+	"config.VanillaBeachStyle.name": "VanillaPlajTarzı",
+	"config.VanillaBeachStyle.description": "Karakterlerin, küçük sprite ve portre düzenlemeleriyle varsayılan oyundaki mayo tasarımlarını mı yoksa DSV ekibi tarafından tasarlanan yeni bir mayoyu mu kullanacağını seçer. Yalnızca vanilla plaj mayosu olan karakterler için kullanılabilir. Daha fazla bilgi için modun wikisine bakın.",
+	"config.VanillaBeachStyle.values.Shane": "Shane",
+	"config.VanillaBeachStyle.values.Marnie": "Marnie",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "foggywizard'ın Looking For Love moduyla uyumluluk ekler ki LfL'nin evlenilebilir Marnie'si DSV'nin Marnie çeşidiyle eşleşsin ve mevsimsel kıyafetleri olsun. Bu seçeneği yalnızca eğer Marnie LfL'nin yapılandırma seçeneklerinde evlenilebilir olarak ayarlandıysa kullanın.",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.Pyjamas.name": "Pijama",
+	"config.Pyjamas.description": "Evlilik adaylarının sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.Pyjamas.values.True": "Açık",	
+	"config.Pyjamas.values.False": "Kapalı",
+	"config.Pyjamas.values.Marriage": "Evlilik",
+	
+	"config.WeddingOutfitShane.name": "DüğünElbisesiShane",
+	"config.WeddingOutfitShane.description": "Shane'in evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitShane.values.1": "1",
+	"config.WeddingOutfitShane.values.2": "2",
+	"config.WeddingOutfitShane.values.3": "3",
+	"config.WeddingOutfitShane.values.4": "4",
+	"config.WeddingOutfitShane.values.5": "5",
+	"config.WeddingOutfitShane.values.6": "6",
+	
+	"config.MarnieCharacterSmile.name": "MarnieKarakterGülümseme",
+	"config.MarnieCharacterSmile.description": "Marnie'nin vanilla karakterinin/dünya sprite'larının varsayılan oyunda olduğu gibi belli bir gülümsemesinin mi yoksa diğer NPCler gibi boş bir yüzünün mü olacağını ayarlar. Marnie'nin 'modlu' çeşidini etkilemez.",
+	"config.MarnieCharacterSmile.values.Smile": "Gülümseme",
+	"config.MarnieCharacterSmile.values.NoSmile": "GülümsemeYok",
+	
+	"config.ShaneSelfCare.name": "ShaneÖzBakım",
+	"config.ShaneSelfCare.description": "Shane'in düzenli mi, dağınık mı giyineceğini yoksa hikayesinde ilerlendikçe dinamik olarak mı görünümünün değişeceğini ayarlar. ShaneHafiflikYapılandırma 'ultra hafif'e ayarlıysa 'dinamik' seçeneği kullanılamaz.",
+	"config.ShaneSelfCare.values.Neat": "Düzenli",
+	"config.ShaneSelfCare.values.Messy": "Dağınık",
+	"config.ShaneSelfCare.values.Dynamic": "Dinamik",
+	
+}
+	
+	
+	

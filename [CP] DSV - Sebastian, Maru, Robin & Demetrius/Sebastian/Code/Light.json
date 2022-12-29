@@ -1,0 +1,231 @@
+{
+// SEBASTIAN DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Sebastian Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SebastianVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomSebastian}}_{{SebastianWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SebastianVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestSebastian}}_{{RandomFestivalSebastian}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian_Beach, Characters/Sebastian_Beach",
+			"FromFile": "Sebastian/{{TargetPathOnly}}/{{SebastianVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sebastian Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SebastianVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitSebastianToken}}.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PlatonicNPCs |contains= Sebastian": false,
+			},
+		},
+		{
+			"LogName": "Sebastian Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SebastianVariant}}/Sebastian_SleepSprite.png",
+			"ToArea": { "X": 32, "Y": 416, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "SebastianRoom",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Sebastian Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Sebastian/Misc/Sebastian_Emoji_{{SebastianVariant}}.png",
+			"ToArea": {"X": 72, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"SebastianVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sebastian Cursors Motorbike",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Sebastian/Misc/BikeCursors/Cursors_Sebastian_{{SebastianVariant}}_{{SebSafety}}.png",
+			"ToArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sebastian Cursors Motorbike Glasses",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Sebastian/Misc/BikeCursors/Cursors_Sebastian_{{SebastianVariant}}_NoHelmet_Glasses.png",
+			"ToArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SebGlasses|contains= glasses": true,
+				"SebSafety|contains= NoHelmet": true,
+			},
+		},
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Sebastian Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Portraits/Sebastian_Beach",
+			"FromFile": "Sebastian/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Sebastian": "Married, Engaged",
+				"SebastianWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// SEBASTIAN EXTRAS OVERLAYS
+		{
+			"LogName": "Sebastian Glasses Sprites Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian, Characters/Sebastian_Beach",
+			"FromFile": "Sebastian/Characters/{{SebastianVariant}}/Overlays/{{TargetWithoutPath}}_{{SebGlassesSprites}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian Glasses Portraits Overlay",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Portraits/Sebastian_Beach",
+			"FromFile": "Sebastian/Portraits/{{SebastianVariant}}/Overlays/{{TargetWithoutPath}}_{{SebGlassesPortraits}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian Piercings Overlay",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Portraits/Sebastian_Beach",
+			"FromFile": "Sebastian/Portraits/{{SebastianVariant}}/Overlays/{{TargetWithoutPath}}_Piercings_{{SebastianWeatherVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SebPiercings|contains= piercings": true,
+				"Special+Festival |contains= Motorbike_Helmet": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Sebastian Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Sebastian_{{SebastianVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Sebastian",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Sebastian No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Sebastian_{{SebastianVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Sebastian",
+			},
+		},
+		
+// Rival Events Sam/Seb
+		{
+			"LogName": "Sebastian Rival Events Compatibility Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian_Shirtless, Portraits/Sebastian_Pink",
+			"FromFile": "Sebastian/Portraits/{{SebastianVariant}}/Sebastian_Swim_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= brin.SSRivalHeartEvents": true,
+				"HasSeenEvent |contains= 1918822": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian Rival Events Compatibility Characters",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian_Shirtless, Characters/Sebastian_Pink",
+			"FromFile": "Sebastian/Characters/{{SebastianVariant}}/Sebastian_Swim_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= brin.SSRivalHeartEvents": true,
+				"HasSeenEvent |contains= 1918822": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian Rival Events Pink Hair",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian_Pink, Characters/Sebastian_Pink",
+			"FromFile": "Sebastian/{{TargetPathOnly}}/{{SebastianVariant}}/Overlays/Sebastian_PinkHair.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= brin.SSRivalHeartEvents": true,
+				"HasSeenEvent |contains= 1918822": false,
+			},
+		},		
+	]
+}

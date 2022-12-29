@@ -1,0 +1,303 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// MOD COMPATIBILITY
+		{
+			"Name": "CompatGunther",
+			"Value": "Default",
+		},
+		{
+			"Name": "CompatGunther",
+			"Value": "MuseumExpansion",
+			"When":
+			{
+				"HasMod |contains= andril11.charlie": true,
+			},
+		},
+		{
+			"Name": "CompatGunther",
+			"Value": "MakeGuntherReal",
+			"When":
+			{
+				"HasMod |contains= Wolf.Gun": true,
+			},
+		},
+		{
+			"Name": "CompatGunther",
+			"Value": "BefriendMarGun",
+			"When":
+			{
+				"HasMod |contains= Yoshimax.BefriendMarlon": true,
+			},
+		},
+		{
+			"Name": "CompatMarlon",
+			"Value": "Default",
+		},
+		{
+			"Name": "CompatMarlon",
+			"Value": "Denver",
+			"When":
+			{
+				"HasMod |contains= balverines.Denver": true,
+			},
+		},
+		{
+			"Name": "CompatMarlon",
+			"Value": "BefriendMarGun",
+			"When":
+			{
+				"HasMod |contains= Yoshimax.BefriendMarlon": true,
+			},
+		},
+		{
+			"Name": "CompatMarlon",
+			"Value": "MakeMarlonReal",
+			"When":
+			{
+				"HasMod |contains= Wolf.Marlon": true,
+			},
+		},
+		{
+			"Name": "CompatMarlon",
+			"Value": "{{MarlonCompatibility}}",
+			"When":
+			{
+				"MarlonCompatibility |contains= Automatic": false,
+			},
+		},
+		
+// MUSEUM EXPANSION GUNTHER
+		{
+			"Name": "GuntherWoods",
+			"Value": "",
+		},
+		{
+			"Name": "GuntherWoods",
+			"Value": "_shop",
+			"When":
+			{
+				"HasMod |contains= andril11.charlie": true,
+				"GuntherVariant |contains= off": false,
+				"HasMod |contains= Wolf.Gun, Yoshimax.BefriendMarlon": false,
+			},
+		},
+
+// AGE COMPAT WINTER
+		{
+			"Name": "AGEWinterIndoorOutdoor",
+			"Value": ""
+		},
+		{
+			"Name": "AGEWinterIndoorOutdoor",
+			"Value": "_Indoor",
+			"When": 
+			{
+				"Season": "Winter",
+				"IsOutdoors": false
+			}
+		},
+		{
+			"Name": "AGEWinterIndoorOutdoor",
+			"Value": "_Outdoor",
+			"When": 
+			{
+				"Season": "Winter",
+				"IsOutdoors": true
+			}
+		}
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"GuntherVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"MarlonVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"MorrisVariant":
+		{
+			"AllowValues": "Vanilla, off",
+			"Default": "Vanilla",
+		},
+		
+//Additional options
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"AlternateCecily":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not Gunther's daughter Cecily will use alternate sprites & portraits by Airyn that match DSV's Gunther. Set to false if you prefer Cecily's original art. Only applicable if using Make Gunther Real.",
+		},	
+		"AdventurersGuildExpandedCompatibility":
+		{
+			"AllowValues": "AllModded, ModdedGabrielOnly, ModdedZinniaOnly, off",
+			"Default": "off",
+			"Description": "Adds compatible portraits and sprites for Adventurers Guild Expanded's Daisy, Gabriel and/or Zinnia, so that they are Mongolian to match Marlon's modded DSV variant."
+		},
+		"MarlonCompatibility":
+		{
+			"AllowValues": "Automatic, Vanilla, Denver, BefriendMarGun, MakeMarlonReal",
+			"Default": "Automatic",
+			"Description": "Toggles which mod will edit Marlon's portraits and sprites. The default 'Automatic' should automatically match the appropriate mod, but if this is not working, this option allows for a manual selection.",
+		},
+	},
+		
+	"Changes":[
+		{
+			"LogName": "Gunther Main",
+			"Action": "Include",
+			"FromFile": "Gunther/Code/Gunther.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"GuntherVariant |contains= off": false,
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false,
+			},
+		},
+		{
+			"LogName": "Marlon Main",
+			"Action": "Include",
+			"FromFile": "Marlon/Code/Marlon.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarlonVariant |contains= off": false,
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false,
+			},
+		},
+		{
+			"LogName": "Morris Main",
+			"Action": "Include",
+			"FromFile": "Morris/Code/Morris.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MorrisVariant |contains= off": false,
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP, DSVTeam.AddOnPack.AirynMorris": false,
+			},
+		},
+		{
+			"LogName": "AGE Compat",
+			"Action": "Include",
+			"FromFile": "AGECompat/Code/AGECompat.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AdventurersGuildExpandedCompatibility |contains= off": false,
+				"HasMod |contains= supert.adventureguildexpanded": true,
+			},
+		},
+	]
+}

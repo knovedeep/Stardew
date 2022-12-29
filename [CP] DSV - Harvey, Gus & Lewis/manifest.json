@@ -1,0 +1,67 @@
+{
+	"Name": "Diverse SDV - Harvey, Gus & Lewis",
+	"Author": "DSV Team",
+	"Version": "3.0.4",
+	"Description": "Adds ethnic and cultural diversity to Harvey, Gus & Lewis, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.HarveyGusLewis",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1073150", "GitHub:AirynS/DSV-Harvey-Gus-Lewis" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "IMS.CP.MarnieDeservesBetter",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "PurrplingCat.CustomGiftDialogue",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Rafseazz.RidgesideVillage",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "foggy.LfL",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.HarveyHungarianWeddingSuit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "mothbeanie.GiftsRedone",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Swift.EveryoneLikesFruit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Lemurkat.UniqueGiftReactions",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+	]
+}

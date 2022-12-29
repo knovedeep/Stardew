@@ -1,0 +1,80 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.AbigailVariant.name": "AbigailÇeşidi",
+	"config.AbigailVariant.values.VanillaStraightSize": "VanillaZayıf",
+	"config.AbigailVariant.values.VanillaPlusSize": "VanillaŞişman",
+	"config.AbigailVariant.values.ModdedStraightSize": "ModluZayıf",
+	"config.AbigailVariant.values.ModdedPlusSize": "ModluŞişman",
+	"config.AbigailVariant.values.Off": "Kapalı",
+	
+	"config.AbigailLightweightConfig.name": "AbigailHafiflikYapılandırma",
+	"config.AbigailLightweightConfig.description": "Abigail'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.AbigailLightweightConfig.values.Full": "Tam",
+	"config.AbigailLightweightConfig.values.Light": "Hafif",
+	"config.AbigailLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.CarolineVariant.name": "CarolineÇeşidi",
+	"config.CarolineVariant.values.Vanilla": "Vanilla",
+	"config.CarolineVariant.values.Modded": "Modlu",
+	"config.CarolineVariant.values.Off": "Kapalı",
+	
+	"config.CarolineLightweightConfig.name": "CarolineHafiflikYapılandırma",
+	"config.CarolineLightweightConfig.description": "Caroline'ın Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.CarolineLightweightConfig.values.Full": "Tam",
+	"config.CarolineLightweightConfig.values.Light": "Hafif",
+	"config.CarolineLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.PierreVariant.name": "PierreÇeşidi",
+	"config.PierreVariant.values.Vanilla": "Vanilla",
+	"config.PierreVariant.values.Modded": "Modlu",
+	"config.PierreVariant.values.Off": "Kapalı",
+	
+	"config.PierreLightweightConfig.name": "PierreHafiflikYapılandırma",
+	"config.PierreLightweightConfig.description": "Pierre'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.PierreLightweightConfig.values.Full": "Tam",
+	"config.PierreLightweightConfig.values.Light": "Hafif",
+	"config.PierreLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.MaternitySprites.name": "GebelikSpriteları",
+	"config.MaternitySprites.description": "Karın hamileyken gebelik kıyafetlerini etkinleştirir. Eğer 'Açık' olarak ayarlanırsa, sprite'lar otomatik olarak değiştirilecek.",
+	"config.MaternitySprites.values.True": "Açık",	
+	"config.MaternitySprites.values.False": "Kapalı",
+	
+	"config.Pyjamas.name": "Pijama",
+	"config.Pyjamas.description": "Evlilik adaylarının sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.Pyjamas.values.True": "Açık",	
+	"config.Pyjamas.values.False": "Kapalı",
+	"config.Pyjamas.values.Marriage": "Evlilik",
+	
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description":  "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun wikisine bakın.",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+
+	"config.WeddingOutfitAbigail.name": "DüğünElbisesiAbigail",
+	"config.WeddingOutfitAbigail.description": "Abigail'in evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitAbigail.values.1": "1",
+	"config.WeddingOutfitAbigail.values.2": "2",
+	"config.WeddingOutfitAbigail.values.3": "3",
+	"config.WeddingOutfitAbigail.values.4": "4",
+	"config.WeddingOutfitAbigail.values.5": "5",
+	"config.WeddingOutfitAbigail.values.6": "6",
+	
+	"config.RidgesideVillageBert.name": "TepeyanıKöyüBert",
+	"config.RidgesideVillageBert.description": "Tepeyanı Köyü'nün Bert'i için uyumlu portre ve sprite'lar ekler, ki Filipinli olup kuzeni Caroline'ın modlu DSV çeşidiyle uyumlu olsun.",
+	"config.RidgesideVillageBert.values.Modded": "Modlu",
+	"config.RidgesideVillageBert.values.Off": "Kapalı",
+	
+	"config.RidgesideVillageTrinnie.name": "TepeyanıKöyüTrinnie",
+	"config.RidgesideVillageTrinnie.description": "Tepeyanı Köyü'nün Trinnie'i için uyumlu portre ve sprite'lar ekler, ki Filipin-Alman melezi olup kuzeni Caroline'ın modlu DSV çeşidiyle uyumlu olsun. Siyah saçlı ve yeşil saçlı birer çeşit mevcut.",
+	"config.RidgesideVillageTrinnie.values.ModdedBlack": "ModluSiyah",
+	"config.RidgesideVillageTrinnie.values.ModdedGreen": "ModluYeşil",
+	"config.RidgesideVillageTrinnie.values.Off": "Kapalı",
+}
+	
+	
+	

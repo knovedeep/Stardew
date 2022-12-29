@@ -1,0 +1,52 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.KrobusVariant.name": "KrobusVariante",
+	"config.KrobusVariant.values.Modded": "Modded",
+	"config.KrobusVariant.values.Off": "Disabilitato",
+	
+	"config.KrobusLightweightConfig.name": "KrobusConfigPesoleggero",
+	"config.KrobusLightweightConfig.description": "Decidi se Krobus avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag. Controlla il sito per maggiori informazioni.",
+	"config.KrobusLightweightConfig.values.Full": "Intero",
+	"config.KrobusLightweightConfig.values.Light": "Leggero",
+	
+	"config.Mermaids.name": "Sirene",
+	"config.Mermaids.description": "Randomizza l'aspetto delle sirene che appaiono nel gioco. L'opzione 'Leggero' cambierà le sirene in un mix pre-selezionato. Vedere il sito per maggiori dettagli.",
+	"config.Mermaids.values.RandomBoth": "CasualeEntrambe",
+	"config.Mermaids.values.RandomUpper": "CasualeSopra",
+	"config.Mermaids.values.RandomLower": "CasualeSotto",
+	"config.Mermaids.values.Light": "Leggero",
+	"config.Mermaids.values.Off": "Disabilitato",
+	
+	"config.WitchVariant.name": "StregaVariante",
+	"config.WitchVariant.values.Modded": "Modded",
+	"config.WitchVariant.values.Off": "Disabilitato",
+	
+	"config.WizardVariant.name": "MagoVariante",
+	"config.WizardVariant.values.Vanilla": "Vanilla",
+	"config.WizardVariant.values.Modded": "Modded",
+	"config.WizardVariant.values.Off": "Disabilitato",
+	
+	"config.WizardLightweightConfig.name": "MagoConfigPesoleggero",
+	"config.WizardLightweightConfig.description": "Decidi se Mago avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag. Controlla il sito per maggiori informazioni.",
+	"config.WizardLightweightConfig.values.Full": "Intero",
+	"config.WizardLightweightConfig.values.Light": "Leggero",
+	
+	"config.WizardFamiliars.name": "FamigliMago",
+	"config.WizardFamiliars.description": "Dà al Mago alcuni spiriti familiari che lo circondano. Non può essere usato se l'opzione MagoConfigPesoleggero è impostata su 'leggero'.",
+	"config.WizardFamiliars.values.HatJunimos": "CapelloJunimo",
+	"config.WizardFamiliars.values.ShoulderJunimos": "SpalleJunimo",
+	"config.WizardFamiliars.values.SpiritCreatures": "CreatureSpiritiche",
+	
+	"config.WizardMarriageMod.name": "ModMagoSposabile",
+	"config.WizardMarriageMod.description": "Se stai usando una mod per avere la possibilità di sposare il Mago, seleziona quella che stai usando qui. Nota: DSV non supporta l'opzione Storia d'amore guidata di SVE.",
+	"config.WizardMarriageMod.values.LookingForLove": "LookingForLove",
+	"config.WizardMarriageMod.values.RomanceableRasmodius": "RomanceableRasmodius",
+	"config.WizardMarriageMod.values.None": "Nessuna",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+}

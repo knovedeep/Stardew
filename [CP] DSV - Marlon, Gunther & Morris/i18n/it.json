@@ -1,0 +1,45 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.GuntherVariant.name": "GuntherVariante",
+	"config.GuntherVariant.values.Vanilla": "Vanilla",
+	"config.GuntherVariant.values.Modded": "Modded",
+	"config.GuntherVariant.values.Off": "Disabilitato",
+	
+	"config.MarlonVariant.name": "MarlonVariante",
+	"config.MarlonVariant.values.Vanilla": "Vanilla",
+	"config.MarlonVariant.values.Modded": "Modded",
+	"config.MarlonVariant.values.Off": "Disabilitato",
+	
+	"config.MorrisVariant.name": "MorrisVariante",
+	"config.MorrisVariant.values.Vanilla": "Vanilla",
+	"config.MorrisVariant.values.Off": "Disabilitato",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.AlternateCecily.name": "CecilyAlternativa",
+	"config.AlternateCecily.description": "Alterna se la figlia di Gunther, Cecily, userà sprite alternativi e ritratti di Airyn che corrispondono a Gunther di DSV. Impostare a 'falso' se si preferiscono gli sprites originali di Cecily. Applicabile solo se si utilizza 'Make Gunther Real'.",
+	"config.AlternateCecily.values.True": "Vero",
+	"config.AlternateCecily.values.False": "Falso",
+	
+	"config.AdventurersGuildExpandedCompatibility.name": "AdventurersGuildExpandedCompatibilità",
+	"config.AdventurersGuildExpandedCompatibility.description": "Aggiunge ritratti e sprite compatibili per Daisy, Gabriel e/o Zinnia di Adventurers Guild Expanded, in modo che siano mongoli per corrispondere alla variante DSV modificata di Marlon.",
+	"config.AdventurersGuildExpandedCompatibility.values.AllModded": "TuttoModded",
+	"config.AdventurersGuildExpandedCompatibility.values.ModdedGabrielOnly": "SoloGabrielModded",
+	"config.AdventurersGuildExpandedCompatibility.values.ModdedZinniaOnly": "SoloZinniaModded",
+	"config.AdventurersGuildExpandedCompatibility.values.Off": "Disabilitato",
+	
+	"config.MarlonCompatibility.name": "MarlonCompatibilità",
+	"config.MarlonCompatibility.description": "Seleziona quale mod modificherà i ritratti e gli sprite di Marlon. L'impostazione predefinita 'Automatico' dovrebbe corrispondere automaticamente alla mod appropriata, ma se ciò non funziona, questa opzione consente una selezione manuale.",
+	"config.MarlonCompatibility.values.Automatic": "Automatico",
+	"config.MarlonCompatibility.values.Vanilla": "Vanilla",
+	"config.MarlonCompatibility.values.Denver": "Denver",
+	"config.MarlonCompatibility.values.BefriendMarGun": "BefriendMarlonAndGunther",
+	"config.MarlonCompatibility.values.MakeMarlonReal": "MakeMarlonReal"
+	
+}
+	
+	

@@ -1,0 +1,397 @@
+{
+	
+// VANILLA CHANGES
+
+	"Changes": [
+	
+		{
+			"LogName": "Vincent Gift Taste Changes - Vanilla",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "Vincent", "7"],
+					"Value": "alcohol_item 346 348 303 459 873",
+					"Delimiter": " "
+				},
+			],
+		},
+		
+// CUSTOM GIFT DIALOGUE CHANGES
+		{
+			"LogName": "Vincent Gift Taste Changes - CGD Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"GiftReaction_Beer": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReactionPreserved_Wine": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Mead": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Pale_Ale": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Piña_Colada": "{{i18n:Vincent.CGD.alcohol}}$s",
+			},
+			"When": 
+			{
+				"HasMod": "PurrplingCat.CustomGiftDialogue",
+			},
+		},
+		
+// PPJA FRESH MEAT
+
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Fresh Meat",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+
+				{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", "5"], 
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Pork}} {{spacechase0.JsonAssets/ObjectId:Cooked Pork}} {{spacechase0.JsonAssets/ObjectId:Cooked Boar}} {{spacechase0.JsonAssets/ObjectId:Wild Boar_Meat}} {{spacechase0.JsonAssets/ObjectId:Sweet and Sour Pork with Rice}} {{spacechase0.JsonAssets/ObjectId:Bacon}} {{spacechase0.JsonAssets/ObjectId:Biscuits and Gravy}} {{spacechase0.JsonAssets/ObjectId:Bratwurst}}  {{spacechase0.JsonAssets/ObjectId:Barbecue Sausage}} {{spacechase0.JsonAssets/ObjectId:Bacon Hamburger}} {{spacechase0.JsonAssets/ObjectId:Bacon n Eggs}} {{spacechase0.JsonAssets/ObjectId:Cheese Board}} {{spacechase0.JsonAssets/ObjectId:Dumplings}} {{spacechase0.JsonAssets/ObjectId:Sausage}} {{spacechase0.JsonAssets/ObjectId:Phoenix Au Vin}} {{spacechase0.JsonAssets/ObjectId:Breakfast Sandwich}} {{spacechase0.JsonAssets/ObjectId:Ham}} {{spacechase0.JsonAssets/ObjectId:Pizza Diavolo}} {{spacechase0.JsonAssets/ObjectId:Schnitzel}} {{spacechase0.JsonAssets/ObjectId:Salami}} {{spacechase0.JsonAssets/ObjectId:Spaghetti and Meatballs}} {{spacechase0.JsonAssets/ObjectId:Toast Hawaii}} {{spacechase0.JsonAssets/ObjectId:Toast Williams}} {{spacechase0.JsonAssets/ObjectId:Tonkatsu}}",
+				"Delimiter": " "
+				},
+			],
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, paradigmnomad.freshmeat",
+			},
+		},
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Fresh Meat CGD",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"GiftReaction_Pork": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Cooked_Pork": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Cooked_Boar": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Wild_Boar_Meat": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Sweet_and_Sour_Pork_with_Rice": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Bacon": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Bacon_Hamburger": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Bacon_n_Eggs": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Biscuits_and_Gravy": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Bratwurst": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Barbecue_Sausage": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Cheese_Board": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Dumplings": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Sausage": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Phoenix_Au_Vin": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Breakfast_Sandwich": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Ham": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Pizza_Diavolo": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Schnitzel": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Salami": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Spaghetti_and_Meatballs": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Toast_Hawaii": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Toast_Williams": "{{i18n:Vincent.CGD.pork}}$s",
+				"GiftReaction_Tonkatsu": "{{i18n:Vincent.CGD.pork}}$s",
+			},
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, PurrplingCat.CustomGiftDialogue, paradigmnomad.freshmeat",
+			},
+		},
+		
+// PPJA ARTISAN VALLEY
+
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Artisan Valley",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+
+				{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", "7"], 
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Absinthe}} {{spacechase0.JsonAssets/ObjectId:Amaretto}} {{spacechase0.JsonAssets/ObjectId:Apple Schnapps}} {{spacechase0.JsonAssets/ObjectId:Bourbon}} {{spacechase0.JsonAssets/ObjectId:Brandy}} {{spacechase0.JsonAssets/ObjectId:Campari}} {{spacechase0.JsonAssets/ObjectId:Chambord}} {{spacechase0.JsonAssets/ObjectId:Cauim}} {{spacechase0.JsonAssets/ObjectId:Cointreau}} {{spacechase0.JsonAssets/ObjectId:Creme de Cacao}} {{spacechase0.JsonAssets/ObjectId:Dark Ale}} {{spacechase0.JsonAssets/ObjectId:Framboise Lambic}} {{spacechase0.JsonAssets/ObjectId:Frangelico}} {{spacechase0.JsonAssets/ObjectId:Gin}} {{spacechase0.JsonAssets/ObjectId:Hard Apple Cider}} {{spacechase0.JsonAssets/ObjectId:Mezcal}} {{spacechase0.JsonAssets/ObjectId:Mint Schnapps}} {{spacechase0.JsonAssets/ObjectId:Moonshine}} {{spacechase0.JsonAssets/ObjectId:Peach Schnapps}} {{spacechase0.JsonAssets/ObjectId:Porter}} {{spacechase0.JsonAssets/ObjectId:Pulque}} {{spacechase0.JsonAssets/ObjectId:Rum}} {{spacechase0.JsonAssets/ObjectId:Sake}} {{spacechase0.JsonAssets/ObjectId:Schnapps}} {{spacechase0.JsonAssets/ObjectId:Scotch}} {{spacechase0.JsonAssets/ObjectId:Shochu}} {{spacechase0.JsonAssets/ObjectId:Stout}} {{spacechase0.JsonAssets/ObjectId:Whiskey}} {{spacechase0.JsonAssets/ObjectId:Vodka}} {{spacechase0.JsonAssets/ObjectId:Vermouth}} {{spacechase0.JsonAssets/ObjectId:Tequila}} {{spacechase0.JsonAssets/ObjectId:Wine Yeast}} {{spacechase0.JsonAssets/ObjectId:Sparkling Wine}}",
+				"Delimiter": " "
+				},
+			],
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, ppja.artisanvalleymachinegoods",
+			},
+		},
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Artisan Valley CGD",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"GiftReaction_Absinthe": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Amaretto": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Apple_Schnapps": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Bourbon": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Brandy": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Campari": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Chambord": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Cauim": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Cointreau": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Creme_de_Cacao ": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Dark_Ale": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Framboise_Lambic": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Frangelico": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Gin": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Hard_Apple_Cider": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Mezcal": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Mint_Schnapps": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Moonshine": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Peach_Schnapps": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Porter": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Pulque": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Rum": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Sake": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Schnapps": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Scotch": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Shochu": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Stout": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Whiskey": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Vodka": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Vermouth": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Tequila": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Wine_Yeast": "{{i18n:Vincent.CGD.alcohol}}$s",
+				"GiftReaction_Sparkling_Wine": "{{i18n:Vincent.CGD.alcohol}}$s",
+			},
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, PurrplingCat.CustomGiftDialogue, ppja.artisanvalleymachinegoods",
+			},
+		},
+		
+// PPJA STARBREW VALLEY
+
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Starbrew Valley",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+
+				{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", "7"], 
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Alexander Cocktail}} {{spacechase0.JsonAssets/ObjectId:Americano}} {{spacechase0.JsonAssets/ObjectId:Angel Face}} {{spacechase0.JsonAssets/ObjectId:Atomic Cocktail}} {{spacechase0.JsonAssets/ObjectId:Aviation}} {{spacechase0.JsonAssets/ObjectId:Barracuda Cocktail}} {{spacechase0.JsonAssets/ObjectId:Basil Cranberry Julep}} {{spacechase0.JsonAssets/ObjectId:Bay Breeze}} {{spacechase0.JsonAssets/ObjectId:Bellini}} {{spacechase0.JsonAssets/ObjectId:Black Junimo}} {{spacechase0.JsonAssets/ObjectId:Bloody Mary}} {{spacechase0.JsonAssets/ObjectId:Brandy Alexander}} {{spacechase0.JsonAssets/ObjectId:Chocolate Liqueur}} {{spacechase0.JsonAssets/ObjectId:Clover Club}} {{spacechase0.JsonAssets/ObjectId:Coffee Liqueur}} {{spacechase0.JsonAssets/ObjectId:Cosmo}} {{spacechase0.JsonAssets/ObjectId:Cuba Libre}} {{spacechase0.JsonAssets/ObjectId:Daiquiri}} {{spacechase0.JsonAssets/ObjectId:Dark and Stormy}} {{spacechase0.JsonAssets/ObjectId:Death in the Afternoon}} {{spacechase0.JsonAssets/ObjectId:Derby}} {{spacechase0.JsonAssets/ObjectId:Espresso Martini}} {{spacechase0.JsonAssets/ObjectId:Frangelico Sour}} {{spacechase0.JsonAssets/ObjectId:French 75}} {{spacechase0.JsonAssets/ObjectId:French Martini}} {{spacechase0.JsonAssets/ObjectId:Gin Fizz}} {{spacechase0.JsonAssets/ObjectId:Gin n Tonic}} {{spacechase0.JsonAssets/ObjectId:Green Junimo}} {{spacechase0.JsonAssets/ObjectId:Hard Iced Tea}} {{spacechase0.JsonAssets/ObjectId:Harlem Mugger Cocktail}} {{spacechase0.JsonAssets/ObjectId:Hemingway Special}} {{spacechase0.JsonAssets/ObjectId:Irish Coffee}} {{spacechase0.JsonAssets/ObjectId:Lemonado Cocktail}} {{spacechase0.JsonAssets/ObjectId:Long Island Iced Tea}} {{spacechase0.JsonAssets/ObjectId:Mai Tai}} {{spacechase0.JsonAssets/ObjectId:Margarita}} {{spacechase0.JsonAssets/ObjectId:Mimosa}} {{spacechase0.JsonAssets/ObjectId:Mint Julep}} {{spacechase0.JsonAssets/ObjectId:Mojito}} {{spacechase0.JsonAssets/ObjectId:Monkey Gland}} {{spacechase0.JsonAssets/ObjectId:Moonlight Jellies}} {{spacechase0.JsonAssets/ObjectId:Moonshine Cherries}} {{spacechase0.JsonAssets/ObjectId:Moscow Mule}} {{spacechase0.JsonAssets/ObjectId:Mudslide}} {{spacechase0.JsonAssets/ObjectId:Negroni}} {{spacechase0.JsonAssets/ObjectId:Night on the Beach}} {{spacechase0.JsonAssets/ObjectId:Paradise}} {{spacechase0.JsonAssets/ObjectId:Planters Punch}} {{spacechase0.JsonAssets/ObjectId:Poinsettia Cocktail}} {{spacechase0.JsonAssets/ObjectId:Porto Flip}} {{spacechase0.JsonAssets/ObjectId:Queens Park Swizzle}} {{spacechase0.JsonAssets/ObjectId:Ramos Gin Fizz}} {{spacechase0.JsonAssets/ObjectId:Rum and Cola}} {{spacechase0.JsonAssets/ObjectId:Rum and Cola Float}} {{spacechase0.JsonAssets/ObjectId:Russian Spring Punch}} {{spacechase0.JsonAssets/ObjectId:Sandy's Calico Colada}} {{spacechase0.JsonAssets/ObjectId:Screwdriver}} {{spacechase0.JsonAssets/ObjectId:Sea Breeze}} {{spacechase0.JsonAssets/ObjectId:Snakebite}} {{spacechase0.JsonAssets/ObjectId:Spritz Veneziano}} {{spacechase0.JsonAssets/ObjectId:Stardew Sangria}} {{spacechase0.JsonAssets/ObjectId:Sweet Pink Cocktail}} {{spacechase0.JsonAssets/ObjectId:Tequila Sunrise}} {{spacechase0.JsonAssets/ObjectId:The Last Word}} {{spacechase0.JsonAssets/ObjectId:The Mayor's Shorts}} {{spacechase0.JsonAssets/ObjectId:Tres Coops}} {{spacechase0.JsonAssets/ObjectId:Vampiro}} {{spacechase0.JsonAssets/ObjectId:Whiskey Sour}} {{spacechase0.JsonAssets/ObjectId:White Junimo}} {{spacechase0.JsonAssets/ObjectId:White Lady}}",
+				"Delimiter": " "
+				},
+			],
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, ppja.starbrewvalley",
+			},
+		},
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Cannabis Kit CGD",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"GiftReaction_Alexander_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Americano": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Angel_Face": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Atomic_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Aviation": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Barracuda_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Basil_Cranberry_Julep": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Bay_Breeze": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Bellini": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Black_Junimo": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Bloody_Mary": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Brandy_Alexander": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Chocolate_Liqueur": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Clover_Club": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Coffee_Liqueur": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Cosmo": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Cuba_Libre": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Daiquiri": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Dark_and_Stormy": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Death_in_the_Afternoon": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Derby": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Espresso_Martini": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Frangelico_Sour": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_French_75": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_French_Martini": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Gin_Fizz": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Gin_n_Tonic": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Green_Junimo": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Hard_Iced_Tea": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Harlem_Mugger_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Hemingway_Special": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Irish_Coffee": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Lemonado_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Long_Island_Iced_Tea": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Mai_Tai": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Margarita": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Mimosa": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Mint_Julep": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Mojito": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Monkey_Gland": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Moonlight_Jellies": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Moonshine_Cherries": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Moscow_Mule": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Mudslide": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Negroni": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Night_on_the_Beach": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Paradise": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Planters_Punch": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Poinsettia_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Porto_Flip": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Queens_Park_Swizzle": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Ramos_Gin_Fizz": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Rum_and_Cola": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Rum_and_Cola_Float": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Russian_Spring_Punch": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Sandy's_Calico_Colada": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Screwdriver": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Sea_Breeze": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Snakebite": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Spritz_Veneziano": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Stardew_Sangria": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Sweet_Pink_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Tequila_Sunrise": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_The_Last_Word": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_The_Mayor's_Shorts": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Tres_Coops": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Vampiro": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Whiskey_Sour": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_White_Junimo": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_White_Lady": "{{i18n:Vincent.CGD.alcohol}}$3",
+			},
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, PurrplingCat.CustomGiftDialogue, ppja.starbrewvalley",
+			},
+		},
+		
+// PPJA CANNABIS KIT
+		
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Cannabis Kit",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+
+				{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", "7"], 
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Blue Dream}} {{spacechase0.JsonAssets/ObjectId:Cannabis}} {{spacechase0.JsonAssets/ObjectId:CBD Oil}} {{spacechase0.JsonAssets/ObjectId:Dried Tobacco}} {{spacechase0.JsonAssets/ObjectId:Girl Scout Cookies}} {{spacechase0.JsonAssets/ObjectId:Green Crack}} {{spacechase0.JsonAssets/ObjectId:Hemp}} {{spacechase0.JsonAssets/ObjectId:Hemp Butter}} {{spacechase0.JsonAssets/ObjectId:Honey Stick}} {{spacechase0.JsonAssets/ObjectId:Hybrid}} {{spacechase0.JsonAssets/ObjectId:Indica}} {{spacechase0.JsonAssets/ObjectId:Joint}} {{spacechase0.JsonAssets/ObjectId:Northern Lights}} {{spacechase0.JsonAssets/ObjectId:OG Kush}} {{spacechase0.JsonAssets/ObjectId:Pot Brownie}} {{spacechase0.JsonAssets/ObjectId:Sativa}} {{spacechase0.JsonAssets/ObjectId:Shatter}} {{spacechase0.JsonAssets/ObjectId:Snuff}} {{spacechase0.JsonAssets/ObjectId:Sour Diesel}} {{spacechase0.JsonAssets/ObjectId:Strawberry Cough}} {{spacechase0.JsonAssets/ObjectId:Tobacco}} {{spacechase0.JsonAssets/ObjectId:Wax}} {{spacechase0.JsonAssets/ObjectId:Weed-Infused Skooma}} {{spacechase0.JsonAssets/ObjectId:White Widow}}",
+				"Delimiter": " "
+				},
+			],
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, PPJA.cannabiskit",
+			},
+		},
+		{
+			"LogName": "Vincent Gift Taste Changes - PPJA Cannabis Kit CGD",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"GiftReaction_Blue_Dream": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Cannabis": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_CBD_Oil": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Dried_Tobacco": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Girl_Scout_Cookies": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Green_Crack": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Hemp": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Hemp_Butter": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Honey_Stick": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Hybrid": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Indica": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Joint": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Northern Lights": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_OG_Kush": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Pot_Brownie": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Sativa": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Shatter": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Snuff": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Sour_Diesel": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Strawberry_Cough": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Tobacco": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Wax": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_Weed-Infused_Skooma": "{{i18n:Vincent.CGD.drugs}}$3",
+				"GiftReaction_White_Widow": "{{i18n:Vincent.CGD.drugs}}$3",
+			},
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, PurrplingCat.CustomGiftDialogue, PPJA.cannabiskit",
+			},
+		},
+		
+// SSATURN'S ORIENTAL KITCHEN
+		
+		{
+			"LogName": "Vincent Gift Taste Changes - SSaturn's Oriental Kitchen",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+
+				{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", "5"], 
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Bak Pao}} {{spacechase0.JsonAssets/ObjectId:Char Siu}} {{spacechase0.JsonAssets/ObjectId:Siu Mai}}",
+				"Delimiter": " "
+				},
+			],
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, SSaturn.OrientalKitchen.withFreshMeat",
+			},
+		},
+		{
+			"LogName": "Vincent Gift Taste Changes - SSaturn's Oriental Kitchen CGD",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"GiftReaction_Bak_Pao": "{{i18n:Vincent.CGD.pork}}$3",
+				"GiftReaction_Char_Siu": "{{i18n:Vincent.CGD.pork}}$3",
+				"GiftReaction_Siu_Mai": "{{i18n:Vincent.CGD.pork}}$3",
+			},
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, PurrplingCat.CustomGiftDialogue, SSaturn.OrientalKitchen.withFreshMeat",
+			},
+		},
+		
+// CHAMPAGNE WISHES
+		
+		{
+			"LogName": "Vincent Gift Taste Changes - Champagne Wishes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+
+				{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", "7"], 
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Black Velvet Cocktail}} {{spacechase0.JsonAssets/ObjectId:Champagne}} {{spacechase0.JsonAssets/ObjectId:Champagne Cocktail}} {{spacechase0.JsonAssets/ObjectId:Kir Imperial}} {{spacechase0.JsonAssets/ObjectId:Kir Royal}}",
+				"Delimiter": " "
+				},
+			],
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, fwippy.champagnewishes",
+			},
+		},
+		{
+			"LogName": "Vincent Gift Taste Changes - Champagne Wishes CGD",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"GiftReaction_Black_Velvet_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Champagne": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Champagne_Cocktail": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Kir_Imperial": "{{i18n:Vincent.CGD.alcohol}}$3",
+				"GiftReaction_Kir_Royal": "{{i18n:Vincent.CGD.alcohol}}$3",
+			},
+			"When": 
+			{
+				"HasMod": "spacechase0.JsonAssets, PurrplingCat.CustomGiftDialogue, fwippy.champagnewishes",
+			},
+		},
+	],
+}

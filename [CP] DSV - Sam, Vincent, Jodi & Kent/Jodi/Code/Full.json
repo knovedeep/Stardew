@@ -1,0 +1,123 @@
+{
+// JODI DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Jodi Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jodi, Characters/Jodi",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JodiVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomJodi}}_{{JodiWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Jodi Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jodi, Characters/Jodi",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JodiVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestJodi}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Jodi Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jodi_Beach, Characters/Jodi_Beach",
+			"FromFile": "Jodi/{{TargetPathOnly}}/{{JodiVariant}}/{{TargetWithoutPath}}{{BeachStyleJodi}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// OVERLAYS
+
+		{
+			"LogName": "Jodi Joja Tote Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JodiVariant}}/Overlays/{{TargetWithoutPath}}_JojaTote.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "JojaMart",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Jodi Socks Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JodiVariant}}/Overlays/{{TargetWithoutPath}}_Socks_{{season}}_{{RandomJodi}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "SamHouse",
+				"JodiVariant |contains= modded": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Jodi Cleaning Overlay",
+			"Action": "EditImage",
+			"Target": "Portraits/Jodi",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JodiVariant}}/Overlays/{{TargetWithoutPath}}_Cleaning_{{season}}_{{RandomJodi}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "SamHouse",
+				"Time": "{{Range: 0800, 1120}}",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Jodi Cleaning Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JodiVariant}}/Overlays/{{TargetWithoutPath}}_Cleaning.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "SamHouse",
+				"Time": "{{Range: 0800, 1120}}",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Jodi Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Jodi/Misc/Jodi_Emoji_{{JodiVariant}}.png",
+			"ToArea": {"X": 45, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"JodiVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Jodi Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "Jodi/Misc/BundleSprites_Jodi.png",
+			"ToArea": { "X": 192, "Y": 0, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"JodiVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+			
+	]
+}

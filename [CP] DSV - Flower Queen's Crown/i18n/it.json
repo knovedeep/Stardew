@@ -1,0 +1,248 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.FlowerQueensCrown.name": "CoronaReginaFiori",
+	"config.FlowerQueensCrown.description": "Dai ad altri NPC la possibilità di essere la regina dei fiori durante la danza dei fiori. Se 'casuale' è selezionato, una persona sarà scelta ogni anno, mentre se 'tutti' è selezionato, tutti i cittadini ammissibili indosseranno le corone Flower Queen.",
+	"config.FlowerQueensCrown.values.Random": "Casuale",
+	"config.FlowerQueensCrown.values.Everyone": "Tutti",
+
+	"config.TownspeopleOnly.name": "SoloPersoneCittà",
+	"config.TownspeopleOnly.description": "Dai agli NPC personalizzati di essere la regina dei fiori durante la danza dei fiori. Imposta su 'vero' se si desidera solo i candidati al matrimonio di Pelican Town e i propri figli di essere ammissibili.",
+	"config.TownspeopleOnly.values.True": "Vero",
+	"config.TownspeopleOnly.values.False": "Falso",
+	
+// CHARACTER VARIANTS
+	
+	"config.AbigailVariant.name": "AbigailVariante",
+	"config.AbigailVariant.values.VanillaStraightSize": "VanillaMagra",
+	"config.AbigailVariant.values.VanillaPlusSize": "VanillaGrassa",
+	"config.AbigailVariant.values.ModdedStraightSize": "ModdedMagra",
+	"config.AbigailVariant.values.ModdedPlusSize": "ModdedGrassa",
+	"config.AbigailVariant.values.Off": "Disabilitato",
+
+	"config.AlexVariant.name": "AlexVariante",
+	"config.AlexVariant.values.Vanilla": "Vanilla",
+	"config.AlexVariant.values.Samoan": "Samoano",
+	"config.AlexVariant.values.Mexican": "Messicano",
+	"config.AlexVariant.values.Off": "Disabilitato",
+
+	"config.EmilyVariant.name": "EmilyVariante",
+	"config.EmilyVariant.values.Black": "Nera",
+	"config.EmilyVariant.values.Romani": "Rom",
+	"config.EmilyVariant.values.Off": "Disabilitato",
+	
+	"config.ElliottVariant.name": "ElliottVariante",
+	"config.ElliottVariant.values.Modded": "Modded",
+	"config.ElliottVariant.values.Vanilla": "Vanilla",
+	"config.ElliottVariant.values.Off": "Disabilitato",
+	
+	"config.HaleyVariant.name": "HaleyVariante",
+	"config.HaleyVariant.values.Black": "Nera",
+	"config.HaleyVariant.values.Romani": "Rom",
+	"config.HaleyVariant.values.Off": "Disabilitato",
+
+	"config.HarveyVariant.name": "HarveyVariante",
+	"config.HarveyVariant.values.Vanilla": "Vanilla",
+	"config.HarveyVariant.values.ModdedNonSikh": "ModdedNonSikh",
+	"config.HarveyVariant.values.ModdedSikh": "ModdedSikh",
+	"config.HarveyVariant.values.Off": "Disabilitato",
+	
+	"config.JasVariant.name": "JasVariante",
+	"config.JasVariant.values.Vanilla": "Vanilla",
+	"config.JasVariant.values.Modded": "Modded",
+	"config.JasVariant.values.Off": "Disabilitato",
+
+	"config.LeahVariant.name": "LeahVariante",
+	"config.LeahVariant.values.Vanilla": "Vanilla",
+	"config.LeahVariant.values.Native": "Nativa",
+	"config.LeahVariant.values.Butch": "Maschiaccio",
+	"config.LeahVariant.values.Off": "Disabilitato",
+	
+	"config.MaruVariant.name": "MaruVariante",
+	"config.MaruVariant.values.Vanilla": "Vanilla",
+	"config.MaruVariant.values.ModdedNotsnufffie": "ModdedSenzaSnufffie",
+	"config.MaruVariant.values.ModdedLavender": "ModdedLavanda",
+	"config.MaruVariant.values.Off": "Disabilitato",
+
+	"config.PennyVariant.name": "PennyVariante",
+	"config.PennyVariant.values.Vanilla": "Vanilla",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieLarge": "ModdedAirynSenzaSnufffieGrande",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieSmall": "ModdedAirynSenzaSnufffiePiccolo",
+	"config.PennyVariant.values.Mixed": "Mischiato",
+	"config.PennyVariant.values.Off": "Disabilitato",
+
+	"config.SamVariant.name": "SamVariante",
+	"config.SamVariant.values.Vanilla": "Vanilla",
+	"config.SamVariant.values.ModdedLighter": "ModdedChiaro",
+	"config.SamVariant.values.ModdedDarker": "ModdedScuro",
+	"config.SamVariant.values.Off": "Disabilitato",
+
+	"config.SebastianVariant.name": "SebastianVariante",
+	"config.SebastianVariant.values.Vanilla": "Vanilla",
+	"config.SebastianVariant.values.ModdedBlack": "ModdedNero",
+	"config.SebastianVariant.values.ModdedPurple": "ModdedViola",
+	"config.SebastianVariant.values.Off": "Disabilitato",
+
+	"config.ShaneVariant.name": "ShaneVariante",
+	"config.ShaneVariant.values.Vanilla": "Vanilla",
+	"config.ShaneVariant.values.Modded": "Modded",
+	"config.ShaneVariant.values.Off": "Disabilitato",
+	
+	"config.VincentVariant.name": "VincentVariante",
+	"config.VincentVariant.values.Vanilla": "Vanilla",
+	"config.VincentVariant.values.Modded": "Modded",
+	"config.VincentVariant.values.Off": "Disabilitato",
+	
+// EXTRAS
+	
+	"config.EmilyTattoos.name": "EmilyTatuaggi",
+	"config.EmilyTattoos.description": "Sceglie se Emily deve avere tatuaggi colorati o meno.",
+	"config.EmilyTattoos.values.Tattoos": "Tatuaggi",
+	"config.EmilyTattoos.values.NoTattoos": "SenzaTatuaggi",
+	
+	"config.HaleyAccessories.name": "HaleyAccessori",
+	"config.HaleyAccessories.description": "Dai ad Haley piercing sul naso e sopracciglia, e/o mettile i suoi polsini per capelli. I polsini si applicano solo alla variante 'nera' di Haley.",
+	"config.HaleyAccessories.values.BlackCam": "CameraNera",
+	"config.HaleyAccessories.values.Piercings": "Piercings",
+	"config.HaleyAccessories.values.Cuffs": "Polsini",
+	
+	"config.HarveyCharacterMustache.name": "BaffiPersonaggioHarvey",
+	"config.HarveyCharacterMustache.description": "Scegli se il personaggio di Harvey deve avere un paio di baffi che si abbinino ai suoi sprites. Influisce solo sulla variante Vanilla.",
+	"config.HarveyCharacterMustache.values.Mustache": "Baffi",
+	"config.HarveyCharacterMustache.values.NoMustache": "SenzaBaffi",
+	
+	"config.MaruCharacterGlasses.name": "OcchialiPersonaggioMaru",
+	"config.MaruCharacterGlasses.description": "Scegli se il personaggio di Maru deve avere gli occhiali che si abbinino ai suoi sprites. Influisce solo la variante Vanilla e la variante ModdedSenzaSnufffie.",
+	"config.MaruCharacterGlasses.values.Glasses": "Occhiali",
+	"config.MaruCharacterGlasses.values.NoGlasses": "SenzaOcchiali",
+	
+	"config.SamEyes.name": "OcchiSam",
+	"config.SamEyes.description": "Mantiene il colore degli occhi predefinito di Sam, o lo cambia in un colore alternativo, o gli dà eterocromia (ogni occhio è di un colore diverso).",
+	"config.SamEyes.values.Default": "Predefinito",
+	"config.SamEyes.values.Alternate": "Alternativo",
+	"config.SamEyes.values.Heterochromia": "Eterocromia",
+	
+	"config.SamExtras.name": "ExtraSam",
+	"config.SamExtras.description": "Dà a Sam stoppie, barba e/o piercing alle labbra e sulle sopracciglia.",
+	"config.SamExtras.values.Stubble": "Stoppie",
+	"config.SamExtras.values.Beard": "Barba",
+	"config.SamExtras.values.Piercings": "Piercings",
+	
+	"config.SebGlasses.name": "OcchialiSebastian",
+	"config.SebGlasses.description": "Dai occhiali a Sebastian. (L'opzione 'Dinamico' non è disponibile in FQC).",
+	"config.SebGlasses.values.Dynamic": "Dinamico",
+	"config.SebGlasses.values.Glasses": "Occhiali",
+	"config.SebGlasses.values.NoGlasses": "SenzaOcchiali",
+	
+	"config.SebPiercings.name": "SebastianPiercings",
+	"config.SebPiercings.description": "Metti piercing alle labbra e alle orecchie a Sebastian.",
+	"config.SebPiercings.values.Piercings": "Piercings",
+	"config.SebPiercings.values.NoPiercings": "SenzaPiercings",
+	
+// VANILLA NPC DIALOGUE CHANGES
+
+// ABIGAIL QUEEN
+	"dialogue.FQC.AbigailQueen": "Questa cosa della Regina dei Fiori è piuttosto stupida, eh? Ma almeno non c'è da fare nessun discorso o cose così. Potrebbe andare peggio.",
+	
+// ALEX QUEEN
+	"dialogue.FQC.AlexQueen": "Nonna è davvero felice di vedermi come Regina dei Fiori. Lei cresce i fiori per le corone ogni anno.$h",
+	
+// EMILY QUEEN
+	"dialogue.FQC.EmilyQueen": "La Regina dei Fiori conduce tradizionalmente la danza ogni anno. Mi piace sempre sentire l'energia di tutti che seguono i miei passi!$h",
+	
+// ELLIOTT QUEEN
+	"dialogue.FQC.ElliottQueen": "Come Regina dei Fiori, devo recitarti un poema della molla mai-rinnovantesi, @?$h#$b#Aspetta, forse ho mescolato cose?...$8",
+	
+// HALEY QUEEN
+	"dialogue.FQC.HaleyNotQueen": "Sto provando i miei passi di danza... Devo essere perfetta.#$e#Vincerò la corona l'anno prossimo, guarda!$h",
+	"dialogue.FQC.HaleyQueen": "Mi sto esercitando con le mie mosse di danza... Devo essere perfetta.#$e#Sono stata regina dei fiori 5 volte e non sono ancora pronta a scendere dal trono!",
+	
+// HARVEY QUEEN
+	"dialogue.FQC.HarveyQueen": "@, lo sai che i fiori nella corona della regina sono tradizionalmente utilizzati per scopi medicinali? Non fare caso a me, sto solo cercando di distrarmi dal pensare al ballo.$s",
+	
+// JAS QUEEN
+	"dialogue.FQC.JasQueen": "Heehee, sono la Regina dei Fiori quest'anno!$h",
+    "dialogue.FQC.Mia.JasQueen": "Jas sembra così bella come Regina dei Fiori, non credi?$1#$b#Faresti meglio a congratularti con lei, @. O tu ed io averemo dei problemi.$5", 
+    "dialogue.FQC.Sterling.JasQueen": "Sarà meglio che Shane si consideri un uomo fortunato, con una ragazza così illustre come nipote.$10#$e#Essendo imparentato letteralmente con una regina, lo possiamo prendere un po' in giro.$10",
+	
+// LEAH QUEEN
+	"dialogue.FQC.LeahQueen": "Ciao, @. Penso che dovrei dipingere un autoritratto di me come Regina dei Fiori prima di restituire la corona?$h",
+    "dialogue.FQC.Mia.LeahQueen": "Pensi che Leah vorrà ballare con me ora che è diventata regina?$3#$e#Assicurati di congratularti con lei! Sembra un dipinto con quella corona. Come se si fondesse con la natura in qualsiasi momento.",
+	
+// MARU QUEEN
+	"dialogue.FQC.MaruQueen": "La corona della Regina dei Fiori è graziosa, ma mi domando se potrei fare una corona con foglie e pezzi di metallo...#$e#Forse con i LED nei fiori...?",
+	
+// PENNY QUEEN
+	"dialogue.FQC.PennyQueen": "Sono la regina dei fiori quest'anno...$l#$b#Sono lusingata, ma anche un po' imbarazzata.",
+	
+// SAM QUEEN
+	"dialogue.FQC.SamQueen": "Regina dei fiori, sì! Le corone dei fiori sono le migliori!$h#$b#Anche se mi fanno prudere il naso tantissimo...",
+	
+// SEBASTIAN QUEEN
+	"dialogue.FQC.SebastianQueen": "Voglio bruciare questa stupida corona. Chi ha votato per me come Regina dei Fiori?$a",
+	
+// SHANE QUEEN
+	"dialogue.FQC.ShaneQueenPre6": "Questo è uno scherzo... perché mai qualcuno sceglierebbe me come Regina dei Fiori...$s",
+	"dialogue.FQC.ShaneQueenPost6": "Ehi, @, come Regina dei Fiori, ti ordino di passarmi una di quelle piccole torte.$h",
+    "dialogue.FQC.Sterling.ShaneQueen": "Oh mamma. Hai visto la faccia di Shane? Devo dire, lui è il mio preferito Regina dei Fiori finora. $10#$e#Scusa, Haley.$10",
+	
+// VINCENT QUEEN
+	"dialogue.FQC.VincentQueen": "Evviva, sono la Regina dei Fiori! Hai visto la mia corona, @? È così bella!$h",
+	"dialogue.FQC.RSVSean.VincentQueen": "Aww, Sono contento che hanno scelto Vincent quest'anno! Quella corona gli dona.$h",
+    "dialogue.FQC.Sterling.VincentQueen": "Aww, il piccolino quest'anno ha vinto ed è diventato Re dei Fiori.$9#$b#O dovrei dire Regina dei Fiori? Suppongo che non hanno mai veramente cambiato il titolo. Va bene lo stesso.$1",
+    "dialogue.FQC.Mia.VincentQueen": "Vincent non sembra adorabile? Questo è il mio bambino!$3#$b#Una vittoria più che meritata. L'unico vero Regina dei Fiori per me.$1",
+	
+// CUSTOM NPC DIALOGUE CHANGES
+
+// ALWAYS RAINING IN THE VALLEY NPCS
+
+// MIA QUEEN
+// Mia Single
+    "dialogue.FQC.Sterling.MiaQueen.Single": "Beh, sembra che questa città ha finalmente sviluppato un po' di gusto. Vorrei aggiungere che tu eri la mia seconda scelta, ma penso che Mia meriti il suo momento sotto i riflettori questa volta.$10",
+    "dialogue.FQC.Henry.MiaQueen.Single": "Così Mia ha vinto, eh? Non posso dire di essere sorpreso. Ha sicuramente avuto il mio voto.#$b#Senza offesa per la concorrenza, naturalmente. È solo che...è davvero difficile non fare favoritismi a volte.$4",
+    "dialogue.FQC.Mia.MiaQueen.Single": "Oh mio Dio, @. *@*. Hai votato per me?$4#$b#Non sapevo nemmeno di poter essere votata, ma poi Aideen e Lewis sono venuti da me per incoronarmi e... Non posso crederci.$4#$b#Mi sento così felice!$3#$b#Ho sempre sognato di sentirmi come una di quelle belle ragazze nelle riviste... Mi dispiace, @. Mi sto emozionando per una stupida corona di fiori.$4#$e#Grazie per avermi votato.$3",
+    "dialogue.FQC.Harvey.MiaQueen.Single": "Hai visto Mia quest'anno? Ha vinto Flower Queen e sembra che potrebbe scoppiare dalla gioia.$4#$b#È francamente una vista incredibilmente dolce. Un titolo ben meritato, direi.",
+    "dialogue.FQC.Leah.MiaQueen.Single": "Sono davvero contenta che qualcuno diverso da Haley ha vinto quest'anno.#$b#E Sono particolarmente contenta che qualcuno è Mia. La ragazza se lo merita.$1",
+    "dialogue.FQC.Elliot.MiaQueen.Single": "Sembra come se un fiore straniero fosse sbocciato e avesse raggiunto il suo pieno splendore.#$b#Sto cercando di descrivere quello che porvato quando hanno incoronato Mia. Mi porta gioia vederla così felice.$1",
+    "dialogue.FQC.RSVSean.MiaQueen.Single": "Cavolo, Mia sembra impressionante in quella corona! Anche se l'avessi saputo in anticipo, avrei fatto di lei uno dei fiori di ciliegio e non-ti-scordar-di-me.$h",
+    "dialogue.FQC.Jas.MiaQueen": "Miss Mia sembra bella con quella corona, non credi?#$b#Sono davvero contenta che abbia vinto quest'anno. Lei e Miss Penny meritano entrambe così tanto!$1",
+
+// Mia Married
+    "dialogue.FQC.Sterling.MiaQueen.Married": "Chi è l'uomo sposato più fortunato del mondo?$10^Chi è la donna sposata più fortunata al mondo?$10#$b#Devi sentirti onorato di essere sposato con sua maestà.^Devi sentirti onorata di essere sposata con sua maestà.#$b#Sembra che sta adorando quella sua corona di fiori.",
+    "dialogue.FQC.Henry.MiaQueen.Married": "Devi essere orgoglioso di lei. Sai, non tutti possono dire di essere sposati con la Regina dei Fiori.^Devi essere orgogliosa di lei. Sai, non tutti possono dire di essere sposati con la Regina dei Fiori.#$b#So che non importa più di tanto, ma a volte è bello fare un buffet con un cupcake. Goditi i piccoli momenti come se fossero quelli grandi.$1",
+    "dialogue.FQC.Mia.MiaQueen.Married": "Tesoro! Tesoro! Tesoro! Hai visto? Hai sentito? Hai sentito vero?$1#$b#Sono stato incoronata Regina dei Fiori quest'anno! Io! Io! Non posso crederci.$3#$b#Mi sento così... fortunata e bella. Proprio come sognavo di sentirmi un giorno quando ero più giovane.$4#$b#... Ahhh.... Oggi è semplicemente magico. Grazie per essere una parte della magia.$8",
+    "dialogue.FQC.Harvey.MiaQueen.Married": "Ti sei già congratulato con Mia per la sua incoronazione? Sembra che stia brillando.^Ti sei già congratulata con Mia per la sua incoronazione? Sembra che stia brillando.#$b#Sei fortunato ad aver sposato una bellezza così primaverile.^Sei fortunata ad aver sposato una bellezza così primaverile.",
+	
+// STERLING QUEEN
+// Sterling Single
+    "dialogue.FQC.Sterling.SterlingQueen.Single": "Bene, questo è...$4#$b#*Incredibilmente* inaspettato?$9#$b#Riesco a malapena a credere all'idea di ricevere dei fiori come un uomo, per non parlare di essere incoronato Regina dei Fiori, io...$4#$b#Se in parte è opera tua, @, grazie.#$e#Detto questo, vorrei ringraziare l'Accademia, prima di tutto. Pierre e tutti i miei mentori, mio padre che se n'è andato, mia madre che mi ha cresciuto...$10#$e#Mi vanterò di questa vittoria per i prossimi 5 anni. SOPRATTUTTO a Haley. Tutti lungo la costa di Ferngill saranno testimoni del mio regime spietato.$10",
+    "dialogue.FQC.Henry.SterlingQueen.Single": "...$8#$b#Oh, scusa @. Stavo solo cercando di capire come Sterling sia riuscito a diventare la Regina dei Fiori. Poi di nuovo, conoscendolo non dovrei davvero essere troppo sorpreso.#$b#Quel ragazzo con le parole riesce ad ottenere qualsiasi cosa, nel bene e nel male.#$b#Almeno sembra che si stia divertendo.$1",
+    "dialogue.FQC.Mia.SterlingQueen.Single": "Pare che qualcuno sis tia montando la testa per la vittoria di quest'anno. Ed ero anche indecisa se votare per lui.$5#$e#Sembra quasi splendere. Non importa quanto gongoli, so che la vittoria significa molto per lui.#$b#Ahh... Le cose che facciamo per coloro che amiamo.$9#$b#Non voglio sapere che cosa ne penserà Henry.$5",
+    "dialogue.FQC.Shane.SterlingQueen.Single": "Tch. Hai visto Sterling?$a#$b#Sembra dannatamente ridicolo con quella cosa addosso... Chiamalo un idiota per me, ok?$1#$e# ...Sembra stranamente felice con quella cosa addosso. Non sapevo che gli piacessero i fiori così tanto.$3",
+    "dialogue.FQC.Jas.SterlingQueen.Single": "...Hai visto Mr. Sterling oggi?$3#$b#È ... la Regina dei Fiori, proprio come Haley.$3#$b#Zio Shane dice che sembra uno sciocco, ma penso che abbia un bell'aspetto! Spero che mi lascino essere regina dopo!$1",
+
+// Sterling Married
+    "dialogue.FQC.Sterling.SterlingQueen.Married": "Come ci si sente ad essere sposato con la Regina dei Fiori? Ti senti già più importante, pasticcino?^Come ci si sente ad essere sposata con la Regina dei Fiori? Ti senti già più importante, pasticcino?$10#$e#Come mio primo mandato ufficiale, mi darai un bacio. Come secondo, ti decreto di ballare con me.#$b#E come terzo....$10#$b#Beh, questo può aspettare fino a quando non siamo a casa.#$e#Cosa? Se qualcuno mi darà una corona e una misura arbitraria del potere, puoi scommettere che mi darà alla testa.$10",
+    "dialogue.FQC.Henry.SterlingQueen.Married": "A questo punto, ho smesso di chiedermi come Sterling riesca a fare acrobazie come queste. Ha detto di avere qualcosa in piano per te?#$b#Oh bene. Almeno è stato tutto molto divertente. Anche se penso che potresti volerlo afferrare prima che lo ostenta di fronte alle signore. Penso che alcuni potrebbero essere un po' gelosi.",
+    "dialogue.FQC.Mia.SterlingQueen.Married": "Va bene, mi rimangio quello che ho detto. Questa è stata un'idea terribile. Il potere gli ha dato alla testa.$5#$b#Temo che potremmo dover tirare fuori la ghigliottina se non riesce a tornare in sé.$5",
+    
+// HENRY QUEEN
+// Henry Flower King Single
+    "dialogue.FQC.Sterling.HenryQueen.Single": "Suppongo che essere così affascinante abbia i suoi vantaggi occasionalmente.$10#$b#Mettergli una buona parola è servito...$10#$e#Cosa? Non ho fatto votare nessuno per lui, lo giuro. Ho solo messo il suo nome nel contest.$9#$e#Perché sì, sono molto contento di me stesso.$10",
+    "dialogue.FQC.Henry.HenryQueen.Single": "Non ho assolutamente idea di come sia successo. Non mi sono iscritto per nulla, e non riesco a immaginare perché qualcuno dovrebbe scegliermi.$4#$b#Già.Q-Questo deve essere una sorta di errore. Andrò solo uh... $4#$b#Andrò a vedere chi avrebbe dovuto vincere e mi assicurerò che questa corona trovi il suo legittimo proprietario.$6",
+    "dialogue.FQC.Mia.HenryQueen.Single": "Aww, non è adorabile Hen? Sono così felice ha vinto quest'anno!$3#$b#È completamente disperato e ha bisogno di un supporto morale, vorrei che potesse prendere questa vittoria per quello che è. La città lo apprezza!#$e#Ehi, non ... Non dirlo a suo padre, va bene?$2#$b#...$2#$b#Lui, uhm. Potrebbe non prenderla bene.$6#$e#Quindi aiutami a tirarlo su di morale, va bene?",
+    "dialogue.FQC.Leah.HenryQueen.Single": "Aww, hai visto Henry?$1#$b#Sono contenta che sia stato scelto quest'anno! Sembra adorabile. Forse lo incoraggerà a unirsi a noi più spesso.",
+
+// Henry Flower King Taken
+    "dialogue.FQC.Sterling.HenryQueen.Married": "Puoi dire a tuo marito che in effetti ha vinto lealmente? La corona è sua, può godersi la vittoria.$10#$$e#A mio parere, non sta per niente male con la corona. Perché non dargli un 'piccolo promemoria'?$10",
+    "dialogue.FQC.Henry.HenryQueen.Married": "Tesoro? Hai qualcosa a che fare con questo?#$b#Per quanto sia felice di essere il tuo Regina dei Fiori, credo che non sia giusto che io abbia un premio che non mi merito.$6#$b##Ora, se vuoi scusarmi, ho bisogno di vedere come risolvere questo problema prima che Sterling inizi a fare più battute.",
+    "dialogue.FQC.Mia.HenryQueen.Married": "@!! Henry è stato nominato Regina dei Fiori quest'anno, ci credete?$3#$e#Tuttavia, sembra che tra poco svenga dal calore, per favore date qualcosa di rinfrescante a quel pover uomo.$5#$b#E assicurariti che lui sappia che se lo merita, va bene?$1#$e#Cercherò di chiedere a Starling di non prenderlo in giro troppo.",
+    
+// EAST SCARP NPCS
+// ELOISE QUEEN
+    "dialogue.FQC.Mia.EloiseQueen": "Per l'amore di Yoba, Ellie sembra così carina con la sua corona di fiori che potrei quasi mangiarla.$4",
+    "dialogue.FQC.Sterling.EloiseQueen": "Hanno nominato la figlia di Jacob, Regina dei Fiori quest'anno, devono entrambi sentirsi così felici.",
+}
+	
+	
+	

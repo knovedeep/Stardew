@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.AbigailVariant.name": "AbigailVariant",
+	"config.AbigailVariant.values.VanillaStraightSize": "VanillaStraightSize",
+	"config.AbigailVariant.values.VanillaPlusSize": "VanillaPlusSize",
+	"config.AbigailVariant.values.ModdedStraightSize": "ModdedStraightSize",
+	"config.AbigailVariant.values.ModdedPlusSize": "ModdedPlusSize",
+	"config.AbigailVariant.values.Off": "Off",
+	
+	"config.AbigailLightweightConfig.name": "AbigailLightweightConfig",
+	"config.AbigailLightweightConfig.description": "Toggles whether Abigail will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.AbigailLightweightConfig.values.Full": "Full",
+	"config.AbigailLightweightConfig.values.Light": "Light",
+	"config.AbigailLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.CarolineVariant.name": "CarolineVariant",
+	"config.CarolineVariant.values.Vanilla": "Vanilla",
+	"config.CarolineVariant.values.Modded": "Modded",
+	"config.CarolineVariant.values.Off": "Off",
+	
+	"config.CarolineLightweightConfig.name": "CarolineLightweightConfig",
+	"config.CarolineLightweightConfig.description": "Toggles whether Caroline will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.CarolineLightweightConfig.values.Full": "Full",
+	"config.CarolineLightweightConfig.values.Light": "Light",
+	"config.CarolineLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.PierreVariant.name": "PierreVariant",
+	"config.PierreVariant.values.Vanilla": "Vanilla",
+	"config.PierreVariant.values.Modded": "Modded",
+	"config.PierreVariant.values.Off": "Off",
+	
+	"config.PierreLightweightConfig.name": "PierreLightweightConfig",
+	"config.PierreLightweightConfig.description": "Toggles whether Pierre will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.PierreLightweightConfig.values.Full": "Full",
+	"config.PierreLightweightConfig.values.Light": "Light",
+	"config.PierreLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.MaternitySprites.name": "MaternitySprites",
+	"config.MaternitySprites.description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MaternitySprites.values.True": "True",	
+	"config.MaternitySprites.values.False": "False",
+	
+	"config.Pyjamas.name": "Pyjamas",
+	"config.Pyjamas.description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.Pyjamas.values.True": "True",	
+	"config.Pyjamas.values.False": "False",
+	"config.Pyjamas.values.Marriage": "Marriage",
+	
+	"config.PlatonicNPCs.name": "PlatonicNPCs",
+	"config.PlatonicNPCs.description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.WeddingOutfitAbigail.name": "WeddingOutfitAbigail",
+	"config.WeddingOutfitAbigail.description": "Selects which wedding outfit Abigail will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitAbigail.values.1": "1",
+	"config.WeddingOutfitAbigail.values.2": "2",
+	"config.WeddingOutfitAbigail.values.3": "3",
+	"config.WeddingOutfitAbigail.values.4": "4",
+	"config.WeddingOutfitAbigail.values.5": "5",
+	"config.WeddingOutfitAbigail.values.6": "6",
+	
+	"config.RidgesideVillageBert.name": "RidgesideVillageBert",
+	"config.RidgesideVillageBert.description": "Adds compatible portraits and sprites for Ridgeside Village's Bert, so that he is Filipino to match his cousin Caroline's modded DSV variant.",
+	"config.RidgesideVillageBert.values.Modded": "Modded",
+	"config.RidgesideVillageBert.values.Off": "Off",
+	
+	"config.RidgesideVillageTrinnie.name": "RidgesideVillageTrinnie",
+	"config.RidgesideVillageTrinnie.description": "Adds compatible portraits and sprites for Ridgeside Village's Trinnie, so that she is mixed Filipino-German to match her aunt Caroline's modded DSV variant. A black-haired or green-haired version is available.",
+	"config.RidgesideVillageTrinnie.values.ModdedBlack": "ModdedBlack",
+	"config.RidgesideVillageTrinnie.values.ModdedGreen": "ModdedGreen",
+	"config.RidgesideVillageTrinnie.values.Off": "Off",
+	
+}
+	
+	
+	

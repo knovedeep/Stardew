@@ -1,0 +1,7 @@
+{
+	"Name": "Enchanter Hat",
+	"Description": "A green hat with a golden ribbon.",
+	"PurchasePrice": "1000",
+	"ShowHair": true,
+	"IgnoreHairstyleOffset": true
+}

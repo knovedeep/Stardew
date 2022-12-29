@@ -1,0 +1,7 @@
+{
+	"Name": "Starry Wizard Hat",
+	"Description": "A hat made in a fabric looking like a starry night.",
+	"PurchasePrice": "1000",
+	"ShowHair": true,
+	"IgnoreHairstyleOffset": true
+}

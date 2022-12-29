@@ -1,0 +1,732 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// ABIGAIL WEATHER
+		{
+			"Name": "AbigailWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "AbigailWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"AbigailLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "AbigailWeatherVariant",
+			"Value": "{{Random: Rain, Rain2 |key= AbigailMain}}",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"AbigailLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "AbigailWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"AbigailLightweightConfig |contains= light": true,
+			},
+		},
+		{
+			"Name": "AbigailWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"AbigailLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "AbigailWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"AbigailLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// CAROLINE WEATHER
+		{
+			"Name": "CarolineWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "CarolineWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"CarolineLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "CarolineWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"CarolineLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "CarolineWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"CarolineLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "CarolineWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"CarolineLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// PIERRE WEATHER
+		{
+			"Name": "PierreWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "PierreWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"PierreLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PierreWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"PierreLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PierreWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"PierreLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PierreWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"PierreLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomAbigail",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomAbigail",
+			"Value": "{{Random: 1, 2, 3|key= AbigailMain}}",
+			"When":
+			{
+				"AbigailLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomFestivalAbigail",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalAbigail",
+			"Value": "{{Random: 1, 2 |key= AbigailFestival}}",
+			"When":
+			{
+				"AbigailLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true,
+			},
+		},
+		{
+			"Name": "RandomPierre",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomCaroline",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomCaroline",
+			"Value": "{{Random: 1, 2|key= CarolineMain}}",
+			"When":
+			{
+				"CarolineLightweightConfig |contains= full": true,
+			},
+		},
+
+// SPECIAL - AEROBICS
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"Time": "{{Range: 0900, 1600}}",
+				"LocationName": "SeedShop",
+				"Weather |contains= Rain, Storm": false,
+				"CarolineLightweightConfig |contains= full": true,
+				"CarolineVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"LocationName": "SeedShop",
+				"Weather |contains= Rain, Storm": false,
+				"CarolineLightweightConfig |contains= light": true,
+				"CarolineVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"LocationName": "SeedShop",
+				"Hearts:Harvey": "{{Range: 6, 14}}",
+				"Time": "{{Range: 1100, 1500}}",
+				"HasSeenEvent |contains= 58": false,
+				"CarolineLightweightConfig |contains= full": true,
+				"CarolineVariant |contains= off": false,	
+			},
+		},
+		
+// SPECIAL - SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true,
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker",
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"Season": "summer",
+				"LocationName": "Beach",
+				"Weather": "sun, wind",
+				"DayEvent |contains= dance of the moonlight jellies, luau, Moonshine Barbecue, Pelican Town Potluck": false,
+			}
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+		{
+			"Name": "WeddingGuestAbigail",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestAbigail",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"AbigailLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"AbigailVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestAbigail",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"AbigailLightweightConfig |contains= ultralight": false,
+				"AbigailVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestAbigail",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"AbigailLightweightConfig |contains= full": true,		
+				"AbigailVariant |contains= off": false,			
+			}
+		},
+		{
+			"Name": "WeddingGuestCaroline",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestCaroline",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"CarolineLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"CarolineVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestCaroline",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"CarolineLightweightConfig |contains= ultralight": false,
+				"CarolineVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestCaroline",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"CarolineLightweightConfig |contains= full": true,	
+				"CarolineVariant |contains= off": false,				
+			}
+		},
+		{
+			"Name": "WeddingGuestPierre",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestPierre",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"PierreLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"PierreVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestPierre",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"PierreLightweightConfig |contains= ultralight": false,
+				"PierreVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestPierre",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"PierreLightweightConfig |contains= full": true,	
+				"PierreVariant |contains= off": false,				
+			}
+		},
+		
+// ABIGAIL FILIPINO WEDDING DRESS / SPANISH WEDDING DRESS COMPAT
+
+		{
+			"Name": "WeddingOutfitAbigailToken",
+			"Value": "{{WeddingOutfitAbigail}}",
+		},
+		{
+			"Name": "WeddingOutfitAbigailToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.AbigailSpanishWeddingDress": false,
+				"WeddingOutfitAbigail": "6",
+			},
+		},
+		{
+			"Name": "WeddingOutfitAbigailToken",
+			"Value": "6_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.AbigailSpanishWeddingDress": true,
+				"WeddingOutfitAbigail": "6",
+			},
+		},
+		
+// PYJAMAS
+		{
+			"Name": "PyjamasAbigail",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasAbigail",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, SeedShop": true,
+				"Query: {{Time}} <= 0750 OR {{Time}} > 2200": true,
+				"AbigailLightweightConfig |contains= full": true,
+				"AbigailVariant |contains= off": false,	
+				"Pyjamas |contains= true": true,
+			}
+		},
+		{
+			"Name": "PyjamasAbigail",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} <= 0750 OR {{Time}} > 2200": true,
+				"Relationship:Abigail": "Married",
+				"AbigailLightweightConfig |contains= full": true,
+				"AbigailVariant |contains= off": false,	
+				"Pyjamas |contains= marriage": true,
+			}
+		},
+		
+// MATERNITY
+		{
+			"Name": "MaternityAbigail",
+			"Value": "",
+		},
+		{
+			"Name": "MaternityAbigail",
+			"Value": "Maternity",
+			"When":
+			{
+				"Pregnant |contains= Abigail": true,
+				"MaternitySprites": true,
+				"AbigailLightweightConfig |contains= ultralight": false,
+				"AbigailVariant |contains= off": false,	
+			}
+		},
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"AbigailVariant":
+		{
+			"AllowValues": "VanillaStraightSize, VanillaPlusSize, ModdedStraightSize, ModdedPlusSize, off",
+			"Default": "VanillaStraightSize",
+		},
+		"AbigailLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Abigail will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"CarolineVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"CarolineLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Caroline will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"PierreVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"PierreLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Pierre will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+		},
+		
+//Additional options
+		"MaternitySprites":
+		{
+			"AllowValues": "false, true",
+			"Default": "false",
+			"Description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"PlatonicNPCs":
+		{
+			"AllowValues": "Abigail",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+            "Default": "Abigail",
+			"Description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+		},
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"Pyjamas":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"WeddingOutfitAbigail":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Abigail will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+		"RidgesideVillageBert":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off",
+			"Description": "Adds compatible portraits and sprites for Ridgeside Village's Bert, so that he is Filipino to match his cousin Caroline's modded DSV variant."
+		},
+		"RidgesideVillageTrinnie":
+		{
+			"AllowValues": "ModdedBlack, ModdedGreen, off",
+			"Default": "off",			
+			"Description": "Adds compatible portraits and sprites for Ridgeside Village's Trinnie, so that she is mixed Filipino-German to match her aunt Caroline's modded DSV variant. A black-haired or green-haired version is available."
+		},
+	},
+	"Changes":[
+		{
+			"LogName": "Abigail Main",
+			"Action": "Include",
+			"FromFile": "Abigail/Code/{{AbigailLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AbigailVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.LavenderAbigail, piper.holychurros": false,
+			},
+		},
+		{
+			"LogName": "Caroline Main",
+			"Action": "Include",
+			"FromFile": "Caroline/Code/{{CarolineLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"CarolineVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.AlkantheCaroline, DSVTeam.AddOnPack.AirynCaroline, piper.holychurros": false,
+			},
+		},
+		{
+			"LogName": "Pierre Main",
+			"Action": "Include",
+			"FromFile": "Pierre/Code/{{PierreLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PierreVariant |contains= off": false,
+				"HasMod |contains= piper.holychurros": false,
+			},
+		},
+		{
+			"LogName": "RSV Bert",
+			"Action": "Include",
+			"FromFile": "RSVCompat/Code/RSV_DSV_Bert.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"RidgesideVillageBert |contains= off": false,
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"HasMod |contains= piper.holychurros": false,
+			},
+		},
+		{
+			"LogName": "RSV Trinnie",
+			"Action": "Include",
+			"FromFile": "RSVCompat/Code/RSV_DSV_Trinnie.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"RidgesideVillageTrinnie |contains= off": false,
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"HasMod |contains= piper.holychurros": false,
+			},
+		},
+	]
+}

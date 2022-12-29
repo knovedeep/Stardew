@@ -1,0 +1,7 @@
+{
+	"Name": "Pansies Crown",
+	"Description": "A crown of delicate pansies.",
+	"PurchasePrice": "1000",
+	"ShowHair": true,
+	"IgnoreHairstyleOffset": true
+}

@@ -1,0 +1,248 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.FlowerQueensCrown.name": "FlowerQueensCrown",
+	"config.FlowerQueensCrown.description": "Gives other NPCs a chance to be Flower Queen during the Flower Dance. If 'random' is selected, one person will be chosen each year, while if 'everyone' is selected, all eligible townspeople will wear Flower Queen crowns.",
+	"config.FlowerQueensCrown.values.Random": "Random",
+	"config.FlowerQueensCrown.values.Everyone": "Everyone",
+
+	"config.TownspeopleOnly.name": "TownspeopleOnly",
+	"config.TownspeopleOnly.description": "Allows custom NPCs to be Flower Queen candidates as well. Set to 'true' if you only want the Pelican Town marriage candidates and children to be eligible.",
+	"config.TownspeopleOnly.values.True": "True",
+	"config.TownspeopleOnly.values.False": "False",
+	
+// CHARACTER VARIANTS
+	
+	"config.AbigailVariant.name": "AbigailVariant",
+	"config.AbigailVariant.values.VanillaStraightSize": "VanillaStraightSize",
+	"config.AbigailVariant.values.VanillaPlusSize": "VanillaPlusSize",
+	"config.AbigailVariant.values.ModdedStraightSize": "ModdedStraightSize",
+	"config.AbigailVariant.values.ModdedPlusSize": "ModdedPlusSize",
+	"config.AbigailVariant.values.Off": "Off",
+
+	"config.AlexVariant.name": "AlexVariant",
+	"config.AlexVariant.values.Vanilla": "Vanilla",
+	"config.AlexVariant.values.Samoan": "Samoan",
+	"config.AlexVariant.values.Mexican": "Mexican",
+	"config.AlexVariant.values.Off": "Off",
+
+	"config.EmilyVariant.name": "EmilyVariant",
+	"config.EmilyVariant.values.Black": "Black",
+	"config.EmilyVariant.values.Romani": "Romani",
+	"config.EmilyVariant.values.Off": "Off",
+	
+	"config.ElliottVariant.name": "ElliottVariant",
+	"config.ElliottVariant.values.Modded": "Modded",
+	"config.ElliottVariant.values.Vanilla": "Vanilla",
+	"config.ElliottVariant.values.Off": "Off",
+	
+	"config.HaleyVariant.name": "HaleyVariant",
+	"config.HaleyVariant.values.Black": "Black",
+	"config.HaleyVariant.values.Romani": "Romani",
+	"config.HaleyVariant.values.Off": "Off",
+
+	"config.HarveyVariant.name": "HarveyVariant",
+	"config.HarveyVariant.values.Vanilla": "Vanilla",
+	"config.HarveyVariant.values.ModdedNonSikh": "ModdedNonSikh",
+	"config.HarveyVariant.values.ModdedSikh": "ModdedSikh",
+	"config.HarveyVariant.values.Off": "Off",
+	
+	"config.JasVariant.name": "JasVariant",
+	"config.JasVariant.values.Vanilla": "Vanilla",
+	"config.JasVariant.values.Modded": "Modded",
+	"config.JasVariant.values.Off": "Off",
+
+	"config.LeahVariant.name": "LeahVariant",
+	"config.LeahVariant.values.Vanilla": "Vanilla",
+	"config.LeahVariant.values.Native": "Native",
+	"config.LeahVariant.values.Butch": "Butch",
+	"config.LeahVariant.values.Off": "Off",
+	
+	"config.MaruVariant.name": "MaruVariant",
+	"config.MaruVariant.values.Vanilla": "Vanilla",
+	"config.MaruVariant.values.ModdedNotsnufffie": "ModdedNotsnufffie",
+	"config.MaruVariant.values.ModdedLavender": "ModdedLavender",
+	"config.MaruVariant.values.Off": "Off",
+
+	"config.PennyVariant.name": "PennyVariant",
+	"config.PennyVariant.values.Vanilla": "Vanilla",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieLarge": "ModdedAirynNotsnufffieLarge",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieSmall": "ModdedAirynNotsnufffieSmall",
+	"config.PennyVariant.values.Mixed": "Mixed",
+	"config.PennyVariant.values.Off": "Off",
+
+	"config.SamVariant.name": "SamVariant",
+	"config.SamVariant.values.Vanilla": "Vanilla",
+	"config.SamVariant.values.ModdedLighter": "ModdedLighter",
+	"config.SamVariant.values.ModdedDarker": "ModdedDarker",
+	"config.SamVariant.values.Off": "Off",
+
+	"config.SebastianVariant.name": "SebastianVariant",
+	"config.SebastianVariant.values.Vanilla": "Vanilla",
+	"config.SebastianVariant.values.ModdedBlack": "ModdedBlack",
+	"config.SebastianVariant.values.ModdedPurple": "ModdedPurple",
+	"config.SebastianVariant.values.Off": "Off",
+
+	"config.ShaneVariant.name": "ShaneVariant",
+	"config.ShaneVariant.values.Vanilla": "Vanilla",
+	"config.ShaneVariant.values.Modded": "Modded",
+	"config.ShaneVariant.values.Off": "Off",
+	
+	"config.VincentVariant.name": "VincentVariant",
+	"config.VincentVariant.values.Vanilla": "Vanilla",
+	"config.VincentVariant.values.Modded": "Modded",
+	"config.VincentVariant.values.Off": "Off",
+	
+// EXTRAS
+	
+	"config.EmilyTattoos.name": "EmilyTattoos",
+	"config.EmilyTattoos.description": "Chooses whether or not Emily has colorful tattoos.",
+	"config.EmilyTattoos.values.Tattoos": "Tattoos",
+	"config.EmilyTattoos.values.NoTattoos": "NoTattoos",
+	
+	"config.HaleyAccessories.name": "HaleyAccessories",
+	"config.HaleyAccessories.description": "Gives Haley nose and eyebrow piercings, and/or gives her hair cuffs. Hair cuffs only apply to Haley's Black variant.",
+	"config.HaleyAccessories.values.BlackCam": "BlackCam",
+	"config.HaleyAccessories.values.Piercings": "Piercings",
+	"config.HaleyAccessories.values.Cuffs": "Cuffs",
+	
+	"config.HarveyCharacterMustache.name": "HarveyCharacterMustache",
+	"config.HarveyCharacterMustache.description": "Gives Harvey's character/overworld sprite a mustache to match his portraits. Only affects the Vanilla variant.",
+	"config.HarveyCharacterMustache.values.Mustache": "Mustache",
+	"config.HarveyCharacterMustache.values.NoMustache": "NoMustache",
+	
+	"config.MaruCharacterGlasses.name": "MaruCharacterGlasses",
+	"config.MaruCharacterGlasses.description": "Gives Maru's character/overworld sprite glasses to match her portraits. Only affects the Vanilla and ModdedNotsnufffie variants.",
+	"config.MaruCharacterGlasses.values.Glasses": "Glasses",
+	"config.MaruCharacterGlasses.values.NoGlasses": "NoGlasses",
+	
+	"config.SamEyes.name": "SamEyes",
+	"config.SamEyes.description": "Keeps Sam's default eye color, changes it to an alternate color, or gives him heterochromia (each eye is a different color).",
+	"config.SamEyes.values.Default": "Default",
+	"config.SamEyes.values.Alternate": "Alternate",
+	"config.SamEyes.values.Heterochromia": "Heterochromia",
+	
+	"config.SamExtras.name": "SamExtras",
+	"config.SamExtras.description": "Gives Sam stubble, a beard, and/or lip and eyebrow piercings.",
+	"config.SamExtras.values.Stubble": "Stubble",
+	"config.SamExtras.values.Beard": "Beard",
+	"config.SamExtras.values.Piercings": "Piercings",
+	
+	"config.SebGlasses.name": "SebGlasses",
+	"config.SebGlasses.description": "Gives Sebastian glasses. ('Dynamic' option is not available in FQC).",
+	"config.SebGlasses.values.Dynamic": "Dynamic",
+	"config.SebGlasses.values.Glasses": "Glasses",
+	"config.SebGlasses.values.NoGlasses": "NoGlasses",
+	
+	"config.SebPiercings.name": "SebPiercings",
+	"config.SebPiercings.description": "Gives Sebastian lip and ear piercings.",
+	"config.SebPiercings.values.Piercings": "Piercings",
+	"config.SebPiercings.values.NoPiercings": "NoPiercings",
+	
+// VANILLA NPC DIALOGUE CHANGES
+
+// ABIGAIL QUEEN
+	"dialogue.FQC.AbigailQueen": "This Flower Queen thing is pretty stupid, huh? But at least there's no speech or anything. It could be worse.",
+	
+// ALEX QUEEN
+	"dialogue.FQC.AlexQueen": "Grams is really happy to see me as the Flower Queen. She grows the flowers for the crown each year.$h",
+	
+// EMILY QUEEN
+	"dialogue.FQC.EmilyQueen": "The Flower Queen traditionally leads the dance each year. I always love feeling the energy of everyone following my steps!$h",
+	
+// ELLIOTT QUEEN
+	"dialogue.FQC.ElliottQueen": "As the Flower Queen, shall I recite to you a poem of the ever-renewing spring, @?$h#$b#Wait, I have that the wrong way around, don't I?$8",
+	
+// HALEY QUEEN
+	"dialogue.FQC.HaleyNotQueen": "I'm practicing my dance moves... It needs to be perfect.#$e#I'll win back the crown next year, you watch!$h",
+	"dialogue.FQC.HaleyQueen": "I'm practicing my dance moves... It needs to be perfect.#$e#I've been flower queen 5 times and I'm not ready to step off the throne just yet!",
+	
+// HARVEY QUEEN
+	"dialogue.FQC.HarveyQueen": "@, did you know that the flowers in the queen's crown are traditionally used for medicinal purposes?#$e#Don't mind me, I'm just trying to distract myself from thinking of the dance.$s",
+	
+// JAS QUEEN
+	"dialogue.FQC.JasQueen": "Heehee, I'm the Flower Queen this year! $h",
+    "dialogue.FQC.Mia.JasQueen": "Jas looks so beautiful as Flower Queen, don't you think?$1#$b#You better have congratulated her already, @. Or you and I are going to have problems.$5", 
+    "dialogue.FQC.Sterling.JasQueen": "Shane better be considering himself a lucky man, having such an illustrious girl for a niece.$10#$e#Being related to a literal Queen better humble him some, they are no longer the same.$10",
+	
+// LEAH QUEEN
+	"dialogue.FQC.LeahQueen": "Hi, @. Think I should paint a self-portrait of me as Flower Queen before I have to hand back the crown?$h",
+    "dialogue.FQC.Mia.LeahQueen": "Do you think Leah will want to dance with me now she's become royalty?$3#$e#Be sure to congratulate her! She looks like a painting with that crown. Like she'll blend with nature at any point.",
+	
+// MARU QUEEN
+	"dialogue.FQC.MaruQueen": "The Flower Queen's crown is pretty, but I wonder if I could make a reusable crown out of wire and metal leaves?#$e#Maybe with LEDs in the flowers...?",
+	
+// PENNY QUEEN
+	"dialogue.FQC.PennyQueen": "I'm the Flower Queen this year...$l#$b#It's flattering, but also a little embarrassing.",
+	
+// SAM QUEEN
+	"dialogue.FQC.SamQueen": "Flower Queen, yeah! Flower crowns are the best!$h#$b#Even if they do make my nose run like crazy...",
+	
+// SEBASTIAN QUEEN
+	"dialogue.FQC.SebastianQueen": "Ugh, I want to burn this stupid crown. Who even voted for me as Flower Queen?$a",
+	
+// SHANE QUEEN
+	"dialogue.FQC.ShaneQueenPre6": "This is a joke... Don't know why anyone would pick a washed-up loser like me as Flower Queen.$s",
+	"dialogue.FQC.ShaneQueenPost6": "Hey, @, as the Flower Queen, I command you to pass me one of those little pies.$h",
+    "dialogue.FQC.Sterling.ShaneQueen": "My, my. Have you checked out Shane's face? I have to say, he's my favorite Flower Queen thus far.$10#$e#Sorry, Haley.$10",
+	
+// VINCENT QUEEN
+	"dialogue.FQC.VincentQueen": "Yay, I'm the Flower Queen! Did you see my crown, @? It's so pretty!$h",
+	"dialogue.FQC.RSVSean.VincentQueen": "Aww, I'm glad they chose Vincent this year! He looks so great in that crown.$h",
+    "dialogue.FQC.Sterling.VincentQueen": "Aww, little man won this year's Flower King.$9#$b#Or should I say Flower Queen? I do suppose they never really changed the title.#$e#Fits him either way.$1",
+    "dialogue.FQC.Mia.VincentQueen": "Doesn't Vincent look adorable? That's my boy!$3#$b#Sweet thing more than deserved the win. The only Flower Queen for me.$1",
+	
+// CUSTOM NPC DIALOGUE CHANGES
+
+// ALWAYS RAINING IN THE VALLEY NPCS
+
+// MIA QUEEN
+// Mia Single
+    "dialogue.FQC.Sterling.MiaQueen.Single": "Well it looks like this town finally developed some taste after all, with their Flower Queen choice and all.$1#$e#I would like to add my second choice would be you, farmer, but I think Mia deserves her moment in the spotlight this time around.$10",
+    "dialogue.FQC.Henry.MiaQueen.Single": "So Mia won, huh? Can't say I'm surprised. She definitely had my vote.#$b#No offense to the competition, of course. It's just...really hard not to play favorites sometimes.$4",
+    "dialogue.FQC.Mia.MiaQueen.Single": "Oh my god, @. *@*. Did you vote for me?$4#$b#I didn't even know I could be in the running, but then Aideen and Lewis came up to me to crown me and... I just can't believe it.$4#$b#I feel so happy!$3#$b#I always dreamed of feeling like one of those beautiful pageant girls in the magazines... I'm sorry, @. I'm getting all emotional over a silly little flower crown.$4#$e#Thank you for voting.$3",
+    "dialogue.FQC.Harvey.MiaQueen.Single": "Have you seen Mia this year? She's won Flower Queen and looks like she could burst from joy.$4#$b#It's quite frankly an incredibly sweet sight. A well deserved title, I might say.",
+    "dialogue.FQC.Leah.MiaQueen.Single": "I'm really glad someone other than Haley won this year.#$b#I'm especially glad that someone is Mia. Girl deserved it.$1",
+    "dialogue.FQC.Elliot.MiaQueen.Single": "It appears as though the foreign flower has blossomed and reached its truest splendor this year.#$b#I'm trying to say it would seem like Mia has become Flower Queen this year. It brings me delight to see her so happy.$1",
+    "dialogue.FQC.RSVSean.MiaQueen.Single": "Dang, Mia looks awesome in that crown! Though if I'd known ahead of time, I would've made her one of cherry blossoms and forget-me-nots.$h",
+    "dialogue.FQC.Jas.MiaQueen": "Miss Mia looks beautiful with that crown, don't you think?#$b#I'm really glad she won this year. She and Miss Penny both deserve it so much!$1",
+
+// Mia Married
+    "dialogue.FQC.Sterling.MiaQueen.Married": "Why, if it's not the luckiest married man alive?$10^Why, if it's not the luckiest married woman alive?$10#$b#Must feel good to be married to one such as her Flowery Majesty the queen.#$b#She looks like she's positively glowing wearing that flower crown. Make sure to remind her of that, alright?",
+    "dialogue.FQC.Henry.MiaQueen.Married": "You must be proud of her. You know, not everyone can say they're married to the Flower Queen.#$b#I know it doesn't matter too much, but sometimes it's nice to make a buffet out of a cupcake. Enjoy the little moments like they're the big ones.$1",
+    "dialogue.FQC.Mia.MiaQueen.Married": "Darling! Honey! Darling! Have you seen? Have you heard? Were you a part of this?$1#$b#I was crowned Flower Queen this year! Me! Me!! I can't believe it.$3#$b#I feel so... lucky and beautiful. Just how I dreamt of feeling someday when I was younger.$4#$b#... Ahhh.... Today is just magical. Thank you for being a part of it, my dear.$8",
+    "dialogue.FQC.Harvey.MiaQueen.Married": "Have you congratulated Mia on her crowning yet? She looks like she's glowing.#$b#You're lucky marrying such a spring beauty.",
+	
+// STERLING QUEEN
+// Sterling Single
+    "dialogue.FQC.Sterling.SterlingQueen.Single": "Well, this is...$4#$b#*Incredibly* unexpected?$9#$b#I can barely wrap my head around getting flowers as a man, let alone being crowned Flower King, I...$4#$b#If you had a hand in this, farmer, thank you.#$e#That being said, I would like to thank the Academy, first and foremost. Pierre and all my mentors, my father who left, my mother who raised me...$10#$e#I will be boasting about this win for the next 5 years. ESPECIALLY to Haley. Everyone along the Ferngill coastline will be witness to my ruthless regime.$10",
+    "dialogue.FQC.Henry.SterlingQueen.Single": "...$8#$b#Oh, sorry farmer. I was just trying to figure out how Sterling managed to become the Flower Queen. Then again, knowing him I really shouldn't be too surprised.#$b#That guy can talk his way out of and into just about anything, for better or worse.#$b#At least it seems he's having fun with it.$1",
+    "dialogue.FQC.Mia.SterlingQueen.Single": "Why, someone's getting in over his head over their win this year. I'm almost second-guessing putting his name in the running.$5#$e#But not really, it looks like he is glowing. No matter how much he gloats, I know the win means a lot to him.#$b#Ahh... The things we do for those we love.$9#$b#I'm not gonna hear the end of this from Henry.$5",
+    "dialogue.FQC.Shane.SterlingQueen.Single": "Tch. Have you seen Sterling?$a#$b#He looks pretty darn ridiculous with that thing on... Call him a dweeb for me, alright? $1#$e#... He looks weirdly happy with that thing on. Didn't know he liked flowers like that.$3",
+    "dialogue.FQC.Jas.SterlingQueen.Single": "... Have you seen Mr. Sterling today?$3#$b#He's like... the Flower Queen, just like Haley.$3#$b#Uncle Shane says he looks silly, but I think he looks great! I hope they let me be queen next!$1",
+
+// Sterling Married
+    "dialogue.FQC.Sterling.SterlingQueen.Married": "How does it feel? Being married to your resident Flower Queen. Feel important just yet, cupcake?$10#$e#As my first official mandate, you're going to give me a kiss. As the second, I decree you are to dance with me.#$b#And as the third....$10#$b#Well, that can wait until we're home.#$e#What? If someone's going to give me a crown and an arbitrary measure of power, you can bet it's going to go straight to my head.$10",
+    "dialogue.FQC.Henry.SterlingQueen.Married": "At this point, I've stopped asking myself how Sterling manages to pull stunts like this. Did he mention having any sort of plan to you?#$b#Oh well. At least it seems like it was all in good fun. Though I do think you might want to grab him before he flaunts it in front of the ladies. I think some might be a bit jealous.",
+    "dialogue.FQC.Mia.SterlingQueen.Married": "Alright, I take it back. This was a terrible idea. Man's gone mad with power.$5#$b#I'm afraid we might have to get out the guillotine if he can't get his stuff together.$5",
+    
+// HENRY QUEEN
+// Henry Flower King Single
+    "dialogue.FQC.Sterling.HenryQueen.Single": "I do suppose being this charming does have its occasional advantages.$10#$b#Like sugar-talking my way into getting Henry into the Flower Queen ballots, that is.$10#$e#What? I didn't make anyone vote for him, I promise. I just got his name to be in the running for Queen.$9#$e#Why yes, I am very happy with myself.$10",
+    "dialogue.FQC.Henry.HenryQueen.Single": "I-I have absolutely no idea how this happened. I didn't sign up for anything, and I can't imagine why anyone would pick me.$4#$b#Right. T-this must be some kind of mistake. I'll just uh...$4#$b#I'll just go see who was supposed to win and make sure this crown finds its rightful owner.$6",
+    "dialogue.FQC.Mia.HenryQueen.Single": "Aww, doesn't Hen just look great? I'm so happy that he won this year!$3#$b#Man is in dire need of a pick-me-up, I wish he could take this win for what it is. The town appreciates him!#$e#Hey, don't... Don't tell his dad, alright?$2#$b#...$2#$b#He, uhm. He might not take it as well.$6#$e#So help me cheer him up, alright?",
+    "dialogue.FQC.Leah.HenryQueen.Single": "Awww, have you seen Henry?$1#$b#I'm glad he got chosen this year! He looks adorable. Maybe it'll encourage him to come join us more often.",
+
+// Henry Flower King Taken
+    "dialogue.FQC.Sterling.HenryQueen.Married": "Can you tell your husband that he in fact won fair and square? Crown's his, he gets to enjoy the win.$10#$e#If you ask me, he's looking his most spiffy with it. Why don't you give him a little reminder?$10",
+    "dialogue.FQC.Henry.HenryQueen.Married": "Sweetheart? Did you have anything to do with this?#$b#As happy as I would be to call myself your Flower King, I feel bad taking this from someone who was really hoping to win this year.$6#$b#Now if you'll excuse me, I need to see about sorting this out before Sterling can make any more jokes.",
+    "dialogue.FQC.Mia.HenryQueen.Married": "@!! Henry won Flower Queen this year, can you believe it?$3#$e#However, he looks like he's one more congratulation away from overheating, so you might want to soothe the poor man a little.$5#$b#And make sure he knows he deserves it, alright?$1#$e#I'll try to keep Sterling from teasing him too much.",
+    
+// EAST SCARP NPCS
+// ELOISE QUEEN
+    "dialogue.FQC.Mia.EloiseQueen": "By Yoba's light, Ellie looks so cute with her flower crown I could just about eat her up.$4",
+    "dialogue.FQC.Sterling.EloiseQueen": "They named Jacob's daughter Flower Queen this year, they must both be feeling so happy.",
+}
+	
+	
+	

@@ -1,0 +1,64 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.PennyVariant.name": "PennyVariante",
+	"config.PennyVariant.values.Vanilla": "Vanilla",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieLarge": "ModdedAirynNotsnufffieGrande",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieSmall": "ModdedAirynNotsnufffiePiccolo",
+	"config.PennyVariant.values.Mixed": "Mischiato",
+	"config.PennyVariant.values.Off": "Disabilitato",
+	
+	"config.PennyLightweightConfig.name": "PennyConfigPesoleggero",
+	"config.PennyLightweightConfig.description": "Indica se Penny avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.PennyLightweightConfig.values.Full": "Intero",
+	"config.PennyLightweightConfig.values.Light": "Leggero",
+	"config.PennyLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.PamVariant.name": "PamVariante",
+	"config.PamVariant.values.Vanilla": "Vanilla",
+	"config.PamVariant.values.Modded": "Modded",
+	"config.PamVariant.values.Off": "Disabilitato",
+	
+	"config.PamLightweightConfig.name": "PamConfigPesoleggero",
+	"config.PamLightweightConfig.description": "Indica se Pam avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.PamLightweightConfig.values.Full": "Intero",
+	"config.PamLightweightConfig.values.Light": "Leggero",
+	"config.PamLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.PlatonicNPCs.name": "NPCPlatonici",
+	"config.PlatonicNPCs.description": "Aggiunge la compatibilità con Platonic Partners and Friendships di Amaranthacyan. Metti il nome del candidato in questa lista per avere i loro ritratti e sprites romantici sostituiti con le alternative platonic. Controlla il sito per maggiori informazioni.",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Aggiunge la compatibilità con la mod Looking For Love di foggywizard in modo che LFL dateable Pam corrisponderà alla variante Pam di DSV e con anche gli abiti stagionali. Selezionalo solo se hai Pam impostato su 'dateable' nelle opzioni di configurazione di LFL.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.Pyjamas.name": "Pigiama",
+	"config.Pyjamas.description": "Alterna se i candidati al matrimonio indosseranno o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosseranno solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.Pyjamas.values.True": "Vero",	
+	"config.Pyjamas.values.False": "Falso",
+	"config.Pyjamas.values.Marriage": "Matrimonio",
+	
+	"config.WeddingOutfitPenny.name": "OutfitMatrimonioPenny",
+	"config.WeddingOutfitPenny.description": "Seleziona quale abito da sposa Penny indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitPenny.values.1": "1",
+	"config.WeddingOutfitPenny.values.2": "2",
+	"config.WeddingOutfitPenny.values.3": "3",
+	"config.WeddingOutfitPenny.values.4": "4",
+	"config.WeddingOutfitPenny.values.5": "5",
+	"config.WeddingOutfitPenny.values.6": "6",
+	
+// PENNY SPOUSE PREGNANCY DIALOGUE REPLACEMENT
+
+	"Penny.HaveBabyQuestion": "Forse dovremmo adottare un bambino, {0}?",
+	"Penny.BirthMessage_SpouseMother": "Durante la notte, l'agenzia di adozioni vi ha portato {0} che aspettavate.",
+	"Penny.Strings.4443": "Oggi non ho proprio energie.... non puoi farti la colazione per conto tuo?$",
+	"Penny.Strings.4445": "{0}, ho spedito le carte per l'adozione. Ora possiamo solo attendere con le dita incrociate.$l",
+	
+}
+	
+	
+	

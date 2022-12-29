@@ -1,0 +1,22 @@
+{
+  "SebastianVariant": "ModdedBlack",
+  "SebastianLightweightConfig": "Full",
+  "MaruVariant": "ModdedNotsnufffie",
+  "MaruLightweightConfig": "Full",
+  "RobinVariant": "Modded",
+  "RobinLightweightConfig": "Full",
+  "DemetriusVariant": "ModdedDarkSkin",
+  "DemetriusLightweightConfig": "Full",
+  "MaternitySprites": "true",
+  "PlatonicNPCs": "Sebastian",
+  "MermaidPendants": "true",
+  "PyjamasSebastian": "true",
+  "PyjamasMaru": "true",
+  "WeddingOutfitSebastian": "1",
+  "WeddingOutfitMaru": "1",
+  "MaruHospitalVariant": "scrubs",
+  "MaruCharacterGlasses": "Glasses",
+  "SebSafety": "Helmet",
+  "SebGlasses": "Glasses",
+  "SebPiercings": "Piercings"
+}

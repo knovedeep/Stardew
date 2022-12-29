@@ -1,0 +1,19 @@
+{
+  "EmilyVariant": "Romani",
+  "EmilyLightweightConfig": "Full",
+  "HaleyVariant": "Black",
+  "HaleyLightweightConfig": "Full",
+  "SandyVariant": "Modded",
+  "SandyLightweightConfig": "Full",
+  "MaternitySprites": "true",
+  "PlatonicNPCs": "Emily, Haley",
+  "LookingForLove": "Sandy",
+  "MermaidPendants": "true",
+  "PyjamasEmily": "true",
+  "PyjamasHaley": "true",
+  "WeddingOutfitEmily": "1",
+  "WeddingOutfitHaley": "1",
+  "GiftTastesChange": "true",
+  "EmilyTattoos": "Tattoos",
+  "HaleyAccessories": "BlackCam, Piercings, Cuffs"
+}

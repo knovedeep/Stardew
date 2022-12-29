@@ -1,0 +1,53 @@
+{
+// GUS DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Gus Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Gus, Characters/Gus",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLGus}}/{{GusVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomGus}}_{{GusWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Gus Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Gus, Characters/Gus",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLGus}}/{{GusVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Gus Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Gus/Misc/Gus_Emoji_{{GusVariant}}.png",
+			"ToArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"GusVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Gus Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "Gus/Misc/Junimo_Gus_{{GusVariant}}.png",
+			"ToArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"GusVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

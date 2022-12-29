@@ -1,0 +1,78 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.HarveyVariant.name": "HarveyVariante",
+	"config.HarveyVariant.values.Vanilla": "Vanilla",
+	"config.HarveyVariant.values.ModdedNonSikh": "ModdedNonSikh",
+	"config.HarveyVariant.values.ModdedSikh": "ModdedSikh",
+	"config.HarveyVariant.values.Off": "Disabilitato",
+	
+	"config.HarveyLightweightConfig.name": "HarveyConfigPesoleggero",
+	"config.HarveyLightweightConfig.description": "Indica se Harvey avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.HarveyLightweightConfig.values.Full": "Intero",
+	"config.HarveyLightweightConfig.values.Light": "Leggero",
+	"config.HarveyLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.GusVariant.name": "GusVariante",
+	"config.GusVariant.values.Vanilla": "Vanilla",
+	"config.GusVariant.values.Modded": "Modded",
+	"config.GusVariant.values.Off": "Disabilitato",
+	
+	"config.GusLightweightConfig.name": "GusConfigPesoleggero",
+	"config.GusLightweightConfig.description": "Indica se Gus avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.GusLightweightConfig.values.Full": "Intero",
+	"config.GusLightweightConfig.values.Light": "Leggero",
+	"config.GusLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.LewisVariant.name": "LewisVariante",
+	"config.LewisVariant.values.Vanilla": "Vanilla",
+	"config.LewisVariant.values.Modded": "Modded",
+	"config.LewisVariant.values.Off": "Disabilitato",
+	
+	"config.LewisLightweightConfig.name": "LewisConfigPesoleggero",
+	"config.LewisLightweightConfig.description": "Indica se Lewis avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.LewisLightweightConfig.values.Full": "Intero",
+	"config.LewisLightweightConfig.values.Light": "Leggero",
+	"config.LewisLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.HarveyCharacterMustache.name": "HarveyBaffi",
+	"config.HarveyCharacterMustache.description": "Dai al personaggio di Harvey degli sprites con un paio di baffi per abbinarsi ai suoi ritratti. Colpisce solo la variante Vanilla.",
+	"config.HarveyCharacterMustache.values.Mustache": "Baffi",
+	"config.HarveyCharacterMustache.values.NoMustache": "SenzaBaffi",
+	
+	"config.PlatonicNPCs.name": "NPCPlatonici",
+	"config.PlatonicNPCs.description": "Aggiunge la compatibilità con Platonic Partners and Friendships di Amaranthacyan. Metti il nome del candidato in questa lista per avere i loro ritratti e sprites romantici sostituiti con le alternative platonic. Controlla il sito per maggiori informazioni.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.WeddingOutfitHarvey.name": "OutfitMatrimonioHarvey",
+	"config.WeddingOutfitHarvey.description": "Seleziona quale abito da sposo Harvey indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitHarvey.values.1": "1",
+	"config.WeddingOutfitHarvey.values.2": "2",
+	"config.WeddingOutfitHarvey.values.3": "3",
+	"config.WeddingOutfitHarvey.values.4": "4",
+	"config.WeddingOutfitHarvey.values.5": "5",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Aggiunge la compatibilità con la mod Looking For Love di foggywizard in modo che Lfl dateable Gus e Lewis corrisponderà alla variante Gus e Lewis di DSV e con anche gli abiti stagionali. Selezionalo solo se hai Gus or Lewis impostato su 'dateable' nelle opzioni di configurazione di Lfl.",
+	
+	"config.RidgesideVillageLenny.name": "RidgesideVillageLenny",
+	"config.RidgesideVillageLenny.description": "Aggiunge ritratti e sprite compatibili per Lenny di Ridgeside Village, in modo che lei sia scura di pelle come la variante modded DSV di suo fratello Lewis.",
+	"config.RidgesideVillageLenny.values.Modded": "Modded",
+	"config.RidgesideVillageLenny.values.Off": "Disabilitato",
+	
+	"config.GiftTastesChange.name": "CambiaRegaliPreferiti",
+	"config.GiftTastesChange.description": "Cambia i gusti dei regali di Sikh Harvey facendogli quindi non sopportare l'alcol. Non influisce sulle varianti Vanilla o ModdedNonSikh. Questa opzione è abilitata per impostazione predefinita, ma può essere disabilitata per la compatibilità con altre mod.",
+	"config.GiftTastesChange.values.True": "Vero",
+	"config.GiftTastesChange.values.False": "Falso",
+	
+// SIKH HARVEY ALCOHOL GIFT TASTES
+	
+	"Harvey.CGD.alcohol": "Oh, questo è alcolico... apprezzo il pensiero, ma non bevo alcolici a causa della mia religione.",
+	
+}
+	
+	

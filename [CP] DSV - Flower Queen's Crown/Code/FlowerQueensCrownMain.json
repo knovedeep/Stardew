@@ -1,0 +1,266 @@
+{
+	"Changes": [
+		{
+			"LogName": "Vanilla Flower Queen Abigail",
+			"Action": "EditImage",
+			"Target": "Portraits/Abigail, Characters/Abigail",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{AbigailVariant}}{{AbigailAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Abigail": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Alex",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{AlexVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Alex": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Elliott",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott, Characters/Elliott",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{ElliottVariant}}{{ElliottAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Elliott": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Emily",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{EmilyVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Emily": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Haley",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{HaleyVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Haley": false,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Harvey",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{HarveyVariant}}{{HarveyAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Harvey": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Jas",
+			"Action": "EditImage",
+			"Target": "Portraits/Jas, Characters/Jas",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{RandomFestivalJasVincentFQ}}_{{JasVariant}}{{JasAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Jas": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Leah",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{LeahVariant}}{{LeahAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Leah": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Maru",
+			"Action": "EditImage",
+			"Target": "Portraits/Maru, Characters/Maru",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{MaruVariant}}{{MaruAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Maru": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Penny",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{PennyVariant}}{{PennyAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Penny": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Sam",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{SamVariant}}{{SamAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Sam": true,
+			},
+		},	
+		{
+			"LogName": "Vanilla Flower Queen Sebastian",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{SebastianVariant}}{{SebastianAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Sebastian": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Shane",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{ShaneVariant}}{{ShaneAddon}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Shane": true,
+			},
+		},
+		{
+			"LogName": "Vanilla Flower Queen Vincent",
+			"Action": "EditImage",
+			"Target": "Portraits/Vincent, Characters/Vincent",
+			"FromFile": "VanillaNPCs/{{Target}}/{{TargetWithoutPath}}_FlowerDance_{{RandomFestivalJasVincentFQ}}_{{VincentVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Vincent": true,
+			},
+		},
+		
+// CUSTOM NPCs
+// Always Raining in the Valley
+
+		{
+			"LogName": "Custom Flower Queen Mia",
+			"Action": "EditImage",
+			"Target": "Portraits/Mia, Characters/Mia",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Mia": true,
+			},
+		},
+		{
+			"LogName": "Custom Flower Queen Henry",
+			"Action": "EditImage",
+			"Target": "Portraits/Henry, Characters/Henry",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Henry": true,
+			},
+		},
+		{
+			"LogName": "Custom Flower Queen Sterling",
+			"Action": "EditImage",
+			"Target": "Portraits/Sterling, Characters/Sterling",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Sterling": true,
+			},
+		},	
+		
+// Jade
+		{
+			"LogName": "Custom Flower Queen Jade",
+			"Action": "EditImage",
+			"Target": "Portraits/Jade, Characters/Jade",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"FlowerQueen |contains= Jade": true,
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+
+// Lavril	
+		/*{
+			"LogName": "Custom Flower Queen Lavril",
+			"Action": "EditImage",
+			"Target": "Portraits/Lavril, Characters/Lavril",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FlowerQueen |contains= Lavril": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// Juliet
+		{
+			"LogName": "Custom Flower Queen Juliet",
+			"Action": "EditImage",
+			"Target": "Portraits/Juliet, Characters/Juliet",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"When":
+			{
+				"FlowerQueen |contains= Juliet": true,
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// Eloise
+		{
+			"LogName": "Custom Flower Queen Eloise",
+			"Action": "EditImage",
+			"Target": "Portraits/Eloise, Characters/Eloise",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"When":
+			{
+				"FlowerQueen |contains= Eloise": true,
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// Juna
+		{
+			"LogName": "Custom Flower Queen Juna",
+			"Action": "EditImage",
+			"Target": "Portraits/Juna, Characters/Juna",
+			"FromFile": "CustomNPCs/{{Target}}_FlowerDance.png",
+			"When":
+			{
+				"FlowerQueen |contains= Juna": true,
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},*/
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"Name": "Diverse SDV - Sebastian, Maru, Robin & Demetrius",
+	"Author": "DSV Team",
+	"Version": "3.0.3",
+	"Description": "Adds ethnic and cultural diversity to Sebastian, Maru, Robin & Demetrius, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.SebastianMaruRobinDemetrius",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1073356", "GitHub:AirynS/DSV-Sebastian-Maru-Robin-Demetrius" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "brin.SSRivalHeartEvents",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.SebastianDutchRomanianOrDutchVietnameseWeddingOutfits",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.MaruDutchXhosaWeddingDress",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+	]
+}

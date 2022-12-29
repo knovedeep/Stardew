@@ -1,0 +1,235 @@
+{
+// SAM DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Sam Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SamVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomSam}}_{{SamWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sam Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SamVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{SamSwim}}{{WeddingGuestSam}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sam Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam_Beach, Characters/Sam_Beach",
+			"FromFile": "Sam/{{TargetPathOnly}}/{{SamVariant}}/{{TargetWithoutPath}}{{SamSwimBeach}}{{BeachStyleSam}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sam Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Sam",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SamVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitSamToken}}.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sam Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Sam",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{SamVariant}}/Sam_SleepSprite.png",
+			"ToArea": { "X": 32, "Y": 416, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "SamHouse",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Sam Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Sam/Misc/Sam_Emoji_{{SamVariant}}.png",
+			"ToArea": {"X": 81, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"SamVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+
+		{
+			"LogName": "Sam PPAF Compat Include",
+			"Action": "Include",
+			"FromFile": "Sam/Code/PPAFCompatibility.json",
+			"When": 
+			{
+				"HasMod |contains= Amaranthacyan.PPAFSMAPI": true
+			}
+		},
+		
+// Rival Events Sam/Seb
+		{
+			"LogName": "Sam Rival Events Compatibility Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam_Shirtless",
+			"FromFile": "Sam/Portraits/{{SamVariant}}/Sam_{{Special+Festival}}{{SamSwim}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= brin.SSRivalHeartEvents": true,
+				"HasSeenEvent |contains= 1918822": false,
+			},
+			"Update": "OnLocationChange",
+		},	
+		{
+			"LogName": "Sam Rival Events Compatibility Characters",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_Shirtless",
+			"FromFile": "Sam/Characters/{{SamVariant}}/Sam_{{Special+Festival}}{{SamSwim}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= brin.SSRivalHeartEvents": true,
+				"HasSeenEvent |contains= 1918822": false,
+			},
+			"Update": "OnLocationChange",
+		},		
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Sam Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Portraits/Sam_Beach",
+			"FromFile": "Sam/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Sam": "Married, Engaged",
+				"SamWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sam Pendants Sam & Alissa",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Portraits/Sam_Beach, Portraits/Alissa, Portraits/Alissa_Beach",
+			"FromFile": "Sam/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= ZoeDoll.SamAndAlissaRivalHearts": true,
+				"HasSeenEvent |contains= 902207": true,
+				"SamWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// SAM EXTRAS OVERLAYS
+		{
+			"LogName": "Sam Extras Overlay Eyes",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam, Portraits/Sam_Beach, Characters/Sam_Beach",
+			"FromFile": "Sam/{{TargetPathOnly}}/{{SamVariant}}/Overlays/Sam_{{SamEyes}}_EyesOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamEyes|contains= default": false,
+			},
+		},
+		{
+			"LogName": "Sam Extras Overlay Piercings",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Portraits/Sam_Beach",
+			"FromFile": "Sam/{{Target}}_PiercingsOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamExtras|contains= piercings": true,
+			},
+		},
+		{
+			"LogName": "Sam Extras Overlay Stubble",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam, Portraits/Sam_Beach, Characters/Sam_Beach",
+			"FromFile": "Sam/{{TargetPathOnly}}/{{SamVariant}}/Overlays/{{TargetWithoutPath}}_StubbleOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamExtras|contains= stubble": true,
+			},
+		},
+		{
+			"LogName": "Sam Extras Overlay Beard",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam, Portraits/Sam_Beach, Characters/Sam_Beach",
+			"FromFile": "Sam/{{TargetPathOnly}}/{{SamVariant}}/Overlays/{{TargetWithoutPath}}_BeardOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamExtras|contains= beard": true,
+			},
+		},
+		
+// PREGNANCY DIALOGUE REPLACEMENT
+		{
+			"LogName": "Sam Spouse Pregnancy Dialogue Replacement 1",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": 
+			{
+				"HaveBabyQuestion": "{{i18n:Sam.HaveBabyQuestion}}",
+				"BirthMessage_PlayerMother": "{{i18n:Sam.BirthMessage_PlayerMother}}",
+			},
+			"When":
+			{
+				"Relationship:Sam": "Married",
+				"HasMod |contains= kdau.PregnancyRole": false,
+				"HasMod |contains= Rubecula.ParrotParents": false,
+			},
+		},
+		{
+			"LogName": "Sam Spouse Pregnancy Dialogue Replacement 2",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": 
+			{
+				"NPC.cs.4448": "{{i18n:Sam.Strings.4448}}",
+			},
+			"When":
+			{
+				"Relationship:Sam": "Married",
+				"HasMod |contains= kdau.PregnancyRole": false,
+				"HasMod |contains= Rubecula.ParrotParents": false,
+			},
+		},		
+	]
+}

@@ -1,0 +1,107 @@
+{
+// CLINT DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Clint Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint, Characters/Clint",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLClint}}/{{ClintVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomClint}}_{{ClintWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Clint Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint, Characters/Clint",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLClint}}/{{ClintVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Clint Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint_Beach, Characters/Clint_Beach",
+			"FromFile": "Clint/{{TargetPathOnly}}/{{LFLClint}}/{{ClintVariant}}/Clint_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Clint Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Clint/Misc/Clint_Emoji_{{ClintVariant}}_{{ClintScar}}.png",
+			"ToArea": {"X": 54, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"ClintVariant|contains= vanilla, disabled, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Clint Clothes Therapy Characters 1",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Clint/Misc/ClothesTherapy_Clint_{{ClintVariant}}.png",
+			"ToArea": {"X": 0, "Y": 96, "Width": 64, "Height": 32},
+			"FromArea": {"X": 0, "Y": 96, "Width": 64, "Height": 32},
+			"When":
+			{
+				"ClintVariant|contains= off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Clint Clothes Therapy Characters 2",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Clint/Misc/ClothesTherapy_Clint_{{ClintVariant}}.png",
+			"ToArea": {"X": 32, "Y": 160, "Width": 32, "Height": 32},
+			"FromArea": {"X": 32, "Y": 160, "Width": 32, "Height": 32},
+			"When":
+			{
+				"ClintVariant|contains= off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Clint Clothes Therapy Characters Scar",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Clint/Misc/ClothesTherapy_Clint_{{ClintScar}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"ClintVariant |contains= Modded": true,
+				"ClintScar": "Scar",
+			},
+		},
+		
+//EXTRAS OVERLAYS
+		{
+			"LogName": "Clint Scars Overlay",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint, Characters/Clint, Portraits/Clint_Beach, Characters/Clint_Beach",
+			"FromFile": "Clint/{{TargetPathOnly}}/{{LFLClint}}/{{TargetWithoutPath}}_{{ClintScar}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"ClintVariant |contains= Modded": true,
+				"ClintScar": "scar",
+				"Special+Festival |contains= SpiritsEve": false,
+			},
+			"Update": "OnLocationChange",
+		},
+	]
+}

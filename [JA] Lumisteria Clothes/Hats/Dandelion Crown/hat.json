@@ -1,0 +1,7 @@
+{
+	"Name": "Dandelion Crown",
+	"Description": "A crown of wild dandelions.",
+	"PurchasePrice": "1000",
+	"ShowHair": true,
+	"IgnoreHairstyleOffset": true
+}

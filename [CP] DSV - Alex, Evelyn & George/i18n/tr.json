@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.AlexVariant.name": "AlexÇeşidi",
+	"config.AlexVariant.values.Vanilla": "Vanilla",
+	"config.AlexVariant.values.Samoan": "Samoalı",
+	"config.AlexVariant.values.Mexican": "Meksikalı",
+	"config.AlexVariant.values.Off": "Kapalı",
+	
+	"config.AlexLightweightConfig.name": "AlexHafiflikYapılandırma",
+	"config.AlexLightweightConfig.description": "Alex'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.AlexLightweightConfig.values.Full": "Tam",
+	"config.AlexLightweightConfig.values.Light": "Hafif",
+	"config.AlexLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.EvelynVariant.name": "EvelynÇeşidi",
+	"config.EvelynVariant.values.Vanilla": "Vanilla",
+	"config.EvelynVariant.values.Samoan": "Samoalı",
+	"config.EvelynVariant.values.Mexican": "Meksikalı",
+	"config.EvelynVariant.values.Off": "Kapalı",
+	
+	"config.EvelynLightweightConfig.name": "EvelynHafiflikYapılandırma",
+	"config.EvelynLightweightConfig.description": "Evelyn'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",	
+	"config.EvelynLightweightConfig.values.Full": "Tam",
+	"config.EvelynLightweightConfig.values.Light": "Hafif",
+	"config.EvelynLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.GeorgeVariant.name": "GeorgeÇeşidi",
+	"config.GeorgeVariant.values.Vanilla": "Vanilla",
+	"config.GeorgeVariant.values.Samoan": "Samoalı",
+	"config.GeorgeVariant.values.Mexican": "Meksikalı",
+	"config.GeorgeVariant.values.Off": "Kapalı",
+	
+	"config.GeorgeLightweightConfig.name": "GeorgeHafiflikYapılandırma",
+	"config.GeorgeLightweightConfig.description": "George'un Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.GeorgeLightweightConfig.values.Full": "Tam",
+	"config.GeorgeLightweightConfig.values.Light": "Hafif",
+	"config.GeorgeLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description": "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun wikisine bakın.",
+
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.Pyjamas.name": "Pijama",
+	"config.Pyjamas.description": "Evlilik adaylarının sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.Pyjamas.values.True": "Açık",	
+	"config.Pyjamas.values.False": "Kapalı",
+	"config.Pyjamas.values.Marriage": "Evlilik",
+	
+	"config.WeddingOutfitAlex.name": "DüğünElbisesiAlex",
+	"config.WeddingOutfitAlex.description": "Alex'in evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitAlex.values.1": "1",
+	"config.WeddingOutfitAlex.values.2": "2",
+	"config.WeddingOutfitAlex.values.3": "3",
+	"config.WeddingOutfitAlex.values.4": "4",
+	"config.WeddingOutfitAlex.values.5": "5",
+	"config.WeddingOutfitAlex.values.6": "6",
+	
+	"config.AlexTattoos.name": "AlexDövme",
+	"config.AlexTattoos.description": "Alex'in Samoalı çeşidinin geleneksel göğüs ve omuz dövmelerine sahip olup olmayacağını belirler.",
+	"config.AlexTattoos.values.Tattoos": "Dövmeli",
+	"config.AlexTattoos.values.NoTattoos": "Dövmesiz",
+	
+	"config.GeorgeBeard.name": "GeorgeSakal",
+	"config.GeorgeBeard.description": "George'un sakallı mı yoksa sinekkaydı mı olduğunu belirler. Dinamik seçeneği onu güzün ve kışın sakallı, baharda ve yazın sakalsız yapar. Yalnızca GeorgeHafiflikYapılandırma 'ultra hafif'e ayarlı değilse kullanılabilir.",
+	"config.GeorgeBeard.values.Beard": "Sakallı",
+	"config.GeorgeBeard.values.NoBeard": "Sakalsız",
+	"config.GeorgeBeard.values.Dynamic": "Dinamik",
+	
+// ALEX WORKOUT DIALOGUE PATCH
+
+	"Alex.workout.fix": "Ah... Şu an olmaz."
+	
+}
+	
+	
+	

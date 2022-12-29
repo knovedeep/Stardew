@@ -1,0 +1,39 @@
+{
+	"Name": "Diverse SDV - Alex, Evelyn & George",
+	"Author": "DSV Team",
+	"Version": "3.0.4",
+	"Description": "Adds ethnic and cultural diversity to Alex, Evelyn & George, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.AlexEvelynGeorge",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1072829", "GitHub:AirynS/DSV-Alex-Evelyn-George" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.AlexJewishWeddingSuit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+	]
+}

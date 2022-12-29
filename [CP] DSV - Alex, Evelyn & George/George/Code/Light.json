@@ -1,0 +1,91 @@
+{
+// GEORGE DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "George Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/George, Characters/George",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{GeorgeVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomGeorge}}_{{GeorgeWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "George Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/George, Characters/George",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{GeorgeVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestGeorge}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "George Beach",
+			"Action": "Load",
+			"Target": "Portraits/George_Beach, Characters/George_Beach",
+			"FromFile": "George/{{TargetPathOnly}}/{{GeorgeVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "George Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "George/Misc/George_Emoji_{{GeorgeVariant}}.png",
+			"ToArea": {"X": 36, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"GeorgeVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+//MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "George Beard Overlay Static",
+			"Action": "EditImage",
+			"Target": "Portraits/George, Characters/George, Portraits/George_Beach, Characters/George_Beach",
+			"FromFile": "George/{{TargetPathOnly}}/{{GeorgeVariant}}/BeardOverlays/{{TargetWithoutPath}}_Overlay_Beard_Winter.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"GeorgeBeard |contains= beard": true,
+				"Special+Festival |contains= SpiritsEve": false,
+			},
+		},
+		{
+			"LogName": "George Beard Overlay Dynamic",
+			"Action": "EditImage",
+			"Target": "Portraits/George, Characters/George, Portraits/George_Beach, Characters/George_Beach",
+			"FromFile": "George/{{TargetPathOnly}}/{{GeorgeVariant}}/BeardOverlays/{{TargetWithoutPath}}_Overlay_Beard_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"Season": "fall, winter",
+				"GeorgeBeard |contains= dynamic": true,
+				"Special+Festival |contains= SpiritsEve": false,
+			},
+		},
+		{
+			"LogName": "George Beard Overlay Spirit's Eve",
+			"Action": "EditImage",
+			"Target": "Portraits/George, Characters/George",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{GeorgeVariant}}/BeardOverlays/{{TargetWithoutPath}}_Overlay_{{GeorgeBeard}}_SpiritsEve.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"GeorgeBeard |contains= nobeard": false,
+				"Special+Festival |contains= SpiritsEve": true,
+			},
+		},
+	]
+}

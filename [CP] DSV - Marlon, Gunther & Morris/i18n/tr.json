@@ -1,0 +1,46 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.GuntherVariant.name": "GuntherÇeşidi",
+	"config.GuntherVariant.values.Vanilla": "Vanilla",
+	"config.GuntherVariant.values.Modded": "Modlu",
+	"config.GuntherVariant.values.Off": "Kapalı",
+	
+	"config.MarlonVariant.name": "MarlonÇeşidi",
+	"config.MarlonVariant.values.Vanilla": "Vanilla",
+	"config.MarlonVariant.values.Modded": "Modlu",
+	"config.MarlonVariant.values.Off": "Kapalı",
+	
+	"config.MorrisVariant.name": "MorrisÇeşidi",
+	"config.MorrisVariant.values.Vanilla": "Vanilla",
+	"config.MorrisVariant.values.Off": "Kapalı",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.AlternateCecily.name": "AlternatifCecily",
+	"config.AlternateCecily.description": "Gunther'ın kızı Cecily'nin DSV'nin Gunther'ıyla eşleşmesi için alternatif sprite ve portreler kullanıp kullanmayacağını ayarlar. Cecily'nin orijinal görünümünü tercih ediyorsanız kapatın. Yalnızca Make Gunther Real modu kullanılıyorsa uygulanabilir.",
+	"config.AlternateCecily.values.True": "Açık",
+	"config.AlternateCecily.values.False": "Kapalı",
+	
+	"config.AdventurersGuildExpandedCompatibility.name": "AdventurersGuildExpandedUyumluluk",
+	"config.AdventurersGuildExpandedCompatibility.description": "Adventurers Guild Expanded'ın Daisy, Gabriel ve/veya Zinnia'sı için uyumlu portreler ve spritelar ekler, böylece Marlon'un modlu DSV çeşidiyle eşleşmeleri için Moğol olurlar.",
+	"config.AdventurersGuildExpandedCompatibility.values.AllModded": "TümModlu",
+	"config.AdventurersGuildExpandedCompatibility.values.ModdedGabrielOnly": "YalnızcaGabrielModlu",
+	"config.AdventurersGuildExpandedCompatibility.values.ModdedZinniaOnly": "YalnızcaZinniaModlu",
+	"config.AdventurersGuildExpandedCompatibility.values.Off": "Kapalı",
+	
+	"config.MarlonCompatibility.name": "MarlonUyumluluk",
+	"config.MarlonCompatibility.description": "Hangi modun Marlon'un portrelerini ve spritelarını değiştireceğini seçer. Varsayılan 'Otomatik' seçeneği uygun modla otomatik olarak eşleşmeli, ancak bu çalışmıyorsa, bu seçenek manuel seçime izin verir.",
+	"config.MarlonCompatibility.values.Automatic": "Otomatik",
+	"config.MarlonCompatibility.values.Vanilla": "Vanilla",
+	"config.MarlonCompatibility.values.Denver": "Denver",
+	"config.MarlonCompatibility.values.BefriendMarGun": "BefriendMarlonAndGunther",
+	"config.MarlonCompatibility.values.MakeMarlonReal": "MakeMarlonReal"
+	
+}
+	
+	
+	

@@ -1,0 +1,60 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.WillyVariant.name": "WillyVariant",
+	"config.WillyVariant.values.Vanilla": "Vanilla",
+	"config.WillyVariant.values.Disabled": "Disabled",
+	"config.WillyVariant.values.Tongan": "Tongan",
+	"config.WillyVariant.values.TonganDisabled": "TonganDisabled",
+	"config.WillyVariant.values.Off": "Off",
+	
+	"config.WillyLightweightConfig.name": "WillyLightweightConfig",
+	"config.WillyLightweightConfig.description": "Toggles whether Willy will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.WillyLightweightConfig.values.Full": "Full",
+	"config.WillyLightweightConfig.values.Light": "Light",
+	"config.WillyLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.ClintVariant.name": "ClintVariant",
+	"config.ClintVariant.values.Vanilla": "Vanilla",
+	"config.ClintVariant.values.Modded": "Modded",
+	"config.ClintVariant.values.Off": "Off",
+	
+	"config.ClintLightweightConfig.name": "ClintLightweightConfig",
+	"config.ClintLightweightConfig.description": "Toggles whether Clint will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.ClintLightweightConfig.values.Full": "Full",
+	"config.ClintLightweightConfig.values.Light": "Light",
+	"config.ClintLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.LinusVariant.name": "LinusVariant",
+	"config.LinusVariant.values.Vanilla": "Vanilla",
+	"config.LinusVariant.values.Modded": "Modded",
+	"config.LinusVariant.values.Off": "Off",
+	
+	"config.LinusLightweightConfig.name": "LinusLightweightConfig",
+	"config.LinusLightweightConfig.description": "Toggles whether Linus will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.LinusLightweightConfig.values.Full": "Full",
+	"config.LinusLightweightConfig.values.Light": "Light",
+	"config.LinusLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Willy, Clint, & Linus will match DSV's Willy, Clint, & Linus variant and have seasonal outfits. Only select this if you have Willy, Clint, or Linus set to dateable in LfL's configuration options.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.ClintScar.name": "ClintScar",
+	"config.ClintScar.description": "Chooses whether or not Clint's Modded variant has facial scars. Does not affect his Vanilla variant.",
+	"config.ClintScar.values.Scar": "Scar",
+	"config.ClintScar.values.NoScar": "NoScar",
+	
+	"config.LinusEventChanges.name": "LinusEventChanges",
+	"config.LinusEventChanges.description": "Adds Marigold the service dog to Linus's heart events. Disable this if using other mods that edit Linus's heart events.",
+	"config.LinusEventChanges.values.True": "True",
+	"config.LinusEventChanges.values.False": "False",
+	
+}
+	
+	
+	

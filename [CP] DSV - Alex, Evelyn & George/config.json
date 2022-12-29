@@ -1,0 +1,14 @@
+{
+  "AlexVariant": "Vanilla",
+  "AlexLightweightConfig": "Full",
+  "EvelynVariant": "Vanilla",
+  "EvelynLightweightConfig": "Full",
+  "GeorgeVariant": "Vanilla",
+  "GeorgeLightweightConfig": "Full",
+  "PlatonicNPCs": "Alex",
+  "MermaidPendants": "true",
+  "Pyjamas": "true",
+  "WeddingOutfitAlex": "1",
+  "AlexTattoos": "Tattoos",
+  "GeorgeBeard": "Dynamic"
+}

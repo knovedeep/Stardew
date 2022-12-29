@@ -1,0 +1,104 @@
+{
+// ABIGAIL DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Abigail Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Abigail, Characters/Abigail",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AbigailVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomAbigail}}_{{AbigailWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Abigail Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Abigail, Characters/Abigail",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AbigailVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_{{RandomFestivalAbigail}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Abigail Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Abigail_Beach, Characters/Abigail_Beach",
+			"FromFile": "Abigail/{{TargetPathOnly}}/{{AbigailVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Abigail Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Abigail",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AbigailVariant}}/{{TargetWithoutPath}}_Wedding_1.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Abigail Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Abigail/Misc/Abigail_Emoji_{{AbigailVariant}}.png",
+			"ToArea": {"X": 0, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"AbigailVariant|contains= vanillastraightsize, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Clothes Therapy Characters - Abigail",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Abigail/Misc/ClothesTherapy_Abigail_{{AbigailVariant}}.png",
+			"ToArea": {"X": 0, "Y": 160, "Width": 16, "Height": 32},
+			"When":
+			{
+				"AbigailVariant|contains= moddedplussize, moddedstraightsize": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Abigail Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Abigail",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Abigail_{{AbigailVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Abigail",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Abigail No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Abigail",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Abigail_{{AbigailVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Abigail",
+			},
+		},
+	]
+}

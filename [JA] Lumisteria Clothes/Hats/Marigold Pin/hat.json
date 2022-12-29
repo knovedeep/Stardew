@@ -1,0 +1,7 @@
+{
+	"Name": "Marigold Pin",
+	"Description": "A single marigold flower.",
+	"PurchasePrice": "1000",
+	"ShowHair": true,
+	"IgnoreHairstyleOffset": true
+}

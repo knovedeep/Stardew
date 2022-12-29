@@ -1,0 +1,50 @@
+{
+	"Format": "1.3",
+
+	"ConfigSchema": {
+        "Wood": {
+            "AllowValues": "true, false",		
+			"Default": "false"
+        },
+		"Stone": {
+            "AllowValues": "true, false",		
+			"Default": "false"
+        },
+		"Iron": {
+            "AllowValues": "true, false",		
+			"Default": "false"
+        },
+		"Hardwood": {
+            "AllowValues": "true, false",		
+			"Default": "true"
+        },
+    },
+	
+	"Changes": [
+	   
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Fence1",
+			"FromFile": "assets/{{season}}/Fence.png",
+			"When": { "Wood": "true" }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Fence2",
+			"FromFile": "assets/{{season}}/Fence.png",
+			"When": { "Stone": "true" }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Fence3",
+			"FromFile": "assets/{{season}}/Fence.png",
+			"When": { "Iron": "true" }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Fence5",
+			"FromFile": "assets/{{season}}/Fence.png",
+			"When": { "Hardwood": "true" }
+		},
+	]
+}

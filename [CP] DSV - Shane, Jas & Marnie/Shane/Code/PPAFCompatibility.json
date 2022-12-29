@@ -1,0 +1,32 @@
+{
+        "Changes": 
+        [
+            {
+                "LogName": "PPaF Compat - Shane Commitment",
+                "Action": "EditImage",
+                "Target": "Characters/Shane",
+                "FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Shane_{{ShaneVariant}}_Commitment.png",
+                "ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+                "FromArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "HasMod |contains= Amaranthacyan.PPAFSMAPI": true,
+                    "Amaranthacyan.PPAFSMAPI/Shane |contains= FullyPlatonic": true
+                }
+            },
+            {
+                "LogName": "PPaF Compat - Shane No Blush",
+                "Action": "EditImage",
+                "Target": "Portraits/Shane",
+                "FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Shane_{{ShaneVariant}}_NoBlushOverlay.png",
+                "PatchMode": "Overlay",
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "HasMod |contains= Amaranthacyan.PPAFSMAPI": true,
+                    "Query: ('{{Amaranthacyan.PPAFSMAPI/Shane}}' = 'FullyPlatonic' AND '{{Amaranthacyan.PPAFSMAPI/EditFullyPlatonicPortraits}}' = 'true') OR ('{{Amaranthacyan.PPAFSMAPI/Shane}}' = 'SexWithoutRomance' AND '{{Amaranthacyan.PPAFSMAPI/EditSexWithoutRomancePortraits}}' = 'true') OR ('{{Amaranthacyan.PPAFSMAPI/Shane}}' = 'RomanceWithoutSex' AND '{{Amaranthacyan.PPAFSMAPI/EditRomanceWithoutSexPortraits}}' = 'true')": true
+                }
+            }
+        ]
+    }

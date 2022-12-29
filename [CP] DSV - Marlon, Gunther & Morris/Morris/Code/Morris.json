@@ -1,0 +1,124 @@
+{
+// MORRIS DSV
+
+	"Changes": [
+		{
+			"LogName": "Morris Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Morris, Characters/Morris",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		
+// MAPS
+		{
+			"LogName": "Morris Movie Theater Sprites",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "Morris/Misc/TheaterSprites/Morris_{{season}}_1_Base.png",
+			"ToArea": { "X": 16, "Y": 224, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		
+// TOWN INTERIOR
+		{
+			"LogName": "Morris JojaMart Sprites 1",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "Morris/Misc/{{TargetWithoutPath}}/Morris_{{season}}_1_Base.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32},
+			"ToArea": { "X": 368, "Y": 1008, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		{
+			"LogName": "Morris JojaMart Sprites 2",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "Morris/Misc/{{TargetWithoutPath}}/Morris_{{season}}_1_Base.png",
+			"FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 16},
+			"ToArea": { "X": 384, "Y": 1008, "Width": 16, "Height": 16 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		{
+			"LogName": "Morris JojaMart Sprites 3",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "Morris/Misc/{{TargetWithoutPath}}/Morris_{{season}}_1_Base.png",
+			"FromArea": { "X": 32, "Y": 0, "Width": 16, "Height": 32},
+			"ToArea": { "X": 400, "Y": 1008, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		
+// CURSORS
+		{
+			"LogName": "Morris Cursors Building",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Morris/Misc/CursorsBuilding/Morris_{{season}}_1_Base.png",
+			"ToArea": { "X": 389, "Y": 1405, "Width": 37, "Height": 35 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		{
+			"LogName": "Morris Cursors Sign",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Morris/Misc/CursorsSign/Morris_{{season}}_1_Base.png",
+			"ToArea": { "X": 48, "Y": 1391, "Width": 17, "Height": 34 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+		{
+			"LogName": "Morris Cursors Surprise",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Morris/Misc/CursorsSurprise/Morris_{{season}}_1_Base.png",
+			"ToArea": { "X": 96, "Y": 1312, "Width": 32, "Height": 48 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			}
+		},
+	
+	// COMPATIBILITY
+		{
+			"LogName": "Morris Redeemed Compatibility",
+			"Action": "EditImage",
+			"Target": "Portraits/Si_MR_Morris, Characters/Si_MR_Morris",
+			"FromFile": "Morris/{{TargetPathOnly}}/Morris_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasMod |contains= SiTheGreat.MorrisRedeemed": true
+			}
+		},
+		{
+			"LogName": "Marry Morris Seasonal Compatibility",
+			"Action": "EditImage",
+			"Target": "Portraits/MorrisTod, Characters/MorrisTod",
+			"FromFile": "Morris/MarryMorrisCompat/{{TargetPathOnly}}/Morris_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasMod |contains= Yoshimax.MarryMorris": true
+			}
+		}
+	]
+}

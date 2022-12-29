@@ -1,0 +1,11 @@
+{
+   "Name": "Lumisteria's Clothes",
+   "Author": "Lumisteria",
+   "Version": "1.1.0",
+   "Description": "New hats and clothes for JsonAssets.",
+   "UniqueID": "Lumisteria.LumisteriaClothes",
+   "ContentPackFor": {
+    	"UniqueID": "spacechase0.JsonAssets"
+    },
+  "UpdateKeys": [ "Nexus:5760" ],
+}

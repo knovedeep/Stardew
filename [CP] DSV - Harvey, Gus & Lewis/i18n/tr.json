@@ -1,0 +1,85 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.HarveyVariant.name": "HarveyÇeşidi",
+	"config.HarveyVariant.values.Vanilla": "Vanilla",
+	"config.HarveyVariant.values.ModdedNonSikh": "ModluSihDeğil",
+	"config.HarveyVariant.values.ModdedSikh": "ModluSih",
+	"config.HarveyVariant.values.Off": "Kapalı",
+	
+	"config.HarveyLightweightConfig.name": "HarveyHafiflikYapılandırma",
+	"config.HarveyLightweightConfig.description": "Harvey'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.HarveyLightweightConfig.values.Full": "Tam",
+	"config.HarveyLightweightConfig.values.Light": "Hafif",
+	"config.HarveyLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.GusVariant.name": "GusÇeşidi",
+	"config.GusVariant.values.Vanilla": "Vanilla",
+	"config.GusVariant.values.Modded": "Modlu",
+	"config.GusVariant.values.Off": "Kapalı",
+	
+	"config.GusLightweightConfig.name": "GusHafiflikYapılandırma",
+	"config.GusLightweightConfig.description": "Gus'ın Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.GusLightweightConfig.values.Full": "Tam",
+	"config.GusLightweightConfig.values.Light": "Hafif",
+	"config.GusLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.LewisVariant.name": "LewisÇeşidi",
+	"config.LewisVariant.values.Vanilla": "Vanilla",
+	"config.LewisVariant.values.Modded": "Modlu",
+	"config.LewisVariant.values.Off": "Kapalı",
+	
+	"config.LewisLightweightConfig.name": "LewisHafiflikYapılandırma",
+	"config.LewisLightweightConfig.description": "Lewis'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.LewisLightweightConfig.values.Full": "Tam",
+	"config.LewisLightweightConfig.values.Light": "Hafif",
+	"config.LewisLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.HarveyCharacterMustache.name": "HarveyKarakterBıyık",
+	"config.HarveyCharacterMustache.description": "Harvey'in karakter/dünya sprite'ına portreleriyle eşleşmesi için bir bıyık ekler. Yalnızca Vanilla çeşidi etkiler.",
+	"config.HarveyCharacterMustache.values.Mustache": "Bıyıklı",
+	"config.HarveyCharacterMustache.values.NoMustache": "Bıyıksız",
+	
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description": "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun sitesine bakın.",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.Pyjamas.name": "Pijama",
+	"config.Pyjamas.description": "Evlilik adaylarının sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.Pyjamas.values.True": "Açık",	
+	"config.Pyjamas.values.False": "Kapalı",
+	"config.Pyjamas.values.Marriage": "Evlilik",
+	
+	"config.WeddingOutfitHarvey.name": "DüğünElbisesiHarvey",
+	"config.WeddingOutfitHarvey.description": "Harvey'in evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitHarvey.values.1": "1",
+	"config.WeddingOutfitHarvey.values.2": "2",
+	"config.WeddingOutfitHarvey.values.3": "3",
+	"config.WeddingOutfitHarvey.values.4": "4",
+	"config.WeddingOutfitHarvey.values.5": "5",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "foggywizard'ın Looking For Love moduyla uyumluluk ekler ki LfL'nin evlenilebilir Gus ve Lewis'i DSV'nin Gus ve Lewis çeşitleriyle eşleşsin ve mevsimsel kıyafetleri olsun. Bu seçeneği yalnızca eğer Gus veya Lewis LfL'nin yapılandırma seçeneklerinde evlenilebilir olarak ayarlandıysa kullanın.",
+	
+	"config.RidgesideVillageLenny.name": "TepeyanıKöyüLenny",
+	"config.RidgesideVillageLenny.description": "Tepeyanı Köyü'nün Lenny'si için uyumlu portre ve sprite'lar ekler, ki kardeşi Lewis'in modlu DSV çeşidiyle uyumlu olsun.",
+	"config.RidgesideVillageLenny.values.Modded": "Modlu",
+	"config.RidgesideVillageLenny.values.Off": "Kapalı",
+	
+	"config.GiftTastesChange.name": "HediyeTadıDeğişimi",
+	"config.GiftTastesChange.description": "Sih Harvey'in alkolik içecekleri beğenmemesi için hediye tatlarını değiştirir. Vanilla veya ModluSihDeğil çeşitlerini etkilemez. Bu seçenek varsayılan olarak açıktır ancak diğer modlarla uyumluluk için kapatılabilir.",
+	"config.GiftTastesChange.values.True": "Açık",
+	"config.GiftTastesChange.values.False": "Kapalı",
+	
+// SIKH HARVEY ALCOHOL GIFT TASTES
+	
+	"Harvey.CGD.alcohol": "Ah, bu alkolik... Düşünceni takdir ediyorum, fakat dinim yüzünden alkol almam.",
+	
+}
+	
+	
+	

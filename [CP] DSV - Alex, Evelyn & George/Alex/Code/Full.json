@@ -1,0 +1,210 @@
+{
+// ALEX DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Alex Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AlexVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomAlex}}_{{AlexWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Alex Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AlexVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{PyjamasAlex}}{{WeddingGuestAlex}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Alex Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex_Beach, Characters/Alex_Beach",
+			"FromFile": "Alex/{{TargetPathOnly}}/{{AlexVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Alex Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Alex",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AlexVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitAlexToken}}.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PlatonicNPCs |contains= Alex": false,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Alex Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Alex/Misc/Alex_Emoji_{{AlexVariant}}.png",
+			"ToArea": {"X": 54, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"AlexVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Alex Mom Portrait",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Alex/Misc/CursorsAlex.png",
+			"ToArea": { "X": 416, "Y": 1936, "Width": 115, "Height": 60 },
+			"When":
+		  	{
+				"AlexVariant|contains= vanilla": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// SAMOAN ALEX TATTOOS
+		{
+			"LogName": "Alex Samoan Tattoos Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AlexVariant}}/TattooOverlays/{{TargetWithoutPath}}_{{season}}_{{RandomAlex}}_{{AlexWeatherVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AlexVariant": "samoan",
+				"AlexTattoos": "tattoos",
+				"Special+Festival| contains= Icecream, Swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"Query: ('{{LocationName}}' = 'Farmhouse' OR '{{LocationName}}' = 'JoshHouse' AND ({{Time}} < 0720 OR {{Time}} >= 2100))": false,
+				"WeddingGuestAlex |contains= WeddingGuest": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Alex Samoan Tattoos Festival/Special",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{AlexVariant}}/TattooOverlays/{{TargetWithoutPath}}_{{Special+Festival}}{{PyjamasAlex}}_1.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AlexVariant": "samoan",
+				"AlexTattoos": "tattoos",
+				"WeddingGuestAlex |contains= WeddingGuest": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Alex Samoan Tattoos Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex_Beach, Characters/Alex_Beach",
+			"FromFile": "Alex/{{TargetPathOnly}}/{{AlexVariant}}/TattooOverlays/Alex_Beach.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AlexVariant": "samoan",
+				"AlexTattoos": "tattoos",
+			},
+		},
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Alex Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Portraits/Alex_Beach",
+			"FromFile": "Alex/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Alex": "Married, Engaged",
+				"Query: '{{AlexWeatherVariant}}'= 'Base' OR ('{{Special+Festival}}' IN ('swim', 'EggFestival', 'FlowerDance', 'Luau', 'MoonlightJellies', 'SVFair', 'WinterStar'))": true,
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Alex Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Alex",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Alex_{{AlexVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Alex",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Alex No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Alex_{{AlexVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Alex",
+			},
+		},
+		
+// MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "Alex Sunglasses Overlay",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex, Portraits/Alex_Beach, Characters/Alex_Beach",
+			"FromFile": "Alex/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{AlexSunglassesRandom}}_{{AlexVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Alex Sunglasses Overlay Luau",
+			"Action": "EditImage",
+			"Target": "Portraits/Alex, Characters/Alex",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{TargetWithoutPath}}_SunglassesOverlay_{{AlexVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"DayEvent": "Luau, Surfing Festival",
+				"LocationName": "Beach, Temp",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// WORKOUT DIALOGUE FIX
+		{
+			"LogName": "Alex Workout Dialogue Patch",
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"Entries": 
+			{
+				"alex_lift_weights": "{{i18n:Alex.workout.fix}}$6",
+			},
+		},
+	]
+}

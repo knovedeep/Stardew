@@ -1,0 +1,19 @@
+{
+  "EmilyVariant": "Vanilla",
+  "EmilyLightweightConfig": "Full",
+  "HaleyVariant": "Vanilla",
+  "HaleyLightweightConfig": "Full",
+  "SandyVariant": "Vanilla",
+  "SandyLightweightConfig": "Full",
+  "MaternitySprites": "false",
+  "PlatonicNPCs": "Emily, Haley",
+  "LookingForLove": "",
+  "MermaidPendants": "true",
+  "PyjamasEmily": "true",
+  "PyjamasHaley": "true",
+  "WeddingOutfitEmily": "1",
+  "WeddingOutfitHaley": "1",
+  "GiftTastesChange": "true",
+  "EmilyTattoos": "Tattoos",
+  "HaleyAccessories": ""
+}

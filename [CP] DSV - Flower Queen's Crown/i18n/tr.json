@@ -1,0 +1,248 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.FlowerQueensCrown.name": "ÇiçekKraliçesiTacı",
+	"config.FlowerQueensCrown.description": "Diğer NPClerin de Çiçek Dansı esnasında Çiçek Kraliçesi olmaları için şans verir. Eğer 'Rastgele' seçiliyse, her sene bir kişi seçilecek; eğer 'herkes' seçiliyse, seçilebilir bütün kasabalı Çiçek Kraliçesi taçları giyecek.",
+	"config.FlowerQueensCrown.values.Random": "Rastgele",
+	"config.FlowerQueensCrown.values.Everyone": "Herkes",
+
+	"config.TownspeopleOnly.name": "YalnızcaKasabalı",
+	"config.TownspeopleOnly.description": "Custom NPClerin de Çiçek Kraliçesi adayı olmalarını sağlar. Eğer yalnızca Pelikan Kasabası'nın çocuklarının ve evlilik adaylarının seçilebilir olmasını istiyorsan 'Açık'ya ayarla.",
+	"config.TownspeopleOnly.values.True": "Açık",
+	"config.TownspeopleOnly.values.False": "Kapalı",
+	
+// CHARACTER VARIANTS
+	
+	"config.AbigailVariant.name": "AbigailÇeşidi",
+	"config.AbigailVariant.values.VanillaStraightSize": "VanillaStraightSize",
+	"config.AbigailVariant.values.VanillaPlusSize": "VanillaPlusSize",
+	"config.AbigailVariant.values.ModdedStraightSize": "ModdedStraightSize",
+	"config.AbigailVariant.values.ModdedPlusSize": "ModdedPlusSize",
+	"config.AbigailVariant.values.Off": "Off",
+
+	"config.AlexVariant.name": "AlexÇeşidi",
+	"config.AlexVariant.values.Vanilla": "Vanilla",
+	"config.AlexVariant.values.Samoan": "Samoalı",
+	"config.AlexVariant.values.Mexican": "Meksikalı",
+	"config.AlexVariant.values.Off": "Kapalı",
+
+	"config.EmilyVariant.name": "EmilyÇeşidi",
+	"config.EmilyVariant.values.Black": "Siyahi",
+	"config.EmilyVariant.values.Romani": "Roman",
+	"config.EmilyVariant.values.Off": "Kapalı",
+	
+	"config.ElliottVariant.name": "Elliott Çeşidi",
+	"config.ElliottVariant.values.Modded": "Modlu",
+	"config.ElliottVariant.values.Vanilla": "Vanilla",
+	"config.ElliottVariant.values.Off": "Kapalı",
+	
+	"config.HaleyVariant.name": "HaleyÇeşidi",
+	"config.HaleyVariant.values.Black": "Siyahi",
+	"config.HaleyVariant.values.Romani": "Romani",
+	"config.HaleyVariant.values.Off": "Kapalı",
+
+	"config.HarveyVariant.name": "Harvey Çeşidi",
+	"config.HarveyVariant.values.Vanilla": "Vanilla",
+	"config.HarveyVariant.values.ModdedNonSikh": "ModluSihDeğil",
+	"config.HarveyVariant.values.ModdedSikh": "ModluSih",
+	"config.HarveyVariant.values.Off": "Kapalı",
+	
+	"config.JasVariant.name": "Jas Çeşidi",
+	"config.JasVariant.values.Vanilla": "Vanilla",
+	"config.JasVariant.values.Modded": "Modlu",
+	"config.JasVariant.values.Off": "Kapalı",
+
+	"config.LeahVariant.name": "Leah Çeşidi",
+	"config.LeahVariant.values.Vanilla": "Vanilla",
+	"config.LeahVariant.values.Native": "YerliAmerikalı",
+	"config.LeahVariant.values.Butch": "Erkeksi",
+	"config.LeahVariant.values.Off": "Kapalı",
+	
+	"config.MaruVariant.name": "Maru Çeşidi",
+	"config.MaruVariant.values.Vanilla": "Vanilla",
+	"config.MaruVariant.values.ModdedNotsnufffie": "ModluNotsnufffie",
+	"config.MaruVariant.values.ModdedLavender": "ModluLavender",
+	"config.MaruVariant.values.Off": "Kapalı",
+
+	"config.PennyVariant.name": "PennyÇeşidi",
+	"config.PennyVariant.values.Vanilla": "Vanilla",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieLarge": "ModluAirynNotsnufffieBüyük",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieSmall": "ModluAirynNotsnufffieKüçük",
+	"config.PennyVariant.values.Mixed": "Karışık",
+	"config.PennyVariant.values.Off": "Kapalı",
+
+	"config.SamVariant.name": "SamÇeşidi",
+	"config.SamVariant.values.Vanilla": "Vanilla",
+	"config.SamVariant.values.ModdedLighter": "ModluDahaAçık",
+	"config.SamVariant.values.ModdedDarker": "ModluDahaKoyu",
+	"config.SamVariant.values.Off": "Kapalı",
+
+	"config.SebastianVariant.name": "SebastianÇeşidi",
+	"config.SebastianVariant.values.Vanilla": "Vanilla",
+	"config.SebastianVariant.values.ModdedBlack": "ModluSiyah",
+	"config.SebastianVariant.values.ModdedPurple": "ModluMor",
+	"config.SebastianVariant.values.Off": "Kapalı",
+
+	"config.ShaneVariant.name": "ShaneÇeşidi",
+	"config.ShaneVariant.values.Vanilla": "Vanilla",
+	"config.ShaneVariant.values.Modded": "Modlu",
+	"config.ShaneVariant.values.Off": "Kapalı",
+	
+	"config.VincentVariant.name": "VincentÇeşidi",
+	"config.VincentVariant.values.Vanilla": "Vanilla",
+	"config.VincentVariant.values.Modded": "Modlu",
+	"config.VincentVariant.values.Off": "Kapalı",
+	
+// EXTRAS
+
+	"config.EmilyTattoos.name": "EmilyDövme",
+	"config.EmilyTattoos.description": "Emily'nin renkli dövmeleri olup olmayacağını belirler.",
+	"config.EmilyTattoos.values.Tattoos": "Dövmeli",
+	"config.EmilyTattoos.values.NoTattoos": "Dövmesiz",
+
+	"config.HaleyAccessories.name": "HaleyAksesuar",
+	"config.HaleyAccessories.description": "Haley'in kamerasını kahverengiden siyaha çevirir, burnuna ve kaşlarına piercing ve/veya saçına tokalar ekler. Saç tokaları sadece Haley'in Siyahi çeşidine uygulanır.",
+	"config.HaleyAccessories.values.BlackCam": "SiyahKamera",
+	"config.HaleyAccessories.values.Piercings": "Piercingler",
+	"config.HaleyAccessories.values.Cuffs": "Tokalar",
+
+	"config.HarveyCharacterMustache.name": "HarveyKarakterBıyık",
+	"config.HarveyCharacterMustache.description": "Harvey'in karakter/dünya sprite'ına portreleriyle eşleşmesi için bir bıyık ekler. Yalnızca Vanilla çeşidi etkiler.",
+	"config.HarveyCharacterMustache.values.Mustache": "Bıyıklı",
+	"config.HarveyCharacterMustache.values.NoMustache": "Bıyıksız",
+	
+	"config.MaruCharacterGlasses.name": "MaruKarakterGözlük",
+	"config.MaruCharacterGlasses.description": "Maru'nun karakter/dünya sprite'larına portreleriyle eşleşmesi için gözlük verir. Yalnızca Vanilla ve ModluNotsnufffie çeşitlerini etkiler.",
+	"config.MaruCharacterGlasses.values.Glasses": "Gözlük",
+	"config.MaruCharacterGlasses.values.NoGlasses": "GözlükYok",
+
+	"config.SamEyes.name": "SamGözler",
+	"config.SamEyes.description": "Sam'in varsayılan göz rengini olduğu gibi bırakır, alternatif bir renge değiştirir veya ona heterokromik (İki gözün birbirinden farklı renkte olması durumu) gözler verir.",
+	"config.SamEyes.values.Default": "Varsayılan",
+	"config.SamEyes.values.Alternate": "Alternatif",
+	"config.SamEyes.values.Heterochromia": "Heterokromi",
+
+	"config.SamExtras.name": "SamEkstraları",
+	"config.SamExtras.description": "Sam'e kirli sakal, sakal ve/veya dudak ve kaş piercingleri verir.",
+	"config.SamExtras.values.Stubble": "Kirli Sakal",
+	"config.SamExtras.values.Beard": "Sakal",
+	"config.SamExtras.values.Piercings": "Piercingler",
+	
+	"config.SebGlasses.name": "SebGözlük",
+	"config.SebGlasses.description": "Sebastian'a gözlük verir. (Dinamik seçeneği Çiçek Kraliçesi Tacı tarafında mevcut değil).",
+	"config.SebGlasses.values.Dynamic": "Dinamik",
+	"config.SebGlasses.values.Glasses": "Gözlük",
+	"config.SebGlasses.values.NoGlasses": "GözlükYok",
+	
+	"config.SebPiercings.name": "SebPiercing",
+	"config.SebPiercings.description": "Sebastian'a dudak ve kulak piercingleri verir.",
+	"config.SebPiercings.values.Piercings": "Piercing",
+	"config.SebPiercings.values.NoPiercings": "PiercingYok",
+	
+// VANILLA NPC DIALOGUE CHANGES
+
+// ABIGAIL QUEEN
+	"dialogue.FQC.AbigailQueen": "Şu Çiçek Kraliçesi olayı amma saçma, ha? Ama en azından konuşma falan yapmıyoruz. Daha kötüsü olabilirdi.",
+	
+// ALEX QUEEN
+	"dialogue.FQC.AlexQueen": "Büyükannem beni Çiçek Kraliçesi olarak görmekten gerçekten mutlu. Her sene taç için çiçek yetiştirir.$h",
+	
+// EMILY QUEEN
+	"dialogue.FQC.EmilyQueen": "Her sene Çiçek Kraliçesi geleneksel olarak dansı yönetir. Adımlarımı takip eden herkesin verdiği enerjiyi hissetmeye bayılıyorum!$h",
+
+// ELLIOTT QUEEN
+	"dialogue.FQC.ElliottQueen": "Çiçek Kraliçesi olarak, sürekli yenilenen baharın bir şiirini yazarak neşelendireyim mi, @?$h#$b#Bekle, bunu yanlış yoldan yaptım, değil mi?$8",
+	
+// HALEY QUEEN
+	"dialogue.FQC.HaleyNotQueen": "Dans hareketlerime çalışıyorum... Mükemmel olmalılar.#$e#Gelecek sene tacı geri kazanacağım, bak ve izle!$h",
+	"dialogue.FQC.HaleyQueen": "Dans hareketlerime çalışıyorum... Mükemmel olmalılar.#$e#5 defa Çiçek Kraliçesi oldum ve daha henüz tahtımdan inmeye niyetim yok!",	
+
+// HARVEY QUEEN
+	"dialogue.FQC.HarveyQueen": "@, Kraliçe'nin tacındaki çiçeklerin geleneksel olarak tıbbi amaçlarla kullanıldığını biliyor muydun?#$e#Beni boşver, sadece dansı düşünmekten kendimi alıkoymaya çalışıyorum.$s",
+
+// JAS QUEEN
+	"dialogue.FQC.JasQueen": "Heehee, bu sene Çiçek Kraliçesi benim!$h",
+    "dialogue.FQC.Mia.JasQueen": "Jas Çiçek Kraliçesi olarak çok güzel duruyor, sence de öyle değil mi?$1#$b#Onu çoktan tebrik etmiş olsan iyi olur, @. Yoksa seninle ben sorunlar yaşamaya başlayacağız.$5", 
+    "dialogue.FQC.Sterling.JasQueen": "Shane kendini şanslı bir adam olarak görse iyi eder, böylesine meşhur bir kız kendi yeğeniyken.$10#$e#Gerçek bir Kraliçeyle akraba olmak ona biraz mütevazılık verse iyi olur, artık aynı değiller.$10",
+	
+// LEAH QUEEN
+	"dialogue.FQC.LeahQueen": "Selam, @. Sence tacı geri vermeden önce kendimin Çiçek Kraliçesi olarak bir portresini yapmalı mıyım?$h",
+    "dialogue.FQC.Mia.LeahQueen": "Leah bir soylu olduğuna göre benimle dans etmek isteyecek midir sence?$3#$e#Onu tebrik ettiğinden emin ol! Şu taçla bir resim gibi. Sanki her an doğayla iç içe geçecek.",
+	
+// MARU QUEEN
+	"dialogue.FQC.MaruQueen": "Çiçek Kraliçesi Tacı güzel, fakat kablolar ve metal yapraklardan yeniden kullanılabilir bir taç yapabilir miyim diye merak ediyorum?#$e#Belki çiçeklerin içinde LED ışıklarla...?",
+	
+// PENNY QUEEN
+	"dialogue.FQC.PennyQueen": "Bu sene Çiçek Kraliçesi benim...$l#$b#Gurur verici, ama aynı zamanda birazcık utandırıcı.",
+
+// SAM QUEEN
+	"dialogue.FQC.SamQueen": "Çiçek Kraliçesi, evet! Çiçek taçları efsanedir!$h#$b#Burnumu çıldırtıyor olsalar bile...",
+	
+// SEBASTIAN QUEEN
+	"dialogue.FQC.SebastianQueen": "Öf, şu aptal tacı yakmak istiyorum. Hem kim beni Çiçek Kraliçesi olarak seçti ki?$a",
+	
+// SHANE QUEEN
+	"dialogue.FQC.ShaneQueenPre6": "Bu bir şaka... Kim niye benim gibi bitik bir beceriksizi Çiçek Kraliçesi olarak seçer bilmiyorum.$s",
+	"dialogue.FQC.ShaneQueen": "Hey, @, Çiçek Kraliçesi olarak, bana şu küçük turtalardan birini uzatmanı emrediyorum.$h",
+    "dialogue.FQC.Sterling.ShaneQueen": "Ay, ay. Shane'in yüzüne baktın mı? Söylemeliyim ki, şu ana kadarki favori Çiçek Kraliçem o.$10#$e#Üzgünüm, Haley.$10",
+	
+// VINCENT QUEEN
+	"dialogue.FQC.VincentQueen": "Yaşasın, Çiçek Kraliçesi benim! Tacımı gördün mü, @? Çok güzel!$h",
+	"dialogue.FQC.RSVSean.VincentQueen": "Yaa, bu sene Vincent'ı seçtikleri için mutluyum! O taçla çok harika görünüyor.$h",
+    "dialogue.FQC.Sterling.VincentQueen": "Ayy, küçük adam bu senenin Çiçek Kralı oldu.$9#$b#Yoksa Çiçek Kraliçesi mi demeliyim? Sanıyorum ismi hiçbir zaman değiştirmediler.#$e#Her ikisi de ona uyuyor.$1",
+    "dialogue.FQC.Mia.VincentQueen": "Vincent çok şirin durmyuor mu? İşte benim oğlum!$3#$b#Tatlı şey kazanmayı haketmekten de fazlasını yaptı. Benim için tek Çiçek Kraliçesi.$1",
+	
+// CUSTOM NPC DIALOGUE CHANGES
+
+// ALWAYS RAINING IN THE VALLEY NPCS
+
+// MIA QUEEN
+// Mia Single
+    "dialogue.FQC.Sterling.MiaQueen.Single": "Şey, görünüşe göre bu kasaba nihayet biraz zevkini geliştirmiş, Çiçek Kraliçe seçimleriyle.$1#$e#İkinci seçimim olarak seni eklemek isterim, çiftçi, fakat bence Mia bu defa sahne ışığındaki anlarını hakediyor.$10",
+    "dialogue.FQC.Henry.MiaQueen.Single": "Yani Mia kazandı, ha? Şaşırdım diyemem. Kesin benim oyumu almıştı.#$b#Rekabete suç bulmuyorum, tabii. Yalnızca... bazen taraf tutmamak fazla zor.$4",
+    "dialogue.FQC.Mia.MiaQueen.Single": "Aman tanrım, @. *@*. Benim için mi oy verdin?$4#$b#Zirvede olabileceğimi bile bilmiyordum, ama sonra Aideen ve Lewis bana tacı takmaya geliverdiler ve... sadece inanamadım.$4#$b#Çok mutluyum!$3#$b#Her zaman dergilerdeki güzel gösterişli kızlar gibi hissetmeyi hayal etmiştim... Üzgünüm, @. Saçma sapan küçük bir çiçek tacı için duygusallaşıyorum.$4#$e#Oyladığın için teşekkürler.$3",
+    "dialogue.FQC.Harvey.MiaQueen.Single": "Bu sene Mia'yı gördün mü? Çiçek Kraliçeliği'ni kazandı ve sevinçten patlayacak gibi görünüyor.$4#$b#Açıkçası inanılmaz sevimli bir görünüm. Demeliyim ki, oldukça hakedilmiş bir ünvan.",
+    "dialogue.FQC.Leah.MiaQueen.Single": "Bu sene Haley'den başka birisinin kazanmış olmasına gerçekten mutluyum.#$b#Özellikle bu kişinin Mia olmasından gurur duyuyorum. Kız haketti.$1",
+    "dialogue.FQC.Elliot.MiaQueen.Single": "Görünüşe göre yabancı çiçek açtı ve gerçek görkemine erişti bu sene.#$b#Demek istiyorum ki bu sene Mia Çiçek Kraliçesi olmuş gibi görünüyor. Onu böyle mutlu görmek bana neşe veriyor.$1",
+    "dialogue.FQC.RSVSean.MiaQueen.Single": "Lanet, Mia o taçla harika görünüyor! Gerçi eğer önceden bilseydim, ona kiraz çiçeklerinden ve unutmabenilerden bir tane yapardım.$h",
+    "dialogue.FQC.Jas.MiaQueen": "Bayan Mia o taçla çok güzel görünüyor, sence de öyle değil mi?#$b#Bu sene o kazandığı için gerçekten mutluyum. O ve Bayan Penny kazanmayı çok hakediyorlar!$1",
+
+// Mia Married
+    "dialogue.FQC.Sterling.MiaQueen.Married": "Ay, bu dünyanın yaşayan en şanslı adamı değil mi?$10^Ay, bu dünyanın yaşayan en şanslı kadını değil mi?$10#$b#Onun gibi bir Çiçek Soylusu olan bir kraliçeyle evli olmak güzel hissettiriyor olmalı.#$b#Şu çiçek tacını takarken sanki parlıyor gibi görünüyor. Ona bunu hatırlattığından emin ol, tamam mıdır?",
+	"dialogue.FQC.Henry.MiaQueen.Married": "Onunla gurur duyuyor olmalısın. Biliyorsun, herkes Çiçek Kraliçesi'yle evli olduğunu söyleyemez.#$b#Biliyorum çok büyük bir fark değil, ama bazen bir kapkekten bir ziyafet çıkarabilmek güzel. Böyle küçük anların sanki büyük şeylermiş gibi tadını çıkar.$1",    
+	"dialogue.FQC.Mia.MiaQueen.Married": "Tatlım! Balım! Tatlım! Gördün mü? Duydun mu? Bunun bir parçası mıydın?$1#$b#Bu sene Çiçek Kraliçesi seçilmişim! Ben! Ben!! Buna inanamıyorum.$3#$b#Çok... güzel ve şanslı hissediyorum. Küçükten beri bir gün hissetmeyi hayal ettiğim şey bu.$4#$b#... Ahhh.... Bugün yalnızca büyülü. Bir parçası olduğun için teşekkür ederim, tatlım.$8",
+    "dialogue.FQC.Harvey.MiaQueen.Married": "Mia'yı henüz taçlandırıldığı için tebrik ettin mi? Işıldıyor gibi görünüyor.#$b#Böyle bir bahar güzeliyle evlendiğin için şanslısın.",
+	
+// STERLING QUEEN
+// Sterling Single
+    "dialogue.FQC.Sterling.SterlingQueen.Single": "Şey, bu...$4#$b#*İnanılmaz* bir şekilde beklenmedik?$9#$b#Bir adam olarak zar zor çiçek toplarım, Çiçek Kralı seçilmeyi bırak, ben...$4#$b#Eğer bunda bir payın olduysa, çiftçi, teşekkür ederim.#$e#Hazır konuşuyorken, Akademi'ye teşekkür ederim, en öncelikle. Pierre ve bütün hocalarıma, giden babama, beni yetiştiren anneme...$10#$e#Sonraki 5 sene boyunca bunun hakkında böbürleneceğim. ÖZELLİKLE Haley'e. Ferngill'in kıyısındaki herkes gaddar rejimime şahit olacak.$10",
+    "dialogue.FQC.Henry.SterlingQueen.Single": "...$8#$b#Ah, üzgünüm çiftçi. Sadece Sterling'in nasıl Çiçek Kraliçesi olmayı başardığını anlamaya çalışıyordum. Yine de, onu tanıdığımdan şaşırmamalıyım cidden.#$b#O çocuk konuşarak iyi ya da kötü her şeyi yaptırabilir.#$b#En azından bununla eğleniyor gibi.$1",
+    "dialogue.FQC.Mia.SterlingQueen.Single": "Ay, biri başından büyük bir zaferin üstüne bayağı mutlu. Neredeyse oylamada onun ismini tahmin ediyordum.$5#$e#Ama cidden, harika görünüyor. Ne kadar böbürlenirse böbürlensin, zaferinin onun için çok şey ifade ettiğini biliyorum.#$b#Ahh... Sevdiklerimiz için yaptığımız şeyler.$9#$b#Bunun sonunu Henry'den dinlemeyeceğim.$5",
+    "dialogue.FQC.Shane.SterlingQueen.Single": "Tch. Sterling'i gördün mü?$a#$b#O şeyle lanet aptal görünüyor... Ona benim için embesilsin de, tamam mı?$1#$e#...O şey kafasındayken tuhaf bir şekilde mutlu görünüyor. Çiçekleri böyle sevdiğini bilmiyordum.$3",
+    "dialogue.FQC.Jas.SterlingQueen.Single": "...Bugün Bay Sterling'i gördün mü?$3#$b#O sanki... Çiçek Kraliçesi gibi, tıpkı Haley.$3#$b#Shane amca komik görünüyor diyor, ama bence harika görünüyor! Umarım birdahaki sefer benim kraliçe olmama izin verirler!$1",
+
+// Sterling Married
+    "dialogue.FQC.Sterling.SterlingQueen.Married": "Nasıl hissettiriyor? Çiçek Kraliçe'nle evli olmak. Daha şimdiden önemli hisset, ha güzellik?$10#$e#İlk resmi mandam olarak, bana bir öpücük vereceksin. İkinci olarak, benimle dans etmeni emrediyorum.#$b#Ve üçüncü olarak....$10#$b#Şey, bu biz eve dönene kadar bekleyebilir.#$e#Ne var? Eğer biri bana bir taç ve keyfi ölçüde güç verecekse, bunun aklımdan geçecek ilk şey olduğuna bahse girebilirsin.$10",
+    "dialogue.FQC.Henry.SterlingQueen.Married": "Bu noktada, kendime Sterling'in nasıl böyle uçuşlar yaptığını düşünmeyi bıraktım. Sana herhangi bir plandan bahsetti mi?#$b#Ah peki. En azından hepsi iyi eğlenceydi gibi. Yine de onu hanımların önünde havalanmadan önce almak isteyebilirsin diye düşünüyorum. Galiba bazıları biraz kıskanç olabilir.",
+    "dialogue.FQC.Mia.SterlingQueen.Married": "Tamam, geri alıyorum. Korkunç bir fikirdi. Adam güçle kafayı yedi.$5#$b#Korkarım eğer onu toplayamazsak giyotini çıkarmamız gerekecek.$5",
+    
+// HENRY QUEEN
+// Henry Flower King Single
+    "dialogue.FQC.Sterling.HenryQueen.Single": "Sanıyorum böylesine çekici olmanın ara sıra kendi avantajları da olabiliyor.$10#$b#Mesela tatlı tatlı Henry'nin Çiçek Kraliçesi aday listesine girmesini sağlamak gibi, sadece.$10#$e#Ne? Kimseye onun için oy verdirtmedim, yemin ederim. Sadece ismini Kraliçe adayı olarak yazdırttım.$9#$e#Ah evet, kendimle çok mutluyum.$10",
+    "dialogue.FQC.Henry.HenryQueen.Single": "B-ben bu nasıl oldu bilmiyorum. Hiçbir şey için kayıt yaptırmadım, ve kim niye beni seçsin bilmiyorum.$4#$b#Doğru. B-bu bir tür hata falan olmalı. Yalnızca-ah...$4#$b#Yalnızca gidip kimin kazanmış olması gerektiğini bulacağım ve tacın gerçek sahibine geri döndüğüne emin olacağım.$6",
+    "dialogue.FQC.Mia.HenryQueen.Single": "Ayy, Hen çok harika durmuyor mu? Bu sene kazandığına mutluyum!$3#$b#Adamın neşelendirecek bir şeylere ihtiyacı var, keşke bu zaferi olduğu gibi kabul edebilse. Kasaba onu tebrik ediyor!#$e#Hey, sakın... Sakın babasına anlatma, tamam mı?$2#$b#...$2#$b#O, ahm. O pek iyi karşılamayabilir.$6#$e#O yüzden onu neşelendirmeme yardım et, tamam?",
+    "dialogue.FQC.Leah.HenryQueen.Single": "Yaaa, Henry'i gördün mü?$1#$b#Bu sene o seçildiği için çok mutluyum! Sevimli görünüyor. Belki bize daha sık katılması için onu daver etmek ona cesaret verir.",
+
+// Henry Flower King Taken
+    "dialogue.FQC.Sterling.HenryQueen.Married": "Kocana tamamen adil bir şekilde kazandığını anlatır mısın? Taç onun, zaferin tadını çıkarmak ona ait.$10#$e#Bana sorarsan, bununla en şık duran o. Neden ona küçük bir hatırlatma yapmıyorsun?$10",
+    "dialogue.FQC.Henry.HenryQueen.Married": "Tatlım? Bununla senin bir alakan var mı?$3#$b#Kendime Çiçek Kralı demekten mutlu olduğum kadar, bunu bu sene en çok kazanmayı umandan aldığım için de üzgünüm.$6#$b#Şimdi bana izin verirsen, Sterling daha fazla şaka yapmadan önce bunu çözmeye bakmalıyım.",
+    "dialogue.FQC.Mia.HenryQueen.Married": "@!! Henry bu sene Çiçek Kraliçeliğini kazandı, inanabiliyor musun?$3#$e#Yine de, aşırı ısınmadan bir tebrik geride geri görünüyor, o yüzden zavallı adamı biraz rahatlatmak isteyebilirsin.$5#$b#Ve bunu hakettiğini bildiğinden emin ol, tamam?$1#$e#Sterling'i onunla çok fazla uğraşmaktan alıkoymaya çalışacağım.",
+    
+// EAST SCARP NPCS
+// ELOISE QUEEN
+    "dialogue.FQC.Mia.EloiseQueen": "Yoba'nın ışığında, Ellie çiçek tacıyla öyle güzel duruyor ki onu yiyebilirim.$4",
+    "dialogue.FQC.Sterling.EloiseQueen": "Bu sene Jacob'ın kızını Çiçek Kraliçesi seçtiler, çok mutlu olmalılar.",
+}
+	
+	
+	

@@ -1,0 +1,43 @@
+{
+	"Name": "Diverse SDV - Penny & Pam",
+	"Author": "DSV Team",
+	"Version": "3.0.3",
+	"Description": "Adds ethnic, cultural, gender identity, and body diversity to Penny & Pam, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.PennyPam",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1073332", "GitHub:AirynS/DSV-Penny-Pam" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "foggy.LfL",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.PennyIrishWeddingDress",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+	]
+}

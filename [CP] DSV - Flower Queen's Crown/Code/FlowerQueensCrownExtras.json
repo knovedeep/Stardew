@@ -1,0 +1,157 @@
+{
+	"Changes": [
+		{
+			"LogName": "FQC Emily Tattoos",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{TargetWithoutPath}}_FlowerDanceTattoos_{{TargetPathOnly}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"EmilyTattoos": "tattoos",
+				"EmilyVariant |contains= off": false,
+				"FlowerQueen |contains= Emily": true,
+			},
+		},
+		{
+			"LogName": "FQC Haley Piercings",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{TargetWithoutPath}}_FlowerDancePiercings_{{HaleyVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyAccessories |contains= piercings": true,
+				"HaleyVariant |contains= off": false,
+				"FlowerQueen |contains= Haley": true,
+			},
+		},
+		{
+			"LogName": "FQC Haley Cuffs",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{TargetWithoutPath}}_FlowerDanceCuffs_{{TargetPathOnly}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyAccessories |contains= cuffs": true,
+				"HaleyVariant |contains= Black": true,
+				"FlowerQueen |contains= Haley": true,
+			},
+		},
+		{
+			"LogName": "FQC Harvey Mustache",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{TargetWithoutPath}}_FlowerDanceMustache.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HarveyCharacterMustache |contains= Mustache": true,
+				"HarveyVariant |contains= Vanilla": true,
+				"FlowerQueen |contains= Harvey": true,
+			},
+		},
+		{
+			"LogName": "FQC Maru Glasses",
+			"Action": "EditImage",
+			"Target": "Characters/Maru",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{TargetWithoutPath}}_FlowerDanceGlasses.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaruCharacterGlasses |contains= Glasses": true,
+				"MaruVariant |contains= Vanilla, ModdedNotsnufffie": true,
+				"FlowerQueen |contains= Maru": true,
+			},
+		},
+		{
+			"LogName": "FQC Sam Eyes",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{Target}}_FlowerDanceEyes_{{SamEyes}}_{{SamVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamVariant |contains= off": false,
+				"FlowerQueen |contains= Sam": true,
+			},
+		},
+		{
+			"LogName": "FQC Sam Stubble",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{Target}}_FlowerDanceExtras_Stubble_{{SamVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamExtras |contains= Stubble": true,
+				"SamVariant |contains= off": false,
+				"FlowerQueen |contains= Sam": true,
+			},
+		},
+		{
+			"LogName": "FQC Sam Beard",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{Target}}_FlowerDanceExtras_Beard_{{SamVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamExtras |contains= Beard": true,
+				"SamVariant |contains= off": false,
+				"FlowerQueen |contains= Sam": true,
+			},
+		},
+		{
+			"LogName": "FQC Sam Piercings",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{Target}}_FlowerDanceExtras_Piercings.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SamExtras |contains= Piercings": true,
+				"SamVariant |contains= off": false,
+				"FlowerQueen |contains= Sam": true,
+			},
+		},
+		{
+			"LogName": "FQC Sebastian Glasses",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{TargetWithoutPath}}_FlowerDanceGlasses_{{SebastianVariant}}_{{TargetPathOnly}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SebGlasses |contains= Glasses": true,
+				"SebastianVariant |contains= off": false,
+				"FlowerQueen |contains= Sebastian": true,
+			},
+		},
+		{
+			"LogName": "FQC Sebastian Piercings",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian",
+			"FromFile": "Misc/{{TargetWithoutPath}}/{{TargetWithoutPath}}_FlowerDancePiercings_{{SebastianVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SebPiercings |contains= Piercings": true,
+				"SebastianVariant |contains= off": false,
+				"FlowerQueen |contains= Sebastian": true,
+			},
+		},
+	]
+}

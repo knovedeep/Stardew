@@ -1,0 +1,60 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.WillyVariant.name": "WillyVariante",
+	"config.WillyVariant.values.Vanilla": "Vanilla",
+	"config.WillyVariant.values.Disabled": "Disabilitato",
+	"config.WillyVariant.values.Tongan": "Tongano",
+	"config.WillyVariant.values.TonganDisabled": "TonganDisabilitato",
+	"config.WillyVariant.values.Off": "Off(Disabilitato)",
+	
+	"config.WillyLightweightConfig.name": "WillyConfigPesoleggero",
+	"config.WillyLightweightConfig.description": "Indica se Willy avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.WillyLightweightConfig.values.Full": "Intero",
+	"config.WillyLightweightConfig.values.Light": "Leggero",
+	"config.WillyLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.ClintVariant.name": "ClintVariante",
+	"config.ClintVariant.values.Vanilla": "Vanilla",
+	"config.ClintVariant.values.Modded": "Modded",
+	"config.ClintVariant.values.Off": "Disabilitato",
+	
+	"config.ClintLightweightConfig.name": "ClintConfigPesoleggero",
+	"config.ClintLightweightConfig.description": "Indica se Clint avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.ClintLightweightConfig.values.Full": "Intero",
+	"config.ClintLightweightConfig.values.Light": "Leggero",
+	"config.ClintLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.LinusVariant.name": "LinusVariante",
+	"config.LinusVariant.values.Vanilla": "Vanilla",
+	"config.LinusVariant.values.Modded": "Modded",
+	"config.LinusVariant.values.Off": "Disabilitato",
+	
+	"config.LinusLightweightConfig.name": "LinusConfigPesoleggero",
+	"config.LinusLightweightConfig.description": "Indica se Linus avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.LinusLightweightConfig.values.Full": "Intero",
+	"config.LinusLightweightConfig.values.Light": "Leggero",
+	"config.LinusLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Aggiunge la compatibilità con Looking For Love di foggywizard in modo che Lfl databile Willy, Clint, & Linus si abbineranno alle varianti DSV Willy, Clint, & Linus con anche gli abiti stagionali. Selezionalo solo se hai Willy, Clint, o Linus impostati su 'dateable' nelle opzioni di configurazione di Lfl.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.ClintScar.name": "CicatriceClint",
+	"config.ClintScar.description": "Sceglie se la variante Modded di Clint con o senza cicatrici sul viso. Non influisce sulla sua variante Vanilla.",
+	"config.ClintScar.values.Scar": "Cicatrice",
+	"config.ClintScar.values.NoScar": "SenzaCicatrice",
+	
+	"config.LinusEventChanges.name": "CambiamentiEventiLinus",
+	"config.LinusEventChanges.description": "Aggiunge Marigold il cane di servizio agli eventi con i cuori di Linus. Disabilitalo se usi altre mod che modificano gli eventi con i cuori di Linus.",
+	"config.LinusEventChanges.values.True": "Vero",
+	"config.LinusEventChanges.values.False": "Falso",
+	
+}
+	
+	
+	

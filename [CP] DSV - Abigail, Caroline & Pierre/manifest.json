@@ -1,0 +1,43 @@
+{
+	"Name": "Diverse SDV - Abigail, Caroline & Pierre",
+	"Author": "DSV Team",
+	"Version": "3.0.4",
+	"Description": "Adds ethnic, cultural, and body type diversity to Abigail, Caroline & Pierre, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.AbigailCarolinePierre",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1072828", "GitHub:AirynS/DSV-Abigail-Caroline-Pierre" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Rafseazz.RidgesideVillage",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.AbigailSpanishWeddingDress",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+	]
+}

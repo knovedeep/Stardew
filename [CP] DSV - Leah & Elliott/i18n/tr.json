@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+	
+	"config.ElliottVariant.name": "ElliottÇeşidi",
+	"config.ElliottVariant.values.Modded": "Modlu",
+	"config.ElliottVariant.values.Vanilla": "Vanilla",
+	"config.ElliottVariant.values.Off": "Kapalı",
+	
+	"config.ElliottLightweightConfig.name": "ElliottHafiflikYapılandırma",
+	"config.ElliottLightweightConfig.description": "Elliott'un Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.ElliottLightweightConfig.values.Full": "Tam",
+	"config.ElliottLightweightConfig.values.Light": "Hafif",
+	"config.ElliottLightweightConfig.values.Ultralight": "Ultra hafif",
+
+	"config.LeahVariant.name": "LeahÇeşidi",
+	"config.LeahVariant.values.Vanilla": "Vanilla",
+	"config.LeahVariant.values.Native": "YerliAmerikalı",
+	"config.LeahVariant.values.Butch": "Erkeksi",
+	"config.LeahVariant.values.Off": "Kapalı",
+	
+	"config.LeahLightweightConfig.name": "LeahHafiflikYapılandırma",
+	"config.LeahLightweightConfig.description": "Leah'ın Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.LeahLightweightConfig.values.Full": "Tam",
+	"config.LeahLightweightConfig.values.Light": "Hafif",
+	"config.LeahLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.MaternitySprites.name": "GebelikSpriteları",
+	"config.MaternitySprites.description": "Karın hamileyken gebelik kıyafetlerini etkinleştirir. Eğer 'Açık' olarak ayarlanırsa, sprite'lar otomatik olarak değiştirilecek. Leah'ın Erkeksi çeşidini etkilemez.",
+	"config.MaternitySprites.values.True": "Açık",	
+	"config.MaternitySprites.values.False": "Kapalı",
+
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description": "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun wikisine bakın.",
+
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.PyjamasElliott.name": "PijamaElliott",
+	"config.PyjamasElliott.description": "Elliott'un sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.PyjamasElliott.values.True": "Açık",	
+	"config.PyjamasElliott.values.False": "Kapalı",
+	"config.PyjamasElliott.values.Marriage": "Evlilik",
+	
+	"config.PyjamasLeah.name": "PijamaLeah",
+	"config.PyjamasLeah.description": "Leah'ın sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.PyjamasLeah.values.True": "Açık",	
+	"config.PyjamasLeah.values.False": "Kapalı",
+	"config.PyjamasLeah.values.Marriage": "Evlilik",
+	
+	"config.WeddingOutfitElliott.name": "DüğünElbisesiElliott",
+	"config.WeddingOutfitElliott.description": "Elliott'un evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitElliott.values.1": "1",
+	"config.WeddingOutfitElliott.values.2": "2",
+	"config.WeddingOutfitElliott.values.3": "3",
+	"config.WeddingOutfitElliott.values.4": "4",
+	"config.WeddingOutfitElliott.values.5": "5",
+	"config.WeddingOutfitElliott.values.6": "6",
+	
+	"config.WeddingOutfitLeah.name": "DüğünElbisesiLeah",
+	"config.WeddingOutfitLeah.description": "Leah'ın evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitLeah.values.1": "1",
+	"config.WeddingOutfitLeah.values.2": "2",
+	"config.WeddingOutfitLeah.values.3": "3",
+	"config.WeddingOutfitLeah.values.4": "4",
+	"config.WeddingOutfitLeah.values.5": "5",
+	"config.WeddingOutfitLeah.values.6": "6",
+	"config.WeddingOutfitLeah.values.7": "7",
+	
+// BUTCH LEAH SPOUSE PREGNANCY DIALOGUE REPLACEMENT
+
+	"Leah.HaveBabyQuestion": "Sence evlat edinmeli miyiz, {0}?",
+	"Leah.BirthMessage_SpouseMother": "Geceleyin evlatlık kurumu yeni bebeğinizi ({0}) bıraktı.",
+	"Leah.Strings.4443": "Bugün enerjik değilim, o kadar... Kahvaltını kendin hazırlayamaz mısın?$s",
+	"Leah.Strings.4445": "{0}, evlat edinme belgelerini doldurdum. Geriye bir tek dua edip beklemek kaldı.$l",
+	
+}
+	
+	
+	

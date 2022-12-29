@@ -1,0 +1,46 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.GuntherVariant.name": "GuntherVariant",
+	"config.GuntherVariant.values.Vanilla": "Vanilla",
+	"config.GuntherVariant.values.Modded": "Modded",
+	"config.GuntherVariant.values.Off": "Off",
+	
+	"config.MarlonVariant.name": "MarlonVariant",
+	"config.MarlonVariant.values.Vanilla": "Vanilla",
+	"config.MarlonVariant.values.Modded": "Modded",
+	"config.MarlonVariant.values.Off": "Off",
+	
+	"config.MorrisVariant.name": "MorrisVariant",
+	"config.MorrisVariant.values.Vanilla": "Vanilla",
+	"config.MorrisVariant.values.Off": "Off",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.AlternateCecily.name": "AlternateCecily",
+	"config.AlternateCecily.description": "Toggles whether or not Gunther's daughter Cecily will use alternate sprites & portraits by Airyn that match DSV's Gunther. Set to false if you prefer Cecily's original art. Only applicable if using Make Gunther Real.",
+	"config.AlternateCecily.values.True": "True",
+	"config.AlternateCecily.values.False": "False",
+	
+	"config.AdventurersGuildExpandedCompatibility.name": "AdventurersGuildExpandedCompatibility",
+	"config.AdventurersGuildExpandedCompatibility.description": "Adds compatible portraits and sprites for Adventurers Guild Expanded's Daisy, Gabriel and/or Zinnia, so that they are Mongolian to match Marlon's modded DSV variant.",
+	"config.AdventurersGuildExpandedCompatibility.values.AllModded": "AllModded",
+	"config.AdventurersGuildExpandedCompatibility.values.ModdedGabrielOnly": "ModdedGabrielOnly",
+	"config.AdventurersGuildExpandedCompatibility.values.ModdedZinniaOnly": "ModdedZinniaOnly",
+	"config.AdventurersGuildExpandedCompatibility.values.Off": "Off",
+	
+	"config.MarlonCompatibility.name": "MarlonCompatibility",
+	"config.MarlonCompatibility.description": "Toggles which mod will edit Marlon's portraits and sprites. The default 'Automatic' should automatically match the appropriate mod, but if this is not working, this option allows for a manual selection.",
+	"config.MarlonCompatibility.values.Automatic": "Automatic",
+	"config.MarlonCompatibility.values.Vanilla": "Vanilla",
+	"config.MarlonCompatibility.values.Denver": "Denver",
+	"config.MarlonCompatibility.values.BefriendMarGun": "BefriendMarlonAndGunther",
+	"config.MarlonCompatibility.values.MakeMarlonReal": "MakeMarlonReal"
+	
+}
+	
+	
+	

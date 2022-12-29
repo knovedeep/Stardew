@@ -1,0 +1,32 @@
+{
+        "Changes": 
+        [
+            {
+                "LogName": "PPaF Compat - Sam Commitment",
+                "Action": "EditImage",
+                "Target": "Characters/Sam",
+                "FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Sam_{{SamVariant}}_Commitment.png",
+                "ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+                "FromArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "HasMod |contains= Amaranthacyan.PPAFSMAPI": true,
+                    "Amaranthacyan.PPAFSMAPI/Sam |contains= FullyPlatonic": true
+                }
+            },
+            {
+                "LogName": "PPaF Compat - Sam No Blush",
+                "Action": "EditImage",
+                "Target": "Portraits/Sam",
+                "FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Sam_{{SamVariant}}_NoBlushOverlay.png",
+                "PatchMode": "Overlay",
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "HasMod |contains= Amaranthacyan.PPAFSMAPI": true,
+                    "Query: ('{{Amaranthacyan.PPAFSMAPI/Sam}}' = 'FullyPlatonic' AND '{{Amaranthacyan.PPAFSMAPI/EditFullyPlatonicPortraits}}' = 'true') OR ('{{Amaranthacyan.PPAFSMAPI/Sam}}' = 'SexWithoutRomance' AND '{{Amaranthacyan.PPAFSMAPI/EditSexWithoutRomancePortraits}}' = 'true') OR ('{{Amaranthacyan.PPAFSMAPI/Sam}}' = 'RomanceWithoutSex' AND '{{Amaranthacyan.PPAFSMAPI/EditRomanceWithoutSexPortraits}}' = 'true')": true
+                }
+            }
+        ]
+    }

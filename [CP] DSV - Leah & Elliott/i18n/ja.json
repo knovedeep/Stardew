@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+	
+	"config.ElliottVariant.name": "ElliottVariant",
+	"config.ElliottVariant.values.Modded": "Modded",
+	"config.ElliottVariant.values.Vanilla": "Vanilla",
+	"config.ElliottVariant.values.Off": "Off",
+	
+	"config.ElliottLightweightConfig.name": "ElliottLightweightConfig",
+	"config.ElliottLightweightConfig.description": "Toggles whether Elliott will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.ElliottLightweightConfig.values.Full": "Full",
+	"config.ElliottLightweightConfig.values.Light": "Light",
+	"config.ElliottLightweightConfig.values.Ultralight": "Ultralight",
+
+	"config.LeahVariant.name": "LeahVariant",
+	"config.LeahVariant.values.Vanilla": "Vanilla",
+	"config.LeahVariant.values.Native": "Native",
+	"config.LeahVariant.values.Butch": "Butch",
+	"config.LeahVariant.values.Off": "Off",
+	
+	"config.LeahLightweightConfig.name": "LeahLightweightConfig",
+	"config.LeahLightweightConfig.description": "Toggles whether Leah will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.LeahLightweightConfig.values.Full": "Full",
+	"config.LeahLightweightConfig.values.Light": "Light",
+	"config.LeahLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.MaternitySprites.name": "MaternitySprites",
+	"config.MaternitySprites.description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change. Doesn't affect Leah's Butch variant. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MaternitySprites.values.True": "True",	
+	"config.MaternitySprites.values.False": "False",
+	
+	"config.PlatonicNPCs.name": "PlatonicNPCs",
+	"config.PlatonicNPCs.description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.PyjamasElliott.name": "PyjamasElliott",
+	"config.PyjamasElliott.description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.PyjamasElliott.values.True": "True",	
+	"config.PyjamasElliott.values.False": "False",
+	"config.PyjamasElliott.values.Marriage": "Marriage",
+	
+	"config.PyjamasLeah.name": "PyjamasLeah",
+	"config.PyjamasLeah.description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.PyjamasLeah.values.True": "True",	
+	"config.PyjamasLeah.values.False": "False",
+	"config.PyjamasLeah.values.Marriage": "Marriage",
+	
+	"config.WeddingOutfitElliott.name": "WeddingOutfitElliott",
+	"config.WeddingOutfitElliott.description": "Selects which wedding outfit Elliott will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitElliott.values.1": "1",
+	"config.WeddingOutfitElliott.values.2": "2",
+	"config.WeddingOutfitElliott.values.3": "3",
+	"config.WeddingOutfitElliott.values.4": "4",
+	"config.WeddingOutfitElliott.values.5": "5",
+	"config.WeddingOutfitElliott.values.6": "6",
+	
+	"config.WeddingOutfitLeah.name": "WeddingOutfitLeah",
+	"config.WeddingOutfitLeah.description": "Selects which wedding outfit Leah will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitLeah.values.1": "1",
+	"config.WeddingOutfitLeah.values.2": "2",
+	"config.WeddingOutfitLeah.values.3": "3",
+	"config.WeddingOutfitLeah.values.4": "4",
+	"config.WeddingOutfitLeah.values.5": "5",
+	"config.WeddingOutfitLeah.values.6": "6",
+	"config.WeddingOutfitLeah.values.7": "7",
+	
+// BUTCH LEAH SPOUSE PREGNANCY DIALOGUE REPLACEMENT
+
+	"Leah.HaveBabyQuestion": "ねえ{0}、赤ちゃんがほしくない？",
+	"Leah.BirthMessage_SpouseMother": "夜のあいだに、養子縁組エージェンシーからかわいい{0}がやってきた！",
+	"Leah.Strings.4443": "ただ 今日は 疲れただけ… 朝食は 自分で 作ったら？$s",
+	"Leah.Strings.4445": "{0}、 養子縁組の 書類は 出したから、 あとは 返事を 待つだけね。$l",
+	
+}
+	
+	
+	

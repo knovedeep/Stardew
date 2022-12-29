@@ -1,0 +1,121 @@
+{
+// GUNTHER DSV
+
+	"Changes": [
+		{
+			"LogName": "Gunther Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Gunther, Characters/Gunther",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{CompatGunther}}/{{GuntherVariant}}/{{TargetWithoutPath}}_{{season}}_1_Base{{GuntherWoods}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "GuntherWoods Museum Expansion",
+			"Action": "EditImage",
+			"Target": "Portraits/GuntherWoods, Characters/GuntherWoods",
+			"FromFile": "Gunther/{{TargetPathOnly}}/MuseumExpansion/{{GuntherVariant}}/Gunther_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= andril11.charlie": true,
+				"GuntherVariant |contains= off": false
+			},
+		},
+		{
+			"LogName": "Gunther Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Gunther, Characters/Gunther",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{CompatGunther}}/{{GuntherVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "GuntherWoods Museum Expansion Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/GuntherWoods, Characters/GuntherWoods",
+			"FromFile": "Gunther/{{TargetPathOnly}}/MuseumExpansion/{{GuntherVariant}}/Gunther_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= andril11.charlie": true,
+				"GuntherVariant |contains= off": false
+			},
+		},
+		
+// MAPS
+		{
+			"LogName": "Gunther Movie Theater Sprites",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "Gunther/Misc/TheaterSprites/{{GuntherVariant}}/Gunther_{{season}}_1_Base.png",
+			"ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Gunther Pendants",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Portraits/Gunther",
+			"FromFile": "Gunther/Misc/Gunther_Pendant_{{GuntherVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:{{TargetWithoutPath}}": "Married, Engaged",
+				"HasMod |contains= Wolf.Gun": true,
+				"MermaidPendants": "true",
+			}
+		},
+		
+// EMOJIS
+		{
+			"LogName": "Emoji Gunther",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Gunther/Misc/Gunther_Emoji_{{GuntherVariant}}.png",
+			"ToArea": {"X": 27, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"GuntherVariant|contains= vanilla, off": false,
+			},
+		},
+		
+// CECILY
+		{
+			"LogName": "Cecily DSV",
+			"Action": "EditImage",
+			"Target": "Portraits/Cecily, Characters/Cecily",
+			"FromFile": "Gunther/{{TargetPathOnly}}/MakeGuntherReal/{{GuntherVariant}}/Cecily.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= Wolf.Gun": true,
+				"AlternateCecily": "true",
+			},
+		},
+		
+// COMPATIBILITY
+		{
+			"LogName": "Gunther Mateo Compat",
+			"Action": "EditImage",
+			"Target": "Portraits/MateoGunther, Characters/MateoGunther",
+			"FromFile": "Gunther/{{TargetPathOnly}}/MakeGuntherReal/{{GuntherVariant}}/Gunther_{{season}}_1_Base.png",
+			"When":
+			{
+				"HasMod |contains= DestyNova.Mateo.CP": true,
+			},
+		},
+	]
+}

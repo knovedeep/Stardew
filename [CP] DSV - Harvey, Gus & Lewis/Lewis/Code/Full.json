@@ -1,0 +1,153 @@
+{
+// LEWIS DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Lewis Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLewis}}/{{LewisVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomLewis}}_{{LewisWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Lewis Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLewis}}/{{LewisVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestLewis}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Lewis Prologue",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLewis}}/{{LewisVariant}}/Lewis_Spring_1_Sun.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasSeenEvent |contains= 60367": false,
+			},
+		},
+		{
+			"LogName": "Lewis Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLewis}}/{{LewisVariant}}/Lewis_SleepSprite.png",
+			"ToArea": { "X": 48, "Y": 192, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "ManorHouse",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Lewis Beach",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis_Beach",
+			"FromFile": "Lewis/{{TargetPathOnly}}/{{LFLLewis}}/{{LewisVariant}}/Lewis_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis Resort - Shorts",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis", 
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLewis}}/{{LewisVariant}}/Lewis_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "IslandSouth, IslandNorth, IslandSouthEast, IslandWest, IslandEast",
+				"Time": "{{Range: 1200, 1750}}",
+				"HasConversationTopic |contains=lucky_pants_lewis": "true",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// MISCELLANEOUS	
+		{
+			"LogName": "Lewis Emoji 1",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Lewis/Misc/Lewis_Emoji_{{LewisVariant}}.png",
+			"ToArea": {"X": 54, "Y": 108, "Width": 9, "Height": 9},
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis Emoji 2",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Lewis/Misc/Lewis_Emoji_{{LewisVariant}}_1.png",
+			"ToArea": {"X": 90, "Y": 117, "Width": 9, "Height": 9},
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emoji Lewis 3",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Lewis/Misc/Lewis_Emoji_{{LewisVariant}}_2.png",
+			"ToArea": {"X": 108, "Y": 117, "Width": 9, "Height": 9},
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis Clothes Therapy",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Lewis/Misc/ClothesTherapy_Lewis_{{LewisVariant}}.png",
+			"ToArea": {"X": 0, "Y": 64, "Width": 64, "Height": 32},
+			"When":
+			{
+				"LewisVariant|contains= Modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+
+// MERMAID PENDANTS
+		{
+			"LogName": "Lewis Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis",
+			"FromFile": "Lewis/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LookingForLove |contains= Lewis": true,
+				"Relationship:Lewis": "Married, Engaged",
+				"Query: ('{{LewisWeatherVariant}}'= 'Base' AND NOT '{{Season}}' = 'winter') OR ('{{Special+Festival}}' IN ('swim', 'EggFestival', 'FlowerDance', 'Luau', 'MoonlightJellies', 'SVFair', 'WinterStar'))": true,
+				"MermaidPendants": "true",
+			},
+		},
+		
+//COMPAT
+	// Marnie Deserves Better
+		{
+			"LogName": "Lewis - Marnie Deserves Better Compatibility",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+			"FromFile": "Lewis/Misc/MarnieDeservesBetter/{{LewisVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomLewis}}_{{LewisWeatherVariant}}.png",
+			"ToArea": {"X": 16, "Y": 224, "Width":16, "Height":32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "IMS.CP.MarnieDeservesBetter",
+			},
+			"Update": "OnLocationChange",
+		},
+	]
+}

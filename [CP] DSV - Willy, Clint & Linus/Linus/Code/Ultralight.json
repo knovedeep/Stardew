@@ -1,0 +1,51 @@
+{
+// LINUS DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Linus Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Linus, Characters/Linus",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLinus}}/{{TargetWithoutPath}}_{{season}}_{{RandomLinus}}_{{LinusWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Linus Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Linus, Characters/Linus",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLinus}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Linus Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "Linus/Misc/BundleSprites_Linus.png",
+			"ToArea": { "X": 160, "Y": 0, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Linus Wash Clothes",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "Linus/Misc/WashClothes/Linus_{{season}}_{{RandomLinus}}.png",
+			"ToArea": { "X": 129, "Y": 241, "Width": 14, "Height": 15 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

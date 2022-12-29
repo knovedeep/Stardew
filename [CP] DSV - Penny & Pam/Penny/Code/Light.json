@@ -1,0 +1,160 @@
+{
+// PENNY DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Penny Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{PennyVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomPenny}}_{{PennyWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Penny Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{PennyVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestPenny}}_{{RandomFestivalPenny}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Penny Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny_Beach, Characters/Penny_Beach",
+			"FromFile": "Penny/{{TargetPathOnly}}/{{PennyVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Penny Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Penny",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{PennyVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitPenny}}.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PlatonicNPCs |contains= Penny": false,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Penny Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Penny/Misc/Penny_Emoji_{{PennyVariant}}.png",
+			"ToArea": {"X": 9, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PennyVariant|contains= vanillastraightsize, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Penny Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Portraits/Penny_Beach",
+			"FromFile": "Penny/Misc/MermaidPendants/{{TargetWithoutPath}}_Pendant_{{PennyVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Penny": "Married, Engaged",
+				"PennyWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// PREGNANCY DIALOGUE REPLACEMENT
+		{
+			"LogName": "Penny Spouse Pregnancy Dialogue Replacement 1",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": 
+			{
+				"HaveBabyQuestion": "{{i18n:Penny.HaveBabyQuestion}}",
+				"BirthMessage_SpouseMother": "{{i18n:Penny.BirthMessage_SpouseMother}}",
+			},
+			"When":
+			{
+				"Relationship:Penny": "Married",
+				"HasMod |contains= kdau.PregnancyRole": false,
+				"HasMod |contains= Rubecula.ParrotParents": false,
+			},
+		},
+		{
+			"LogName": "Penny Spouse Pregnancy Dialogue Replacement 2",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": 
+			{
+				"NPC.cs.4443": "{{i18n:Penny.Strings.4443}}",
+				"NPC.cs.4445": "{{i18n:Penny.Strings.4445}}",
+			},
+			"When":
+			{
+				"Relationship:Penny": "Married",
+				"HasMod |contains= kdau.PregnancyRole": false,
+				"HasMod |contains= Rubecula.ParrotParents": false,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Penny Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Penny",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Penny_{{PennyVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Penny",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Penny No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Penny_{{PennyVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Penny",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Penny Sad",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Penny_{{PennyVariant}}_Sad.png",
+			"ToArea": { "X": 0, "Y": 320, "Width": 64, "Height": 64 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PennyVariant": "vanilla, mixed",
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Penny",
+			},
+		},
+	]
+}

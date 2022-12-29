@@ -1,0 +1,7 @@
+{
+	"Name": "Fancy Spellcaster Hat",
+	"Description": "A red hat with decorative feathers.",
+	"PurchasePrice": "1000",
+	"ShowHair": true,
+	"IgnoreHairstyleOffset": true
+}

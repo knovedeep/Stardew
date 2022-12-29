@@ -1,0 +1,126 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.SebastianVariant.name": "SebastianVariante",
+	"config.SebastianVariant.values.Vanilla": "Vanilla",
+	"config.SebastianVariant.values.ModdedBlack": "ModdedNero",
+	"config.SebastianVariant.values.ModdedPurple": "ModdedViola",
+	"config.SebastianVariant.values.Off": "Disabilitato",
+	
+	"config.SebastianLightweightConfig.name": "SebastianConfigPesoleggero",
+	"config.SebastianLightweightConfig.description": "Decidi se Sebastian avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.SebastianLightweightConfig.values.Full": "Intero",
+	"config.SebastianLightweightConfig.values.Light": "Leggero",
+	"config.SebastianLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.MaruVariant.name": "MaruVariante",
+	"config.MaruVariant.values.Vanilla": "Vanilla",
+	"config.MaruVariant.values.ModdedNotsnufffie": "ModdedNotsnufffie",
+	"config.MaruVariant.values.ModdedLavender": "ModdedLavender",
+	"config.MaruVariant.values.Off": "Disabilitato",
+	
+	"config.MaruLightweightConfig.name": "MaruConfigPesoleggero",
+	"config.MaruLightweightConfig.description": "Decidi se Maru avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.MaruLightweightConfig.values.Full": "Intero",
+	"config.MaruLightweightConfig.values.Light": "Leggero",
+	"config.MaruLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.RobinVariant.name": "RobinVariante",
+	"config.RobinVariant.values.Vanilla": "Vanilla",
+	"config.RobinVariant.values.Modded": "Modded",
+	"config.RobinVariant.values.Off": "Disabilitato",
+	
+	"config.RobinLightweightConfig.name": "RobinConfigPesoleggero",
+	"config.RobinLightweightConfig.description": "Decidi se Robin avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.RobinLightweightConfig.values.Full": "Intero",
+	"config.RobinLightweightConfig.values.Light": "Leggero",
+	"config.RobinLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.DemetriusVariant.name": "DemetriusVariante",
+	"config.DemetriusVariant.values.Vanilla": "Vanilla",
+	"config.DemetriusVariant.values.ModdedDarkSkin": "ModdedPelleScuro",
+	"config.DemetriusVariant.values.ModdedAlbino": "ModdedAlbino",
+	"config.DemetriusVariant.values.Off": "Disabilitato",
+	
+	"config.DemetriusLightweightConfig.name": "DemetriusConfigPesoleggero",
+	"config.DemetriusLightweightConfig.description": "Decidi se Demetrius avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.DemetriusLightweightConfig.values.Full": "Intero",
+	"config.DemetriusLightweightConfig.values.Light": "Leggero",
+	"config.DemetriusLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.MaternitySprites.name": "SpritesMaternità",
+	"config.MaternitySprites.description": "Abilita l'abbigliamento premaman per tua moglie mentre è incinta. Se impostato su 'vero', gli sprite cambieranno automaticamente. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MaternitySprites.values.True": "Vero",	
+	"config.MaternitySprites.values.False": "Falso",
+	
+	"config.PlatonicNPCs.name": "NPCPlatonici",
+	"config.PlatonicNPCs.description": "Aggiunge la compatibilità con Platonic Partners and Friendships di Amaranthacyan. Metti il nome del candidato in questa lista per avere i loro ritratti e sprites romantici sostituiti con le alternative platonic. Controlla il sito per maggiori informazioni.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.PyjamasSebastian.name": "PigiamaSebastian",
+	"config.PyjamasSebastian.description": "Decidi se Sebastian indosserà o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosserà solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.PyjamasSebastian.values.True": "Vero",	
+	"config.PyjamasSebastian.values.False": "Falso",
+	"config.PyjamasSebastian.values.Marriage": "Matrimonio",
+	
+	"config.PyjamasMaru.name": "PigiamaMaru",
+	"config.PyjamasMaru.description": "Decidi se Maru indosserà o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosserà solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.PyjamasMaru.values.True": "Vero",	
+	"config.PyjamasMaru.values.False": "Falso",
+	"config.PyjamasMaru.values.Marriage": "Matrimonio",
+	
+	"config.WeddingOutfitSebastian.name": "OutfitMatrimonioSebastian",
+	"config.WeddingOutfitSebastian.description": "Seleziona quale abito da sposo Sebastian indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitSebastian.values.1": "1",
+	"config.WeddingOutfitSebastian.values.2": "2",
+	"config.WeddingOutfitSebastian.values.3": "3",
+	"config.WeddingOutfitSebastian.values.4": "4",
+	"config.WeddingOutfitSebastian.values.5": "5",
+	"config.WeddingOutfitSebastian.values.6": "6",
+	
+	"config.WeddingOutfitMaru.name": "OutfitMatrimonioMaru",
+	"config.WeddingOutfitMaru.description": "Seleziona quale abito da sposa Maru indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitMaru.values.1": "1",
+	"config.WeddingOutfitMaru.values.2": "2",
+	"config.WeddingOutfitMaru.values.3": "3",
+	"config.WeddingOutfitMaru.values.4": "4",
+	"config.WeddingOutfitMaru.values.5": "5",
+	"config.WeddingOutfitMaru.values.6": "6",
+	
+	"config.MaruHospitalVariant.name": "MaruHospitalVariante",
+	"config.MaruHospitalVariant.description": "Dai a Maru un camice quando lavora in clinica o lascia il vestito da infermiera Vanilla.",
+	"config.MaruHospitalVariant.values.Scrubs": "Camice",
+	"config.MaruHospitalVariant.values.NoScrubs": "SenzaCamice",
+	
+	"config.MaruCharacterGlasses.name": "MaruOcchiali",
+	"config.MaruCharacterGlasses.description": "Dai a Maru occhiali che possono essere abbinati agli sprites. Ha effetto solo sulle varianti Vanilla e ModdedNotsnufffie.",
+	"config.MaruCharacterGlasses.values.Glasses": "Occhiali",
+	"config.MaruCharacterGlasses.values.NoGlasses": "SenzaOcchiali",
+	
+	"config.SebSafety.name": "SicurezzaSebastian",
+	"config.SebSafety.description": "Dà a Sebastian un casco quando guida la sua moto. Può essere utilizzato solo se SebastianConfigPesoleggero è impostato su 'intero'.",
+	"config.SebSafety.values.Helmet": "Casco",
+	"config.SebSafety.values.NoHelmet": "SenzaCasco",
+	
+	"config.SebGlasses.name": "SebastianOcchiali",
+	"config.SebGlasses.description": "Dà occhiali a Sebastian. Quando viene selezionato 'Dinamico', li indossa solo in privato. Non può essere utilizzato se SebastianConfigPesoleggero è impostato su 'ultraleggero'.",
+	"config.SebGlasses.values.Dynamic": "Dinamico",
+	"config.SebGlasses.values.Glasses": "Occhiali",
+	"config.SebGlasses.values.NoGlasses": "SenzaOcchiali",
+	
+	"config.SebPiercings.name": "SebastianPiercings",
+	"config.SebPiercings.description": "Dà a Sebastian un piercieng al labbro e all'orecchio. Non può essere utilizzato se SebastianConfigPesoleggero è impostato su 'ultraleggero'.",
+	"config.SebPiercings.values.Piercings": "Piercings",
+	"config.SebPiercings.values.NoPiercings": "SenzaPiercings",
+	
+// DEMETRIUS ICE FESTIVAL DIALOGUE FIX
+
+	"dialogue.Demetrius.IceFest": "Anche con una giacca, fa ancora freddo qui. Ammiro la capacità di Robin di stare così vicino al ghiaccio!"
+	
+}
+	
+	

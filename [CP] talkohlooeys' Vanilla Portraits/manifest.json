@@ -1,0 +1,21 @@
+{
+	"Name": "talkohlooeys' Portraits",
+	"Author": "talkohlooeys",
+	"Version": "2.0.1",
+	"Description": "High-res portraits of all vanilla characters.",
+	"UniqueID": "talkohlooeys.HiResPortraits",
+	"UpdateKeys": [ "Nexus:5269" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "tlitookilakin.HDPortraits",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "foggy.LfL",
+			"IsRequired": false
+		},
+	],
+}

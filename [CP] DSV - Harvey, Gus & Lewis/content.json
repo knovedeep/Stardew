@@ -1,0 +1,730 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// HARVEY WEATHER
+		{
+			"Name": "HarveyWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "HarveyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"HarveyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "HarveyWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"HarveyLightweightConfig |contains= light": true,
+			},
+		},
+		{
+			"Name": "HarveyWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"HarveyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "HarveyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"HarveyLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// GUS WEATHER
+		{
+			"Name": "GusWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "GusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"GusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "GusWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"GusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "GusWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"GusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "GusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"GusLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// LEWIS WEATHER
+		{
+			"Name": "LewisWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "LewisWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"LewisLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LewisWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"LewisLightweightConfig |contains= full": false,
+			}
+		},
+		{
+			"Name": "LewisWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"LewisLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LewisWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"LewisLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LewisWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"LewisLightweightConfig |contains= full": true,
+			}
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomHarvey",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomHarvey",
+			"Value": "{{Random: 1, 2 |key= HarveyMain}}",
+			"When":
+			{
+				"HarveyLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomFestivalHarvey",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalHarvey",
+			"Value": "{{Random: 1, 2 |key= HarveyFestival}}",
+			"When":
+			{
+				"HarveyLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true,
+			},
+		},
+		{
+			"Name": "RandomGus",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomLewis",
+			"Value": "1",
+		},
+
+// HARVEY CLINIC
+		{
+			"Name": "HarveyClinic",
+			"Value": "",
+		},
+		{
+			"Name": "HarveyClinic",
+			"Value": "_Clinic",
+			"When":
+			{
+				"LocationName": "Hospital",
+				"Time": "{{Range: 0900, 1500}}",
+				"HarveyLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "HarveyClinic",
+			"Value": "_Clinic",
+			"When":
+			{
+				"LocationName": "Hospital",
+				"HarveyLightweightConfig |contains= light": true,
+			},
+		},
+		
+// SPECIAL - SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true,
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker",
+			}
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+		{
+			"Name": "WeddingGuestHarvey",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestHarvey",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"HarveyLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"HarveyVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestHarvey",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HarveyLightweightConfig |contains= ultralight": false,
+				"HarveyVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestHarvey",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"HarveyLightweightConfig |contains= full": true,		
+				"HarveyVariant |contains= off": false,			
+			}
+		},
+		{
+			"Name": "WeddingGuestGus",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestGus",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"GusLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"GusVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestGus",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"GusLightweightConfig |contains= ultralight": false,
+				"GusVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestGus",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"GusLightweightConfig |contains= full": true,	
+				"GusVariant |contains= off": false,				
+			}
+		},
+		{
+			"Name": "WeddingGuestLewis",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestLewis",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"LewisLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"LewisVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestLewis",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"LewisLightweightConfig |contains= ultralight": false,
+				"LewisVariant |contains= off": false,	
+			}
+		},
+		{
+			"Name": "WeddingGuestLewis",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"LewisLightweightConfig |contains= full": true,	
+				"LewisVariant |contains= off": false,				
+			}
+		},
+		
+// HARVEY HUNGARIAN WEDDING SUIT COMPAT
+
+		{
+			"Name": "WeddingOutfitHarveyToken",
+			"Value": "{{WeddingOutfitHarvey}}",
+		},
+		{
+			"Name": "WeddingOutfitHarveyToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.HarveyHungarianWeddingSuit": false,
+				"WeddingOutfitHarvey": "5",
+			},
+		},	
+		{
+			"Name": "WeddingOutfitHarveyToken",
+			"Value": "5_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.HarveyHungarianWeddingSuit": true,
+				"WeddingOutfitHarvey": "5",
+				"HarveyVariant |contains= vanilla": true,
+			},
+		},		
+		
+		
+// 14 HEART PYJAMA EXCEPTIONS
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "false",
+		},
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "true",
+			"When":
+			{
+				"Relationship:Harvey": "Married",
+				"Hearts:Harvey": "14",
+				"LocationName |contains= Farmhouse": true,
+				"Time": "{{Range: 2000, 2400}}",
+				"FarmhouseUpgrade": "2, 3",
+				"HasSeenEvent |contains = 3917626": false,
+				"HarveyLightweightConfig |contains= full": true,
+				"HarveyVariant |contains= off": false,	
+			},
+		},
+		
+// PYJAMAS
+		{
+			"Name": "PyjamasHarvey",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasHarvey",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, HarveyRoom": true,
+				"Query: {{Time}} < 0630 OR {{Time}} >= 2200": true,
+				"14HeartPyjamaException": false,
+				"HarveyLightweightConfig |contains= full": true,
+				"HarveyVariant |contains= off": false,	
+				"Pyjamas |contains= true": true,
+			}
+		},
+		{
+			"Name": "PyjamasHarvey",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} < 0630 OR {{Time}} >= 2200": true,
+				"14HeartPyjamaException": false,
+				"Relationship:Harvey": "Married",
+				"HarveyLightweightConfig |contains= full": true,
+				"HarveyVariant |contains= off": false,	
+				"Pyjamas |contains= marriage": true,
+			}
+		},
+		
+// LOOKING FOR LOVE COMPATIBILITY
+		{
+			"Name": "LFLGus",
+			"Value": "Default",
+		},
+		{
+			"Name": "LFLGus",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"LookingForLove |contains= Gus": true,
+				"HasMod |contains= foggy.LfL": true,
+				"GusVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "LFLLewis",
+			"Value": "Default",
+		},
+		{
+			"Name": "LFLLewis",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"LookingForLove |contains= Lewis": true,
+				"HasMod |contains= foggy.LfL": true,
+				"LewisVariant |contains= off": false,	
+			},
+		},
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"HarveyVariant":
+		{
+			"AllowValues": "Vanilla, ModdedNonSikh, ModdedSikh, off",
+			"Default": "Vanilla",
+		},
+		"HarveyLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Harvey will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"GusVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"GusLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Gus will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"LewisVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"LewisLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Lewis will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+		},
+		
+//Additional options
+		"HarveyCharacterMustache":
+		{
+			"AllowValues": "Mustache, NoMustache",
+			"Default": "NoMustache",
+			"Description": "Gives Harvey's character/overworld sprite a mustache to match his portraits. Only affects the Vanilla variant.",
+		},
+		"PlatonicNPCs":
+		{
+			"AllowValues": "Harvey",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+            "Default": "Harvey",
+			"Description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+		},
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"Pyjamas":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"WeddingOutfitHarvey":
+		{
+			"AllowValues": "1, 2, 3, 4, 5",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Harvey will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+		"LookingForLove":
+		{
+			"AllowValues": "Gus, Lewis",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Gus and Lewis will match DSV's Gus and Lewis variants and have seasonal outfits. Only select this if you have Gus or Lewis set to dateable in LfL's configuration options.",
+		},
+		"RidgesideVillageLenny":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off",
+			"Description": "Adds compatible portraits and sprites for Ridgeside Village's Lenny, so that she is Black to match her brother Lewis's modded DSV variant."
+		},
+		"GiftTastesChange":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Changes Sikh Harvey's gift tastes to dislike alcoholic drinks. Doesn't affect Vanilla or ModdedNonSikh variants. This option is enabled by default but can be disabled for compatibility with other mods.",
+		},
+	},
+		
+	"Changes":[
+		{
+			"LogName": "Harvey Main",
+			"Action": "Include",
+			"FromFile": "Harvey/Code/{{HarveyLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HarveyVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.AcerbiconHarvey": false,	
+				"HasMod |contains= DSVTeam.AddOnPack.MedinaquirinPinzolHarveyNoGlasses": false,	
+				"HasMod |contains= DSVTeam.AddOnPack.MedinaquirinPinzolHarveyGlasses": false,	
+				"HasMod |contains= SystemWorks.Hazel": false,
+			},
+		},
+		{
+			"LogName": "Gus Main",
+			"Action": "Include",
+			"FromFile": "Gus/Code/{{GusLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"GusVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "Lewis Main",
+			"Action": "Include",
+			"FromFile": "Lewis/Code/{{LewisLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LewisVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "RSV Lenny",
+			"Action": "Include",
+			"FromFile": "RSVCompat/Code/RSV_DSV_Lenny.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"RidgesideVillageLenny |contains= off": false,
+				"HasMod |contains= Rafseazz.RSVCP": true,
+			},
+		},
+	]
+}

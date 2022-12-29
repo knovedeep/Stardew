@@ -1,0 +1,82 @@
+{
+// LINUS DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Linus Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Linus, Characters/Linus",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLinus}}/{{TargetWithoutPath}}_{{season}}_{{RandomLinus}}_{{LinusWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Linus Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Linus, Characters/Linus",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLinus}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Linus Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Linus",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLLinus}}/Linus_SleepSprite.png",
+			"ToArea": { "X": 48, "Y": 160, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "Tent",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Linus Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "Linus/Misc/BundleSprites_Linus.png",
+			"ToArea": { "X": 160, "Y": 0, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Linus Wash Clothes",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "Linus/Misc/WashClothes/Linus_{{season}}_{{RandomLinus}}.png",
+			"ToArea": { "X": 129, "Y": 241, "Width": 14, "Height": 15 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MERMAID PENDANTS		
+		{
+			"LogName": "Linus Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Linus",
+			"FromFile": "Linus/Misc/Linus_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:{{TargetWithoutPath}}": "Married, Engaged",
+				"Query: ('{{LinusWeatherVariant}}'= 'Base' AND NOT '{{Season}}' = 'winter') OR ('{{Special+Festival}}' IN ('swim', 'EggFestival', 'FlowerDance', 'Luau', 'MoonlightJellies', 'SVFair', 'WinterStar'))": true,
+				"MermaidPendants": "true",
+			},
+			"Update": "OnLocationChange",
+		},
+	]
+}

@@ -1,0 +1,91 @@
+{
+// ELLIOTT DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Elliott Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott, Characters/Elliott",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{ElliottVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomElliott}}_{{ElliottWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Elliott Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott, Characters/Elliott",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{ElliottVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Elliott Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott_Beach, Characters/Elliott_Beach",
+			"FromFile": "Elliott/{{TargetPathOnly}}/{{ElliottVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Elliott Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Elliott",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{ElliottVariant}}/{{TargetWithoutPath}}_Wedding_1.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Elliott Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Elliott/Misc/Elliott_Emoji_{{ElliottVariant}}.png",
+			"ToArea": {"X": 54, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Elliott Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Elliott",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Elliott_{{ElliottVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 384, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Elliott",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Elliott No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Elliott",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Elliott_{{ElliottVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Elliott",
+			},
+		},
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"Changes": [
+		{
+			"LogName": "Temporary Sprites Mermaid A Top",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidA/MermaidA_Top{{RandomMermaidATop}}.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 113, "Height": 70 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Mermaids |contains= randomupper, randomboth": true,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid A Tail",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidA/MermaidA_Tail{{RandomMermaidATail}}.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 113, "Height": 70 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Mermaids |contains= randomlower, randomboth": true,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid B Top",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidB/MermaidB_Top{{RandomMermaidBTop}}.png",
+			"ToArea": { "X": 192, "Y": 0, "Width": 30, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Mermaids |contains= randomupper, randomboth": true,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid C Top",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidC/MermaidC_Top{{RandomMermaidCTop}}.png",
+			"ToArea": { "X": 0, "Y": 80, "Width": 251, "Height": 36 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid C Tail",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidC/MermaidC_Tail{{RandomMermaidCTail}}.png",
+			"ToArea": { "X": 0, "Y": 80, "Width": 251, "Height": 36 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid D Top",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidD/MermaidD_Top{{RandomMermaidDTop}}.png",
+			"ToArea": { "X": 68, "Y": 190, "Width": 70, "Height": 51 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains=PaperNautilus.IslaMermaid": false,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid D Tail",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidD/MermaidD_Tail{{RandomMermaidDTail}}.png",
+			"ToArea": { "X": 68, "Y": 190, "Width": 70, "Height": 51 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains=PaperNautilus.IslaMermaid": false,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid E Top",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidE/MermaidE_Top{{RandomMermaidETop}}.png",
+			"ToArea": { "X": 304, "Y": 592, "Width": 192, "Height": 35 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites Mermaid E Tail",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Mermaids/MermaidE/MermaidE_Tail{{RandomMermaidETail}}.png",
+			"ToArea": { "X": 304, "Y": 592, "Width": 192, "Height": 35 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}
+	

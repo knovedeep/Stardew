@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.AlexVariant.name": "AlexVariant",
+	"config.AlexVariant.values.Vanilla": "Vanilla",
+	"config.AlexVariant.values.Samoan": "Samoan",
+	"config.AlexVariant.values.Mexican": "Mexican",
+	"config.AlexVariant.values.Off": "Off",
+	
+	"config.AlexLightweightConfig.name": "AlexLightweightConfig",
+	"config.AlexLightweightConfig.description": "Toggles whether Alex will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.AlexLightweightConfig.values.Full": "Full",
+	"config.AlexLightweightConfig.values.Light": "Light",
+	"config.AlexLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.EvelynVariant.name": "EvelynVariant",
+	"config.EvelynVariant.values.Vanilla": "Vanilla",
+	"config.EvelynVariant.values.Samoan": "Samoan",
+	"config.EvelynVariant.values.Mexican": "Mexican",
+	"config.EvelynVariant.values.Off": "Off",
+	
+	"config.EvelynLightweightConfig.name": "EvelynLightweightConfig",
+	"config.EvelynLightweightConfig.description": "Toggles whether Evelyn will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.EvelynLightweightConfig.values.Full": "Full",
+	"config.EvelynLightweightConfig.values.Light": "Light",
+	"config.EvelynLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.GeorgeVariant.name": "GeorgeVariant",
+	"config.GeorgeVariant.values.Vanilla": "Vanilla",
+	"config.GeorgeVariant.values.Samoan": "Samoan",
+	"config.GeorgeVariant.values.Mexican": "Mexican",
+	"config.GeorgeVariant.values.Off": "Off",
+	
+	"config.GeorgeLightweightConfig.name": "GeorgeLightweightConfig",
+	"config.GeorgeLightweightConfig.description": "Toggles whether George will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.GeorgeLightweightConfig.values.Full": "Full",
+	"config.GeorgeLightweightConfig.values.Light": "Light",
+	"config.GeorgeLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.PlatonicNPCs.name": "PlatonicNPCs",
+	"config.PlatonicNPCs.description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.Pyjamas.name": "Pyjamas",
+	"config.Pyjamas.description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.Pyjamas.values.True": "True",	
+	"config.Pyjamas.values.False": "False",
+	"config.Pyjamas.values.Marriage": "Marriage",
+	
+	"config.WeddingOutfitAlex.name": "WeddingOutfitAlex",
+	"config.WeddingOutfitAlex.description": "Selects which wedding outfit Alex will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitAlex.values.1": "1",
+	"config.WeddingOutfitAlex.values.2": "2",
+	"config.WeddingOutfitAlex.values.3": "3",
+	"config.WeddingOutfitAlex.values.4": "4",
+	"config.WeddingOutfitAlex.values.5": "5",
+	"config.WeddingOutfitAlex.values.6": "6",
+	
+	"config.AlexTattoos.name": "AlexTattoos",
+	"config.AlexTattoos.description": "Chooses whether or not Alex's Samoan variant has traditional chest and shoulder tattoos.",
+	"config.AlexTattoos.values.Tattoos": "Tattoos",
+	"config.AlexTattoos.values.NoTattoos": "NoTattoos",
+	
+	"config.GeorgeBeard.name": "GeorgeBeard",
+	"config.GeorgeBeard.description": "Chooses whether George is bearded or clean-shaven. The dynamic option makes him bearded during fall and winter. Can only be used if GeorgeLightweightConfig is not set to 'ultralight'.",
+	"config.GeorgeBeard.values.Beard": "Beard",
+	"config.GeorgeBeard.values.NoBeard": "NoBeard",
+	"config.GeorgeBeard.values.Dynamic": "Dynamic",
+	
+// ALEX WORKOUT DIALOGUE PATCH
+
+	"Alex.workout.fix": "Unghh... Can't talk."
+	
+}
+	
+	
+	

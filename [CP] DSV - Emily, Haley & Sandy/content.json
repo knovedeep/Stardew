@@ -1,0 +1,811 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+	
+// EMILY WEATHER
+		{
+			"Name": "EmilyWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "EmilyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"EmilyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "EmilyWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"EmilyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "EmilyWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"EmilyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "EmilyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"EmilyLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// HALEY WEATHER
+		{
+			"Name": "HaleyWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "HaleyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"HaleyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "HaleyWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"HaleyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "HaleyWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"HaleyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "HaleyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"HaleyLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// RANDOM OUTFITS
+		{
+			"Name": "RandomEmily",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomEmily",
+			"Value": "{{Random: 1, 2, 3|key= EmilyMain}}",
+			"When":
+			{
+				"EmilyLightweightConfig |contains= full": true,
+			},
+		},
+		/*{
+			"Name": "RandomFestivalEmily",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalEmily",
+			"Value": "{{Random: 1, 2 |key= EmilyFestival}}",
+			"When":
+			{
+				"EmilyLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true,
+			},
+		},*/
+		{
+			"Name": "RandomHaley",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomHaley",
+			"Value": "{{Random: 1, 2, 3|key= HaleyMain}}",
+			"When":
+			{
+				"HaleyLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomFestivalHaley",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalHaley",
+			"Value": "{{Random: 1, 2 |key= HaleyFestival}}",
+			"When":
+			{
+				"HaleyLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true,
+			},
+		},
+		{
+			"Name": "RandomSandy",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomSandy",
+			"Value": "{{Random: 1, 2|key= SandyMain}}",
+			"When":
+			{
+				"SandyLightweightConfig |contains= full": true,
+			},
+		},
+		
+// 14 HEART PYJAMA EXCEPTIONS
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "false",
+		},
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "true",
+			"When":
+			{
+				"Relationship:Emily": "Married",
+				"Hearts:Emily": "14",
+				"LocationName |contains= Farmhouse": true,
+				"Time": "{{Range: 2000, 2400}}",
+				"HasSeenEvent |contains = 3917601": false,
+				"HasConversationTopic |contains= emilyFiber": false,
+				"EmilyLightweightConfig |contains= full": true,
+			},
+		},
+		
+// SPECIAL - AEROBICS
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"Time": "{{Range: 0900, 1600}}",
+				"LocationName": "SeedShop",
+				"Weather |contains= Rain, Storm": false,
+				"EmilyLightweightConfig |contains= full": true,
+				"EmilyVariant |contains= off": false,		
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+				"LocationName": "SeedShop",
+				"Weather |contains= Rain, Storm": false,
+				"EmilyLightweightConfig |contains= light": true,
+				"EmilyVariant |contains= off": false,		
+			},
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Aerobics",
+			"When":
+			{
+				"LocationName": "SeedShop",
+				"Hearts:Harvey": "{{Range: 6, 14}}",
+				"Time": "{{Range: 1100, 1500}}",
+				"HasSeenEvent |contains= 58": false,
+				"EmilyLightweightConfig |contains= full": true,
+				"EmilyVariant |contains= off": false,		
+			},
+		},
+		
+// SPECIAL - SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true,
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker",
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"Season": "summer",
+				"LocationName": "Beach",
+				"Weather": "sun, wind",
+				"DayEvent |contains= dance of the moonlight jellies, luau, Moonshine Barbecue, Pelican Town Potluck": false,
+			}
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+		{
+			"Name": "WeddingGuestEmily",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestEmily",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"EmilyLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"EmilyVariant |contains= off": false,		
+			}
+		},
+		{
+			"Name": "WeddingGuestEmily",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"EmilyLightweightConfig |contains= ultralight": false,
+				"EmilyVariant |contains= off": false,		
+			}
+		},
+		{
+			"Name": "WeddingGuestEmily",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"EmilyLightweightConfig |contains= full": true,			
+				"EmilyVariant |contains= off": false,			
+			}
+		},
+		{
+			"Name": "WeddingGuestHaley",
+			"Value": "",
+		},	
+		{
+			"Name": "WeddingGuestHaley",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"HaleyLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+				"HaleyVariant |contains= off": false,		
+			}
+		},
+		{
+			"Name": "WeddingGuestHaley",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HaleyLightweightConfig |contains= ultralight": false,
+				"HaleyVariant |contains= off": false,		
+			}
+		},
+		{
+			"Name": "WeddingGuestHaley",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"HaleyLightweightConfig |contains= full": true,		
+				"HaleyVariant |contains= off": false,				
+			}
+		},
+		
+// EMILY UKRAINIAN WEDDING DRESS COMPAT
+
+		{
+			"Name": "WeddingOutfitEmilyToken",
+			"Value": "{{WeddingOutfitEmily}}",
+		},
+		{
+			"Name": "WeddingOutfitEmilyToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.EmilyUkrainianWeddingDress": false,
+				"WeddingOutfitEmily": "7",
+			},
+		},
+		{
+			"Name": "WeddingOutfitEmilyToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.EmilyUkrainianWeddingDress": true,
+				"WeddingOutfitEmily": "7",
+				"EmilyVariant |contains= romani": true,
+			},
+		},
+		{
+			"Name": "WeddingOutfitEmilyToken",
+			"Value": "7_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.EmilyUkrainianWeddingDress": true,
+				"WeddingOutfitEmily": "7",
+				"EmilyVariant |contains= romani": false,
+			},
+		},
+		
+// HALEY RUSSIAN WEDDING DRESS COMPAT
+
+		{
+			"Name": "WeddingOutfitHaleyToken",
+			"Value": "{{WeddingOutfitHaley}}",
+		},
+		{
+			"Name": "WeddingOutfitHaleyToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.HaleyRussianWeddingDress": false,
+				"WeddingOutfitHaley": "7",
+			},
+		},
+		{
+			"Name": "WeddingOutfitHaleyToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.HaleyRussianWeddingDress": true,
+				"WeddingOutfitHaley": "7",
+				"HaleyVariant |contains= romani": true,
+			},
+		},
+		{
+			"Name": "WeddingOutfitHaleyToken",
+			"Value": "7_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.HaleyRussianWeddingDress": true,
+				"WeddingOutfitHaley": "7",
+				"HaleyVariant |contains= romani": false,
+			},
+		},
+		
+// PYJAMAS
+		{
+			"Name": "PyjamasEmilyToken",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasEmilyToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, HaleyHouse": true,
+				"Query: {{Time}} < 0830 OR {{Time}} >= 2100": true,
+				"14HeartPyjamaException": false,
+				"EmilyLightweightConfig |contains= full": true,
+				"EmilyVariant |contains= off": false,		
+				"PyjamasEmily |contains= true": true,
+			}
+		},
+		{
+			"Name": "PyjamasEmilyToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} < 0830 OR {{Time}} >= 2100": true,
+				"14HeartPyjamaException": false,
+				"Relationship:Emily": "Married",
+				"EmilyLightweightConfig |contains= full": true,
+				"EmilyVariant |contains= off": false,		
+				"PyjamasEmily |contains= marriage": true,
+			}
+		},
+		{
+			"Name": "PyjamasHaleyToken",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasHaleyToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, HaleyHouse": true,
+				"Query: {{Time}} < 0930 OR {{Time}} >= 2200": true,
+				"HaleyLightweightConfig |contains= full": true,
+				"HaleyVariant |contains= off": false,	
+				"PyjamasHaley |contains= true": true,	
+			}
+		},
+		{
+			"Name": "PyjamasHaleyToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} < 0930 OR {{Time}} >= 2200": true,
+				"Relationship:Haley": "Married",
+				"HaleyLightweightConfig |contains= full": true,
+				"HaleyVariant |contains= off": false,	
+				"PyjamasHaley |contains= marriage": true,	
+			}
+		},
+		
+// HALEY SUNGLASSES
+
+		{
+			"Name": "HaleySunglassesRandom",
+			"Value": "blank",
+		},
+		{			
+			"Name": "HaleySunglassesRandom",
+			"Value": "{{Random: SunglassesOverlay, x, x, x, x |key= HaleySunglasses}}",
+			"When":
+			{				
+				"IsOutdoors": true,
+				"Season": "spring, fall",
+				"Weather": "sun, wind",
+				"Time": "{{Range: 0800, 1800}}",
+				"Special+Festival| contains= EggFestival, FlowerDance, IceFestival, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"HaleyLightweightConfig |contains= full": true,
+			},
+		},		
+		{			
+			"Name": "HaleySunglassesRandom",
+			"Value": "{{Random: SunglassesOverlay, x |key= HaleySunglasses}}",
+			"When":
+			{				
+				"IsOutdoors": true,
+				"Query: ('{{LocationName}}' IN ('IslandSouth', 'IslandNorth', 'IslandWest', 'IslandSouthEast', 'IslandEast')) OR ('{{Season}}' = 'summer')": true,
+				"Weather": "sun, wind",				
+				"Time": "{{Range: 0800, 1800}}",
+				"Special+Festival| contains= EggFestival, Luau, FlowerDance, IceFestival, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"HaleyLightweightConfig |contains= full": true,
+			},
+		},
+		
+// MATERNITY
+		{
+			"Name": "MaternityEmily",
+			"Value": "",
+		},
+		{
+			"Name": "MaternityEmily",
+			"Value": "Maternity",
+			"When":
+			{
+				"Pregnant |contains= Emily": true,
+				"MaternitySprites": true,
+				"EmilyLightweightConfig |contains= ultralight": false,
+				"EmilyVariant |contains= off": false,		
+			}
+		},
+		{
+			"Name": "MaternityHaley",
+			"Value": "",
+		},
+		{
+			"Name": "MaternityHaley",
+			"Value": "Maternity",
+			"When":
+			{
+				"Pregnant |contains= Haley": true,
+				"MaternitySprites": true,
+				"HaleyLightweightConfig |contains= ultralight": false,
+				"HaleyVariant |contains= off": false,		
+			}
+		},
+		
+// LOOKING FOR LOVE COMPATIBILITY
+		{
+			"Name": "LFLSandy",
+			"Value": "Default",
+		},
+		{
+			"Name": "LFLSandy",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"LookingForLove |contains= Sandy": true,
+				"HasMod |contains= foggy.LfL": true,
+				"SandyVariant |contains= off": false,	
+			},
+		},
+		
+	],
+
+
+	"ConfigSchema":
+	{
+		
+// Variant Toggles
+// Full, Lightweight, or Ultralightweight Toggles
+
+		"EmilyVariant":
+		{
+			"AllowValues": "Vanilla, Black, Romani, off",
+			"Default": "Vanilla",
+		},
+		"EmilyLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Emily will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"HaleyVariant":
+		{
+			"AllowValues": "Vanilla, Black, Romani, off",
+			"Default": "Vanilla",
+		},
+		"HaleyLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Haley will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"SandyVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"SandyLightweightConfig":
+		{
+			"AllowValues": "Full, Light",
+			"Default": "Full",
+			"Description": "Toggles whether Sandy will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+		},
+		
+//Additional Options
+
+		"MaternitySprites":
+		{
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"PlatonicNPCs":
+		{
+			"AllowValues": "Emily, Haley",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+            "Default": "Emily, Haley",
+			"Description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+		},
+		"LookingForLove":
+		{
+			"AllowValues": "Sandy",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Sandy will match DSV's Sandy variant and have seasonal outfits. Only select this if you have Sandy set to dateable in LfL's configuration options.",
+		},
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"PyjamasEmily":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not Emily will wear pyjamas in the morning and evening. If 'Marriage' is selected, she will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"PyjamasHaley":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not Haley will wear pyjamas in the morning and evening. If 'Marriage' is selected, she will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"WeddingOutfitEmily":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6, 7",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Emily will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+		"WeddingOutfitHaley":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6, 7",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Haley will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},	
+		"GiftTastesChange":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Changes modded Sandy's gift tastes to dislike alcoholic drinks. Doesn't affect her vanilla variant. This option is on by default but can be disabled for compatibility with other mods.",
+		},	
+		"EmilyTattoos":
+		{
+			"AllowValues": "Tattoos, NoTattoos",
+			"Default": "Tattoos",
+			"Description": "Chooses whether or not Emily has colorful tattoos. Can only be used if EmilyLightweightConfig is set to 'full'.",
+		},
+		"HaleyAccessories":
+		{
+			"AllowValues": "BlackCam, Piercings, Cuffs",
+			"AllowBlank": true,
+			"AllowMultiple": true,
+			"Description": "Changes Haley's camera from brown to black, gives her nose and eyebrow piercings, and/or gives her hair cuffs. Hair cuffs only apply to Haley's Black variant. Only hair cuffs can be used if HaleyLightweightConfig is set to 'ultralight'.",
+		},
+	},
+	"Changes":[
+		{
+			"LogName": "Emily Main",
+			"Action": "Include",
+			"FromFile": "Emily/Code/{{EmilyLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"EmilyVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "Haley Main",
+			"Action": "Include",
+			"FromFile": "Haley/Code/{{HaleyLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "Sandy Main",
+			"Action": "Include",
+			"FromFile": "Sandy/Code/Sandy.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"SandyVariant |contains= off": false,
+			},
+		},
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"Name": "Diverse SDV - Emily, Haley, & Sandy",
+	"Author": "DSV Team",
+	"Version": "3.0.4",
+	"Description": "Adds ethnic and cultural diversity to Emily, Haley, & Sandy, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1072839", "GitHub:AirynS/DSV-Emily-Haley-Sandy" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "foggy.LfL",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "mothbeanie.GiftsRedone",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Swift.EveryoneLikesFruit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Lemurkat.UniqueGiftReactions",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.HaleyRussianWeddingDress",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.EmilyUkrainianWeddingDress",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false,
+		},
+	]
+}

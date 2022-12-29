@@ -1,0 +1,52 @@
+{
+// EVELYN DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Evelyn Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Evelyn, Characters/Evelyn",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{EvelynVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomEvelyn}}_{{EvelynWeatherVariant}}{{EvelynGarden}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Evelyn Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Evelyn, Characters/Evelyn",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{EvelynVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestEvelyn}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Evelyn Beach",
+			"Action": "Load",
+			"Target": "Portraits/Evelyn_Beach, Characters/Evelyn_Beach",
+			"FromFile": "Evelyn/{{TargetPathOnly}}/{{EvelynVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Evelyn Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Evelyn/Misc/Evelyn_Emoji_{{EvelynVariant}}.png",
+			"ToArea": {"X": 117, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"EvelynVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

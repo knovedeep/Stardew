@@ -1,0 +1,62 @@
+{
+// WILLY DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Willy Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Willy, Characters/Willy",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLWilly}}/{{WillyVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomWilly}}_{{WillyWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Willy Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Willy, Characters/Willy",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLWilly}}/{{WillyVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Willy Beach",
+			"Action": "Load",
+			"Target": "Portraits/Willy_Beach, Characters/Willy_Beach",
+			"FromFile": "Willy/{{TargetPathOnly}}/{{LFLWilly}}/{{WillyVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Willy Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Willy/Misc/Willy_Emoji_{{WillyVariant}}.png",
+			"ToArea": {"X": 81, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"WillyVariant|contains= vanilla, disabled, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Willy Boat",
+			"Action": "EditImage",
+			"Target": "LooseSprites/WillysBoat",
+			"FromFile": "Willy/Misc/WillyBoat/{{WillyVariant}}/WillysBoat_{{season}}_1_Base.png",
+			"ToArea": { "X": 173, "Y": 163, "Width": 16, "Height": 18 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

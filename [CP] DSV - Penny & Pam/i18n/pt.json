@@ -1,0 +1,64 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.PennyVariant.name": "PennyVariant",
+	"config.PennyVariant.values.Vanilla": "Vanilla",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieLarge": "ModdedAirynNotsnufffieLarge",
+	"config.PennyVariant.values.ModdedAirynNotsnufffieSmall": "ModdedAirynNotsnufffieSmall",
+	"config.PennyVariant.values.Mixed": "Mixed",
+	"config.PennyVariant.values.Off": "Off",
+	
+	"config.PennyLightweightConfig.name": "PennyLightweightConfig",
+	"config.PennyLightweightConfig.description": "Toggles whether Penny will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.PennyLightweightConfig.values.Full": "Full",
+	"config.PennyLightweightConfig.values.Light": "Light",
+	"config.PennyLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.PamVariant.name": "PamVariant",
+	"config.PamVariant.values.Vanilla": "Vanilla",
+	"config.PamVariant.values.Modded": "Modded",
+	"config.PamVariant.values.Off": "Off",
+	
+	"config.PamLightweightConfig.name": "PamLightweightConfig",
+	"config.PamLightweightConfig.description": "Toggles whether Pam will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.PamLightweightConfig.values.Full": "Full",
+	"config.PamLightweightConfig.values.Light": "Light",
+	"config.PamLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.PlatonicNPCs.name": "PlatonicNPCs",
+	"config.PlatonicNPCs.description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Pam will match DSV's Pam variant and have seasonal outfits. Only select this if you have Pam set to dateable in LfL's configuration options.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.Pyjamas.name": "Pyjamas",
+	"config.Pyjamas.description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.Pyjamas.values.True": "True",	
+	"config.Pyjamas.values.False": "False",
+	"config.Pyjamas.values.Marriage": "Marriage",
+	
+	"config.WeddingOutfitPenny.name": "WeddingOutfitPenny",
+	"config.WeddingOutfitPenny.description": "Selects which wedding outfit Penny will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitPenny.values.1": "1",
+	"config.WeddingOutfitPenny.values.2": "2",
+	"config.WeddingOutfitPenny.values.3": "3",
+	"config.WeddingOutfitPenny.values.4": "4",
+	"config.WeddingOutfitPenny.values.5": "5",
+	"config.WeddingOutfitPenny.values.6": "6",
+	
+// PENNY SPOUSE PREGNANCY DIALOGUE REPLACEMENT
+
+	"Penny.HaveBabyQuestion": "Devemos adotar um filho, {0}?",
+	"Penny.BirthMessage_SpouseMother": "Durante a noite, a agência de adoção deixou um bebê para você {0}.",
+	"Penny.Strings.4443": "Só estou sem energia hoje... você não pode fazer o seu próprio café da manhã?$s",
+	"Penny.Strings.4445": "{0}, dei entrada no processo de adoção. Agora, tudo o que temos que fazer é cruzar os dedos e esperar.$l",
+	
+}
+	
+	
+	

@@ -1,0 +1,79 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.ShaneVariant.name": "ShaneVariante",
+	"config.ShaneVariant.values.Vanilla": "Vanilla",
+	"config.ShaneVariant.values.Modded": "Modded",
+	"config.ShaneVariant.values.Off": "Disabilitato",
+	
+	"config.ShaneLightweightConfig.name": "ShaneConfigPesoleggero",
+	"config.ShaneLightweightConfig.description": "Indica se Shane avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.ShaneLightweightConfig.values.Full": "Intero",
+	"config.ShaneLightweightConfig.values.Light": "Leggero",
+	"config.ShaneLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.JasVariant.name": "JasVariante",
+	"config.JasVariant.values.Vanilla": "Vanilla",
+	"config.JasVariant.values.Modded": "Modded",
+	"config.JasVariant.values.Off": "Disabilitato",
+	
+	"config.JasLightweightConfig.name": "JasConfigPesoleggero",
+	"config.JasLightweightConfig.description": "Indica se Jas avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.JasLightweightConfig.values.Full": "Intero",
+	"config.JasLightweightConfig.values.Light": "Leggero",
+	"config.JasLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.MarnieVariant.name": "MarnieVariante",
+	"config.MarnieVariant.values.Vanilla": "Vanilla",
+	"config.MarnieVariant.values.Modded": "Modded",
+	"config.MarnieVariant.values.Off": "Disabilitato",
+	
+	"config.MarnieLightweightConfig.name": "MarnieConfigPesoleggero",
+	"config.MarnieLightweightConfig.description": "Indica se Marnie avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.MarnieLightweightConfig.values.Full": "Intero",
+	"config.MarnieLightweightConfig.values.Light": "Leggero",
+	"config.MarnieLightweightConfig.values.Ultralight": "Ultraleggero",
+
+	"config.VanillaBeachStyle.name": "StileSpiaggiaAllaVaniglia",
+	"config.VanillaBeachStyle.description": "Seleziona se i personaggi utilizzeranno il design del costume da bagno del gioco predefinito con ritocchi di sprite e ritratti o un nuovo costume da bagno disegnato dal team DSV. Disponibile solo per i personaggi con un costume da bagno da spiaggia nel gioco predefinito. Controlla il sito per maggiori informazioni.",
+	"config.VanillaBeachStyle.values.Shane": "Shane",
+	"config.VanillaBeachStyle.values.Marnie": "Marnie",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Aggiunge la compatibilità con la mod Looking For Love di foggywizard in modo che Lfl dateable Marnie corrisponderà alla variante Marnie di DSV e con anche gli abiti stagionali. Selezionalo solo se hai Marnie impostato su 'dateable' nelle opzioni di configurazione di Lfl.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.Pyjamas.name": "Pigiama",
+	"config.Pyjamas.description": "Alterna se i candidati al matrimonio indosseranno o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosseranno solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.Pyjamas.values.True": "Vero",	
+	"config.Pyjamas.values.False": "Falso",
+	"config.Pyjamas.values.Marriage": "Matrimonio",
+	
+	"config.WeddingOutfitShane.name": "OutfitMatrimonioShane",
+	"config.WeddingOutfitShane.description": "Seleziona quale abito da sposo Shane indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitShane.values.1": "1",
+	"config.WeddingOutfitShane.values.2": "2",
+	"config.WeddingOutfitShane.values.3": "3",
+	"config.WeddingOutfitShane.values.4": "4",
+	"config.WeddingOutfitShane.values.5": "5",
+	"config.WeddingOutfitShane.values.6": "6",
+	
+	"config.MarnieCharacterSmile.name": "MarnieSorriso",
+	"config.MarnieCharacterSmile.description": "Sceglie se il personaggio/gli sprite per la variante vaniglia di Marnie avranno un sorriso visibile come nel gioco predefinito o se i suoi sprite avranno il volto vuoto come gli altri sprite del personaggio. Non influisce sulla variante modificata di Marnie.",
+	"config.MarnieCharacterSmile.values.Smile": "Sorriso",
+	"config.MarnieCharacterSmile.values.NoSmile": "SenzaSorriso",
+	
+	"config.ShaneSelfCare.name": "ShaneCuraPersonale",
+	"config.ShaneSelfCare.description": "Scegliete se Shane sia più ordinato, disordinato, o se il suo aspetto cambia dinamicamente con la progressione della sua storia. L'opzione 'dinamico' non può essere utilizzata se ShaneConfigPesoleggero è impostato su 'ultraleggero'.",
+	"config.ShaneSelfCare.values.Neat": "Ordinato",
+	"config.ShaneSelfCare.values.Messy": "Disordinato",
+	"config.ShaneSelfCare.values.Dynamic": "Dinamico",
+	
+}
+	
+	
+	

@@ -1,0 +1,55 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.KrobusVariant.name": "KrobusVariant",
+	"config.KrobusVariant.values.Modded": "Modded",
+	"config.KrobusVariant.values.Off": "Off",
+	
+	"config.KrobusLightweightConfig.name": "KrobusLightweightConfig",
+	"config.KrobusLightweightConfig.description": "Toggles whether Krobus will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+	"config.KrobusLightweightConfig.values.Full": "Full",
+	"config.KrobusLightweightConfig.values.Light": "Light",
+	
+	"config.Mermaids.name": "Mermaids",
+	"config.Mermaids.description": "Randomizes the appearance of the mermaids who appear in the game. The 'Light' option will change the mermaids to a pre-selected mix. See the website for more details.",
+	"config.Mermaids.values.RandomBoth": "RandomBoth",
+	"config.Mermaids.values.RandomUpper": "RandomUpper",
+	"config.Mermaids.values.RandomLower": "RandomLower",
+	"config.Mermaids.values.Light": "Light",
+	"config.Mermaids.values.Off": "Off",
+	
+	"config.WitchVariant.name": "WitchVariant",
+	"config.WitchVariant.values.Modded": "Modded",
+	"config.WitchVariant.values.Off": "Off",
+	
+	"config.WizardVariant.name": "WizardVariant",
+	"config.WizardVariant.values.Vanilla": "Vanilla",
+	"config.WizardVariant.values.Modded": "Modded",
+	"config.WizardVariant.values.Off": "Off",
+	
+	"config.WizardLightweightConfig.name": "WizardLightweightConfig",
+	"config.WizardLightweightConfig.description": "Toggles whether the Wizard will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+	"config.WizardLightweightConfig.values.Full": "Full",
+	"config.WizardLightweightConfig.values.Light": "Light",
+	
+	"config.WizardFamiliars.name": "WizardFamiliars",
+	"config.WizardFamiliars.description": "Gives the Wizard some spirit familiars who hang around him. Can't be used if WizardLightweightConfig option is set to 'light'.",
+	"config.WizardFamiliars.values.HatJunimos": "HatJunimos",
+	"config.WizardFamiliars.values.ShoulderJunimos": "ShoulderJunimos",
+	"config.WizardFamiliars.values.SpiritCreatures": "SpiritCreatures",
+	
+	"config.WizardMarriageMod.name": "WizardMarriageMod",
+	"config.WizardMarriageMod.description": "If you are using a mod to romance the Wizard, select which one you are using here. Note: DSV does not support SVE's Wizard romance option.",
+	"config.WizardMarriageMod.values.LookingForLove": "LookingForLove",
+	"config.WizardMarriageMod.values.RomanceableRasmodius": "RomanceableRasmodius",
+	"config.WizardMarriageMod.values.None": "None",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+}
+	
+	
+	

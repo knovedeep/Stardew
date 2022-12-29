@@ -1,0 +1,64 @@
+{
+// CAROLINE DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Caroline Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Caroline, Characters/Caroline",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{CarolineVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomCaroline}}_{{CarolineWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Caroline Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Caroline, Characters/Caroline",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{CarolineVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestCaroline}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Caroline Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Caroline_Beach, Characters/Caroline_Beach",
+			"FromFile": "Caroline/{{TargetPathOnly}}/{{CarolineVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Caroline Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Caroline/Misc/Caroline_Emoji_{{CarolineVariant}}.png",
+			"ToArea": {"X": 9, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"CarolineVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Temporary Sprites - Caroline",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Caroline/Misc/TemporarySprites1_Caroline_{{CarolineVariant}}.png",
+			"When":
+			{
+				"CarolineVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

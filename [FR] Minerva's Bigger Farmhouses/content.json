@@ -1,0 +1,284 @@
+{
+	"Format": "1.9",
+
+	"ConfigSchema": {
+
+		"Farmhouse2Beds": {
+			"AllowValues": "Default, Crib+1Bed, CribOnly, NoBeds",
+			"Default": "NoBeds"
+		},
+
+		"Farmhouse2MarriageBeds": {
+			"AllowValues": "Default, Crib+1Bed, CribOnly, NoBeds",
+			"Default": "Default"
+		},
+
+		"ApplyToCabins": {
+			"AllowValues": "true, false",
+			"Default": false
+		},
+
+		"CabinUpgrade2Beds": {
+			"AllowValues": "Default, Crib+1Bed, CribOnly, NoBeds",
+			"Default": "NoBeds"
+		},
+
+		"CabinUpgrade2MarriageBeds": {
+			"AllowValues": "Default, Crib+1Bed, CribOnly, NoBeds",
+			"Default": "Default"
+		},
+	},
+
+	"Changes": [
+
+		//TILESHEETS
+		
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/farmhouse_tiles",
+		"FromFile": "assets/tilesheets/farmhouse_bathroom_tiles.png",
+		"FromArea": {"X": 0, "Y": 320, "Width": 192, "Height": 80},
+		"ToArea": {"X": 0, "Y": 320, "Width": 192, "Height": 80}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/farmhouse_tiles",
+		"FromFile": "assets/tilesheets/farmhouse_bathroom_tiles_ATDSV.png",
+		"FromArea": {"X": 0, "Y": 320, "Width": 192, "Height": 80},
+		"ToArea": {"X": 0, "Y": 320, "Width": 192, "Height": 80},
+		"When": {
+			"HasMod:minervamaga.CP.ATDSV": true
+			}
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/zcompactbathroom_tiles deepblue",
+		"FromFile": "assets/tilesheets/zcompactbathroom_tiles deepblue.png",
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/zcompactbathroom_tiles deepblue",
+		"FromFile": "assets/tilesheets/zcompactbathroom_tiles deepblue_ATDSV.png",
+		"When": {
+			"HasMod:minervamaga.CP.ATDSV": true
+			}
+		},
+
+		//MAPS - FARMHOUSE
+		
+		{
+		"Action": "Load",
+		"Target": "Maps/FarmHouse",
+		"FromFile": "assets/FarmHouse.tbin",
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/FarmHouse1",
+		"FromFile": "assets/FarmHouse1.tbin",
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/FarmHouse1_marriage",
+		"FromFile": "assets/FarmHouse1_marriage.tbin",
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/FarmHouse2",
+		"FromFile": "assets/FarmHouse2.tbin",
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/FarmHouse2_marriage",
+		"FromFile": "assets/FarmHouse2_marriage.tbin",
+		},
+
+		{
+		"LogName": "Farmhouse Cribs",
+		"Action": "EditMap",
+		"Target": "Maps/FarmHouse2",
+		"FromFile": "assets/Crib.tbin",
+		"ToArea": {"X": 15, "Y": 2, "Width": 3, "Height": 4},
+		"When": {
+			"Farmhouse2Beds": "Default, Crib+1Bed, CribOnly"
+			},
+		},
+
+		{
+		"LogName": "Farmhouse Marriage Cribs",
+		"Action": "EditMap",
+		"Target": "Maps/FarmHouse2_marriage",
+		"FromFile": "assets/Crib.tbin",
+		"ToArea": {"X": 15, "Y": 2, "Width": 3, "Height": 4},
+		"When": {
+			"Farmhouse2MarriageBeds": "Default, Crib+1Bed, CribOnly"
+			},
+		},
+
+		{
+		"LogName": "Farmhouse Bed 1",
+		"Action": "EditMap",
+		"Target": "Maps/FarmHouse2",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 23, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"Farmhouse2Beds": "Default, Crib+1Bed"
+			},
+		},
+
+		{
+		"LogName": "Farmhouse Marriage Bed 1",
+		"Action": "EditMap",
+		"Target": "Maps/FarmHouse2_marriage",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 23, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"Farmhouse2MarriageBeds": "Default, Crib+1Bed"
+			},
+		},
+
+		{
+		"LogName": "Farmhouse Bed 2",
+		"Action": "EditMap",
+		"Target": "Maps/FarmHouse2",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 26, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"Farmhouse2Beds": "Default"
+			},
+		},
+
+		{
+		"LogName": "Farmhouse Marriage Bed 2",
+		"Action": "EditMap",
+		"Target": "Maps/FarmHouse2_marriage",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 26, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"Farmhouse2MarriageBeds": "Default"
+			},
+		},
+
+		//MAPS - CABINS
+
+		{
+		"Action": "Load",
+		"Target": "Maps/Cabin",
+		"FromFile": "assets/Cabin.tbin",
+		"When": {
+			"ApplyToCabins": true
+			}
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/Cabin1",
+		"FromFile": "assets/Cabin1.tbin",
+		"When": {
+			"ApplyToCabins": true
+			}
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/Cabin1_marriage",
+		"FromFile": "assets/Cabin1_marriage.tbin",
+		"When": {
+			"ApplyToCabins": true
+			}
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/Cabin2",
+		"FromFile": "assets/Cabin2.tbin",
+		"When": {
+			"ApplyToCabins": true
+			},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Maps/Cabin2_marriage",
+		"FromFile": "assets/Cabin2_marriage.tbin",
+		"When": {
+			"ApplyToCabins": true
+			},
+		},
+
+		{
+		"LogName": "Cabin Cribs",
+		"Action": "EditMap",
+		"Target": "Maps/Cabin2",
+		"FromFile": "assets/Crib.tbin",
+		"ToArea": {"X": 15, "Y": 2, "Width": 3, "Height": 4},
+		"When": {
+			"CabinUpgrade2Beds": "Default, Crib+1Bed, CribOnly"
+			},
+		},
+
+		{
+		"LogName": "Cabin Marriage Cribs",
+		"Action": "EditMap",
+		"Target": "Maps/Cabin2_marriage",
+		"FromFile": "assets/Crib.tbin",
+		"ToArea": {"X": 15, "Y": 2, "Width": 3, "Height": 4},
+		"When": {
+			"CabinUpgrade2MarriageBeds": "Default, Crib+1Bed, CribOnly"
+			},
+		},
+
+		{
+		"LogName": "Cabin Bed 1",
+		"Action": "EditMap",
+		"Target": "Maps/Cabin2",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 23, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"CabinUpgrade2Beds": "Default, Crib+1Bed"
+			},
+		},
+
+		{
+		"LogName": "Cabin Marriage Bed 1",
+		"Action": "EditMap",
+		"Target": "Maps/Cabin2_marriage",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 23, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"CabinUpgrade2MarriageBeds": "Default, Crib+1Bed"
+			},
+		},
+
+		{
+		"LogName": "Cabin Bed 2",
+		"Action": "EditMap",
+		"Target": "Maps/Cabin2",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 26, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"CabinUpgrade2Beds": "Default"
+			},
+		},
+
+		{
+		"LogName": "Cabin Marriage Bed 2",
+		"Action": "EditMap",
+		"Target": "Maps/Cabin2_marriage",
+		"FromFile": "assets/SingleBed.tbin",
+		"ToArea": {"X": 26, "Y": 2, "Width": 2, "Height": 4},
+		"When": {
+			"CabinUpgrade2MarriageBeds": "Default"
+			},
+		},
+	]
+}

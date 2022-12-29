@@ -1,0 +1,216 @@
+{
+// MARNIE DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Marnie Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie, Characters/Marnie",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLMarnie}}/{{MarnieVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomMarnie}}_{{MarnieWeatherVariant}}{{MarnieShop}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Marnie Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie, Characters/Marnie",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LFLMarnie}}/{{MarnieVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestMarnie}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Marnie Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie_Beach, Characters/Marnie_Beach",
+			"FromFile": "Marnie/{{TargetPathOnly}}/{{LFLMarnie}}/{{MarnieVariant}}/{{TargetWithoutPath}}{{BeachStyleMarnie}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS	
+		{
+			"LogName": "Marnie Cursors Dance",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Marnie/Misc/DanceCursors/{{MarnieVariant}}/Marnie_{{season}}_{{RandomMarnie}}_{{MarnieWeatherVariant}}.png",
+			"ToArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 28 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarnieWeatherVariant |contains= rain, snow": false,
+				"WeddingGuestMarnie |contains= WeddingGuest": false,
+			},
+			"Update": "OnLocationChange",
+		},	
+		{
+			"LogName": "Marnie Cursors Dance Wedding",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Marnie/Misc/DanceCursors/{{MarnieVariant}}/Marnie_WeddingGuest.png",
+			"ToArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 28 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"WeddingGuestMarnie |contains= WeddingGuest": true,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},	
+		{
+			"LogName": "Marnie Cursors Paintings",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Marnie/Misc/CursorsPaintings_Marnie.png",
+			"ToArea": { "X": 0, "Y": 1925, "Width": 50, "Height": 47 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarnieVariant |contains= vanilla": false,
+			},
+		},
+		{
+			"LogName": "Marnie Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Marnie/Misc/Marnie_Emoji_{{MarnieVariant}}.png",
+			"ToArea": {"X": 0, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"MarnieVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Marnie Secret Notes",
+			"Action": "EditImage",
+			"Target": "Tilesheets/SecretNotesImages",
+			"FromFile": "Marnie/Misc/SecretNote_Marnie_{{MarnieVariant}}.png",
+			"ToArea": {"X": 128, "Y": 64, "Width": 64, "Height": 64},
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"MarnieVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Marnie Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "Marnie/Misc/Junimo_Marnie_{{MarnieVariant}}.png",
+			"ToArea": { "X": 480, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarnieVariant|contains= vanilla, off": false,
+			},
+		},
+		{
+			"LogName": "Marnie Leah 14-Heart Furniture",
+			"Action": "EditImage",
+			"Target": "Tilesheets/Furniture",
+			"FromFile": "Marnie/Misc/Leah14Heart_Furniture_{{MarnieVariant}}.png",
+			"ToArea": { "X": 164, "Y": 900, "Width": 25, "Height": 22 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarnieVariant|contains= vanilla, off": false,
+			},
+		},
+		{
+			"LogName": "Marnie Leah 14-Heart Temporary Sprites Paintings",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Marnie/Misc/Leah14Heart_TemporarySprites1_{{MarnieVariant}}.png",
+			"ToArea": { "X": 400, "Y": 394, "Width": 101, "Height": 23 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarnieVariant|contains= vanilla, off": false,
+			},
+		},
+		{
+			"LogName": "Marnie Soup",
+			"Action": "EditImage",
+			"Target": "Characters/Marnie",
+			"FromFile": "Marnie/Characters/Marnie_LuauSoup.png",
+			"ToArea": { "X": 16, "Y": 150, "Width": 48, "Height": 10 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= Xiddav.FestivalsRecolored, minervamaga.CP.ATDSV, DaisyNiko.EarthyRecolour, grapeponta.VibrantPastoralRecolor": false,
+			},
+		},
+
+// MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "Marnie No Smile Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Marnie, Characters/Marnie_Beach",
+			"FromFile": "Marnie/Characters/{{TargetWithoutPath}}_NoSmileOverlay_{{LFLMarnie}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MarnieCharacterSmile": "NoSmile",
+				"MarnieVariant|contains= vanilla": true,
+			},
+		},
+
+// MERMAID PENDANTS
+		{
+			"LogName": "Marnie Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie, Portraits/Marnie_Beach",
+			"FromFile": "Marnie/Misc/{{TargetWithoutPath}}_Pendant_{{MarnieVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LookingForLove |contains= Marnie": true,
+				"Relationship:Marnie": "Married, Engaged",
+				"Query: ('{{MarnieWeatherVariant}}'= 'Base' AND NOT '{{Season}}' = 'winter') OR ('{{Special+Festival}}' IN ('swim', 'EggFestival', 'FlowerDance', 'Luau', 'MoonlightJellies', 'SVFair', 'WinterStar'))": true,
+				"MermaidPendants": "true",
+			},
+		},		
+		
+// COMPATIBILITY
+// Marnie Deserves Better
+		{
+			"LogName": "Marnie Deserves Better Compatibility",
+			"Action": "EditImage",
+			"Target": "Characters/Marnie",
+			"FromFile": "Marnie/Misc/MarnieDeservesBetter/{{MarnieVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomMarnie}}_{{MarnieWeatherVariant}}.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 64, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "IMS.CP.MarnieDeservesBetter",
+				"DayEvent |contains= wedding": false,
+				"Relationship:Marnie |contains= Married, Engaged": false,
+			},
+			"Update": "OnLocationChange",
+		},	
+		
+// Tristan
+		{
+			"LogName": "Marnie Cute Tristan",
+			"Action": "EditImage",
+			"Target": "Characters/MarnCute, Characters/MarnShane",
+			"FromFile": "Marnie/Misc/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"MarnieVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},	
+	]
+}

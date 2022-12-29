@@ -1,0 +1,60 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.WillyVariant.name": "WillyÇeşidi",
+	"config.WillyVariant.values.Vanilla": "Vanilla",
+	"config.WillyVariant.values.Disabled": "Engelli",
+	"config.WillyVariant.values.Tongan": "Tongalı",
+	"config.WillyVariant.values.TonganDisabled": "TongalıEngelli",
+	"config.WillyVariant.values.Off": "Kapalı",
+	
+	"config.WillyLightweightConfig.name": "WillyHafiflikYapılandırması",
+	"config.WillyLightweightConfig.description": "Willy'nin Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.WillyLightweightConfig.values.Full": "Tam",
+	"config.WillyLightweightConfig.values.Light": "Hafif",
+	"config.WillyLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.ClintVariant.name": "ClintÇeşidi",
+	"config.ClintVariant.values.Vanilla": "Vanilla",
+	"config.ClintVariant.values.Modded": "Modlu",
+	"config.ClintVariant.values.Off": "Kapalı",
+	
+	"config.ClintLightweightConfig.name": "ClintHafiflikYapılandırması",
+	"config.ClintLightweightConfig.description": "Clint'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.ClintLightweightConfig.values.Full": "Tam",
+	"config.ClintLightweightConfig.values.Light": "Hafif",
+	"config.ClintLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.LinusVariant.name": "LinusÇeşidi",
+	"config.LinusVariant.values.Vanilla": "Vanilla",
+	"config.LinusVariant.values.Modded": "Modlu",
+	"config.LinusVariant.values.Off": "Kapalı",
+	
+	"config.LinusLightweightConfig.name": "LinusHafiflikYapılandırması",
+	"config.LinusLightweightConfig.description": "Linus'un Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.LinusLightweightConfig.values.Full": "Tam",
+	"config.LinusLightweightConfig.values.Light": "Hafif",
+	"config.LinusLightweightConfig.values.Ultralight": "Ultra hafif",
+
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "foggywizard'ın Looking For Love moduyla uyumluluk ekler ki LfL'nin evlenilebilir Willy, Clint ve Linus'u DSV'nin çeşitleriyle eşleşsin ve mevsimsel kıyafetleri olsun. Bu seçeneği yalnızca eğer Willy, Clint ve Linus LfL'nin yapılandırma seçeneklerinde evlenilebilir olarak ayarlandıysa kullanın.",
+
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.ClintScar.name": "ClintYara",
+	"config.ClintScar.description": "Clint'in Modlu çeşidinin yüzünde yara olup olmayacağını ayarlar. Vanilla çeşidini etkilemez.",
+	"config.ClintScar.values.Scar": "Yara",
+	"config.ClintScar.values.NoScar": "YaraYok",
+	
+	"config.LinusEventChanges.name": "LinusOlayDeğişiklikleri",
+	"config.LinusEventChanges.description": "Adds Marigold the service dog to Linus's heart events. Disable this if using other mods that edit Linus's heart events.",
+	"config.LinusEventChanges.values.True": "Açık",
+	"config.LinusEventChanges.values.False": "Kapalı",
+	
+}
+	
+	
+	

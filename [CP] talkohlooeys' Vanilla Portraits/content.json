@@ -1,0 +1,126 @@
+{
+"Format": "1.25.0",
+"ConfigSchema": {
+	"Emily's Shirt is Sleeved": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Choose between a white collar and sleeveless top, or a red collar and long-sleeved top.",
+	},
+	"Harvey Has a Mustache": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "When set to false, Harvey will be clean-shaven.",
+	},
+	"Linus Wears a Coat": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Gives Linus a warm coat and a red scarf. Overworld sprite not included.",
+	},
+	"Hot Pam": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Makes Pam look younger and conventially attractive. Complete with overworld sprite.",
+	},
+	"Young Wizard": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Makes the Wizard look younger. Overworld sprite not included.",
+	},
+},
+
+"Changes": [
+	{
+        "LogName": "talkoh's Vanilla Portraits",
+        "Action": "Include",
+        "FromFile": "assets/data/portraits.json",
+    },
+
+
+
+	///CONFIGURATION OPTIONS///
+
+
+			//Long-sleeved Emily
+	{		
+		"Action": "EditImage",
+		"Target": "Mods/talkohPortraits/Emily",
+		"FromFile": "assets/Portraits/Variants/Sleeved Emily.png",
+		"When": {
+			"Emily's Shirt is Sleeved": "true",
+		},
+	},
+			//Clean-shaven Harvey
+	{		
+        "Action": "EditImage",
+        "Target": "Mods/talkohPortraits/Harvey, Mods/talkohPortraits/Harvey_Beach",
+        "FromFile": "assets/Portraits/Variants/Shaved {{TargetWithoutPath}}.png",
+		"When": {
+			"Harvey Has a Mustache": "false",
+		},
+    },
+
+			//Hot Pam
+	{
+		"Action": "EditImage",
+		"Target": "Mods/talkohPortraits/Pam, Mods/talkohPortraits/Pam_Beach",
+		"FromFile": "assets/Portraits/Variants/Hot {{TargetWithoutPath}}.png",
+		"When": {
+			"Hot Pam": "true",
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Pam, Characters/Pam_Beach",
+		"FromFile": "assets/Portraits/Variants/Hot Pam Sprites/{{TargetWithoutPath}}.png",
+		"When": {
+			"Hot Pam": "true",
+		},
+	},
+
+			//Young Wizard
+	{
+		"Action": "EditImage",
+		"Target": "Mods/talkohPortraits/Wizard",
+		"FromFile": "assets/Portraits/Variants/Young Wizard.png",
+		"When": {
+			"Young Wizard": "true",
+		},
+	},
+
+				//Linus wears a coat
+	{
+        "Action": "EditImage",
+        "Target": "Mods/talkohPortraits/Linus",
+        "FromFile": "assets/Portraits/Variants/Warm Linus.png",
+		"When": {
+			"Linus Wears a Coat": "true",
+		},
+    },
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Linus",
+		"FromFile": "assets/Portraits/Variants/Warm Linus Sprites/Linus.png",
+		"When": {
+			"Linus Wears a Coat": "true",
+		},
+	},
+	{
+		"Action": "EditImage",
+        "Target": "LooseSprites/BundleSprites",
+        "FromFile": "assets/Portraits/Variants/Warm Linus Sprites/BundleSprites.png",
+        "ToArea": { "X": 160, "Y": 0, "Width": 32, "Height": 32 },
+		"When": {
+			"Linus Wears a Coat": "true",
+		},
+    },
+    {
+        "Action": "EditImage",
+        "Target": "LooseSprites/Cursors2",
+        "FromFile": "assets/Portraits/Variants/Warm Linus Sprites/Cursors2.png",
+        "ToArea": { "X": 129, "Y": 241, "Width": 14, "Height": 15 },
+		"When": {
+			"Linus Wears a Coat": "true",
+		},
+    },
+],
+}

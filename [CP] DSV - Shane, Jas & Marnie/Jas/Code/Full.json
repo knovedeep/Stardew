@@ -1,0 +1,167 @@
+{
+// JAS DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Jas Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jas, Characters/Jas",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JasVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomJas}}_{{JasWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Jas Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jas, Characters/Jas",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JasVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestJas}}_{{RandomFestivalJas}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Jas Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Jas",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{JasVariant}}/Jas_SleepSprite.png",
+			"ToArea": { "X": 16, "Y": 192, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "AnimalShop",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Jas Beach",
+			"Action": "Load",
+			"Target": "Characters/Jas_Beach, Portraits/Jas_Beach",
+			"FromFile": "Jas/{{TargetPathOnly}}/{{JasVariant}}/{{TargetWithoutPath}}.png",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Jas Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Jas/Misc/Jas_Emoji_{{JasVariant}}.png",
+			"ToArea": {"X": 108, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"JasVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Jas Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "Jas/Misc/BundleSprites_Jas.png",
+			"ToArea": { "X": 16, "Y": 0, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"JasVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Jas Secret Note",
+			"Action": "EditImage",
+			"Target": "Tilesheets/SecretNotesImages",
+			"FromFile": "Jas/Misc/SecretNote_Jas_{{JasVariant}}.png",
+			"ToArea": {"X": 128, "Y": 64, "Width": 64, "Height": 64},
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"JasVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+
+// COMPATIBILITY
+// Ranch Expansion
+		{
+			"LogName": "Jas Ranch Expansion No Bow Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jas_NoBow",
+			"FromFile": "Jas/Portraits/{{JasVariant}}/Jas_{{season}}_{{RandomJas}}_{{JasWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= lemurkat.Jasmineno": true,
+				"HasSeenEvent |contains= 50706115": false,
+			},
+		},
+		{
+			"LogName": "Jas Ranch Expansion No Bow Characters",
+			"Action": "EditImage",
+			"Target": "Characters/Jas_NoBow",
+			"FromFile": "Jas/Characters/{{JasVariant}}/Jas_{{season}}_{{RandomJas}}_{{JasWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= lemurkat.Jasmineno": true,
+				"HasSeenEvent |contains= 50706115": false,
+			},
+		},
+		{
+			"LogName": "Jas Ranch Expansion Custom Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Jas",
+			"FromFile": "{{TargetWithoutPath}}/Misc/RanchExpansion/{{JasVariant}}/{{TargetWithoutPath}}CustomSprites_{{season}}_{{RandomJas}}_{{JasWeatherVariant}}.png",
+			"FromArea": {"X": 0, "Y": 0, "Width": 64, "Height": 96},
+            "ToArea": {"X": 0, "Y": 224, "Width": 64, "Height": 96},
+            "When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= lemurkat.Jasmineno": true,
+				"JasWeatherVariant |contains= Rain": false,				
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Mona DSV Ranch Expansion",
+			"Action": "EditImage",
+			"Target": "Characters/Spirit, Characters/Spirit",
+			"FromFile": "Jas/Misc/MonaGhost_{{TargetPathOnly}}.png",
+			"When":
+			{
+				"JasVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= lemurkat.Jasmineno": true,
+			},
+		},		
+		
+// Tristan
+		{
+			"LogName": "Jas & Mona Cute Tristan",
+			"Action": "EditImage",
+			"Target": "Characters/JasCute, Characters/MonaCute",
+			"FromFile": "Jas/Misc/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"JasVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},	
+		
+// Lavril
+		{
+			"LogName": "Jas PJs",
+			"Action": "EditImage",
+			"Target": "Characters/JasPJ, Portraits/JasPJ",
+			"FromFile": "Jas/Misc/LavrilCompat/{{TargetWithoutPath}}_{{TargetPathOnly}}.png",
+			"When":
+			{
+				"JasVariant|contains= modded": true,
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= Arknir27.Lavril": true,
+			},
+		},
+	]
+}

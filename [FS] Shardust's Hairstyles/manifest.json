@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Shardust's Hairstyles for Fashion Sense",
+  "Author": "Shardust",
+  "Version": "1.5.0",
+  "Description": "Hairstyles for the Fashion Sense framework.",
+  "UniqueID": "Shardust.HairstylesFashionSensePack",
+  "UpdateKeys": ["Nexus:11909"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.3"
+  }
+}

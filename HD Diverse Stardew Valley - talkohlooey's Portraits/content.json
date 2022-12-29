@@ -1,0 +1,1855 @@
+{
+"Format": "1.25.0",
+"ConfigSchema": {
+		"EnableSprites":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Chooses whether or not to enable the non-seasonal DSV sprites. Disable if you want to use only the portraits alongside the seasonal sprites from the main DSV packs."
+		},
+		"AbigailVariant":
+		{
+			"AllowValues": "VanillaPlusSize, ModdedStraightSize, ModdedPlusSize, off",
+			"Default": "off"
+		},
+		"AlexVariant":
+		{
+			"AllowValues": "Mexican, Samoan, off",
+			"Default": "off"
+		},
+		"AlexTattoos":
+		{
+			"AllowValues": "Tattoos, NoTattoos",
+			"Default": "tattoos",
+			"Description": "Chooses whether or not Alex's Samoan variant has tattoos. Does not affect his Mexican variant."
+		},
+		"CarolineVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"ClintVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"ClintScar":
+		{
+			"AllowValues": "Scar, NoScar",
+			"Default": "noScar",
+			"Description": "Chooses whether or not Clint's Modded variant has facial scars."
+		},
+		"DemetriusVariant":
+		{
+			"AllowValues": "ModdedDarkskin, ModdedAlbino, off",
+			"Default": "off"
+		},
+		"ElliottVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"EmilyVariant":
+		{
+			"AllowValues": "Black, Romani, off",
+			"Default": "off"
+		},
+		"EvelynVariant":
+		{
+			"AllowValues": "Mexican, Samoan, off",
+			"Default": "off"
+		},
+		"GeorgeVariant":
+		{
+			"AllowValues": "Mexican, Samoan, off",
+			"Default": "off"
+		},
+		"GuntherVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"GusVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"HaleyVariant":
+		{
+			"AllowValues": "Black, Romani, off",
+			"Default": "off"
+		},
+		"HaleyCuffs":
+		{
+			"AllowValues": "Cuffs, NoCuffs",
+			"Default": "NoCuffs",
+			"Description": "Chooses whether or not Haley's Black variant has hair cuffs. Does not affect her Romani variant."
+		},
+		"HarveyVariant":
+		{
+			"AllowValues": "ModdedNonSikh, ModdedSikh, off",
+			"Default": "off"
+		},
+		"JasVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"JodiVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"KentVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"LeahVariant":
+		{
+			"AllowValues": "Native, Butch, off",
+			"Default": "off"
+		},
+		"LewisVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"MarlonVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"MarnieVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"MaruVariant":
+		{
+			"AllowValues": "ModdedLavender, ModdedNotsnufffie, off",
+			"Default": "off"
+		},
+		"PamVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"PennyVariant":
+		{
+			"AllowValues": "ModdedAirynNotsnufffieLarge, ModdedAirynNotsnufffieSmall, Mixed, off",
+			"Default": "off"
+		},
+		"PierreVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"RobinVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"SamVariant":
+		{
+			"AllowValues": "ModdedLighter, ModdedDarker, off",
+			"Default": "off"
+		},
+		"SamBinder":
+		{
+			"AllowValues": "Binder, NoBinder",
+			"Default": "Binder",
+			"Description": "Gives Sam a tanktop-style binder at the beach."
+		},
+		"SandyVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"SebastianVariant":
+		{
+			"AllowValues": "ModdedBlack, ModdedPurple, off",
+			"Default": "off"
+		},
+		"ShaneVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"VincentVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		},
+		"WillyVariant":
+		{
+			"AllowValues": "Tongan, Disabled, TonganDisabled, off",
+			"Default": "off"
+		},
+		"WizardVariant":
+		{
+			"AllowValues": "Modded, off",
+			"Default": "off"
+		}
+},
+
+"DynamicTokens": 
+	[
+			{
+				"Name": "AlexTattoosToken",
+				"Value": "",
+				"When":
+				{
+					"AlexVariant |contains= Samoan": false
+				}
+			},
+			{
+				"Name": "AlexTattoosToken",
+				"Value": "_Tattoos",
+				"When":
+				{
+					"AlexVariant |contains= Samoan": true,
+					"AlexTattoos": "Tattoos"
+				}
+			},
+			{
+				"Name": "AlexTattoosToken",
+				"Value": "_NoTattoos",
+				"When":
+				{
+					"AlexVariant |contains= Samoan": true,
+					"AlexTattoos": "NoTattoos"
+				}
+			},
+			{
+				"Name": "ClintScarToken",
+				"Value": "",
+				"When":
+				{
+					"ClintVariant |contains= Modded": false
+				}
+			},
+			{
+				"Name": "ClintScarToken",
+				"Value": "_Scar",
+				"When":
+				{
+					"ClintVariant |contains= Modded": true,
+					"ClintScar": "Scar"
+				}
+			},
+			{
+				"Name": "ClintScarToken",
+				"Value": "_NoScar",
+				"When":
+				{
+					"ClintVariant |contains= Modded": true,
+					"ClintScar": "NoScar"
+				}
+			},
+			{
+				"Name": "HaleyCuffsToken",
+				"Value": "",
+				"When":
+				{
+					"HaleyVariant |contains= Black": false
+				}
+			},
+			{
+				"Name": "HaleyCuffsToken",
+				"Value": "_Cuffs",
+				"When":
+				{
+					"HaleyVariant |contains= Black": true,
+					"HaleyCuffs": "Cuffs"
+				}
+			},
+			{
+				"Name": "HaleyCuffsToken",
+				"Value": "_NoCuffs",
+				"When":
+				{
+					"HaleyVariant |contains= Black": true,
+					"HaleyCuffs": "NoCuffs"
+				}
+			},
+			{
+				"Name": "SamBinderToken",
+				"Value": "",
+				"When":
+				{
+					"SamVariant |contains= off": true
+				}
+			},
+			{
+				"Name": "SamBinderToken",
+				"Value": "_Binder",
+				"When":
+				{
+					"SamVariant |contains= off": false,
+					"SamBinder": "Binder"
+				}
+			},
+			{
+				"Name": "SamBinderToken",
+				"Value": "_NoBinder",
+				"When":
+				{
+					"SamVariant |contains= off": false,
+					"SamBinder": "NoBinder"
+				}
+			}
+	],
+
+"Changes": [
+
+// ABIGAIL
+
+		{	
+			"LogName": "DSV Talko Abigail Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Abigail, Mods/talkohPortraits/Abigail_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{AbigailVariant}}.png",
+			"When": 
+			{
+				"AbigailVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Abigail Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Abigail, Characters/Abigail_Beach",
+			"FromFile": "assets/Sprites/Abigail/{{TargetWithoutPath}}_{{AbigailVariant}}.png",
+			"When": 
+			{
+				"AbigailVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Abigail Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Abigail/Abigail_Emoji_{{AbigailVariant}}.png",
+			"ToArea": {"X": 0, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"AbigailVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Abigail Misc",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Sprites/Abigail/ClothesTherapy_Abigail_{{AbigailVariant}}.png",
+			"ToArea": {"X": 0, "Y": 160, "Width": 16, "Height": 32},
+			"When":
+			{
+				"AbigailVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// ALEX
+
+		{	
+			"LogName": "DSV Talko Alex Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Alex, Mods/talkohPortraits/Alex_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{AlexVariant}}{{AlexTattoosToken}}.png",
+			"When": 
+			{
+				"AlexVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Alex Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Alex, Characters/Alex_Beach",
+			"FromFile": "assets/Sprites/Alex/{{TargetWithoutPath}}_{{AlexVariant}}{{AlexTattoosToken}}.png",
+			"When": 
+			{
+				"AlexVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Alex Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Alex/Alex_Emoji_{{AlexVariant}}.png",
+			"ToArea": {"X": 54, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"AlexVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Alex Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Sprites/Alex/CursorsAlex.png",
+			"ToArea": { "X": 416, "Y": 1936, "Width": 115, "Height": 60 },
+			"When":
+			{
+				"AlexVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Caroline
+
+		{	
+			"LogName": "DSV Talko Caroline Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Caroline, Mods/talkohPortraits/Caroline_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{CarolineVariant}}.png",
+			"When": 
+			{
+				"CarolineVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Caroline Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Caroline, Characters/Caroline_Beach",
+			"FromFile": "assets/Sprites/Caroline/{{TargetWithoutPath}}_{{CarolineVariant}}.png",
+			"When": 
+			{
+				"CarolineVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Caroline Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Caroline/Caroline_Emoji_{{CarolineVariant}}.png",
+			"ToArea": {"X": 9, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"CarolineVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Caroline Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/Sprites/Caroline/TemporarySprites1_Caroline_{{CarolineVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"CarolineVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Clint
+
+		{	
+			"LogName": "DSV Talko Clint Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Clint, Mods/talkohPortraits/Clint_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{ClintVariant}}{{ClintScarToken}}.png",
+			"When": 
+			{
+				"ClintVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Clint Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Clint, Characters/Clint_Beach",
+			"FromFile": "assets/Sprites/Clint/{{TargetWithoutPath}}_{{ClintVariant}}{{ClintScarToken}}.png",
+			"When": 
+			{
+				"ClintVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Clint Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Clint/Clint_Emoji_{{ClintVariant}}{{ClintScarToken}}.png",
+			"ToArea": {"X": 54, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"ClintVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Clint Misc",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Sprites/Clint/ClothesTherapy_Clint_Overlay_{{ClintVariant}}{{ClintScarToken}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"ClintVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Demetrius
+
+		{	
+			"LogName": "DSV Talko Demetrius Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Demetrius",
+			"FromFile": "assets/talkohPortraits/Demetrius_{{DemetriusVariant}}.png",
+			"When": 
+			{
+				"DemetriusVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Demetrius Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius, Characters/Demetrius_Beach",
+			"FromFile": "assets/Sprites/Demetrius/{{TargetWithoutPath}}_{{DemetriusVariant}}.png",
+			"When": 
+			{
+				"DemetriusVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Demetrius Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Demetrius/Demetrius_Emoji_{{DemetriusVariant}}.png",
+			"ToArea": {"X": 45, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"DemetriusVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Demetrius Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/Sprites/Demetrius/Junimo_Demetrius_{{DemetriusVariant}}.png",
+			"ToArea": { "X": 384, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"DemetriusVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Elliott
+
+		{	
+			"LogName": "DSV Talko Elliott Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Elliott, Mods/talkohPortraits/Elliott_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{ElliottVariant}}.png",
+			"When": 
+			{
+				"ElliottVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Elliott Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Elliott, Characters/Elliott_Beach",
+			"FromFile": "assets/Sprites/Elliott/{{TargetWithoutPath}}_{{ElliottVariant}}.png",
+			"When": 
+			{
+				"ElliottVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Elliott Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Elliott/Elliott_Emoji_{{ElliottVariant}}.png",
+			"ToArea": {"X": 99, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"ElliottVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Emily
+
+		{	
+			"LogName": "DSV Talko Emily Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Emily, Mods/talkohPortraits/Emily_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{EmilyVariant}}.png",
+			"When": 
+			{
+				"EmilyVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Emily Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Emily, Characters/Emily_Beach",
+			"FromFile": "assets/Sprites/Emily/{{TargetWithoutPath}}_{{EmilyVariant}}.png",
+			"When": 
+			{
+				"EmilyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Emily Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Emily/Emily_Emoji_{{EmilyVariant}}.png",
+			"ToArea": {"X": 45, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"EmilyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Emily Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/Sprites/Emily/Junimo_Emily_{{EmilyVariant}}.png",
+			"ToArea": { "X": 448, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"EmilyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Evelyn
+
+		{	
+			"LogName": "DSV Talko Evelyn Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Evelyn",
+			"FromFile": "assets/talkohPortraits/Evelyn_{{EvelynVariant}}.png",
+			"When": 
+			{
+				"EvelynVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Evelyn Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Evelyn",
+			"FromFile": "assets/Sprites/Evelyn/Evelyn_{{EvelynVariant}}.png",
+			"When": 
+			{
+				"EvelynVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Evelyn Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Evelyn/Evelyn_Emoji_{{EvelynVariant}}.png",
+			"ToArea": {"X": 117, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"EvelynVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// George
+
+		{	
+			"LogName": "DSV Talko George Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/George",
+			"FromFile": "assets/talkohPortraits/George_{{GeorgeVariant}}.png",
+			"When": 
+			{
+				"GeorgeVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko George Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/George",
+			"FromFile": "assets/Sprites/George/George_{{GeorgeVariant}}.png",
+			"When": 
+			{
+				"GeorgeVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko George Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/George/George_Emoji_{{GeorgeVariant}}.png",
+			"ToArea": {"X": 36, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"GeorgeVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Gunther
+
+		{	
+			"LogName": "DSV Talko Gunther Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Gunther",
+			"FromFile": "assets/talkohPortraits/Gunther_{{GuntherVariant}}.png",
+			"When": 
+			{
+				"GuntherVariant |contains= off": "false",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{	
+			"LogName": "DSV Talko Gunther Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Gunther",
+			"FromFile": "assets/Sprites/Gunther/Gunther_{{GuntherVariant}}.png",
+			"When": 
+			{
+				"GuntherVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Gunther Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Gunther/Gunther_Emoji_{{GuntherVariant}}.png",
+			"ToArea": {"X": 27, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"GuntherVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+
+// Gus
+
+		{	
+			"LogName": "DSV Talko Gus Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Gus",
+			"FromFile": "assets/talkohPortraits/Gus_{{GusVariant}}.png",
+			"When": 
+			{
+				"GusVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Gus Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Gus",
+			"FromFile": "assets/Sprites/Gus/Gus_{{GusVariant}}.png",
+			"When": 
+			{
+				"GusVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Gus Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Gus/Gus_Emoji_{{GusVariant}}.png",
+			"ToArea": {"X": 18, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"GusVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Gus Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/Sprites/Gus/Junimo_Gus_{{GusVariant}}.png",
+			"ToArea": { "X": 352, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"GusVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Haley
+
+		{	
+			"LogName": "DSV Talko Haley Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Haley, Mods/talkohPortraits/Haley_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{HaleyVariant}}{{HaleyCuffsToken}}.png",
+			"When": 
+			{
+				"HaleyVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Haley Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Haley, Characters/Haley_Beach",
+			"FromFile": "assets/Sprites/Haley/{{TargetWithoutPath}}_{{HaleyVariant}}{{HaleyCuffsToken}}.png",
+			"When": 
+			{
+				"HaleyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Haley Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Haley/Haley_Emoji_{{HaleyVariant}}.png",
+			"ToArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HaleyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Haley Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/cowPhotos, LooseSprites/cowPhotosWinter",
+			"FromFile": "assets/Sprites/Haley/Haley_{{HaleyVariant}}_{{TargetWithoutPath}}{{HaleyCuffsToken}}.png",
+			"When":
+			{
+				"HaleyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Harvey
+
+		{	
+			"LogName": "DSV Talko Harvey Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Harvey, Mods/talkohPortraits/Harvey_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{HarveyVariant}}.png",
+			"When": 
+			{
+				"HarveyVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Harvey Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey, Characters/Harvey_Beach",
+			"FromFile": "assets/Sprites/Harvey/{{TargetWithoutPath}}_{{HarveyVariant}}.png",
+			"When": 
+			{
+				"HarveyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Harvey Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Harvey/Harvey_Emoji_{{HarveyVariant}}.png",
+			"ToArea": {"X": 90, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HarveyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Jas
+
+		{	
+			"LogName": "DSV Talko Jas Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Jas",
+			"FromFile": "assets/talkohPortraits/Jas_{{JasVariant}}.png",
+			"When": 
+			{
+				"JasVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Jas Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Jas",
+			"FromFile": "assets/Sprites/Jas/Jas_{{JasVariant}}.png",
+			"When": 
+			{
+				"JasVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Jas Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Jas/Jas_Emoji_{{JasVariant}}.png",
+			"ToArea": {"X": 108, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"JasVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Jas Misc",
+			"Action": "EditImage",
+			"Target": "Tilesheets/SecretNotesImages",
+			"FromFile": "assets/Sprites/Jas/SecretNote_Jas_{{JasVariant}}.png",
+			"ToArea": {"X": 128, "Y": 64, "Width": 64, "Height": 64},
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"JasVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Jas Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "assets/Sprites/Jas/BundleSprites_Jas_{{JasVariant}}.png",
+			"ToArea": { "X": 16, "Y": 0, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"JasVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Jodi
+
+		{	
+			"LogName": "DSV Talko Jodi Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Jodi, Mods/talkohPortraits/Jodi_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{JodiVariant}}.png",
+			"When": 
+			{
+				"JodiVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Jodi Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi, Characters/Jodi_Beach",
+			"FromFile": "assets/Sprites/Jodi/{{TargetWithoutPath}}_{{JodiVariant}}.png",
+			"When": 
+			{
+				"JodiVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Jodi Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Jodi/Jodi_Emoji_{{JodiVariant}}.png",
+			"ToArea": {"X": 45, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"JodiVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Jodi Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "assets/Sprites/Jodi/BundleSprites_Jodi_{{JodiVariant}}.png",
+			"ToArea": { "X": 192, "Y": 0, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"JodiVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Kent
+
+		{	
+			"LogName": "DSV Talko Kent Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Kent",
+			"FromFile": "assets/talkohPortraits/Kent_{{KentVariant}}.png",
+			"When": 
+			{
+				"KentVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Kent Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Kent",
+			"FromFile": "assets/Sprites/Kent/Kent_{{KentVariant}}.png",
+			"When": 
+			{
+				"KentVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Leah
+
+		{	
+			"LogName": "DSV Talko Leah Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Leah, Mods/talkohPortraits/Leah_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{LeahVariant}}.png",
+			"When": 
+			{
+				"LeahVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Leah Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Leah, Characters/Leah_Beach",
+			"FromFile": "assets/Sprites/Leah/{{TargetWithoutPath}}_{{LeahVariant}}.png",
+			"When": 
+			{
+				"LeahVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Leah Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Leah/Leah_Emoji_{{LeahVariant}}.png",
+			"ToArea": {"X": 27, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"LeahVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Lewis
+
+		{	
+			"LogName": "DSV Talko Lewis Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Lewis",
+			"FromFile": "assets/talkohPortraits/Lewis_{{LewisVariant}}.png",
+			"When": 
+			{
+				"LewisVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Lewis Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis, Characters/Lewis_Beach",
+			"FromFile": "assets/Sprites/Lewis/{{TargetWithoutPath}}_{{LewisVariant}}.png",
+			"When": 
+			{
+				"LewisVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Lewis Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Lewis/Lewis_Emoji_{{LewisVariant}}.png",
+			"ToArea": {"X": 54, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"LewisVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Lewis Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Lewis/Lewis_Emoji_{{LewisVariant}}_1.png",
+			"ToArea": {"X": 90, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"LewisVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Lewis Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Lewis/Lewis_Emoji_{{LewisVariant}}_2.png",
+			"ToArea": {"X": 108, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"LewisVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Lewis Misc",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Sprites/Lewis/ClothesTherapy_Lewis_{{LewisVariant}}.png",
+			"ToArea": {"X": 0, "Y": 64, "Width": 64, "Height": 32},
+			"When":
+			{
+				"LewisVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Marlon
+
+		{	
+			"LogName": "DSV Talko Marlon Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Marlon",
+			"FromFile": "assets/talkohPortraits/Marlon_{{MarlonVariant}}.png",
+			"When": 
+			{
+				"MarlonVariant |contains= off": "false",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{	
+			"LogName": "DSV Talko Marlon Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Marlon",
+			"FromFile": "assets/Sprites/Marlon/Marlon_{{MarlonVariant}}.png",
+			"When": 
+			{
+				"MarlonVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Marlon Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Marlon/Marlon_Emoji_{{MarlonVariant}}.png",
+			"ToArea": {"X": 72, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"MarlonVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Marlon Misc",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Sprites/Marlon/Marlon_Theater_{{MarlonVariant}}.png",
+			"ToArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+			"When": 
+			{
+				"MarlonVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+
+// Marnie
+
+		{	
+			"LogName": "DSV Talko Marnie Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Marnie, Mods/talkohPortraits/Marnie_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{MarnieVariant}}.png",
+			"When": 
+			{
+				"MarnieVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Marnie Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Marnie, Characters/Marnie_Beach",
+			"FromFile": "assets/Sprites/Marnie/{{TargetWithoutPath}}_{{MarnieVariant}}.png",
+			"When": 
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Marnie/Marnie_Emoji_{{MarnieVariant}}.png",
+			"ToArea": {"X": 0, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "Tilesheets/SecretNotesImages",
+			"FromFile": "assets/Sprites/Marnie/SecretNote_Marnie_{{MarnieVariant}}.png",
+			"ToArea": {"X": 128, "Y": 64, "Width": 64, "Height": 64},
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/Sprites/Marnie/Junimo_Marnie_{{MarnieVariant}}.png",
+			"ToArea": { "X": 480, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Sprites/Marnie/CursorsPaintings_Marnie.png",
+			"ToArea": { "X": 0, "Y": 1925, "Width": 50, "Height": 47 },
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "Tilesheets/Furniture",
+			"FromFile": "assets/Sprites/Marnie/Leah14Heart_Furniture_{{MarnieVariant}}.png",
+			"ToArea": { "X": 164, "Y": 900, "Width": 25, "Height": 22 },
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/Sprites/Marnie/Leah14Heart_TemporarySprites1_{{MarnieVariant}}.png",
+			"ToArea": { "X": 400, "Y": 394, "Width": 101, "Height": 23 },
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Sprites/Marnie/CursorsMarnie_{{MarnieVariant}}.png",
+			"ToArea": { "X": 559, "Y": 1425, "Width": 60, "Height": 26 },
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "assets/Sprites/Marnie/BundleSprites_Marnie_{{MarnieVariant}}.png",
+			"ToArea": { "X": 16, "Y": 0, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Marnie Misc",
+			"Action": "EditImage",
+			"Target": "Characters/Marnie",
+			"FromFile": "assets/Sprites/Marnie/Marnie_LuauSoup.png",
+			"ToArea": { "X": 16, "Y": 150, "Width": 48, "Height": 10 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"MarnieVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= Xiddav.FestivalsRecolored, minervamaga.CP.ATDSV, DaisyNiko.EarthyRecolour, grapeponta.VibrantPastoralRecolor": false
+			}
+		},
+
+// Maru
+
+		{	
+			"LogName": "DSV Talko Maru Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Maru, Mods/talkohPortraits/Maru_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{MaruVariant}}.png",
+			"When": 
+			{
+				"MaruVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Maru Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Maru, Characters/Maru_Beach",
+			"FromFile": "assets/Sprites/Maru/{{TargetWithoutPath}}_{{MaruVariant}}.png",
+			"When": 
+			{
+				"MaruVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Maru Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Maru/Maru_Emoji_{{MaruVariant}}.png",
+			"ToArea": {"X": 18, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"MaruVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Pam
+
+		{	
+			"LogName": "DSV Talko Pam Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Pam, Mods/talkohPortraits/Pam_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{PamVariant}}.png",
+			"When": 
+			{
+				"PamVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Pam Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Pam, Characters/Pam_Beach",
+			"FromFile": "assets/Sprites/Pam/{{TargetWithoutPath}}_{{PamVariant}}.png",
+			"When": 
+			{
+				"PamVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Pam Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Pam/Pam_Emoji_{{PamVariant}}.png",
+			"ToArea": {"X": 36, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PamVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Penny
+
+		{	
+			"LogName": "DSV Talko Penny Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Penny, Mods/talkohPortraits/Penny_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{PennyVariant}}.png",
+			"When": 
+			{
+				"PennyVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Penny Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Penny, Characters/Penny_Beach",
+			"FromFile": "assets/Sprites/Penny/{{TargetWithoutPath}}_{{PennyVariant}}.png",
+			"When": 
+			{
+				"PennyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Penny Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Penny/Penny_Emoji_{{PennyVariant}}.png",
+			"ToArea": {"X": 9, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PennyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Pierre
+
+		{	
+			"LogName": "DSV Talko Pierre Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Pierre, Mods/talkohPortraits/Pierre_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{PierreVariant}}.png",
+			"When": 
+			{
+				"PierreVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Pierre Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Pierre, Characters/Pierre_Beach",
+			"FromFile": "assets/Sprites/Pierre/{{TargetWithoutPath}}_{{PierreVariant}}.png",
+			"When": 
+			{
+				"PierreVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Pierre Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Pierre/Pierre_Emoji_{{PierreVariant}}.png",
+			"ToArea": {"X": 27, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PierreVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Robin
+
+		{	
+			"LogName": "DSV Talko Robin Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Robin, Mods/talkohPortraits/Robin_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{RobinVariant}}.png",
+			"When": 
+			{
+				"RobinVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Robin Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Robin, Characters/Robin_Beach",
+			"FromFile": "assets/Sprites/Robin/{{TargetWithoutPath}}_{{RobinVariant}}.png",
+			"When": 
+			{
+				"RobinVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Robin Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Robin/Robin_Emoji_{{RobinVariant}}.png",
+			"ToArea": {"X": 18, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"RobinVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Robin Misc",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Sprites/Robin/ClothesTherapy_Robin_{{RobinVariant}}.png",
+			"ToArea": {"X": 0, "Y": 128, "Width": 64, "Height": 32},
+			"FromArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+			"When":
+			{
+				"RobinVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Robin Misc",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Sprites/Robin/ClothesTherapy_Robin_{{RobinVariant}}.png",
+			"ToArea": {"X": 16, "Y": 160, "Width": 16, "Height": 32},
+			"FromArea": {"X": 0, "Y": 32, "Width": 16, "Height": 32},
+			"When":
+			{
+				"RobinVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Sam
+
+		{	
+			"LogName": "DSV Talko Sam Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Sam",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{SamVariant}}.png",
+			"When": 
+			{
+				"SamVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Sam Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Sam_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{SamVariant}}{{SamBinderToken}}.png",
+			"When": 
+			{
+				"SamVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Sam Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Sam",
+			"FromFile": "assets/Sprites/Sam/{{TargetWithoutPath}}_{{SamVariant}}.png",
+			"When": 
+			{
+				"SamVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},	
+		{	
+			"LogName": "DSV Talko Sam Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_Beach",
+			"FromFile": "assets/Sprites/Sam/{{TargetWithoutPath}}_{{SamVariant}}{{SamBinderToken}}.png",
+			"When": 
+			{
+				"SamVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Sam Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Sam/Sam_Emoji_{{SamVariant}}.png",
+			"ToArea": {"X": 81, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"SamVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Sandy
+
+		{	
+			"LogName": "DSV Talko Sandy Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Sandy",
+			"FromFile": "assets/talkohPortraits/Sandy_{{SandyVariant}}.png",
+			"When": 
+			{
+				"SandyVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Sandy Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Sandy",
+			"FromFile": "assets/Sprites/Sandy/Sandy_{{SandyVariant}}.png",
+			"When": 
+			{
+				"SandyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Sandy Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Sandy/Sandy_Emoji_{{SandyVariant}}.png",
+			"ToArea": {"X": 108, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"SandyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Sebastian
+
+		{	
+			"LogName": "DSV Talko Sebastian Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Sebastian, Mods/talkohPortraits/Sebastian_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{SebastianVariant}}.png",
+			"When": 
+			{
+				"SebastianVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Sebastian Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian, Characters/Sebastian_Beach",
+			"FromFile": "assets/Sprites/Sebastian/{{TargetWithoutPath}}_{{SebastianVariant}}.png",
+			"When": 
+			{
+				"SebastianVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Sebastian Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Sebastian/Sebastian_Emoji_{{SebastianVariant}}.png",
+			"ToArea": {"X": 72, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"SebastianVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Sebastian Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Sprites/Sebastian/Cursors_Sebastian_{{SebastianVariant}}.png",
+			"ToArea": { "X": 407, "Y": 1854, "Width": 47, "Height": 33 },
+			"When": 
+			{
+				"SebastianVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Shane
+
+		{	
+			"LogName": "DSV Talko Shane Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Shane, Mods/talkohPortraits/Shane_Beach",
+			"FromFile": "assets/talkohPortraits/{{TargetWithoutPath}}_{{ShaneVariant}}.png",
+			"When": 
+			{
+				"ShaneVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Shane Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Shane, Characters/Shane_Beach, Shane_JojaMart",
+			"FromFile": "assets/Sprites/Shane/{{TargetWithoutPath}}_{{ShaneVariant}}.png",
+			"When": 
+			{
+				"ShaneVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Shane Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Shane/Shane_Emoji_{{ShaneVariant}}.png",
+			"ToArea": {"X": 63, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"ShaneVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Shane Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Sprites/Shane/Shane_Cursors_{{ShaneVariant}}.png",
+			"ToArea": { "X": 533, "Y": 1864, "Width": 20, "Height": 28 },
+			"When": 
+			{
+				"ShaneVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},	
+		{	
+			"LogName": "DSV Talko Shane Misc",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/Sprites/Shane/ClothesTherapy_Shane_{{ShaneVariant}}.png",
+			"ToArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+			"When": 
+			{
+				"ShaneVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Vincent
+
+		{	
+			"LogName": "DSV Talko Vincent Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Vincent",
+			"FromFile": "assets/talkohPortraits/Vincent_{{VincentVariant}}.png",
+			"When": 
+			{
+				"VincentVariant |contains= off": "false"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Vincent Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Vincent",
+			"FromFile": "assets/Sprites/Vincent/Vincent_{{VincentVariant}}.png",
+			"When": 
+			{
+				"VincentVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Vincent Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Vincent/Vincent_Emoji_{{VincentVariant}}.png",
+			"ToArea": {"X": 117, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"VincentVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Vincent Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/Sprites/Vincent/TemporarySprites1_Vincent_Modded.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"VincentVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Willy
+
+		{	
+			"LogName": "DSV Talko Willy Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Willy",
+			"FromFile": "assets/talkohPortraits/Willy_Tongan.png",
+			"When": 
+			{
+				"WillyVariant |contains= Tongan, TonganDisabled": "true"
+			}
+		},
+		{	
+			"LogName": "DSV Talko Willy Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Willy",
+			"FromFile": "assets/Sprites/Willy/Willy_{{WillyVariant}}.png",
+			"When": 
+			{
+				"WillyVariant |contains= off": "false",
+				"EnableSprites": "true"
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Willy Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Willy/Willy_Emoji_{{WillyVariant}}.png",
+			"ToArea": {"X": 81, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"WillyVariant |contains= off, Disabled": "false",
+				"EnableSprites": "true"
+			}
+		},
+		{
+			"LogName": "DSV Talko Willy Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/WillysBoat",
+			"FromFile": "assets/Sprites/Willy/WillysBoat_{{WillyVariant}}.png",
+			"ToArea": { "X": 173, "Y": 163, "Width": 16, "Height": 18 },
+			"When":
+			{
+				"WillyVariant |contains= off, Disabled": "false",
+				"EnableSprites": "true"
+			}
+		},
+
+// Wizard
+
+		{	
+			"LogName": "DSV Talko Wizard Portraits",
+			"Action": "EditImage",
+			"Target": "Mods/talkohPortraits/Wizard",
+			"FromFile": "assets/talkohPortraits/Wizard_{{WizardVariant}}.png",
+			"When": 
+			{
+				"WizardVariant |contains= off": "false",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{	
+			"LogName": "DSV Talko Wizard Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Wizard",
+			"FromFile": "assets/Sprites/Wizard/Wizard_{{WizardVariant}}.png",
+			"When": 
+			{
+				"WizardVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},		
+		{	
+			"LogName": "DSV Talko Wizard Misc",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Sprites/Wizard/Wizard_Emoji_{{WizardVariant}}.png",
+			"ToArea": {"X": 90, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"WizardVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "DSV Talko Wizard Misc",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "assets/Sprites/Wizard/KrobusRaven_{{WizardVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"WizardVariant |contains= off": "false",
+				"EnableSprites": "true",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+
+	]
+}

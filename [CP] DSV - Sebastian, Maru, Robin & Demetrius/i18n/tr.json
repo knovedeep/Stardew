@@ -1,0 +1,140 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.SebastianVariant.name": "SebastianÇeşidi",
+	"config.SebastianVariant.values.Vanilla": "Vanilla",
+	"config.SebastianVariant.values.ModdedBlack": "ModluBlack",
+	"config.SebastianVariant.values.ModdedPurple": "ModluPurple",
+	"config.SebastianVariant.values.Off": "Kapalı",
+	
+	"config.SebastianLightweightConfig.name": "SebastianHafiflikYapılandırma",
+	"config.SebastianLightweightConfig.description": "Sebastian'ın Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.SebastianLightweightConfig.values.Full": "Tam",
+	"config.SebastianLightweightConfig.values.Light": "Hafif",
+	"config.SebastianLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.MaruVariant.name": "MaruÇeşidi",
+	"config.MaruVariant.values.Vanilla": "Vanilla",
+	"config.MaruVariant.values.ModdedNotsnufffie": "ModluNotsnufffie",
+	"config.MaruVariant.values.ModdedLavender": "ModluLavender",
+	"config.MaruVariant.values.Off": "Kapalı",
+	
+	"config.MaruLightweightConfig.name": "MaruHafiflikYapılandırma",
+	"config.MaruLightweightConfig.description": "Maru'nun Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.MaruLightweightConfig.values.Full": "Tam",
+	"config.MaruLightweightConfig.values.Light": "Hafif",
+	"config.MaruLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.RobinVariant.name": "RobinÇeşidi",
+	"config.RobinVariant.values.Vanilla": "Vanilla",
+	"config.RobinVariant.values.Modded": "Modlu",
+	"config.RobinVariant.values.Off": "Kapalı",
+	
+	"config.RobinLightweightConfig.name": "RobinHafiflikYapılandırma",
+	"config.RobinLightweightConfig.description": "Robin'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.RobinLightweightConfig.values.Full": "Tam",
+	"config.RobinLightweightConfig.values.Light": "Hafif",
+	"config.RobinLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.DemetriusVariant.name": "DemetriusÇeşidi",
+	"config.DemetriusVariant.values.Vanilla": "Vanilla",
+	"config.DemetriusVariant.values.ModdedDarkSkin": "ModluKoyuTen",
+	"config.DemetriusVariant.values.ModdedAlbino": "ModluAlbino",
+	"config.DemetriusVariant.values.Off": "Kapalı",
+	
+	"config.DemetriusLightweightConfig.name": "DemetriusHafiflikYapılandırma",
+	"config.DemetriusLightweightConfig.description": "Demetrius'un Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun wikisine bakın.",
+	"config.DemetriusLightweightConfig.values.Full": "Tam",
+	"config.DemetriusLightweightConfig.values.Light": "Hafif",
+	"config.DemetriusLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.MaternitySprites.name": "GebelikSpriteları",
+	"config.MaternitySprites.description": "Karın hamileyken gebelik kıyafetlerini etkinleştirir. Eğer 'Açık' olarak ayarlanırsa, sprite'lar otomatik olarak değiştirilecek. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MaternitySprites.values.True": "Açık",	
+	"config.MaternitySprites.values.False": "Kapalı",
+	
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description": "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun wikisine bakın.",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.WeddingOutfitSebastian.name": "DüğünElbisesiSebastian",
+	"config.WeddingOutfitSebastian.description": "Sebastian'ın evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitSebastian.values.1": "1",
+	"config.WeddingOutfitSebastian.values.2": "2",
+	"config.WeddingOutfitSebastian.values.3": "3",
+	"config.WeddingOutfitSebastian.values.4": "4",
+	"config.WeddingOutfitSebastian.values.5": "5",
+	"config.WeddingOutfitSebastian.values.6": "6",
+	
+	"config.WeddingOutfitMaru.name": "DüğünElbisesiMaru",
+	"config.WeddingOutfitMaru.description": "Maru'nun evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitMaru.values.1": "1",
+	"config.WeddingOutfitMaru.values.2": "2",
+	"config.WeddingOutfitMaru.values.3": "3",
+	"config.WeddingOutfitMaru.values.4": "4",
+	"config.WeddingOutfitMaru.values.5": "5",
+	"config.WeddingOutfitMaru.values.6": "6",
+	
+	"config.MaternitySprites.name": "GebelikSpriteları",
+	"config.MaternitySprites.description": "Karın hamileyken gebelik kıyafetlerini etkinleştirir. Eğer 'Açık' olarak ayarlanırsa, sprite'lar otomatik olarak değiştirilecek. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MaternitySprites.values.True": "Açık",	
+	"config.MaternitySprites.values.False": "Kapalı",
+	
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description": "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun wikisine bakın.",
+	
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.PyjamasSebastian.name": "PijamaSebastian",
+	"config.PyjamasSebastian.description": "Sebastian'ın sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.PyjamasSebastian.values.True": "Açık",	
+	"config.PyjamasSebastian.values.False": "Kapalı",
+	"config.PyjamasSebastian.values.Marriage": "Evlilik",
+
+	"config.PyjamasMaru.name": "PijamaMaru",
+	"config.PyjamasMaru.description": "Maru'nun sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.PyjamasMaru.values.True": "Açık",	
+	"config.PyjamasMaru.values.False": "Kapalı",
+	"config.PyjamasMaru.values.Marriage": "Evlilik",
+	
+	"config.MaruHospitalVariant.name": "MaruHastaneÇeşidi",
+	"config.MaruHospitalVariant.description": "Klinikte çalışırken Maru'ya önlük verir ya da vanilla hemşire elbisesiyle bırakır.",
+	"config.MaruHospitalVariant.values.Scrubs": "Önlük",
+	"config.MaruHospitalVariant.values.NoScrubs": "ÖnlükYok",
+	
+	"config.MaruCharacterGlasses.name": "MaruKarakterGözlük",
+	"config.MaruCharacterGlasses.description": "Maru'nun karakter/dünya sprite'larına portreleriyle eşleşmesi için gözlük verir. Yalnızca Vanilla ve ModluNotsnufffie çeşitlerini etkiler.",
+	"config.MaruCharacterGlasses.values.Glasses": "Gözlük",
+	"config.MaruCharacterGlasses.values.NoGlasses": "GözlükYok",
+	
+	"config.SebSafety.name": "SebGüvenlik",
+	"config.SebSafety.description": "Sebastian'a motoksikletini sürerken bir kask verir. Yalnızca SebastianHafiflikYapılandırma 'tam'a ayarlıysa kullanılabilir.",
+	"config.SebSafety.values.Helmet": "Kask",
+	"config.SebSafety.values.NoHelmet": "KaskYok",
+	
+	"config.SebGlasses.name": "SebGözlük",
+	"config.SebGlasses.description": "Sebastian'a gözlük verir. 'Dinamik' seçildiğinde, yalnızca gizli olarak takar. Eğer SebastianHafiflikYapılandırma 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.SebGlasses.values.Dynamic": "Dinamik",
+	"config.SebGlasses.values.Glasses": "Gözlük",
+	"config.SebGlasses.values.NoGlasses": "GözlükYok",
+	
+	"config.SebPiercings.name": "SebPiercing",
+	"config.SebPiercings.description": "Sebastian'a dudak ve kulak piercingleri verir. Eğer SebastianHafiflikYapılandırma 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.SebPiercings.values.Piercings": "Piercing",
+	"config.SebPiercings.values.NoPiercings": "PiercingYok",
+	
+// DEMETRIUS ICE FESTIVAL DIALOGUE FIX
+
+	"dialogue.Demetrius.IceFest": "Üstümde bir ceket olsa bile, dışarısı hala soğuk. Robin'in buza bu kadar yakın durabilmesine hayranım!"
+	
+}
+	
+	
+	

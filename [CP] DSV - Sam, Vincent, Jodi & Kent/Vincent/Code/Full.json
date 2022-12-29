@@ -1,0 +1,72 @@
+{
+// VINCENT DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Vincent Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Vincent, Characters/Vincent",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{VincentVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomVincent}}_{{VincentWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Vincent Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Vincent, Characters/Vincent",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{VincentVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestVincent}}_{{RandomFestivalVincent}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Vincent Beach Load",
+			"Action": "Load",
+			"Target": "Characters/Vincent_Beach, Portraits/Vincent_Beach",
+			"FromFile": "Vincent/{{TargetPathOnly}}/{{VincentVariant}}/{{TargetWithoutPath}}.png"
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Vincent Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Vincent/Misc/Vincent_Emoji_{{VincentVariant}}.png",
+			"ToArea": {"X": 117, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"VincentVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Vincent Bundle Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "Vincent/Misc/BundleSprites_Vincent.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"VincentVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Vincent Temporary Sprite",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Vincent/Misc/TemporarySprites1_Vincent_Modded.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"VincentVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

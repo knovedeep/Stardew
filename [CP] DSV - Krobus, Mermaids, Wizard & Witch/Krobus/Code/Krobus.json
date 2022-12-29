@@ -1,0 +1,34 @@
+{
+	"Changes": [
+		{
+			"LogName": "Krobus Weather Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Krobus, Characters/Krobus",
+			"FromFile": "Krobus/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{RandomKrobus}}_{{KrobusWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Krobus Trenchcoat",
+			"Action": "EditImage",
+			"Target": "Portraits/Krobus_Trenchcoat, Characters/Krobus_Trenchcoat",
+			"FromFile": "Krobus/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{RandomKrobusTrenchcoat}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Krobus Beach",
+			"Action": "Load",
+			"Target": "Portraits/Krobus_Beach, Characters/Krobus_Beach",
+			"FromFile": "Krobus/{{TargetPathOnly}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

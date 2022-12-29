@@ -1,0 +1,607 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// WEATHER
+		{
+			"Name": "PennyWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "PennyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"PennyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PennyWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"PennyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PennyWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"PennyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PennyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"PennyLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// PAM WEATHER
+		{
+			"Name": "PamWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "PamWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"PamLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PamWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"PamLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PamWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"PamLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "PamWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"PamLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomPenny",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomPenny",
+			"Value": "{{Random: 1, 2, 3, 4 |key= PennyMain}}",
+			"When":
+			{
+				"PennyLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomFestivalPenny",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalPenny",
+			"Value": "{{Random: 1, 2 |key= PennyFestival}}",
+			"When":
+			{
+				"PennyLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true,
+			},
+		},
+		{
+			"Name": "RandomPam",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomPam",
+			"Value": "{{Random: 1, 2 |key= PamMain}}",
+			"When":
+			{
+				"PamLightweightConfig |contains= full": true,
+				"HasFlag": "ccVault, jojaVault",
+			},
+		},
+
+// SPECIAL - BUS UNIFORM
+		{
+			"Name": "PamBus",
+			"Value": "",
+		},
+		{
+			"Name": "PamBus",
+			"Value": "_Bus",
+			"When":
+			{
+				"LocationName": "BusStop, Desert",
+				"HasFlag": "ccVault, jojaVault",
+				"PamLightweightConfig |contains= ultralight": false,
+			},
+		},
+		
+// SPECIAL - SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true,
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker",
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"Season": "summer",
+				"LocationName": "Beach",
+				"Weather": "sun, wind",
+				"DayEvent |contains= dance of the moonlight jellies, luau, Moonshine Barbecue, Pelican Town Potluck": false,
+			}
+		},
+		
+// SPECIAL - AEROBICS
+
+		{
+			"Name": "Special+Festival",
+			"Value": "_Aerobics",
+			"When":
+			{
+				"LocationName": "SeedShop",
+				"Hearts:Harvey": "{{Range: 6, 14}}",
+				"Time": "{{Range: 1100, 1500}}",
+				"HasSeenEvent |contains= 58": false,
+				"PamLightweightConfig |contains= full": true,
+			},
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+
+		
+// PYJAMAS
+		{
+			"Name": "PyjamasPenny",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasPenny",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, Trailer, Trailer_big": true,
+				"Query: {{Time}} < 0800 OR {{Time}} >= 2100": true,
+				"PennyLightweightConfig |contains= full": true,
+				"PennyVariant |contains= off": false,	
+				"Pyjamas |contains= true": true,
+			}
+		},
+		{
+			"Name": "PyjamasPenny",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse": true,
+				"Query: {{Time}} < 0800 OR {{Time}} >= 2100": true,
+				"Relationship:Penny": "Married",
+				"PennyLightweightConfig |contains= full": true,
+				"PennyVariant |contains= off": false,	
+				"Pyjamas |contains= marriage": true,
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+
+		{
+			"Name": "WeddingGuestPenny",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestPenny",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"PennyLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestPenny",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"PennyLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestPenny",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"PennyLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+		{
+			"Name": "WeddingGuestPam",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestPam",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"PamLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestPam",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"PamLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestPam",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"PamLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// PENNY IRISH WEDDING DRESS COMPAT
+
+		{
+			"Name": "WeddingOutfitPennyToken",
+			"Value": "{{WeddingOutfitPenny}}",
+		},
+		{
+			"Name": "WeddingOutfitPennyToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.PennyIrishWeddingDress": false,
+				"WeddingOutfitPenny": "6",
+			},
+		},
+		{
+			"Name": "WeddingOutfitPennyToken",
+			"Value": "6_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.PennyIrishWeddingDress": true,
+				"WeddingOutfitPenny": "6",
+			},
+		},
+
+// SPECIAL - DRINK FLUSH OVERLAY
+		{
+			"Name": "PamDrinkOverlay",
+			"Value": "",
+		},
+		{
+			"Name": "PamDrinkOverlay", // Pre-bus repair Full
+			"Value": "DrinkFlushOverlay",
+			"When":
+			{
+				"LocationName": "Saloon",
+				"Time": "{{Range: 1730, 2400}}",
+				"HasFlag |contains=ccVault": false,
+				"HasFlag |contains=jojaVault": false,
+				"PamLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "PamDrinkOverlay", // Post-bus repair, pre-house upgrade
+			"Value": "{{Random: DrinkFlushOverlay, DrinkFlushOverlay, x}}",
+			"When":
+			{
+				"LocationName": "Saloon",
+				"Time": "{{Range: 1730, 2400}}",
+				"HasFlag": "ccVault, jojaVault",
+				"HasSeenEvent |contains=503180": false,
+				"PamLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "PamDrinkOverlay",
+			"Value": "{{Random: DrinkFlushOverlay, x, x}}", // Post-bus repair, post-house upgrade
+			"When":
+			{
+				"LocationName": "Saloon",
+				"Time": "{{Range: 1730, 2400}}",
+				"HasFlag": "ccVault, jojaVault",
+				"HasSeenEvent |contains=503180": true,
+				"PamLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "PamDrinkOverlay", // Pre-bus repair Light
+			"Value": "DrinkFlushOverlay",
+			"When":
+			{
+				"LocationName": "Saloon",
+				"HasFlag |contains=ccVault": false,
+				"HasFlag |contains=jojaVault": false,
+				"PamLightweightConfig |contains= light": true,
+			},
+		},
+		
+// LOOKING FOR LOVE COMPATIBILITY
+		{
+			"Name": "LFLPam",
+			"Value": "Default",
+		},
+		{
+			"Name": "LFLPam",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"LookingForLove |contains= Pam": true,
+				"HasMod |contains= foggy.LfL": true,
+				"PamVariant |contains= off": false,	
+			},
+		},
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"PennyVariant":
+		{
+			"AllowValues": "Vanilla, ModdedAirynNotsnufffieLarge, ModdedAirynNotsnufffieSmall, Mixed, off",
+			"Default": "Vanilla",
+		},
+		"PennyLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Penny will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"PamVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"PamLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Pam will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		
+		//Additional options
+		"PlatonicNPCs":
+		{
+			"AllowValues": "Penny",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+            "Default": "Penny",
+			"Description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+		},
+		"LookingForLove":
+		{
+			"AllowValues": "Pam",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Pam will match DSV's Pam variant and have seasonal outfits. Only select this if you have Pam set to dateable in LfL's configuration options.",
+		},
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"Pyjamas":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"WeddingOutfitPenny":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Penny will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+	},
+	
+	"Changes":[
+		{
+			"LogName": "Penny Main",
+			"Action": "Include",
+			"FromFile": "Penny/Code/{{PennyLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PennyVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.BittybeePenny": false,
+			},
+		},
+		{
+			"LogName": "Pam Main",
+			"Action": "Include",
+			"FromFile": "Pam/Code/{{PamLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PamVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.SivolobwhoPam": false,
+			},
+		},
+	]
+}

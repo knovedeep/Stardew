@@ -1,0 +1,69 @@
+{
+// KENT DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Kent Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Kent, Characters/Kent",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{KentVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomKent}}_{{KentWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Kent Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Kent, Characters/Kent",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{KentVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestKent}}_{{RandomFestivalKent}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Kent Sleep Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Kent",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{KentVariant}}/Kent_SleepSprite.png",
+			"ToArea": { "X": 32, "Y": 128, "Width": 16, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "SamHouse"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Kent Beach Load",
+			"Action": "Load",
+			"Target": "Characters/Kent_Beach, Portraits/Kent_Beach",
+			"FromFile": "Kent/{{TargetPathOnly}}/{{KentVariant}}/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Kent Beach Edit",
+			"Action": "EditImage",
+			"Target": "Characters/Kent_Beach, Portraits/Kent_Beach",
+			"FromFile": "Kent/{{TargetPathOnly}}/{{KentVariant}}/Kent_Swim_{{RandomFestivalKent}}.png"
+		},
+		
+// COMPATIBILITY
+// Kent Does the Dishes
+
+		{
+			"LogName": "Kent Does Dishes Compat",
+			"Action": "EditImage",
+			"Target": "Characters/Kent",
+			"FromFile": "{{TargetWithoutPath}}/Misc/KentDoesTheDishes/{{KentVariant}}/KentDishes_{{season}}.png",
+			"ToArea": { "X": 0, "Y": 160, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= Sqbr.KentDoesTheDishes": true
+			}
+		}
+	]
+}

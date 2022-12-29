@@ -1,0 +1,54 @@
+{
+// WIZARD DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Wizard Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard, Characters/Wizard",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MarriageableWizard}}/{{WizardVariant}}/{{TargetWithoutPath}}_{{season}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		/*
+		{
+			"LogName": "Wizard Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard, Characters/Wizard",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MarriageableWizard}}/{{WizardVariant}}/{{TargetWithoutPath}}_{{Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		*/
+		{
+			"LogName": "Wizard Krobus Raven",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "Wizard/Characters/{{MarriageableWizard}}/{{WizardVariant}}/KrobusRaven_{{season}}_1.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// EMOJIS
+		{
+			"LogName": "Emoji Wizard",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Wizard/Misc/Wizard_Emoji_{{WizardVariant}}.png",
+			"ToArea": {"X": 90, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"WizardVariant|contains= vanilla, off": false,
+			},
+		},
+	]
+}

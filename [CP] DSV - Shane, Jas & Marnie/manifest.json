@@ -1,0 +1,80 @@
+{
+	"Name": "Diverse SDV - Shane, Jas & Marnie",
+	"Author": "DSV Team",
+	"Version": "3.1.0",
+	"Description": "Adds ethnic and cultural diversity to Shane, Jas & Marnie, with complete seasonal outfits.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.ShaneJasMarnie",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "ModDrop:1073357", "GitHub:AirynS/DSV-Shane-Jas-Marnie" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Ran.ShanesNewJob",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "IMS.CP.MarnieDeservesBetter",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Lemurkat.Tristan.CP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "LemurKat.Mr.Ginger.NPC",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "lemurkat.Jasmineno",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "lemurkat.MarnieRanchPack",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Arknir27.Lavril",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "foggy.LfL",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Himetarts.ARV.CP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Elaho.ShaneGeorgianWeddingSuit",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaryn.OvergrownFloweryInterface",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VintageInterface2",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "ManaKirel.VMI",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "grapeponta.VibrantPastoralRecolor",
+			"IsRequired": false,
+		},
+
+	]
+}

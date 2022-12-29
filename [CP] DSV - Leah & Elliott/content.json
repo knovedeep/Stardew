@@ -1,0 +1,648 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// WEATHER
+		{
+			"Name": "ElliottWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "ElliottWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"ElliottLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "ElliottWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"ElliottLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "ElliottWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"ElliottLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "ElliottWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"ElliottLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// LEAH WEATHER
+		{
+			"Name": "LeahWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "LeahWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"LeahLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LeahWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"LeahLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LeahWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"LeahLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LeahWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"LeahLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomElliott",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomElliott",
+			"Value": "{{Random: 1, 2 |key= ElliottMain}}",
+			"When":
+			{
+				"ElliottLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomLeah",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomLeah",
+			"Value": "{{Random: 1, 2 |key= ElliottMain}}",
+			"When":
+			{
+				"LeahLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomFestivalLeah",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomFestivalLeah",
+			"Value": "{{Random: 1, 2 |key= LeahFestival}}",
+			"When":
+			{
+				"LeahLightweightConfig |contains= full": true,
+				"DayEvent |contains= spirit's eve": true,
+			},
+		},
+		
+// SPECIAL - SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true,
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker",
+			}
+		},
+		
+// LEAH ART SHOW
+	
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"LocationName |contains= Town": true,
+				"Time": "{{Range: 1500, 1700}}",
+				"HasSeenEvent |contains= 55": true,
+				"HasSeenEvent |contains= 53": false,
+				"LeahLightweightConfig |contains= full": true,
+			}
+		},
+		
+// SPECIAL - AEROBICS
+
+		{
+			"Name": "Special+Festival",
+			"Value": "_Aerobics",
+			"When":
+			{
+				"LocationName": "SeedShop",
+				"Hearts:Harvey": "{{Range: 6, 14}}",
+				"Time": "{{Range: 1100, 1500}}",
+				"HasSeenEvent |contains= 58": false,
+				"LeahLightweightConfig |contains= full": true,
+			},
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+
+		{
+			"Name": "WeddingGuestElliott",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestElliott",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"ElliottLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestElliott",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"ElliottLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestElliott",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"ElliottLightweightConfig |contains= ultralight": false,
+			}
+		},
+		{
+			"Name": "WeddingGuestLeah",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestLeah",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"LeahLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestLeah",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"LeahLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestLeah",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"LeahLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// ELLIOTT SCOTTISH WEDDING KILT COMPAT
+
+		{
+			"Name": "WeddingOutfitElliottToken",
+			"Value": "{{WeddingOutfitElliott}}",
+		},
+		{
+			"Name": "WeddingOutfitElliottToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.ElliottScottishWeddingKilt": false,
+				"WeddingOutfitElliott": "6",
+			},
+		},
+		{
+			"Name": "WeddingOutfitElliottToken",
+			"Value": "6_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.ElliottScottishWeddingKilt": true,
+				"WeddingOutfitElliott": "6",
+			},
+		},
+		
+// LEAH POLISH WEDDING OUTFITS COMPAT
+
+		{
+			"Name": "WeddingOutfitLeahToken",
+			"Value": "{{WeddingOutfitLeah}}",
+		},
+		{
+			"Name": "WeddingOutfitLeahToken",
+			"Value": "1",
+			"When": 
+			{
+				"HasMod |contains= Elaho.LeahPolishWeddingOutfits": false,
+				"WeddingOutfitLeah": "6",
+			},
+		},
+		{
+			"Name": "WeddingOutfitLeahToken",
+			"Value": "6_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.LeahPolishWeddingOutfits": true,
+				"WeddingOutfitLeah": "6",
+			},
+		},
+		{
+			"Name": "WeddingOutfitLeahToken",
+			"Value": "6_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.LeahPolishWeddingOutfits": true,
+				"WeddingOutfitLeah": "7",
+				"LeahVariant |contains= vanilla": false,
+			},
+		},
+		{
+			"Name": "WeddingOutfitLeahToken",
+			"Value": "7_{{Season}}",
+			"When": 
+			{
+				"HasMod |contains= Elaho.LeahPolishWeddingOutfits": true,
+				"WeddingOutfitLeah": "7",
+				"LeahVariant |contains= vanilla": true,
+			},
+		},
+		
+// 14 HEART PYJAMA EXCEPTIONS
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "false",
+		},
+		{
+			"Name": "14HeartPyjamaException",
+			"Value": "true",
+			"When":
+			{
+				"Relationship:Elliott": "Married",
+				"Hearts:Elliott": "13, 14",
+				"LocationName |contains= Farmhouse": true,
+				"HasSeenEvent |contains = 3912125": true,
+				"HasSeenEvent |contains = 3912132": false,
+				"HasConversationTopic |contains= ElliottGone1, ElliottGone2, ElliottGone3, ElliottGone4, ElliottGone5, ElliottGone6, ElliottGone7": false,
+				"ElliottLightweightConfig |contains= full": true,
+			},
+		},
+		
+// PYJAMAS
+		{
+			"Name": "PyjamasElliottToken",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasElliottToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, ElliottHouse": true,
+				"Query: {{Time}} < 0750 OR {{Time}} >= 2200": true,
+				"14HeartPyjamaException": false,
+				"ElliottLightweightConfig |contains= full": true,
+				"ElliottVariant |contains= off": false,
+				"PyjamasElliott |contains= true": true,	
+			}
+		},
+		{
+			"Name": "PyjamasElliottToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, ElliottHouse": true,
+				"Query: {{Time}} < 0750 OR {{Time}} >= 2200": true,
+				"14HeartPyjamaException": false,
+				"Relationship:Elliott": "Married",
+				"ElliottLightweightConfig |contains= full": true,
+				"ElliottVariant |contains= off": false,
+				"PyjamasElliott |contains= marriage": true,	
+			}
+		},
+		{
+			"Name": "PyjamasLeahToken",
+			"Value": "",
+		},
+		{
+			"Name": "PyjamasLeahToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, LeahHouse": true,
+				"Query: {{Time}} < 0830 OR {{Time}} >= 2200": true,
+				"LeahLightweightConfig |contains= full": true,
+				"LeahVariant |contains= off": false,	
+				"PyjamasLeah |contains= true": true,
+			}
+		},
+		{
+			"Name": "PyjamasLeahToken",
+			"Value": "Pyjamas",
+			"When":
+			{
+				"LocationName |contains= Farmhouse, LeahHouse": true,
+				"Query: {{Time}} < 0830 OR {{Time}} >= 2200": true,
+				"Relationship:Leah": "Married",
+				"LeahLightweightConfig |contains= full": true,
+				"LeahVariant |contains= off": false,	
+				"PyjamasLeah |contains= marriage": true,
+			}
+		},
+		
+// MATERNITY
+		{
+			"Name": "MaternityLeah",
+			"Value": "",
+		},
+		{
+			"Name": "MaternityLeah",
+			"Value": "Maternity",
+			"When":
+			{
+				"Pregnant |contains= Leah": true,
+				"MaternitySprites": true,
+				"LeahLightweightConfig |contains= ultralight": false,
+				"LeahVariant |contains= butch, off": false,		
+			}
+		},
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"ElliottVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"ElliottLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Elliott will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"LeahVariant":
+		{
+			"AllowValues": "Vanilla, Native, Butch, off",
+			"Default": "Vanilla",
+		},
+		"LeahLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Leah will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		
+		//Additional options
+		"MaternitySprites":
+		{
+			"AllowValues": "false, true",
+			"Default": "false",
+			"Description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change. Doesn't affect Leah's Butch variant. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"PlatonicNPCs":
+		{
+			"AllowValues": "Elliott, Leah",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+            "Default": "Elliott, Leah",
+			"Description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+		},
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		"PyjamasElliott":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not Elliott will wear pyjamas in the morning and evening. If 'Marriage' is selected, he will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"PyjamasLeah":
+		{
+			"AllowValues": "true, false, marriage",
+			"Default": "true",
+			"Description": "Toggles whether or not Elliott will wear pyjamas in the morning and evening. If 'Marriage' is selected, he will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+		},
+		"WeddingOutfitElliott":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Elliott will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+		"WeddingOutfitLeah":
+		{
+			"AllowValues": "1, 2, 3, 4, 5, 6, 7",
+			"Default": "1",
+			"Description": "Selects which wedding outfit Leah will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},		
+	},
+	"Changes":[
+		{
+			"LogName": "Elliott Main",
+			"Action": "Include",
+			"FromFile": "Elliott/Code/{{ElliottLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"ElliottVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.SabreeneElliott": false,
+				"HasMod |contains= DSVTeam.AddOnPack.EemieElliott": false,
+				"HasMod |contains= DSVTeam.AddOnPack.LumenElliott": false,
+			},
+		},
+		{
+			"LogName": "Leah Main",
+			"Action": "Include",
+			"FromFile": "Leah/Code/{{LeahLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LeahVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.JoLeah": false,
+			},
+		},
+	]
+}

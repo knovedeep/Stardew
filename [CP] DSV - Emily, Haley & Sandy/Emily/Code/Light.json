@@ -1,0 +1,176 @@
+{
+// EMILY DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Emily Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{EmilyVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomEmily}}_{{EmilyWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{EmilyVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestEmily}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityEmily |contains= maternity": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily Maternity Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{EmilyVariant}}/{{TargetWithoutPath}}_Maternity_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityEmily |contains= maternity": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily_Beach, Characters/Emily_Beach",
+			"FromFile": "Emily/{{TargetPathOnly}}/{{EmilyVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily Maternity Beach Character",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_Beach",
+			"FromFile": "Emily/{{TargetPathOnly}}/{{EmilyVariant}}/Emily_Beach_Maternity.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityEmily |contains= maternity": true,
+			},
+		},
+		{
+			"LogName": "Emily Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Emily",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{EmilyVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitEmilyToken}}.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PlatonicNPCs |contains= Emily": false,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Emily Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Emily/Misc/Emily_Emoji_{{EmilyVariant}}.png",
+			"ToArea": {"X": 45, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"EmilyVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "Emily/Misc/Junimo_Emily_{{EmilyVariant}}.png",
+			"ToArea": { "X": 448, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"EmilyVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+
+// MERMAID PENDANTS
+		{
+			"LogName": "Emily Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Portraits/Emily_Beach",
+			"FromFile": "Emily/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:Emily": "Married, Engaged",
+				"EmilyWeatherVariant": "Base",
+				"Season |contains= winter": false,
+				"MermaidPendants": "true",
+				"MaternityEmily |contains= maternity": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily Maternity Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Portraits/Emily_Beach",
+			"FromFile": "Emily/Misc/{{TargetWithoutPath}}_Pendant.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityEmily |contains= maternity": true,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Emily Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Emily",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Emily_{{EmilyVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Emily",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Emily No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Emily_{{EmilyVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Emily",
+				"Special+Festival| contains= SpiritsEve": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "PPaF Compat - Emily Stick",
+			"Action": "EditImage",
+			"Target": "Characters/Emily",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Emily_Stick.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Emily",
+			},
+		},
+	]
+}

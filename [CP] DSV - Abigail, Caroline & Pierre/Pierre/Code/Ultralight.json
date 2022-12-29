@@ -1,0 +1,51 @@
+{
+// PIERRE DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Pierre Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Pierre, Characters/Pierre",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{PierreVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomPierre}}_{{PierreWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Pierre Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Pierre, Characters/Pierre",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{PierreVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestPierre}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Pierre Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Pierre_Beach, Characters/Pierre_Beach",
+			"FromFile": "Pierre/{{TargetPathOnly}}/{{PierreVariant}}/Pierre_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Pierre Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Pierre/Misc/Pierre_Emoji_{{PierreVariant}}.png",
+			"ToArea": {"X": 27, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PierreVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

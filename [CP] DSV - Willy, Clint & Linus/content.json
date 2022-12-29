@@ -1,0 +1,563 @@
+{
+	"Format": "1.24.0",
+	"DynamicTokens": [
+		
+// WILLY WEATHER
+		{
+			"Name": "WillyWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "WillyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"WillyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "WillyWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"WillyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "WillyWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"WillyLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "WillyWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"WillyLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// CLINT WEATHER
+		{
+			"Name": "ClintWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "ClintWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"ClintLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "ClintWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"ClintLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "ClintWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"ClintLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "ClintWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"ClintLightweightConfig |contains= ultralight": false,
+			}
+		},
+
+// LINUS WEATHER
+		{
+			"Name": "LinusWeatherVariant",
+			"Value": "Base",
+			"When":
+			{
+				"HasValue:{{season}}": true,
+			}
+		},
+		{
+			"Name": "LinusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"Season": "spring, summer, fall, winter",
+				"Weather": "sun, wind",
+				"IsOutdoors": true,
+				"LinusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LinusWeatherVariant",
+			"Value": "Rain",
+			"When":
+			{
+				"Season": "spring, summer, fall",
+				"Weather": "rain, storm, snow",
+				"IsOutdoors": true,
+				"LinusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LinusWeatherVariant",
+			"Value": "Snow",
+			"When":
+			{
+				"Season": "winter",
+				"Weather": "snow, rain, storm",
+				"IsOutdoors": true,
+				"LinusLightweightConfig |contains= ultralight": false,
+			},
+		},
+		{
+			"Name": "LinusWeatherVariant",
+			"Value": "Sun",
+			"When":
+			{
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast",
+				"LinusLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// RANDOM OUTFITS
+		{
+			"Name": "RandomWilly",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomClint",
+			"Value": "1",
+		},
+		{
+			"Name": "RandomClint",
+			"Value": "{{Random: 1, 2 |key= ClintMain}}",
+			"When":
+			{
+				"ClintLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "RandomLinus",
+			"Value": "1",
+		},
+
+// SPECIAL
+		{
+			"Name": "ClintForge",
+			"Value": "",
+		},
+		{
+			"Name": "ClintForge",
+			"Value": "_Forge",
+			"When":
+			{
+				"LocationName": "Blacksmith",
+				"Time": "{{Range: 0900, 1600}}",
+				"ClintLightweightConfig |contains= full": true,
+			},
+		},
+		{
+			"Name": "ClintForge",
+			"Value": "_Forge",
+			"When":
+			{
+				"LocationName": "Blacksmith",
+				"ClintLightweightConfig |contains= light": true,
+			},
+		},
+		
+// SWIM
+		{
+			"Name": "Special+Festival",
+			"Value": "",
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"DayEvent": "Surfing Festival",
+				"LocationName": "Beach, Temp",
+				"HasMod |contains= spacechase0.SurfingFestival": true,
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Swim",
+			"When":
+			{
+				"LocationName": "BathHouse_Pool, BathHouse_MensLocker, BathHouse_WomensLocker",
+			}
+		},
+		
+// FESTIVALS
+		{
+			"Name": "Special+Festival",
+			"Value": "EggFestival",
+			"When":
+			{
+				"DayEvent": "egg festival, Fairy Ring Feast",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "FlowerDance",
+			"When":
+			{
+				"DayEvent": "flower dance",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "festival of ice",
+				"LocationName": "temp, forest"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "IceFestival",
+			"When":
+			{
+				"DayEvent": "Ember of Resolutions",
+				"LocationName": "temp, Ridge, EmberNight, Custom_Ridgeside_Ridge"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "Luau",
+			"When":
+			{
+				"DayEvent": "luau, Moonshine Barbecue, Pelican Town Potluck",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "MoonlightJellies",
+			"When":
+			{
+				"DayEvent": "dance of the moonlight jellies",
+				"LocationName": "temp, beach"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "stardew valley fair",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SVFair",
+			"When":
+			{
+				"DayEvent": "Ridgeside Gathering",
+				"LocationName": "temp, RidgesideVillage, RSVGathering, Custom_Ridgeside_RidgesideVillage"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "WinterStar",
+			"When":
+			{
+				"DayEvent": "feast of the winter star",
+				"LocationName": "temp, town"
+			}
+		},
+		{
+			"Name": "Special+Festival",
+			"Value": "SpiritsEve",
+			"When":
+			{
+				"DayEvent": "spirit's eve",
+				"LocationName": "temp, town, Custom_EastScarpe, Custom_EastScarpeInn"
+			}
+		},
+		
+// WEDDING GUEST FORMALWEAR
+
+		{
+			"Name": "WeddingGuestWilly",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestWilly",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"WillyLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestWilly",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"WillyLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestWilly",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"WillyLightweightConfig |contains= ultralight": false,
+			}
+		},	
+		{
+			"Name": "WeddingGuestClint",
+			"Value": "",
+		},
+		{
+			"Name": "WeddingGuestClint",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"HasMod": "ZoeDoll.SamAndAlissaRivalHearts",
+				"LocationName": "temp, town, Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"HasReadLetter |contains= SamAlissaWeddingLetter": true,
+				"HasSeenEvent |contains= 902207": false,
+				"Time": "{{Range: 900, 1700}}",
+				"Weather": "sun",
+				"Season": "summer, fall, winter",
+				"ClintLightweightConfig |contains= full": true,				
+			}
+		},
+		{
+			"Name": "WeddingGuestClint",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "temp, town",
+				"ClintLightweightConfig |contains= full": true,
+				"Time": "{{Range: 0600, 0610}}",
+			}
+		},
+		{
+			"Name": "WeddingGuestClint",
+			"Value": "WeddingGuest",
+			"When":
+			{
+				"DayEvent": "wedding",
+				"LocationName": "Custom_Ridgeside_LogCabinEventHall_WeddingReception, Custom_Ridgeside_LogCabinEventHall_WeddingReception_Temp",
+				"ClintLightweightConfig |contains= ultralight": false,
+			}
+		},
+		
+// LOOKING FOR LOVE COMPATIBILITY
+		{
+			"Name": "LFLWilly",
+			"Value": "Default",
+		},
+		{
+			"Name": "LFLWilly",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"LookingForLove |contains= Willy": true,
+				"HasMod |contains= foggy.LfL": true,
+				"WillyVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "LFLClint",
+			"Value": "Default",
+		},
+		{
+			"Name": "LFLClint",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"LookingForLove |contains= Clint": true,
+				"HasMod |contains= foggy.LfL": true,
+				"ClintVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "LFLClint",
+			"Value": "ImprovedClint",
+			"When":
+			{
+				"HasMod |contains= SoftPandaBoi.ImprovedClint": true,
+				"ClintVariant |contains= off": false,	
+			},
+		},
+		{
+			"Name": "LFLLinus",
+			"Value": "Default",
+		},
+		{
+			"Name": "LFLLinus",
+			"Value": "LookingForLove",
+			"When":
+			{
+				"LookingForLove |contains= Linus": true,
+				"HasMod |contains= foggy.LfL": true,
+				"LinusVariant |contains= off": false,	
+			},
+		},
+	],
+
+
+	"ConfigSchema":
+	{
+		// Full, Lightweight, or Ultralightweight Toggle
+		
+		// Variant Toggles
+		"WillyVariant":
+		{
+			"AllowValues": "Vanilla, Disabled, Tongan, TonganDisabled, off",
+			"Default": "Vanilla",
+		},
+		"WillyLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Willy will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"ClintVariant":
+		{
+			"AllowValues": "Vanilla, Modded, off",
+			"Default": "Vanilla",
+		},
+		"ClintLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Clint will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+		"LinusVariant":
+		{
+			"AllowValues": "Vanilla, off",
+			"Default": "Vanilla",
+		},
+		"LinusLightweightConfig":
+		{
+			"AllowValues": "Full, Light, Ultralight",
+			"Default": "Full",
+			"Description": "Toggles whether Linus will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+		},
+	//
+		"LookingForLove":
+		{
+			"AllowValues": "Willy, Clint, Linus",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Linus will match DSV's Linus variant and have seasonal outfits. Only select this if you have Willy, Clint or Linus set to dateable in LfL's configuration options.",
+		},
+		"MermaidPendants":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+		},
+		// Clint
+		"ClintScar":
+		{
+			"AllowValues": "Scar, NoScar",
+			"Default": "NoScar",
+			"Description": "Chooses whether or not Clint's Modded variant has facial scars. Does not affect his Vanilla variant.",
+		},
+		/*// Linus
+		"LinusEventChanges":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Adds Marigold the service dog to Linus's heart events. Disable this if using other mods that edit Linus's heart events.",
+		},*/
+	},
+	"Changes":[
+		{
+			"LogName": "Willy Main",
+			"Action": "Include",
+			"FromFile": "Willy/Code/{{WillyLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"WillyVariant |contains= off": false,
+				"HasMod |contains= DSVTeam.AddOnPack.AirynWillyAbled": false,
+				"HasMod |contains= DSVTeam.AddOnPack.AirynWillyDisabled": false,
+			},
+		},
+		{
+			"LogName": "Clint Main",
+			"Action": "Include",
+			"FromFile": "Clint/Code/{{ClintLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"ClintVariant |contains= off": false,
+			},
+		},
+		{
+			"LogName": "Linus Main",
+			"Action": "Include",
+			"FromFile": "Linus/Code/{{LinusLightweightConfig}}.json",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LinusVariant |contains= off": false,
+			},
+		},
+	]
+}

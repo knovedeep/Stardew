@@ -1,0 +1,277 @@
+{
+// LEAH DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Leah Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomLeah}}_{{LeahWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Leah Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{PyjamasLeahToken}}{{WeddingGuestLeah}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityLeah |contains= maternity": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Leah Maternity Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/{{TargetWithoutPath}}_Maternity_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityLeah |contains= maternity": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Leah Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah_Beach, Characters/Leah_Beach",
+			"FromFile": "Leah/{{TargetPathOnly}}/{{LeahVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Leah Maternity Beach Character",
+			"Action": "EditImage",
+			"Target": "Characters/Leah_Beach",
+			"FromFile": "Leah/{{TargetPathOnly}}/{{LeahVariant}}/Leah_Beach_Maternity.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityLeah |contains= maternity": true,
+			},
+		},
+		{
+			"LogName": "Leah Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/{{TargetWithoutPath}}_Wedding_{{WeddingOutfitLeahToken}}.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"PlatonicNPCs |contains= Leah": false,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Leah Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Leah/Misc/Leah_Emoji_{{LeahVariant}}.png",
+			"ToArea": {"X": 27, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"LeahVariant|contains= vanilla, off": false,
+			},
+		},
+		{
+			"LogName": "Leah 14-Heart Event Temporary Sprites Hands",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "Leah/Misc/Leah14Heart_TemporarySprites1_{{LeahVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LeahVariant|contains= vanilla, off": false,
+			},
+		},
+
+// MERMAID PENDANTS
+		{
+			"LogName": "Leah Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Portraits/Leah_Beach",
+			"FromFile": "Leah/Misc/MermaidPendants/{{TargetWithoutPath}}_Pendant_{{LeahVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:{{TargetWithoutPath}}": "Married, Engaged",
+				"Query: ('{{LeahWeatherVariant}}'= 'Base' AND NOT '{{Season}}' = 'winter') OR ('{{Special+Festival}}' IN ('swim', 'EggFestival', 'FlowerDance', 'Luau', 'MoonlightJellies', 'SVFair', 'WinterStar'))": true,
+				"MermaidPendants": "true",
+				"MaternityLeah |contains= maternity": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Leah Maternity Pendants",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Portraits/Leah_Beach",
+			"FromFile": "Leah/Misc/MermaidPendants/{{TargetWithoutPath}}_Pendant_{{LeahVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"MaternityLeah |contains= maternity": true,
+			},
+		},
+		
+//MISCELLANEOUS OVERLAYS
+		{
+			"LogName": "Art Bags",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/Overlays/Leah_{{season}}_{{RandomLeah}}_Sun_Bag{{Random: 1, 2|key= LeahArtBag}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Season |contains= winter": false,
+				"IsOutdoors": "true",
+				"DayOfWeek |contains= Tuesday, Wednesday, Thursday": true,
+				"Weather": "sun, wind",
+				"Special+Festival| contains= swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+				"WeddingGuestLeah |contains= WeddingGuest": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Leah Paint Splatter 1",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/Overlays/Leah_PaintSplatter_{{Random: 1, 2, 3, 4, 5, x, x, x}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Time": "{{Range: 1230, 2400}}",
+				"Query: ('{{Weather}}' = 'rain') OR ('{{DayOfWeek}}' = 'Saturday') OR ('{{DayOfWeek}}' = 'Friday') OR ('{{Season}}' = 'winter')": true,
+				"Special+Festival| contains= swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Leah Paint Splatter 2",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/Overlays/Leah_PaintSplatter_{{Random: 1, 2, 3, 4, 5, x, x, x}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Time": "{{Range: 1230, 2400}}",
+				"Query: ('{{Weather}}' = 'rain') OR ('{{DayOfWeek}}' = 'Saturday') OR ('{{DayOfWeek}}' = 'Friday') OR ('{{Season}}' = 'winter')": true,
+				"Special+Festival| contains= swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Leah Paint Splatter 3",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/Overlays/Leah_PaintSplatter_{{Random: 1, 2, 3, 4, 5, x, x, x}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Time": "{{Range: 1230, 2400}}",
+				"Query: ('{{Weather}}' = 'rain') OR ('{{DayOfWeek}}' = 'Saturday') OR ('{{DayOfWeek}}' = 'Friday') OR ('{{Season}}' = 'winter')": true,
+				"Special+Festival| contains= swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"LogName": "Leah Woodworking Goggles",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{LeahVariant}}/Overlays/Leah_WoodworkGoggles.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName |contains= Farm, LeahHouse": true,
+				"Time": "{{Range: 0900, 1200}}",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Leah Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Leah",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Leah_{{LeahVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Leah",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Leah No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Leah_{{LeahVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Leah",
+				"Special+Festival| contains= SpiritsEve": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// BUTCH LEAH PREGNANCY DIALOGUE REPLACEMENT
+		{
+			"LogName": "Leah Spouse Pregnancy Dialogue Replacement 1",
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries": 
+			{
+				"HaveBabyQuestion": "{{i18n:Leah.HaveBabyQuestion}}",
+				"BirthMessage_SpouseMother": "{{i18n:Leah.BirthMessage_SpouseMother}}",
+			},
+			"When":
+			{
+				"Relationship:Leah": "Married",
+				"LeahVariant": "Butch",
+				"HasMod |contains= kdau.PregnancyRole": false,
+				"HasMod |contains= Rubecula.ParrotParents": false,
+			},
+		},
+		{
+			"LogName": "Leah Spouse Pregnancy Dialogue Replacement 2",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": 
+			{
+				"NPC.cs.4443": "{{i18n:Leah.Strings.4443}}",
+				"NPC.cs.4445": "{{i18n:Leah.Strings.4445}}",
+			},
+			"When":
+			{
+				"Relationship:Leah": "Married",
+				"LeahVariant": "Butch",
+				"HasMod |contains= kdau.PregnancyRole": false,
+				"HasMod |contains= Rubecula.ParrotParents": false,
+			},
+		},
+	]
+}

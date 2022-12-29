@@ -1,0 +1,89 @@
+{
+// ROBIN DSV LIGHT
+
+	"Changes": [
+		{
+			"LogName": "Robin Prologue",
+			"Action": "EditImage",
+			"Target": "Portraits/Robin, Characters/Robin",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{RobinVariant}}/Robin_Spring_1_Sun.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasSeenEvent |contains= 60367": false,
+			},
+		},
+		{
+			"LogName": "Robin Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Robin, Characters/Robin",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{RobinVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomRobin}}_{{RobinWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Robin Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Robin, Characters/Robin",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{RobinVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}{{WeddingGuestRobin}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},		
+		{
+			"LogName": "Robin Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Robin_Beach, Characters/Robin_Beach",
+			"FromFile": "Robin/{{TargetPathOnly}}/{{RobinVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Robin Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Robin/Misc/Robin_Emoji_{{RobinVariant}}.png",
+			"ToArea": {"X": 18, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"RobinVariant|contains= vanilla, off": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Robin Clothes Therapy 1",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Robin/Misc/ClothesTherapy_Robin_{{RobinVariant}}.png",
+			"ToArea": {"X": 0, "Y": 128, "Width": 64, "Height": 32},
+			"FromArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+			"When":
+			{
+				"RobinVariant|contains= Modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Robin Clothes Therapy 2",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "Robin/Misc/ClothesTherapy_Robin_{{RobinVariant}}.png",
+			"ToArea": {"X": 16, "Y": 160, "Width": 16, "Height": 32},
+			"FromArea": {"X": 0, "Y": 32, "Width": 16, "Height": 32},
+			"When":
+			{
+				"RobinVariant|contains= Modded": true,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

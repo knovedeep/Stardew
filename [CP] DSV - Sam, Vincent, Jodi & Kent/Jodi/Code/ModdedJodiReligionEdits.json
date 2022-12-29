@@ -1,0 +1,85 @@
+{
+	"Changes": [
+		
+// RELIGION DIALOGUE EDITS
+
+		{
+			"LogName": "Religion Dialogue Edit - Jodi Vanilla",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries": 
+			{
+			"Mon2": "$d kent#{{i18n:DSV.NMW.VanillaDialogue.Religion.Jodi.Mon2}}",
+			},
+		},
+		{
+			"LogName": "Religion Dialogue Edit - Jodi Canon-Friendly Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries": 
+			{
+			"Mon2": "#$1 JodiAltar#{{i18n:DSV.NMW.CanonFriendlyDialogue.Religion.Jodi.Mon2}}",
+			"winter_28": "{{i18n:DSV.NMW.CanonFriendlyDialogue.Religion.Jodi.winter_28}}",
+			"winter_28_2": "{{i18n:DSV.NMW.CanonFriendlyDialogue.Religion.Jodi.winter_28_2}}",
+			},
+			"When": 
+			{
+				"HasMod |contains= gizzymo.canonfriendlyexpansion": true,
+			},
+		},
+		{
+			"LogName": "Religion Dialogue Edit - Strings George",
+			"Action": "EditData",
+			"Target": "Strings/schedules/George",
+			"Entries": 
+			{
+				"Sun.001": "{{i18n:DSV.NMW.VanillaStrings.Religion.George.Sun.001}}",
+			},
+		},
+		{
+			"LogName": "Religion Dialogue Edit - Strings Caroline",
+			"Action": "EditData",
+			"Target": "Strings/schedules/Caroline",
+			"Entries": 
+			{
+				"Sun.000": "{{i18n:DSV.NMW.VanillaStrings.Religion.Caroline.Sun.000}}",
+			},
+		},
+		
+// ALTAR EDITS
+		
+		{
+			"LogName": "Religion Dialogue Edit - Strings SeedShop",
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Entries": 
+			{
+				"SeedShop_Yoba": "{{i18n:DSV.NMW.VanillaStrings.Religion.SeedShop}}",
+			},
+		},
+		{
+			"LogName": "Altar Visual Edit - Vanilla No Yoba",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "Jodi/Misc/Jodi_AltarEdit_NoYoba.png",
+			"ToArea": {"X": 259, "Y": 375, "Width": 42, "Height": 40},
+			"When": 
+			{
+				"HasMod |contains= Undare.AltarOfYobaRedux, sb.AltarYoba": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Altar Visual Edit - Vanilla No Columns",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "Jodi/Misc/Jodi_AltarEdit_Plants.png",
+			"ToArea": {"X": 304, "Y": 368, "Width": 16, "Height": 48},
+			"When": 
+			{
+				"HasMod |contains= Undare.AltarOfYobaRedux, sb.AltarYoba": false,
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

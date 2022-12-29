@@ -1,0 +1,523 @@
+{
+	"Changes": [
+
+// VANILLA NPCS
+
+// ABIGAIL QUEEN
+
+		{
+			"LogName": "Abigail FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Abigail": "{{i18n: dialogue.FQC.AbigailQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Abigail": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// ALEX QUEEN
+		{
+			"LogName": "Alex FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Alex": "{{i18n: dialogue.FQC.AlexQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Alex": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// EMILY QUEEN
+		{
+			"LogName": "Emily FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Emily": "{{i18n: dialogue.FQC.EmilyQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Emily": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// ELLIOTT QUEEN
+		{
+			"LogName": "Elliott FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Elliott": "{{i18n: dialogue.FQC.ElliottQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Elliott": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// HALEY NOT QUEEN
+		{
+			"LogName": "Haley FQC Not Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Haley": "{{i18n: dialogue.FQC.HaleyNotQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Haley": false,
+			},
+		},
+		
+// HALEY QUEEN
+		{
+			"LogName": "Haley FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Haley": "{{i18n: dialogue.FQC.HaleyQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Haley": true,
+			},
+		},
+		
+// HARVEY QUEEN
+		{
+			"LogName": "Harvey FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Harvey": "{{i18n: dialogue.FQC.HarveyQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Harvey": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// JAS QUEEN
+		{
+			"LogName": "Jas FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Jas": "{{i18n: dialogue.FQC.JasQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Jas": true,
+			},
+		},
+		{
+			"LogName": "ARV FQC Jas Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.JasQueen}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.JasQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Jas": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// LEAH QUEEN
+		{
+			"LogName": "Leah FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Leah": "{{i18n: dialogue.FQC.LeahQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Leah": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		{
+			"LogName": "ARV FQC Leah Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Mia": "{{i18n: dialogue.FQC.Mia.LeahQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Leah": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// MARU QUEEN
+		{
+			"LogName": "Maru FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Maru": "{{i18n: dialogue.FQC.MaruQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Maru": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// PENNY QUEEN
+		{
+			"LogName": "Penny FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Penny": "{{i18n: dialogue.FQC.PennyQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Penny": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// SAM QUEEN
+		{
+			"LogName": "Sam FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Sam": "{{i18n: dialogue.FQC.SamQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Sam": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// SEBASTIAN QUEEN
+		{
+			"LogName": "Sebastian FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Sebastian": "{{i18n: dialogue.FQC.SebastianQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Sebastian": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// SHANE QUEEN
+		{
+			"LogName": "Shane FQC Pre-6-Heart Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Shane": "{{i18n: dialogue.FQC.ShaneQueenPre6}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Shane": true,
+				"HasSeenEvent |contains= 2118991": false,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		{
+			"LogName": "Shane FQC Post-6-Heart Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Shane": "{{i18n: dialogue.FQC.ShaneQueenPost6}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Shane": true,
+				"HasSeenEvent |contains= 2118991": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		{
+			"LogName": "ARV FQC Shane Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.ShaneQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Shane": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// VINCENT QUEEN
+		{
+			"LogName": "Vincent FQC Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Vincent": "{{i18n: dialogue.FQC.VincentQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Vincent": true,
+			},
+		},
+		{
+			"LogName": "RSV FQC Vincent Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+            "Entries":
+            {
+				"Sean": "{{i18n: dialogue.FQC.RSVSean.VincentQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Vincent": true,
+				"HasMod |contains= Rafseazz.RSVCP": true,
+			},
+		},
+		{
+			"LogName": "ARV FQC Vincent Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.VincentQueen}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.VincentQueen}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.VincentQueen}}",
+				"Mia_y2": "{{i18n: dialogue.FQC.Mia.VincentQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Vincent": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// ALWAYS RAINING IN THE VALLEY NPCS
+		
+// MIA QUEEN
+// Mia Single
+		{
+			"LogName": "ARV FQC Mia Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.MiaQueen.Single}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.MiaQueen.Single}}",
+				"Henry": "{{i18n: dialogue.FQC.Henry.MiaQueen.Single}}",
+				"Henry_y2": "{{i18n: dialogue.FQC.Henry.MiaQueen.Single}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.MiaQueen.Single}}",
+				"Mia_y2": "{{i18n: dialogue.FQC.Mia.MiaQueen.Single}}",
+				"Harvey": "{{i18n: dialogue.FQC.Harvey.MiaQueen.Single}}",
+				"Leah": "{{i18n: dialogue.FQC.Leah.MiaQueen.Single}}",
+				"Elliot": "{{i18n: dialogue.FQC.Elliot.MiaQueen.Single}}",
+				"Jas": "{{i18n: dialogue.FQC.Jas.MiaQueen.Single}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Mia": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+// Mia Married
+		/*{
+			"LogName": "ARV FQC Mia Married Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.MiaQueen.Married}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.MiaQueen.Married}}",
+				"Henry": "{{i18n: dialogue.FQC.Henry.MiaQueen.Married}}",
+				"Henry_y2": "{{i18n: dialogue.FQC.Henry.MiaQueen.Married}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.MiaQueen.Married}}",
+				"Mia_y2": "{{i18n: dialogue.FQC.Mia.MiaQueen.Married}}",
+				"Harvey": "{{i18n: dialogue.FQC.Harvey.MiaQueen.Married}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Mia": true,
+				"Relationship:Mia": "Married",  
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},*/
+// Sean Reaction
+		{
+			"LogName": "RSV FQC Mia Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sean": "{{i18n: dialogue.FQC.RSVSean.MiaQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Mia": true,
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+	
+// STERLING QUEEN
+// Sterling Single
+		{
+			"LogName": "ARV FQC Sterling Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.SterlingQueen.Single}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.SterlingQueen.Single}}",
+				"Henry": "{{i18n: dialogue.FQC.Henry.SterlingQueen.Single}}",
+				"Henry_y2": "{{i18n: dialogue.FQC.Henry.SterlingQueen.Single}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.SterlingQueen.Single}}",
+				"Mia_y2": "{{i18n: dialogue.FQC.Mia.SterlingQueen.Single}}",
+				"Shane": "{{i18n: dialogue.FQC.Shane.SterlingQueen.Single}}",
+				"Jas": "{{i18n: dialogue.FQC.Jas.SterlingQueen.Single}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Sterling": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+// Sterling Married
+		{
+			"LogName": "ARV FQC Sterling Married Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.SterlingQueen.Married}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.SterlingQueen.Married}}",
+				"Henry": "{{i18n: dialogue.FQC.Henry.SterlingQueen.Married}}",
+				"Henry_y2": "{{i18n: dialogue.FQC.Henry.SterlingQueen.Married}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.SterlingQueen.Married}}",
+				"Mia_2": "{{i18n: dialogue.FQC.Mia.SterlingQueen.Married}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Sterling": true,
+				"Relationship:Sterling": "Married",  
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+		
+// HENRY QUEEN
+// Henry Single
+		{
+			"LogName": "ARV FQC Henry Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.HenryQueen.Single}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.HenryQueen.Single}}",
+				"Henry": "{{i18n: dialogue.FQC.Henry.HenryQueen.Single}}",
+				"Henry_y2": "{{i18n: dialogue.FQC.Henry.HenryQueen.Single}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.HenryQueen.Single}}",
+				"Mia_y2": "{{i18n: dialogue.FQC.Mia.HenryQueen.Single}}",
+				"Leah": "{{i18n: dialogue.FQC.Leah.HenryQueen.Single}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Henry": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+
+//Henry Married
+		/*{
+			"LogName": "ARV FQC Henry Married Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.HenryQueen.Married}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.HenryQueen.Married}}",
+				"Henry": "{{i18n: dialogue.FQC.Henry.HenryQueen.Married}}",
+				"Henry_y2": "{{i18n: dialogue.FQC.Henry.HenryQueen.Married}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.HenryQueen.Married}}",
+				"Mia_y2": "{{i18n: dialogue.FQC.Mia.HenryQueen.Married}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Henry": true,
+				"Relationship:Henry": "Married",
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},*/
+		
+// EAST SCARP NPCS
+
+// ELOISE QUEEN
+		{
+			"LogName": "ARV FQC Eloise Queen Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries":
+			{
+				"Sterling": "{{i18n: dialogue.FQC.Sterling.EloiseQueen}}",
+				"Sterling_y2": "{{i18n: dialogue.FQC.Sterling.EloiseQueen}}",
+				"Mia": "{{i18n: dialogue.FQC.Mia.EloiseQueen}}",
+				"Mia_y2": "{{i18n: dialogue.FQC.Mia.EloiseQueen}}",
+			},
+			"When":
+			{
+				"FlowerQueen |contains= Eloise": true,
+				"HasMod |contains= Himetarts.ARV.CP": true,
+				"HasMod |contains= Lemurkat.JacobEloise.CP": true,
+				"FlowerQueensCrown |contains= Everyone": false,
+			},
+		},
+	]
+}

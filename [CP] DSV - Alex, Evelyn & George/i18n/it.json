@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.AlexVariant.name": "AlexVariante",
+	"config.AlexVariant.values.Vanilla": "Vanilla",
+	"config.AlexVariant.values.Samoan": "Samoano",
+	"config.AlexVariant.values.Mexican": "Messicano",
+	"config.AlexVariant.values.Off": "Disabilitato",
+	
+	"config.AlexLightweightConfig.name": "AlexConfigPesoleggero",
+	"config.AlexLightweightConfig.description": "Decidi se Alex avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.AlexLightweightConfig.values.Full": "Intero",
+	"config.AlexLightweightConfig.values.Light": "Leggero",
+	"config.AlexLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.EvelynVariant.name": "EvelynVariant",
+	"config.EvelynVariant.values.Vanilla": "Vanilla",
+	"config.EvelynVariant.values.Samoan": "Samoana",
+	"config.EvelynVariant.values.Mexican": "Messicana",
+	"config.EvelynVariant.values.Off": "Disabilitato",
+	
+	"config.EvelynLightweightConfig.name": "EvelynConfigPesoleggero",
+	"config.EvelynLightweightConfig.description": "Decidi se Evelyn avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.EvelynLightweightConfig.values.Full": "Intero",
+	"config.EvelynLightweightConfig.values.Light": "Leggero",
+	"config.EvelynLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.GeorgeVariant.name": "GeorgeVariant",
+	"config.GeorgeVariant.values.Vanilla": "Vanilla",
+	"config.GeorgeVariant.values.Samoan": "Samoano",
+	"config.GeorgeVariant.values.Mexican": "Messicano",
+	"config.GeorgeVariant.values.Off": "Disabilitato",
+	
+	"config.GeorgeLightweightConfig.name": "GeorgeConfigPesoleggero",
+	"config.GeorgeLightweightConfig.description": "Decidi se Evelyn avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.GeorgeLightweightConfig.values.Full": "Intero",
+	"config.GeorgeLightweightConfig.values.Light": "Leggero",
+	"config.GeorgeLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.PlatonicNPCs.name": "NPCPlatonici",
+	"config.PlatonicNPCs.description": "Aggiunge la compatibilità con Platonic Partners and Friendships di Amaranthacyan. Metti il nome del candidato in questa lista per avere i loro ritratti e sprites romantici sostituiti con le alternative platonic. Controlla il sito per maggiori informazioni.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.Pyjamas.name": "Pigiama",
+	"config.Pyjamas.description": "Alterna se i candidati al matrimonio indosseranno o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosseranno solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.Pyjamas.values.True": "Vero",	
+	"config.Pyjamas.values.False": "Falso",
+	"config.Pyjamas.values.Marriage": "Matrimonio",
+	
+	"config.WeddingOutfitAlex.name": "OutfitMatrimonioAlex",
+	"config.WeddingOutfitAlex.description": "Seleziona quale abito da sposo Alex indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitAlex.values.1": "1",
+	"config.WeddingOutfitAlex.values.2": "2",
+	"config.WeddingOutfitAlex.values.3": "3",
+	"config.WeddingOutfitAlex.values.4": "4",
+	"config.WeddingOutfitAlex.values.5": "5",
+	"config.WeddingOutfitAlex.values.6": "6",
+	
+	"config.AlexTattoos.name": "AlexTatuaggi",
+	"config.AlexTattoos.description": "Scegli se la variante samoana di Alex deve avere tatuaggi tradizionali sul petto e sulla spalla.",
+	"config.AlexTattoos.values.Tattoos": "Tatuaggi",
+	"config.AlexTattoos.values.NoTattoos": "SenzaTatuaggi",
+	
+	"config.GeorgeBeard.name": "GeorgeBarba",
+	"config.GeorgeBeard.description": "Scegli se George deve essere barbuto o rasato. L'opzione 'dinamica' lo rende barbuto durante l'autunno e l'inverno. Può essere utilizzato solo se GeorgeConfigPesoleggero non è impostato su 'ultraleggero'.",
+	"config.GeorgeBeard.values.Beard": "Barba",
+	"config.GeorgeBeard.values.NoBeard": "SenzaBarba",
+	"config.GeorgeBeard.values.Dynamic": "Dinamica",
+	
+// ALEX WORKOUT DIALOGUE PATCH
+
+	"Alex.workout.fix": "Ughh... Non posso parlare."
+	
+}
+	
+	
+	

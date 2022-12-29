@@ -1,0 +1,29 @@
+{
+// DSV BERT
+
+	"Changes": [
+		{
+			"LogName": "DSV Bert",
+			"Action": "EditImage",
+			"Target": "Portraits/Bert, Portraits/Bert_Beach, Characters/Bert, Characters/Bert_Beach",
+			"FromFile": "RSVCompat/{{Target}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "DSV Bert Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVemojis",
+			"FromFile": "RSVCompat/Misc/Bert_Emoji.png",
+			"ToArea": {"X": 54, "Y": 0, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

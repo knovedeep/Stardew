@@ -1,0 +1,113 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.EmilyVariant.name": "EmilyÇeşidi",
+	"config.EmilyVariant.values.Vanilla": "Vanilla",
+	"config.EmilyVariant.values.Black": "Siyahi",
+	"config.EmilyVariant.values.Romani": "Roman",
+	"config.EmilyVariant.values.Off": "Kapalı",
+	
+	"config.EmilyLightweightConfig.name": "EmilyHafiflikYapılandırma",
+	"config.EmilyLightweightConfig.description": "Emily'nin Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.EmilyLightweightConfig.values.Full": "Tam",
+	"config.EmilyLightweightConfig.values.Light": "Hafif",
+	"config.EmilyLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.HaleyVariant.name": "HaleyÇeşidi",
+	"config.HaleyVariant.values.Vanilla": "Vanilla",
+	"config.HaleyVariant.values.Black": "Siyahi",
+	"config.HaleyVariant.values.Romani": "Roman",
+	"config.HaleyVariant.values.Off": "Kapalı",
+	
+	"config.HaleyLightweightConfig.name": "HaleyHafiflikYapılandırma",
+	"config.HaleyLightweightConfig.description": "Haley'in Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.HaleyLightweightConfig.values.Full": "Tam",
+	"config.HaleyLightweightConfig.values.Light": "Hafif",
+	"config.HaleyLightweightConfig.values.Ultralight": "Ultra hafif",
+	
+	"config.SandyVariant.name": "SandyÇeşidi",
+	"config.SandyVariant.values.Vanilla": "Vanilla",
+	"config.SandyVariant.values.Modded": "Modlu",
+	"config.SandyVariant.values.Off": "Kapalı",
+	
+	"config.SandyLightweightConfig.name": "SandyHafiflikYapılandırma",
+	"config.SandyLightweightConfig.description": "Sandy'nin Diverse Stardew Valley'in özelliklerinin tamamına mı, yoksa lagı azaltmak için hafif veya ultra hafif seçimlere sahip olup olmayacağını ayarlar. Daha fazla bilgi için modun sitesine bakın.",
+	"config.SandyLightweightConfig.values.Full": "Tam",
+	"config.SandyLightweightConfig.values.Light": "Hafif",
+	
+	"config.MaternitySprites.name": "GebelikSpriteları",
+	"config.MaternitySprites.description": "Karın hamileyken gebelik kıyafetlerini etkinleştirir. Eğer 'Açık' olarak ayarlanırsa, sprite'lar otomatik olarak değiştirilecek.",
+	"config.MaternitySprites.values.True": "Açık",	
+	"config.MaternitySprites.values.False": "Kapalı",
+	
+	"config.PlatonicNPCs.name": "PlatonikNPCler",
+	"config.PlatonicNPCs.description": "Amaranthacyan'ın Platonic Partnerships and Friendships moduyla uyumluluk ekler. Bu listenin içine romantik portre ve sprite'larının platonik alternatifleriyle değiştirilmesi için bir evlilik adayının ismini yazın. Daha fazla bilgi için modun sitesine bakın.",	
+
+	"config.MermaidPendants.name": "DenizkızıKolyeleri",
+	"config.MermaidPendants.description": "Nişanlının/eşinin nişanlandıktan veya evlendikten sonra bir denizkızı kolyesi takıp takmayacağını ayarlar. Eğer bir karakter'in HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.MermaidPendants.values.True": "Açık",
+	"config.MermaidPendants.values.False": "Kapalı",
+	
+	"config.PyjamasEmily.name": "PijamaEmily",
+	"config.PyjamasEmily.description": "Emily'nin sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.PyjamasEmily.values.True": "Açık",	
+	"config.PyjamasEmily.values.False": "Kapalı",
+	"config.PyjamasEmily.values.Marriage": "Evlilik",
+	
+	"config.PyjamasHaley.name": "PijamaHaley",
+	"config.PyjamasHaley.description": "Haley'in sabah ve akşam pijama giyip giymeyeceğini ayarlar. Eğer 'Evlilik' seçiliyse, evlendikten sonra sadece evde pijama giyecekler. Yalnızca bir karakterin HafiflikYapılandırması 'tam' olarak ayarlandığında kullanılabilir.",
+	"config.PyjamasHaley.values.True": "Açık",	
+	"config.PyjamasHaley.values.False": "Kapalı",
+	"config.PyjamasHaley.values.Marriage": "Evlilik",
+	
+	"config.WeddingOutfitEmily.name": "DüğünElbisesiEmily",
+	"config.WeddingOutfitEmily.description": "Emily'in evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitEmily.values.1": "1",
+	"config.WeddingOutfitEmily.values.2": "2",
+	"config.WeddingOutfitEmily.values.3": "3",
+	"config.WeddingOutfitEmily.values.4": "4",
+	"config.WeddingOutfitEmily.values.5": "5",
+	"config.WeddingOutfitEmily.values.6": "6",
+	"config.WeddingOutfitEmily.values.7": "7",
+	
+	"config.WeddingOutfitHaley.name": "DüğünElbisesiHaley",
+	"config.WeddingOutfitHaley.description": "Haley'in evlenirken hangi düğün elbisesini giyeceğini seçer. 1 DSV'nin eski sürümlerinden varsayılan elbise. Daha fazla bilgi için modun sitesine bakın. Eğer bir karakterin HafiflikYapılandırması 'ultra hafif'e ayarlıysa kullanılamaz.",
+	"config.WeddingOutfitHaley.values.1": "1",
+	"config.WeddingOutfitHaley.values.2": "2",
+	"config.WeddingOutfitHaley.values.3": "3",
+	"config.WeddingOutfitHaley.values.4": "4",
+	"config.WeddingOutfitHaley.values.5": "5",
+	"config.WeddingOutfitHaley.values.6": "6",
+	"config.WeddingOutfitHaley.values.7": "7",
+	
+	"config.GiftTastesChange.name": "HediyeTadıDeğişimi",
+	"config.GiftTastesChange.description": "Modlu Sandy'nin hediye tatlarını alkolik içecekleri sevmemesi için değiştirir. Vanilla çeşidini etkilemez. Bu seçenek varsayılan olarak açıktır ancak diğer modlarla uyumluluk için kapatılabilir.",
+	"config.GiftTastesChange.values.True": "Açık",
+	"config.GiftTastesChange.values.False": "Kapalı",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "foggywizard'ın Looking For Love moduyla uyumluluk ekler ki LfL'nin evlenilebilir Sandy'si DSV'nin Sandy çeşidiyle eşleşsin ve mevsimsel kıyafetleri olsun. Bu seçeneği yalnızca eğer Sandy LfL'nin yapılandırma seçeneklerinde evlenilebilir olarak ayarlandıysa kullanın.",
+
+	"config.EmilyTattoos.name": "EmilyDövme",
+	"config.EmilyTattoos.description": "Emily'nin renkli dövmeleri olup olmayacağını belirler. Yalnızca EmilyHafiflikYapılandırma 'tam' seçeneğine ayarlandığında kullanılabilir.",
+	"config.EmilyTattoos.values.Tattoos": "Dövmeli",
+	"config.EmilyTattoos.values.NoTattoos": "Dövmesiz",
+	
+	"config.HaleyAccessories.name": "HaleyAksesuar",
+	"config.HaleyAccessories.description": "Haley'in kamerasını kahverengiden siyaha çevirir, burnuna ve kaşlarına piercing ve/veya saçına tokalar ekler. Saç tokaları sadece Haley'in Siyahi çeşidine uygulanır. Eğer HaleyHafiflikYapılandırma 'ultra hafif'e ayarlandıysa yalnızca saç tokaları kullanılabilir.",
+	"config.HaleyAccessories.values.BlackCam": "SiyahKamera",
+	"config.HaleyAccessories.values.Piercings": "Piercingler",
+	"config.HaleyAccessories.values.Cuffs": "Tokalar",
+
+// HALEY NIGHT MARKET DIALOGUE FIX
+
+	"dialogue.Haley.NightMarket": "Brrr... yeterince kalın giyindiğimi sanıyordum, ama şu meltem buz gibi soğuk!$s",
+	
+// MODDED SANDY ALCOHOL GIFT TASTES
+
+	"Sandy.CGD.alcohol": "Ah tatlım, beni düşündüğün için teşekkür ederim! Fakat alkol kullanmıyorum.",
+	
+}
+	
+	
+	

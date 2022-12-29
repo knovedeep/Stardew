@@ -1,0 +1,158 @@
+{
+// HALEY DSV ULTRALIGHT
+
+	"Changes": [
+		{
+			"LogName": "Haley Seasonal Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}_{{season}}_{{RandomHaley}}_{{HaleyWeatherVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Haley Festival/Special Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Haley Beach Outfits",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley_Beach, Characters/Haley_Beach",
+			"FromFile": "Haley/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Haley Wedding",
+			"Action": "EditImage",
+			"Target": "Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/{{TargetWithoutPath}}_Wedding_1.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS
+		{
+			"LogName": "Emoji Haley",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Haley/Misc/Haley_Emoji_{{HaleyVariant}}.png",
+			"ToArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= vanilla, off": false,
+			},
+		},
+		
+// BLACK HALEY HAIR CUFFS
+		{
+			"LogName": "Haley Cuffs Overlay Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/CuffsOverlays/{{TargetWithoutPath}}_{{season}}_{{RandomHaley}}_{{HaleyWeatherVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= Black": true,
+				"HaleyAccessories|contains= cuffs": true,
+				"Special+Festival| contains= aerobics, swim, EggFestival, FlowerDance, IceFestival, Luau, MoonlightJellies, SVFair, WinterStar, SpiritsEve": false,
+			},
+		},
+		{
+			"LogName": "Haley Cuffs Overlay Festival/Special",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{HaleyVariant}}/CuffsOverlays/{{TargetWithoutPath}}_{{Special+Festival}}_1.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= Black": true,
+				"HaleyAccessories|contains= cuffs": true,
+			},			
+			"Update": "OnLocationChange",
+		},
+		
+// COW PHOTOS	
+		{
+			"LogName": "Cow Photos Seasonal",
+			"Action": "EditImage",
+			"Target": "LooseSprites/cowPhotos, LooseSprites/cowPhotosWinter",
+			"FromFile": "Haley/Characters/CowPhotos/{{HaleyVariant}}/cowPhotos_{{season}}_{{RandomHaley}}_Sun.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Cow Photos Cuffs Overlay",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "LooseSprites/cowPhotos, LooseSprites/cowPhotosWinter",
+			"FromFile": "Haley/Characters/CowPhotos/{{HaleyVariant}}/cowPhotos_{{season}}_{{RandomHaley}}_Sun_cuffs.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HaleyVariant|contains= Black": true,
+				"HaleyAccessories|contains= cuffs": true,
+			},
+		},
+		
+// COMPATIBILITY
+// Platonic Partnerships and Friendships
+		{
+			"LogName": "PPaF Compat - Haley Commitment",
+			"Action": "EditImage",
+			"Target": "Characters/Haley",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Haley_{{HaleyVariant}}_Commitment.png",
+			"ToArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"FromArea": {"X": 0, "Y": 288, "Width": 48, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Haley",
+			},
+		},
+		{
+			"LogName": "PPaF Compat - Haley No Blush",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley",
+			"FromFile": "{{TargetWithoutPath}}/Misc/Platonic/Haley_{{HaleyVariant}}_NoBlushOverlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Amaranthacyan.PlatonicPartnersandFriendships",
+				"PlatonicNPCs": "Haley",
+			},
+		},
+		
+// NIGHT MARKET DIALOGUE FIX
+		{
+            "LogName": "Haley Night Market Dialogue",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries":
+            {
+                "winter_16.001": "{{i18n:dialogue.Haley.NightMarket}}",
+            },
+        },
+	]
+}

@@ -1,0 +1,181 @@
+{
+	"Name": "Diverse SDV - Flower Queen's Crown",
+	"Author": "DSV Team",
+	"Version": "3.0.3",
+	"Description": "An add-on for Diverse Stardew Valley that chooses who will wear the Flower Queen's crown each year.",
+	"UniqueID": "DSVTeam.DiverseSeasonalOutfits.FlowerQueensCrown",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [ "GitHub:AirynS/DSV-Flower-Queens-Crown", "ModDrop:1072852" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+		"MinimumVersion": "1.19.0"
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.GenericModConfigMenu",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "tangeriney.FestivalDialogue",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "gizzymo.canonfriendlyexpansion",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Amaranthacyan.PlatonicPartnersandFriendships",
+			"IsRequired": false,
+		},
+		
+// DSV MAIN PACKS
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.AbigailCarolinePierre",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.AlexEvelynGeorge",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.EmilyHaleySandy",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.HarveyGusLewis",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.ElliottLeah",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.PennyPam",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.SamVincentJodiKent",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.SebastianMaruRobinDemetrius",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.DiverseSeasonalOutfits.ShaneJasMarnie",
+			"IsRequired": false,
+		},
+		
+// DSV ADD-ON PACKS
+		{
+			"UniqueID": "DSVTeam.AddOnPack.LavenderAbigail",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.SabreeneElliott",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.EemieElliott",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.LumenElliott",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.AcerbiconHarvey",
+			"IsRequired": false,
+		},		
+		{
+			"UniqueID": "DSVTeam.AddOnPack.MedinaquirinPinzolHarveyNoGlasses",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.MedinaquirinPinzolHarveyGlasses",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.SarahsynaJas",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.JoLeah",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.AshbrassLeah",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.AcerbiconMaru",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.LavenderMaru",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.RubyquesterMaru",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.BittybeePenny",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.OenimoSam",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.OenimoHopefulFoxSam",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.AirynSam",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.Cheshire348Sam",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.SideShaveSebastian",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "DSVTeam.AddOnPack.SarahsynaShane",
+			"IsRequired": false,
+		},
+		
+// CUSTOM NPCs
+		{
+			"UniqueID": "Rafseazz.RSVCP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Himetarts.ARV.CP",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Arknir27.Lavril",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "malic.cp.jadeNPC",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "elhrvy.NPCJuna",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "LemurKat.JulietHouse.NPC",
+			"IsRequired": false,
+		},
+		{
+			"UniqueID": "Lemurkat.JacobEloise.CP",
+			"IsRequired": false,
+		},
+	]
+}

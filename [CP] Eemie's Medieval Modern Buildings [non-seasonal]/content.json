@@ -1,0 +1,207 @@
+{
+	"Format": "1.10",
+
+	"ConfigSchema": {
+		"ColorScheme": {
+			"AllowValues": "BlueGreenBrown, BlueGreenPink, GreenBrown, GreenPink, disable",
+			"Default": "GreenBrown"
+			},
+		"WellSiloColor": {
+			"AllowValues": "GreenGrey, GreenWhite, BlueGreenGrey, BlueGreenWhite, disable",
+			"Default": "GreenGrey"
+			},
+		"WhichFarmType": {
+			"AllowValues": "Standard, Riverland, Forest, Hilltop, Wilderness, FourCorners, Custom",
+			"Default": "Forest",
+			"AllowMultiple": true
+			}
+	},
+
+	"Changes": [
+
+	//Farmhouse & Greenhouse
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/houses",
+		"FromFile": "assets/{{ColorScheme}}/houses.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+
+		}
+		},
+
+	//Coops
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Coop",
+		"FromFile": "assets/{{ColorScheme}}/Coop.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Big Coop",
+		"FromFile": "assets/{{ColorScheme}}/Big Coop.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+		{
+		"Action": "EditImage",
+		"Target": "Buildings/Deluxe Coop",
+		"FromFile": "assets/{{ColorScheme}}/Deluxe Coop.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Barns
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Barn",
+		"FromFile": "assets/{{ColorScheme}}/Barn.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Big Barn",
+		"FromFile": "assets/{{ColorScheme}}/Big Barn.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Deluxe Barn",
+		"FromFile": "assets/{{ColorScheme}}/Deluxe Barn.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Silo
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Silo",
+		"FromFile": "assets/{{WellSiloColor}}/Silo.png",
+		"When": {
+			"HasFile:assets/{{WellSiloColor}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Stable
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Stable",
+		"FromFile": "assets/{{ColorScheme}}/Stable.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Slime Hutch
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Slime Hutch",
+		"FromFile": "assets/{{ColorScheme}}/Slime Hutch.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Shed
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Shed",
+		"FromFile": "assets/{{ColorScheme}}/Shed.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Big Shed",
+		"FromFile": "assets/{{ColorScheme}}/Big Shed.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Well
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Well",
+		"FromFile": "assets/{{WellSiloColor}}/Well.png",
+		"When": {
+			"HasFile:assets/{{WellSiloColor}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Mill
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Mill",
+		"FromFile": "assets/{{ColorScheme}}/Mill.png",
+		"When": {
+			"HasFile:assets/{{ColorScheme}}/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	//Fish Pond
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Buildings/Fish Pond",
+		"FromFile": "assets/Fish Pond.png",
+		"When": {
+			"HasFile:assets/{{TargetWithoutPath}}.png": true,
+			"FarmType": "{{WhichFarmType}}"
+		}
+		},
+
+	]
+}

@@ -1,0 +1,113 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.EmilyVariant.name": "EmilyVariant",
+	"config.EmilyVariant.values.Vanilla": "Vanilla",
+	"config.EmilyVariant.values.Black": "Black",
+	"config.EmilyVariant.values.Romani": "Romani",
+	"config.EmilyVariant.values.Off": "Off",
+	
+	"config.EmilyLightweightConfig.name": "EmilyLightweightConfig",
+	"config.EmilyLightweightConfig.description": "Toggles whether Emily will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.EmilyLightweightConfig.values.Full": "Full",
+	"config.EmilyLightweightConfig.values.Light": "Light",
+	"config.EmilyLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.HaleyVariant.name": "HaleyVariant",
+	"config.HaleyVariant.values.Vanilla": "Vanilla",
+	"config.HaleyVariant.values.Black": "Black",
+	"config.HaleyVariant.values.Romani": "Romani",
+	"config.HaleyVariant.values.Off": "Off",
+	
+	"config.HaleyLightweightConfig.name": "HaleyLightweightConfig",
+	"config.HaleyLightweightConfig.description": "Toggles whether Haley will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.HaleyLightweightConfig.values.Full": "Full",
+	"config.HaleyLightweightConfig.values.Light": "Light",
+	"config.HaleyLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.SandyVariant.name": "SandyVariant",
+	"config.SandyVariant.values.Vanilla": "Vanilla",
+	"config.SandyVariant.values.Modded": "Modded",
+	"config.SandyVariant.values.Off": "Off",
+	
+	"config.SandyLightweightConfig.name": "SandyLightweightConfig",
+	"config.SandyLightweightConfig.description": "Toggles whether Sandy will have the full range of Diverse Stardew Valley's features or a lightweight selection to reduce lag. Check the website for more info.",
+	"config.SandyLightweightConfig.values.Full": "Full",
+	"config.SandyLightweightConfig.values.Light": "Light",
+	
+	"config.MaternitySprites.name": "MaternitySprites",
+	"config.MaternitySprites.description": "Enables maternity outfits for your wife while she is pregnant. If set to ‘true’, the sprites will automatically change. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MaternitySprites.values.True": "True",	
+	"config.MaternitySprites.values.False": "False",
+	
+	"config.PlatonicNPCs.name": "PlatonicNPCs",
+	"config.PlatonicNPCs.description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.PyjamasEmily.name": "PyjamasEmily",
+	"config.PyjamasEmily.description": "Toggles whether or not Emily will wear pyjamas in the morning and evening. If 'Marriage' is selected, she will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.PyjamasEmily.values.True": "True",	
+	"config.PyjamasEmily.values.False": "False",
+	"config.PyjamasEmily.values.Marriage": "Marriage",
+	
+	"config.PyjamasHaley.name": "PyjamasHaley",
+	"config.PyjamasHaley.description": "Toggles whether or not Haley will wear pyjamas in the morning and evening. If 'Marriage' is selected, she will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.PyjamasHaley.values.True": "True",	
+	"config.PyjamasHaley.values.False": "False",
+	"config.PyjamasHaley.values.Marriage": "Marriage",
+	
+	"config.WeddingOutfitEmily.name": "WeddingOutfitEmily",
+	"config.WeddingOutfitEmily.description": "Selects which wedding outfit Emily will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitEmily.values.1": "1",
+	"config.WeddingOutfitEmily.values.2": "2",
+	"config.WeddingOutfitEmily.values.3": "3",
+	"config.WeddingOutfitEmily.values.4": "4",
+	"config.WeddingOutfitEmily.values.5": "5",
+	"config.WeddingOutfitEmily.values.6": "6",
+	"config.WeddingOutfitEmily.values.7": "7",
+	
+	"config.WeddingOutfitHaley.name": "WeddingOutfitHaley",
+	"config.WeddingOutfitHaley.description": "Selects which wedding outfit Haley will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitHaley.values.1": "1",
+	"config.WeddingOutfitHaley.values.2": "2",
+	"config.WeddingOutfitHaley.values.3": "3",
+	"config.WeddingOutfitHaley.values.4": "4",
+	"config.WeddingOutfitHaley.values.5": "5",
+	"config.WeddingOutfitHaley.values.6": "6",
+	"config.WeddingOutfitHaley.values.7": "7",
+	
+	"config.GiftTastesChange.name": "GiftTastesChange",
+	"config.GiftTastesChange.description": "Changes modded Sandy's gift tastes to dislike alcoholic drinks. Doesn't affect her vanilla variant. This option is on by default but can be disabled for compatibility with other mods.",
+	"config.GiftTastesChange.values.True": "True",
+	"config.GiftTastesChange.values.False": "False",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Sandy will match DSV's Sandy variant and have seasonal outfits. Only select this if you have Sandy set to dateable in LfL's configuration options.",
+	
+	"config.EmilyTattoos.name": "EmilyTattoos",
+	"config.EmilyTattoos.description": "Chooses whether or not Emily has colorful tattoos. Can only be used if EmilyLightweightConfig is set to 'full'.",
+	"config.EmilyTattoos.values.Tattoos": "Tattoos",
+	"config.EmilyTattoos.values.NoTattoos": "NoTattoos",
+	
+	"config.HaleyAccessories.name": "HaleyAccessories",
+	"config.HaleyAccessories.description": "Changes Haley's camera from brown to black, gives her nose and eyebrow piercings, and/or gives her hair cuffs. Hair cuffs only apply to Haley's Black variant. Only hair cuffs can be used if HaleyLightweightConfig is set to 'ultralight'.",
+	"config.HaleyAccessories.values.BlackCam": "BlackCam",
+	"config.HaleyAccessories.values.Piercings": "Piercings",
+	"config.HaleyAccessories.values.Cuffs": "Cuffs",
+		
+// HALEY NIGHT MARKET DIALOGUE FIX
+
+	"dialogue.Haley.NightMarket": "Brrr... I thought I was dressed warmly enough, but that sea breeze is icy-cold!$s",
+	
+// MODDED SANDY ALCOHOL GIFT TASTES
+
+	"Sandy.CGD.alcohol": "Oh sweetie, thank you for thinking of me! But I don't drink alcohol.",
+	
+}
+	
+	
+	

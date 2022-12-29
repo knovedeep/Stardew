@@ -1,0 +1,85 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.HarveyVariant.name": "HarveyVariant",
+	"config.HarveyVariant.values.Vanilla": "Vanilla",
+	"config.HarveyVariant.values.ModdedNonSikh": "ModdedNonSikh",
+	"config.HarveyVariant.values.ModdedSikh": "ModdedSikh",
+	"config.HarveyVariant.values.Off": "Off",
+	
+	"config.HarveyLightweightConfig.name": "HarveyLightweightConfig",
+	"config.HarveyLightweightConfig.description": "Toggles whether Harvey will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.HarveyLightweightConfig.values.Full": "Full",
+	"config.HarveyLightweightConfig.values.Light": "Light",
+	"config.HarveyLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.GusVariant.name": "GusVariant",
+	"config.GusVariant.values.Vanilla": "Vanilla",
+	"config.GusVariant.values.Modded": "Modded",
+	"config.GusVariant.values.Off": "Off",
+	
+	"config.GusLightweightConfig.name": "GusLightweightConfig",
+	"config.GusLightweightConfig.description": "Toggles whether Gus will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.GusLightweightConfig.values.Full": "Full",
+	"config.GusLightweightConfig.values.Light": "Light",
+	"config.GusLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.LewisVariant.name": "LewisVariant",
+	"config.LewisVariant.values.Vanilla": "Vanilla",
+	"config.LewisVariant.values.Modded": "Modded",
+	"config.LewisVariant.values.Off": "Off",
+	
+	"config.LewisLightweightConfig.name": "LewisLightweightConfig",
+	"config.LewisLightweightConfig.description": "Toggles whether Lewis will have the full range of Diverse Stardew Valley's features, a lightweight selection to reduce lag, or an ultra-lightweight selection. Check the website for more info.",
+	"config.LewisLightweightConfig.values.Full": "Full",
+	"config.LewisLightweightConfig.values.Light": "Light",
+	"config.LewisLightweightConfig.values.Ultralight": "Ultralight",
+	
+	"config.HarveyCharacterMustache.name": "HarveyCharacterMustache",
+	"config.HarveyCharacterMustache.description": "Gives Harvey's character/overworld sprite a mustache to match his portraits. Only affects the Vanilla variant.",
+	"config.HarveyCharacterMustache.values.Mustache": "Mustache",
+	"config.HarveyCharacterMustache.values.NoMustache": "NoMustache",
+	
+	"config.PlatonicNPCs.name": "PlatonicNPCs",
+	"config.PlatonicNPCs.description": "Adds compatibility with Amaranthacyan's Platonic Partnerships and Friendships. Put a marriage candidate's name in this list to have their romantic portraits and sprites replaced with platonic alternatives. Check the website for more info.",
+	
+	"config.MermaidPendants.name": "MermaidPendants",
+	"config.MermaidPendants.description": "Toggles whether or not your fiance/spouse will wear a mermaid pendant after getting engaged or married. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.MermaidPendants.values.True": "True",
+	"config.MermaidPendants.values.False": "False",
+	
+	"config.Pyjamas.name": "Pyjamas",
+	"config.Pyjamas.description": "Toggles whether or not marriage candidates will wear pyjamas in the morning and evening. If 'Marriage' is selected, they will only wear them in the farmhouse once married. Can only be used if a character's LightweightConfig option is set to 'full'.",
+	"config.Pyjamas.values.True": "True",	
+	"config.Pyjamas.values.False": "False",
+	"config.Pyjamas.values.Marriage": "Marriage",
+	
+	"config.WeddingOutfitHarvey.name": "WeddingOutfitHarvey",
+	"config.WeddingOutfitHarvey.description": "Selects which wedding outfit Harvey will wear when getting married. 1 is the default outfit from previous versions of DSV. Check the website for more info. Can't be used if a character's LightweightConfig option is set to 'ultralight'.",
+	"config.WeddingOutfitHarvey.values.1": "1",
+	"config.WeddingOutfitHarvey.values.2": "2",
+	"config.WeddingOutfitHarvey.values.3": "3",
+	"config.WeddingOutfitHarvey.values.4": "4",
+	"config.WeddingOutfitHarvey.values.5": "5",
+	
+	"config.LookingForLove.name": "LookingForLove",
+	"config.LookingForLove.description": "Adds compatibility with foggywizard's Looking For Love so that LfL's dateable Gus and Lewis will match DSV's Gus and Lewis variants and have seasonal outfits. Only select this if you have Gus or Lewis set to dateable in LfL's configuration options.",
+	
+	"config.RidgesideVillageLenny.name": "RidgesideVillageLenny",
+	"config.RidgesideVillageLenny.description": "Adds compatible portraits and sprites for Ridgeside Village's Lenny, so that she is Black to match her brother Lewis's modded DSV variant.",
+	"config.RidgesideVillageLenny.values.Modded": "Modded",
+	"config.RidgesideVillageLenny.values.Off": "Off",
+	
+	"config.GiftTastesChange.name": "GiftTastesChange",
+	"config.GiftTastesChange.description": "Changes Sikh Harvey's gift tastes to dislike alcoholic drinks. Doesn't affect Vanilla or ModdedNonSikh variants. This option is enabled by default but can be disabled for compatibility with other mods.",
+	"config.GiftTastesChange.values.True": "True",
+	"config.GiftTastesChange.values.False": "False",
+	
+// SIKH HARVEY ALCOHOL GIFT TASTES
+	
+	"Harvey.CGD.alcohol": "Oh, this is alcoholic... I appreciate the thought, but I don't drink alcohol because of my religion.",
+	
+}
+	
+	
+	

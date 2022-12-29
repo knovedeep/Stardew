@@ -1,0 +1,112 @@
+{
+// WIZARD DSV FULL
+
+	"Changes": [
+		{
+			"LogName": "Wizard Default",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard, Characters/Wizard",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MarriageableWizard}}/{{WizardVariant}}/{{TargetWithoutPath}}_{{season}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		/*
+		{
+			"LogName": "Wizard Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard, Characters/Wizard",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MarriageableWizard}}/{{WizardVariant}}/{{TargetWithoutPath}}_{{Festival}}_1.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		*/
+		{
+			"LogName": "Wizard Krobus Raven",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "Wizard/Characters/{{MarriageableWizard}}/{{WizardVariant}}/KrobusRaven_{{season}}_1.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MERMAID PENDANTS
+		{
+			"LogName": "Wizard Pendants",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Portraits/Wizard",
+			"FromFile": "Wizard/Misc/{{MarriageableWizard}}/Wizard_Pendant_{{WizardVariant}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Relationship:{{TargetWithoutPath}}": "Married, Engaged",
+				"MermaidPendants": "true",
+			}
+		},
+		
+// EMOJIS
+		{
+			"LogName": "Wizard Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "Wizard/Misc/Wizard_Emoji_{{WizardVariant}}.png",
+			"ToArea": {"X": 90, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"WizardVariant|contains= vanilla, off": false,
+			},
+		},
+		
+// FAMILIAR OVERLAYS
+		{
+			"LogName": "Wizard Familiars - Hat Junimos",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MarriageableWizard}}/{{WizardVariant}}/WizardFamiliars/HatJunimos/Hat_Junimo_{{Random: x, x, x, x, x, x, x, x, x, x, x, x, Blue, Cyan, Green, Orange, Pink, Purple, Red, Yellow}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"WizardFamiliars |contains= hatjunimos": true,
+				"Hearts:Wizard": "{{Range: 2, 14}}",
+			},
+		},
+		{
+			"LogName": "Wizard Familiars - Shoulder Junimos",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MarriageableWizard}}/{{WizardVariant}}/WizardFamiliars/ShoulderJunimos/{{Random: x, x, x, x, x, Shoulder}}_Junimo_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"WizardFamiliars |contains= shoulderjunimos": true,
+				"Relationship:Wizard |contains= Unmet": false,
+				"Hearts:Wizard": "{{Range: 4, 14}}",
+			},
+		},
+		{
+			"LogName": "Wizard Familiars - Spirit Creatures",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard",
+			"FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{MarriageableWizard}}/{{WizardVariant}}/WizardFamiliars/SpiritCreatures/Spirit_Creature_{{Random: x, x, x, x, x, x, x, x, x, Bird, Butterfly, Dragon, Dragonfly, Flower, Frog, Ice, Solar, Void}}.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"WizardFamiliars |contains= spiritcreatures": true,
+				"Relationship:Wizard |contains= Unmet": false,
+			},
+		},
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"Name": "Traveling Witch Hat",
+	"Description": "A convenient hat used by witches in their travels.",
+	"PurchasePrice": "1000",
+	"ShowHair": true,
+	"IgnoreHairstyleOffset": true
+}

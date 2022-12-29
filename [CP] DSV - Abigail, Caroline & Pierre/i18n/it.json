@@ -1,0 +1,81 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.AbigailVariant.name": "AbigailVariante",
+	"config.AbigailVariant.values.VanillaStraightSize": "VanillaMagra",
+	"config.AbigailVariant.values.VanillaPlusSize": "VanillaGrassa",
+	"config.AbigailVariant.values.ModdedStraightSize": "ModdedMagra",
+	"config.AbigailVariant.values.ModdedPlusSize": "ModdedGrassa",
+	"config.AbigailVariant.values.Off": "Disabilitato",
+	
+	"config.AbigailLightweightConfig.name": "AbigailConfigPesoleggero",
+	"config.AbigailLightweightConfig.description": "Indica se Abigail avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.AbigailLightweightConfig.values.Full": "Intero",
+	"config.AbigailLightweightConfig.values.Light": "Leggero",
+	"config.AbigailLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.CarolineVariant.name": "CarolineVariante",
+	"config.CarolineVariant.values.Vanilla": "Vanilla",
+	"config.CarolineVariant.values.Modded": "Modded",
+	"config.CarolineVariant.values.Off": "Disabilitato",
+	
+	"config.CarolineLightweightConfig.name": "CarolineConfigPesoleggero",
+	"config.CarolineLightweightConfig.description": "Indica se Caroline avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.CarolineLightweightConfig.values.Full": "Intero",
+	"config.CarolineLightweightConfig.values.Light": "Leggero",
+	"config.CarolineLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.PierreVariant.name": "PierreVariante",
+	"config.PierreVariant.values.Vanilla": "Vanilla",
+	"config.PierreVariant.values.Modded": "Modded",
+	"config.PierreVariant.values.Off": "Disabilitato",
+	
+	"config.PierreLightweightConfig.name": "PierreConfigPesoleggero",
+	"config.PierreLightweightConfig.description": "Indica se Pierre avrà l'intera gamma di caratteristiche di Diverse Stardew Valley, se selezioni 'leggero' ridurrai il lag, oppure puoi selezioanre ultra-leggero. Controlla il sito per maggiori informazioni.",
+	"config.PierreLightweightConfig.values.Full": "Intero",
+	"config.PierreLightweightConfig.values.Light": "Leggero",
+	"config.PierreLightweightConfig.values.Ultralight": "Ultraleggero",
+	
+	"config.MaternitySprites.name": "SpritesMaternità",
+	"config.MaternitySprites.description": "Abilita l'abbigliamento premaman per tua moglie mentre è incinta. Se impostato su 'vero', gli sprite cambieranno automaticamente. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MaternitySprites.values.True": "Vero",	
+	"config.MaternitySprites.values.False": "Falso",
+	
+	"config.Pyjamas.name": "Pigiama",
+	"config.Pyjamas.description": "Alterna se i candidati al matrimonio indosseranno o meno il pigiama al mattino e alla sera. Se viene selezionato 'Matrimonio', li indosseranno solo nella fattoria una volta sposati. Può essere usato solo se l'opzione ConfigPesoleggero di un personaggio è impostata su 'intero'.",
+	"config.Pyjamas.values.True": "Vero",	
+	"config.Pyjamas.values.False": "Falso",
+	"config.Pyjamas.values.Marriage": "Matrimonio",
+	
+	"config.PlatonicNPCs.name": "NPCPlatonici",
+	"config.PlatonicNPCs.description": "Aggiunge la compatibilità con Platonic Partners and Friendships di Amaranthacyan. Metti il nome del candidato in questa lista per avere i loro ritratti e sprites romantici sostituiti con le alternative platonic. Controlla il sito per maggiori informazioni.",
+	
+	"config.MermaidPendants.name": "PendenteSirena",
+	"config.MermaidPendants.description": "Alterna se il vostro fidanzato/a-coniuge indosserà un ciondolo sirena dopo essersi fidanzati o sposati. Non può essere utilizzato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.MermaidPendants.values.True": "Vero",
+	"config.MermaidPendants.values.False": "Falso",
+	
+	"config.WeddingOutfitAbigail.name": "OutfitMatrimonioAbigail",
+	"config.WeddingOutfitAbigail.description": "Seleziona quale abito da sposa Abigail indosserà quando si sposa. 1 è il vestito predefinito dalle versioni precedenti di DSV. Controlla il sito per maggiori informazioni. Non può essere usato se l'opzione ConfigPesoleggero di un personaggio è impostata su 'ultraleggero'.",
+	"config.WeddingOutfitAbigail.values.1": "1",
+	"config.WeddingOutfitAbigail.values.2": "2",
+	"config.WeddingOutfitAbigail.values.3": "3",
+	"config.WeddingOutfitAbigail.values.4": "4",
+	"config.WeddingOutfitAbigail.values.5": "5",
+	"config.WeddingOutfitAbigail.values.6": "6",
+	
+	"config.RidgesideVillageBert.name": "RidgesideVillageBert",
+	"config.RidgesideVillageBert.description": "Aggiunge ritratti e sprite compatibili per Bert di Ridgeside Village, in modo che sia filippino per abbinare la variante modded DSV di sua cugina Caroline.",
+	"config.RidgesideVillageBert.values.Modded": "Modded",
+	"config.RidgesideVillageBert.values.Off": "Disabilitato",
+	
+	"config.RidgesideVillageTrinnie.name": "RidgesideVillageTrinnie",
+	"config.RidgesideVillageTrinnie.description": "Aggiunge ritratti e sprite compatibili per Trinnie di Ridgeside Village, in modo che sia misto filippino-tedesca come la variante modded DSV di sua zia Caroline. È disponibile una versione dai capelli neri o verdi.",
+	"config.RidgesideVillageTrinnie.values.ModdedBlack": "ModdedNero",
+	"config.RidgesideVillageTrinnie.values.ModdedGreen": "ModdedVerde",
+	"config.RidgesideVillageTrinnie.values.Off": "Disabilitato",
+	
+}
+	
+	
+	

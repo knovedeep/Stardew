@@ -1,0 +1,29 @@
+{
+// DSV LENNY
+
+	"Changes": [
+		{
+			"LogName": "DSV Lenny",
+			"Action": "EditImage",
+			"Target": "Portraits/Lenny, Portraits/Lenny_Beach, Characters/Lenny, Characters/Lenny_Beach",
+			"FromFile": "RSVCompat/{{Target}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "DSV Lenny Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/RSVemojis",
+			"FromFile": "RSVCompat/Misc/Lenny_Emoji.png",
+			"ToArea": {"X": 117, "Y": 9, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

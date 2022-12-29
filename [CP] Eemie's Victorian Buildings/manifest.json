@@ -1,0 +1,12 @@
+{
+   "Name": "Eemie's Victorian Buildings for CP",
+   "Author": "eemiestardew and minervamaga",
+   "Version": "2.0.0",
+   "Description": "A conversion of Eemie's Victorian Buildings",
+   "UniqueID": "minervamaga.CP.EemieVictorianBuildings",
+   "UpdateKeys": ["Nexus:3511"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "1.9.0"
+   }
+}

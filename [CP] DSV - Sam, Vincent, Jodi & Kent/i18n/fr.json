@@ -1,0 +1,279 @@
+{
+// CONFIGURATION SETTINGS TRANSLATION
+
+	"config.SamVariant.name": "VarianteSam",
+	"config.SamVariant.values.Vanilla": "Vanille",
+	"config.SamVariant.values.ModdedLighter": "ModifiéPlusClair",
+	"config.SamVariant.values.ModdedDarker": "ModifiéPlusSombre",
+	"config.SamVariant.values.Off": "Désactivé",
+	
+	"config.SamLightweightConfig.name": "ConfigLégèreSam",
+	"config.SamLightweightConfig.description": "Permet de déterminer si Sam aura toute la gamme des caractéristiques de Diverse Stardew Valley, une sélection légère pour réduire le ralentissement ou une sélection ultra légère. Pour plus d'informations, consultez le site Web.",
+	"config.SamLightweightConfig.values.Full": "Complet",
+	"config.SamLightweightConfig.values.Light": "Légère",
+	"config.SamLightweightConfig.values.Ultralight": "Ultralégère",
+	
+	"config.VincentVariant.name": "VarianteVincent",
+	"config.VincentVariant.values.Vanilla": "Vanille",
+	"config.VincentVariant.values.Modded": "Modifié",
+	"config.VincentVariant.values.Off": "Désactivé",
+	
+	"config.VincentLightweightConfig.name": "VincentLightweightConfig",
+	"config.VincentLightweightConfig.description": "Permet de déterminer si Vincent aura toute la gamme des caractéristiques de Diverse Stardew Valley, une sélection légère pour réduire le ralentissement ou une sélection ultra légère. Pour plus d'informations, consultez le site Web.",
+	"config.VincentLightweightConfig.values.Full": "Complet",
+	"config.VincentLightweightConfig.values.Light": "Légère",
+	"config.VincentLightweightConfig.values.Ultralight": "Ultralégère",
+	
+	"config.JodiVariant.name": "VarianteJodi",
+	"config.JodiVariant.values.Vanilla": "Vanille",
+	"config.JodiVariant.values.Modded": "Modifié",
+	"config.JodiVariant.values.Off": "Désactivé",
+	
+	"config.JodiLightweightConfig.name": "JodiLightweightConfig",
+	"config.JodiLightweightConfig.description": "Permet de déterminer si Jodi aura toute la gamme des caractéristiques de Diverse Stardew Valley, une sélection légère pour réduire le ralentissement ou une sélection ultra légère. Pour plus d'informations, consultez le site Web.",
+	"config.JodiLightweightConfig.values.Full": "Complet",
+	"config.JodiLightweightConfig.values.Light": "Légère",
+	"config.JodiLightweightConfig.values.Ultralight": "Ultralégère",
+	
+	"config.KentVariant.name": "VarianteKent",
+	"config.KentVariant.values.Vanilla": "Vanille",
+	"config.KentVariant.values.Modded": "Modifié",
+	"config.KentVariant.values.Off": "Désactivé",
+	
+	"config.KentLightweightConfig.name": "KentLightweightConfig",
+	"config.KentLightweightConfig.description": "Permet de déterminer si Kent aura toute la gamme des caractéristiques de Diverse Stardew Valley, une sélection légère pour réduire le ralentissement ou une sélection ultra légère. Pour plus d'informations, consultez le site Web.",
+	"config.KentLightweightConfig.values.Full": "Complet",
+	"config.KentLightweightConfig.values.Light": "Légère",
+	"config.KentLightweightConfig.values.Ultralight": "Ultralégère",
+	
+	"config.MermaidPendants.name": "PendentifsSirène",
+	"config.MermaidPendants.description": "Active/désactive si votre fiancé/conjoint portera ou non un pendentif sirène après s'être fiancé ou marié. Ne peut pas être utilisé si l'option de configuration légère d'un personnage est définie sur 'ultralégere'.",
+	"config.MermaidPendants.values.True": "Vrai",
+	"config.MermaidPendants.values.False": "Faux",
+	
+	"config.Pyjamas.name": "Pyjamas",
+	"config.Pyjamas.description": "Permet de déterminer si les candidats au mariage porteront ou non un pyjama le matin et le soir. Si le «mariage» est choisi, ils ne le porteront à la ferme qu'une fois mariés. Ne peut être utilisé que si l'option ConfigLégère d'un personnage est réglée sur 'complet'.",
+	"config.Pyjamas.values.True": "Vrai",	
+	"config.Pyjamas.values.False": "Faux",
+	"config.Pyjamas.values.Marriage": "Mariage",
+
+	"config.VanillaBeachStyle.name": "StylePlageVanille",
+	"config.VanillaBeachStyle.description": "Sélectionne si les personnages utiliseront leur design de maillot de bain du jeu par défaut avec des retouches de sprite et de portrait ou un nouveau maillot de bain conçu par l'équipe DSV. Uniquement disponible pour les personnages avec un maillot de bain de plage dans le jeu par défaut. Pour plus d'informations, consultez le site Web.",
+	"config.VanillaBeachStyle.values.Sam": "Sam",
+	"config.VanillaBeachStyle.values.Jodi": "Jodi",
+	
+	"config.WeddingOutfitSam.name": "TenueDeMariageSam",
+	"config.WeddingOutfitSam.description": "Choisit la tenue de mariage que Sam portera au moment du mariage. 1 est l'ensemble par défaut des versions précédentes de DSV. Consultez le site Web pour plus d'informations. Ne peut pas être utilisé si l'option ConfigLégère d'un personnage est réglée sur 'ultralégère'.",
+	"config.WeddingOutfitSam.values.1": "1",
+	"config.WeddingOutfitSam.values.2": "2",
+	"config.WeddingOutfitSam.values.3": "3",
+	"config.WeddingOutfitSam.values.4": "4",
+	
+	"config.GiftTastesChange.name": "GiftTastesChange",
+	"config.GiftTastesChange.description": "Change les préférences de Jodi modifié en matière de cadeaux de sorte qu'il n'aime pas les boissons alcoolisées. N'affecte pas les variantes Vanille ou ModdedNonSikh. Cette option est activée par défaut mais peut être désactivée pour des raisons de compatibilité avec d'autres mods.",
+	"config.GiftTastesChange.values.True": "Vrai",
+	"config.GiftTastesChange.values.False": "Faux",
+	
+	"config.ModdedJodiKentDialogueEdits.name": "ModificationsDeDialogueDeJodiEtKentModifiés",
+	"config.ModdedJodiKentDialogueEdits.description": "Change le dialogue sur la profession de Kent et la guerre si vous utilisez la variante modifiée de Jodi. N'affecte pas sa variante vanille. Consultez le site Web pour plus d'informations. Cette option est activée par défaut mais peut être désactivée pour la compatibilité avec d'autres mods.",
+	"config.ModdedJodiKentDialogueEdits.values.True": "Vrai",
+	"config.ModdedJodiKentDialogueEdits.values.False": "Faux",
+	
+	"config.KentNoBombsInMail.name": "KentPasDeBombesDansLeCourrier",
+	"config.KentNoBombsInMail.description": "Modifie les lettres de Kent afin qu'il ne poste pas de bombes au joueur et envoie plutôt d'autres objets plus appropriés. Automatiquement désactivé si Replace Bombs Kent Mail by LiziAnne est installé.",
+	"config.KentNoBombsInMail.values.True": "Vrai",
+	"config.KentNoBombsInMail.values.False": "Faux",
+	
+	"config.SamEyes.name": "SamYeux",
+	"config.SamEyes.description": "Conserve la couleur par défaut des yeux de Sam, la change en une autre couleur ou lui donne une couleur hétérochromie (chaque œil est d'une couleur différente). Ne peut pas être utilisé si ConfigLégèreSam est réglé sur 'ultralégère'.",
+	"config.SamEyes.values.Default": "Défaut",
+	"config.SamEyes.values.Alternate": "Alterné",
+	"config.SamEyes.values.Heterochromia": "Hétérochromie",
+	
+	"config.SamExtras.name": "SamSuppléments",
+	"config.SamExtras.description": "Donne à Sam du chaume, une barbe et / ou des piercings aux lèvres et aux sourcils. Ne peut pas être utilisé si ConfigLégèreSam est réglé sur 'ultralégère'.",
+	"config.SamExtras.values.Stubble": "Chaume",
+	"config.SamExtras.values.Beard": "Barbe",
+	"config.SamExtras.values.Piercings": "Piercings",
+	
+	"config.SamBinder.name": "SamBinder",
+	"config.SamBinder.description": "Donne à Sam un binder de style débardeur qui est visible lorsqu'il va nager et lors de certains événements.",
+	"config.SamBinder.values.Binder": "Binder",
+	"config.SamBinder.values.NoBinder": "PasDeBinder",
+	
+// MODDED JODI ALCOHOL GIFT TASTES
+	
+	"Jodi.CGD.alcohol": "Um, merci, @, mais je ne bois pas d'alcool.",
+	"Jodi.CGD.pork": "Je ne mange rien qui contienne du porc @. Vous devriez trouver quelqu'un d'autre qui peut le manger à la place.",
+	"Jodi.CGD.drugs": "Enlevez-moi ça, et ne l'approchez pas non plus de mes garçons !",
+	
+	"Sam.CGD.alcohol": "Nan, je bois pas d'alcool. J'essaye d'être un bon modèle pour Vincent, tu sais ?",
+	"Sam.CGD.pork": "Désolé, @, on ne mange pas ce truc.",
+	"Sam.CGD.drugs": "Euh, je ne devrais pas... Allez plutôt le donner à Seb.",
+	
+	"Vincent.CGD.alcohol": "Ma mère dit que les boissons comme ça sont diaboliques.",
+	"Vincent.CGD.pork": "Je ne pense pas pouvoir manger ça...",
+	"Vincent.CGD.drugs": "Hein ? C'est quoi ce truc ? Il a une drôle d'odeur... Je ne pense pas que maman aimerait que je l'aie.",
+	
+	"Kent.CGD.alcohol": "J'ai été tenté quelques fois, mais nous sommes une famille sans alcool, @.",
+	"Kent.CGD.pork": "Jodi et les garçons ne peuvent pas manger de porc. Donnez-le à quelqu'un d'autre.",
+	"Kent.CGD.drugs": "Cela a été suggéré comme option thérapeutique, mais Jodi ne l'aimerait pas. C'est contre sa religion.",
+	
+// SAM SPOUSE PREGNANCY DIALOGUE REPLACEMENT
+
+	"Sam.HaveBabyQuestion": "Devrions-nous adopter un bébé, {0} ?",
+	"Sam.BirthMessage_PlayerMother": "Pendant la nuit, l’agence d’adoption a déposé votre nouveau bébé {0}.",
+	"Sam.Strings.4448": "{0}, j'ai rempli le dossier d'adoption. Il n'y a plus qu'à croiser les doigts et attendre.$l",
+
+//
+
+// MODDED JODI DIALOGUE CHANGES
+
+//
+
+// NO MORE WAR DIALOGUE - JODI
+
+
+	"DSV.NMW.VanillaDialogue.Religion.Jodi.Mon2": "Hier, je suis allée à l'autel communautaire pour rendre grâce pour le retour sain et sauf de mon mari.|Hier, je suis allée à l'autel communautaire pour demander le retour sain et sauf de mon mari.#$e#J’essaie de rester positive, mais c’est difficile parfois.$s",
+
+	"DSV.NMW.VanillaDialogue.Jodi.2_1": "Mon mari Kent est un journaliste de guerre, travaillant à l'étranger. C’est pour ça qu’il n’est pas ici pour le moment.#$b#Je sais qu’il reviendra sain et sauf une fois sa mission terminé !#$e#Tu as besoin de quelque chose ?",
+	"DSV.NMW.VanillaDialogue.Jodi.winter_Thu8": "Nous nous sommes en quelque sorte précipités dans notre mariage, Kent étant occupé avec l'université... J'ai à peine eu le temps de profiter de ma jeunesse et de ma liberté, mais il est trop tard pour revenir en arrière.$s#$e#Je ne peux pas croire que je te raconte tout ça.$4",
+	"DSV.NMW.VanillaDialogue.Jodi.reject_864": "Qu'est-ce que c'est, ça ? On dirait l'un des copains de Kent quand il était à Gotoro. Tu devrais peut-être la lui montrer !",
+	
+	"DSV.NMW.ExtendedDialogue.Religion.Jodi.Mon2": "Yesterday I visited the community altar to ask for my husband's safe return.#$e#I'm trying to stay positive, but it's hard sometimes.$s",
+	
+	"DSV.NMW.ExtendedDialogue.Jodi.winter_Sat10_2": "I'm so relieved that Kent is safe, but... I trust you to keep this between the two of us, @...$s#$b#He's just not the same man he was before he went to Gotoro.$s#$b#I know he went through some terrible things, but he doesn't like to talk about it and I don't know how to help him.$s#$e#Sometimes it's hard to be strong for the people you love. *sigh* Thanks for listening, @.$s",
+	
+	"DSV.NMW.CanonFriendlyDialogue.Religion.Jodi.Mon2":"Hier, je suis allée à l'autel communautaire pour demander le retour sain et sauf de mon mari.#$e#J’essaie de rester positive, mais c’est difficile parfois.$s",
+	"DSV.NMW.CanonFriendlyDialogue.Religion.Jodi.winter_28": "The boys are staying up late, but not me. I've had a lot of work to do today.",
+	"DSV.NMW.CanonFriendlyDialogue.Religion.Jodi.winter_28_2": "The boys are staying up late, but not me. I've had a lot of work to do today.",
+	
+	"DSV.NMW.CanonFriendlyDialogue.Jodi.2_1": "Mon mari Kent est un journaliste de guerre, travaillant à l'étranger. C’est pour ça qu’il n’est pas ici pour le moment.#$b#Je sais qu’il reviendra sain et sauf une fois sa mission terminé !#$e#Tu as besoin de quelque chose ?",
+	"DSV.NMW.CanonFriendlyDialogue.Jodi.Sun4_2": "Sam has come a long way with Vincent. He really stepped up when Kent's assignment started.#$e#It did make me happy to see him grow and change like that.",
+	"DSV.NMW.CanonFriendlyDialogue.Jodi.summer_Mon4": "Kent's retirement pension actually exceeds his working salary.#$b#We can meet our bills decently, but... well uh...$s#$b#How are things going for you?",
+	"DSV.NMW.CanonFriendlyDialogue.Jodi.summer_Wed8": "Kent truly is a good man at heart. I wish you could have met him before he left, @.$s",
+	
+	"DSV.NMW.ToshinoriDialogue.Jodi.ToshisPTSD": "I deeply sympathize with Toshinori's ire with Pam about her parenting and drinking habits.#$b# But speaking as the wife of someone who was in the same war, I don't think these recent outbursts are really about that...",
+	
+// NO MORE WAR DIALOGUE - KENT
+		
+	"DSV.NMW.VanillaDialogue.Kent.Wed6": "... J'ai vu beaucoup d'amis se faire mal... Certains sont même morts.$s#$e#Le plus triste, c'est que je n'arrive même plus à me souvenir de leurs visages.#$e#...",
+	"DSV.NMW.VanillaDialogue.Kent.Sun": "Je ne sais pas comment me rendre utile depuis mon retour.#$e#J'ai l'habitude de construire plus de structure dans ma journée.",
+	"DSV.NMW.VanillaDialogue.Kent.Resort": "L'escapade en bateau était amusante. J'ai même pu utiliser certaines de mes compétences de navigation d'enfance pour aider à naviguer.$h",
+	"DSV.NMW.VanillaDialogue.Kent.accept_864": "...!$4#$b#... Où as-tu trouvé ça ?$4#$b#...$5#$b#Cet homme... Il était mon traducteur quand j'étais à l'étranger, @. Il était comme un frère pour moi.#$b#Mais... un seul d'entre nous est revenu.$5#$b#Cependant, il n'a jamais perdu son courage. Même face à la mort. Il était un vrai héros... Je ne l'oublierai jamais.#$b#Merci de m'avoir rapporté ça... ça compte beaucoup pour moi.#$b#Tiens, c'est pour toi. C'était au fond de notre armoire depuis des années et nous ne l'avons jamais utilisé.",
+
+	"DSV.NMW.ColaShopDialogue.Kent.Sun2": "I tried to get a job, but there's no call for my skills in a town this small.#$b#Don't look at me like that. I wasn't always a reporter.",
+	
+	"DSV.NMW.ExtendedDialogue.Kent.Fri10": "Damn this war, @. When you're on the front lines, you forget how to do anything other than survive. How does anyone come back from that?#$e#How does a man go back to being the husband and father his family needs? Nothing feels the same.$s",
+	"DSV.NMW.ExtendedDialogue.Kent.Sat5": "Sam and Vincent turned out to be good kids. I can't get back the time I missed watching them grow up, but at least I got to see them again.#$b#Too many people I met over there will never get that chance.$s",
+	"DSV.NMW.ExtendedDialogue.Kent.fall_Sun8": "Sometimes I have this dream where Sam and Vincent are with the kids trying to escape the fighting. No matter what I do, the dream always ends the same way.#$b#...I hope this war ends soon, @.$s",
+	"DSV.NMW.ExtendedDialogue.Kent.winter_Sun8": "Sometimes I have this dream where Sam and Vincent are with the kids trying to escape the fighting. No matter what I do, the dream always ends the same way.#$b#...I hope this war ends soon, @.$s",
+
+	"DSV.NMW.CanonFriendlyDialogue.Kent.Tue_019": "Hm. Sounds miserable. I'm glad you got out.#$b#Well, better to be a retired newshound with a family you love than to spend your entire life in a cubicle. Thanks for sharing.$h",
+	"DSV.NMW.CanonFriendlyDialogue.Kent.Wed10": "@, I know you want to help me, and I appreciate it. But some things will never be the same again.#$b#What's a man to do? It's miles away from perfect, but all I can do each day is my best, for the kids, for Jodi...#$b#...and then hope it's enough.",
+	"DSV.NMW.CanonFriendlyDialogue.Kent.Thu8": "I talked to one of my contacts on the phone. He said watching cartoons with his daughter helped 'bring the color back.'#$e#I think I get what he means by that, but mostly in the abstract sense.#$e#It must be nice.",
+	"DSV.NMW.CanonFriendlyDialogue.Kent.Fri10": "In the war, so many people are forced to learn that survival is the only right... the only good.#$b#And the reality of the situation only confirms that.$s#$e#How does anyone expect someone like me to resume a normal life again after that?#$e#...Sorry.",
+	"DSV.NMW.CanonFriendlyDialogue.Kent.Sat4": "The newspaper company let me take an early retirement.#$e#It's nice that they send checks that support the family.#$e#They deserve the money, even if I don't.",
+	"DSV.NMW.CanonFriendlyDialogue.Kent.Sat6": "The boys turned out pretty well. Jodi's been a good mother to them.#$b#And there's still some time. Vincent's still just a boy.#$e#Too many people I met over there won't even get to see their families again.$s",
+	"DSV.NMW.CanonFriendlyDialogue.Kent.fall_Sun8": "I've been having this dream where I'm on the front lines again, but Sam's there trying to draw the soldiers away from us.$s#$b#Then for some reason, Vincent shows up.$s#$e#It all feels so real when it happens. I never had to face that image before I came home.$3",
+	
+	"DSV.NMW.ToshinoriDialogue.Kent.winter_27_2": "Toshinori helped me when I was still finding my feet in Gotoro. I really believe I wouldn't still be here if I hadn't travelled with his platoon.",
+	
+// NO MORE WAR DIALOGUE - SAM
+		
+	"DSV.NMW.VanillaDialogue.Sam.Thu2": "Mon père est journaliste, couvrant le conflit entre l'Empire Gotoro et son ancien territoire Jhunal. C’est pour ça qu’il n’est pas là...#$e#Il reviendra un jour.#$e#... J’ai entendu des choses terribles sur l’Empire Gotoro...$s",
+	"DSV.NMW.VanillaDialogue.Sam.summer_Thu": "Papa m'a parlé de l'Empire Gotoro, où il faisait des reportages... Ils ont l'air d'être impitoyables.",
+	"DSV.NMW.VanillaDialogue.Sam.winter_Thu": "Mon père est journaliste, couvrant le conflit entre l'Empire Gotoro et son ancien territoire Jhunal. C’est pour ça qu’il n’est pas là#$e#Mais il reviendra bientôt.",
+
+	"DSV.NMW.CanonFriendlyDialogue.Sam.summer_Thu": "Dad was telling me about the Gotoro Empire, where he was reporting... They sound like a ruthless bunch.",
+	"DSV.NMW.CanonFriendlyDialogue.Sam.fall_Tue6":"After Dad left for his assignment, I made a conscious decision to give Vince the best childhood he can get.#$e#I realized, if I don't help make that happen for him, who else will?",
+		
+// NO MORE WAR DIALOGUE - VINCENT
+				
+	"DSV.NMW.CanonFriendlyDialogue.Vincent.Sat2": "Do you know anyone in Gotoro? That's where my dad works.",
+
+// NO MORE WAR DIALOGUE - RSV EZEKIEL
+		
+	"DSV.NMW.RSVDialogue.Ezekiel.Fri4_1": "Kent knows what I'm going through.$s#$b#But he's been through a lot worse.$s#$b#Gave his all so his country could hear the truth and what's he got to show for it?#$b#Huh? Who's Kent? That's Jodi's husband, don't you know? He's currently on assignment overseas.$s",
+	"DSV.NMW.RSVDialogue.Ezekiel.Fri4_2": "Kent knows what I'm going through.$s#$b#But he's been through a lot worse.$s#$b#Gave his all so his country could hear the truth and what's he got to show for it?#$b#You should show him some respect when you see him.",
+
+// NO MORE WAR DIALOGUE - RSV PAULA
+		
+	"DSV.NMW.RSVDialogue.Paula.Fri2": "Philip's doing a great job in his field.#$b#We could use men like him in the medical branch.#$b#He'd make recovery easier for the refugees and soldiers who have impairments.",
+	"DSV.NMW.RSVDialogue.Paula.Mon6": "You have a nice build!$h#$b#Have you ever experienced training? We could use hardworking people like you in the reserve.",
+	
+// NO MORE WAR DIALOGUE - TOSHINORI
+
+	"DSV.NMW.ToshinoriDialogue.Toshinori.Fri8": "Please don't tell Kent but... I worry about him. I know he would feel guilty, if he knew.#$b#But I also know the transition back to a peacetime environment is hard.$s",
+	"DSV.NMW.ToshinoriDialogue.Toshinori.Fri8_2": "Please don't tell Kent but... I worry about him. I know he would feel guilty, if he knew.#$b#But I also know the transition back to a peacetime environment is hard.$s",
+	"DSV.NMW.ToshinoriDialogue.Toshinori.summer_Tue8": "Kent and I plan on going fishing together.#$b#Willy offered to give me lessons, and Kent said he'd show me a trick or two!$h",
+		
+// NO MORE WAR DIALOGUE - IZUKU
+
+	"DSV.NMW.ToshinoriDialogue.Izuku.fall_10_2": "I was in my senior year of highschool when Dad was called up for military duty.$2#$b#That was the last we saw of him. For years and years. We'd write to him all the time. We stayed in touch. But we all worried.#$b#When we heard he was injured on duty, we were devastated. At the time, the doctors weren't sure he was going to make it. He was in the ICU for months.#$b#The next time I saw him... when they were finally allowing visitors... he'd lost so much weight.#$b# His muscles had atrophied. He looked... you know. Kind of like he does now.",
+	
+// NO MORE WAR EVENTS - VANILLA 
+	
+	"DSV.NMW.VanillaEvents.733330.33": "Mais j’ai entendu des adultes dire que... que tout le monde dans l'Empire Gotoro est abattu.$s",
+	"DSV.NMW.VanillaEvents.733330.38": "N’oublie pas que papa est très intelligent ! Il ne gênerait jamais une fusillade ! Ne t’inquiète pas !$a#$b#Et n’oublie jamais que maman et moi sommes ici pour jouer avec toi si jamais tu te sens seul.",
+	"DSV.NMW.VanillaEvents.733330.55": "Pour être honnête, je ne sais pas si mon père reviendra... Nous avons tous lu ses articles. Les soldats tombent par centaines, et il est au milieu de tout cela.$s#$b#Que vais-je bien pouvoir dire à Vincent ?$7",	
+	
+	"DSV.NMW.VanillaEvents.100.70": "Tu aurais dû savoir que ce son me rappellerait d'être dans l'empire !$u",
+	"DSV.NMW.VanillaEvents.100.85": "... J'ai perdu beaucoup de bons amis dans ces foutues rues.$s",
+
+// NO MORE WAR EVENTS - RSV
+	
+	"DSV.NMW.RSVEvents.75160072.23": "Take a look at this beauty!$h#$b#These old boots were the very ones I wore when we came back from our 148-hour rescue mission after being stranded in a cave following an ambush!$h#$b#It was one of the most intense battles I ever had. Lost some friends... Gained new ones... It was... something.$s#$b#I wouldn't wish that kind of experience on anyone else. That's why I keep this displayed.#$b#To remind me of the people I protected and fought for. For the peace I pray to Yoba comes for Corine and her generation.",
+	
+// NO MORE WAR EVENTS - TOSHINORI 
+
+	"DSV.NMW.ToshinoriEvents.66170024.20": "We were friends in high school before I became a teacher and Kent went into journalism, then we were reunited on the front lines.",
+	
+	"DSV.NMW.ToshinoriEvents.approvequestionToshi.20": "Well, I was in the peacekeeping reserve. The Gotoro Empire's forces vastly outnumbered those of their ex-territory Jhunal, and so many Jhunalese refugees were trying to reach safety that Ferngill sent some of our peacekeepers to assist. I was still a teacher at the time, but I packed my bags when they asked and joined the military.#$b#The hardest part was honestly saying goodbye to my students, knowing I might never see them again.#$b# But, despite how I look now, I wasn't always like this. I was actually an extremely big man! It would take an entire kitchen to feed me and I'd always go back for seconds, haha!$h#$b#I had a reputation at the military base for my appetite and my bad jokes. And I performed very well at boot camp. Due to my strength I was assigned to the front lines.#$b# For the first couple of months I didn't really see much action, but as the Gotoro Empire moved further into Jhunal, things quickly got messy.#$b#But, ah, I'm afraid I don't really feel like talking much more about it. Still... thank you for taking interest in my life, @.",
+	"DSV.NMW.ToshinoriEvents.sadToshi.4": "It was... well, I was... I was behind a demolished wall. With Kent, and many others. We were escorting a small group of civilians.#$b#The Gotoro Empire was blocking our escape route. They were better equipped. At the time, they had just developed a new breed of explosive. They were using us to test their weapons, like rats in a cage.#$b#It's... very difficult for me to recall this moment. But the long and short of it? I abandoned my post to protect my fellow soldiers and the civilians we were defending. I managed to take out their grenadiers before an explosive detonated against my chest. Kent pulled me out of there. I don't remember what happened. And people were delicate enough not to tell me.",
+	"DSV.NMW.ToshinoriEvents.sadToshi.5": "I was told that dozens of innocent people might not have made it to safety if not for my actions that day.#$b# I got... some medals. Honor. Bravery. Sacrifice. That sort of thing.$s",
+	
+	"DSV.NMW.ToshinoriEvents.66170001.48": "Oh! Cool! I bet he saved lots of people like in Dad's stories!",
+	
+	"DSV.NMW.ToshinoriEvents.66170003.26": "Many of my students still keep in touch. This one's from Izuku. He's so close he's practically my own son.$6#$b#It's been years since he graduated. Back when I still lived in the city, he'd visit me almost every day.$6#$b#Of course, this was before I was involved in that horrible war.",
+	
+	"DSV.NMW.ToshinoriEvents.66170031.20": "I know you're a busy individual, so I'll just get to the point.#$b# My friend, Toshinori... words can't really express just how much that guy means to me. But, lately, he's not acting like himself. I'm sure you've noticed.#$b# Something's up... and, knowing the guy like I do, I don't think he's actually that upset at anyone in town. It's deeper than that.#$b#I don't know if he's told you or not, but we were together in Gotoro during the war, me as a journalist and him as a peacekeeper. We've seen hell, been through hell. I've been seeing a therapist, but I don't think Toshinori's bothered.#$b# I don't know if he thought he was too good for it, or if he wasn't traumatized enough to need it, but... he's... always preferred to distract himself with other people's problems than deal with his own.#$b# I've told him I think it's a bad idea, that he needs to address what he's gone through, but he always laughed me off and said he was fine.#$b# At his best, he just genuinely wants to help other people. But the way it's coming out lately... He needs help.#$b#I think 'confrontation' is a strong word, and 'intervention' makes me think of an addiction problem. I just know he needs help.#$b#He won't listen to me. Our trauma is just too similar. He likes you, @. I think he'll listen to you. Please, talk to him. Get through to him.",
+	"DSV.NMW.ToshinoriEvents.66170032.20": "I know you're a busy individual, so I'll just get to the point.#$b# Your husband, Toshinori... words can't really express just how much that guy means to me. But, lately, he's not acting like himself. I'm sure you've noticed, considering you live with him.#$b# Something's up... and, knowing the guy like I do, I don't think he's actually that upset at anyone in town. It's deeper than that.#$b# I don't know if he's told you or not, but we were together in Gotoro during the war, me as a journalist and him as a peacekeeper. We've seen hell, been through hell. I've been seeing a therapist, but I don't think Toshinori's bothered.#$b# I don't know if he thought he was too good for it, or if he wasn't traumatized enough to need it, but... he's... always preferred to distract himself with other people's problems than deal with his own.#$b# I've told him I think it's a bad idea, that he needs to address what he's gone through, but he always laughed me off and said he was fine.#$b# At his best, he just genuinely wants to help other people. But the way it's coming out lately... He needs help.#$b# I think 'confrontation' is a strong word, and 'intervention' makes me think of an addiction problem. I just know he needs help.#$b# He won't listen to me. Our trauma is just too similar. He clearly loves you, @, and values what you say. I think he'll listen to you. Please, talk to him. Get through to him.",
+	
+	"DSV.NMW.ToshinoriEvents.66170031.30": "During the war... it felt like so many people's lives were depending on us. That if we failed, people we had come to know and love would die.$12#$b#I was never... quite able to adjust to civilian life. I tried. But I still feel like someone, somewhere, is going to die due to my inaction. And it'd be my fault.$12",
+	
+// NO MORE WAR GIFT TASTES - KENT
+	
+	"DSV.NMW.VanillaGiftTastes.Hate": "This... A Gotoro soldier gave me this when they were detaining me. I've been trying to forget about that. *shudder*",
+
+	"DSV.NMW.CGRGiftTastes.RabbitFoot": "I used to carry one of these around with me while I was reporting.#$b#Thank you, I appreciate it.",
+
+// NO MORE WAR QUESTS
+	
+	"DSV.NMW.VanillaQuests.119": "A Summer Star",
+
+// NO MORE WAR STRINGS
+
+	"DSV.NMW.VanillaStrings.Religion.George.Sun.001": "Hehehe... I skipped my usual altar visit to come here! I hope Yoba isn't too angry with me.$h",
+
+	"DSV.NMW.VanillaStrings.Religion.Caroline.Sun.000": "It was the previous owners who built the altar room as a community shrine for anyone who wants to pray or reflect, Yoba worshipper or not.$b#We aren't religious, but we let the other townsfolk use it if they want.",
+
+	"DSV.NMW.VanillaStrings.Religion.SeedShop": "Autel Communautaire",
+	
+	"DSV.NMW.RememberMyBirthdayStrings.Kent.spring.004": "Birthdays aren't really important in Gotoro, so we often forgot about them.$0#$b#But I guess it's different now that I'm back home.$1",
+
+	"DSV.NMW.ColaShopStrings.Kent.colashop.000": "This tastes like something the Jhunalese refugees used to make.#$b#Should send the recipe to some of my friends...",
+
+// NO MORE WAR OTHER
+	
+	"DSV.NMW.LyellSecretNote.Lyell.982": "Dear journal,^This is my final entry. Not because I grow tired of writing but because this is my last page.^I've returned from war - Gotoro and its former territory have been at it for a while now, and I heard the call to fight against my own motherland for what I believe is right.^I left unwillingly; the military could no longer use me to their benefit, so I am being sent back. I have no home in Ferngill, but luckily I have savings in a bank. I plan to buy a piece of land somewhere. Somewhere small and peaceful.^I hope to raise a farm, though I only have one arm now. I'm sure it'll be a difficult task. But I am hopeful for it.^I just want to rest now.^-Lyell Halkias",
+
+// NO BOMBS IN MAIL EDIT
+	
+	"DSV.NMW.VanillaMail.Kent.Body": "Bonjour, @.^Cet objet était en train de prendre la poussière dans la cabane à outils. Je me suis dit que tu pourrais en avoir besoin.  ^   -Kent",
+	"DSV.NMW.VanillaMail.Kent.Title": "Un cadeau de la part de Kent",
+	
+}
+	
+	
+	

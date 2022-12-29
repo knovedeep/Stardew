@@ -1,0 +1,316 @@
+{
+	"Format": "1.10",
+
+	"ConfigSchema": {
+		"Version": {
+			"AllowValues": "clean, mossy, seasonal",
+			"Default": "clean"
+			},
+	},
+
+	"Changes": [
+
+	//Farmhouse & Greenhouse
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/houses",
+		"FromFile": "assets/{{version}}/houses.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Houses Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/houses",
+		"FromFile": "assets/{{season}}/houses.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Coops
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Coop, Buildings/Big Coop, Buildings/Deluxe Coop",
+		"FromFile": "assets/{{version}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Coops Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Coop, Buildings/Big Coop, Buildings/Deluxe Coop",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Barns
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Barn, Buildings/Big Barn, Buildings/Deluxe Barn",
+		"FromFile": "assets/{{version}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Barns Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Barn, Buildings/Big Barn, Buildings/Deluxe Barn",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Silo
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Silo",
+		"FromFile": "assets/{{version}}/Silo.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Silo Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Silo",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Stable
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Stable",
+		"FromFile": "assets/{{version}}/Stable.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Stable Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Stable",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Slime Hutch
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Slime Hutch",
+		"FromFile": "assets/{{version}}/Slime Hutch.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Slime Hutch Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Slime Hutch",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Shed - TODO Big Shed Seasonal
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Shed",
+		"FromFile": "assets/{{version}}/Shed.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Big Shed",
+		"FromFile": "assets/{{version}}/Big Shed.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Shed Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Shed, Buildings/Big Shed",
+		"FromFile": "assets/{{season}}/Shed.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Well
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Well",
+		"FromFile": "assets/{{version}}/Well.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Well Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Well",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Mill
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Mill",
+		"FromFile": "assets/{{version}}/Mill.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Mill Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Mill",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Obelisks - TODO Seasonal Desert
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Water Obelisk, Buildings/Earth Obelisk, Buildings/Desert Obelisk",
+		"FromFile": "assets/{{version}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Silo Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Water Obelisk, Buildings/Earth Obelisk",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Fish Pond - TODO Seasonal
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Buildings/Fish Pond",
+		"FromFile": "assets/{{version}}/Fish Pond.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+	//Gold Clock - TODO Seasonal
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Buildings/Gold Clock",
+		"FromFile": "assets/{{version}}/Gold Clock.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+	//Junimo Hut
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Buildings/Junimo Hut",
+		"FromFile": "assets/{{version}}/Junimo Hut.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+		{
+		"LogName": "Junimo Hut Seasonal",
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Junimo Hut",
+		"FromFile": "assets/{{season}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": true
+			}
+		},
+
+	//Cabins - TODO Seasonal
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Buildings/Plank Cabin, Buildings/Stone Cabin, Buildings/Log Cabin",
+		"FromFile": "assets/{{version}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Version:seasonal": false
+			}
+		},
+
+	//Shipping Bin - TODO
+
+
+	]
+}
